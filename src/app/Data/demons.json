@@ -1,0 +1,233 @@
+[
+    {
+        "Race": "Avian",
+        "Name": "Feng Huang",
+        "Level": 20,
+        "Range": [
+            1,
+            39
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Jatayu",
+        "Level": 28,
+        "Range": [
+            40,
+            55
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Phoenix",
+        "Level": 36,
+        "Range": [
+            56,
+            71
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Suparna",
+        "Level": 42,
+        "Range": [
+            72,
+            83
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Zhu Que",
+        "Level": 49,
+        "Range": null,
+        "Special": [
+            [
+                "Phoenix",
+                "Kirin",
+                "Badb Catha"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Avian",
+        "Name": "Yata-Garasu",
+        "Level": 52,
+        "Range": [
+            84,
+            103
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Garuda",
+        "Level": 65,
+        "Range": [
+            104,
+            null
+        ],
+        "Special": false,
+        "Plugin": false
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Thoth",
+        "Level": 42,
+        "Range": null,
+        "Special": [
+            [
+                "Sarasvati",
+                "Phoenix",
+                "Kaichi"
+            ],
+            [
+                "Sarasvati",
+                "Jatayu",
+                "Nandi"
+            ],
+            [
+                "Sarasvati",
+                "Feng Huang",
+                "Kirin"
+            ]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Indra",
+        "Level": 67,
+        "Range": null,
+        "Special": [
+            [
+                "Zouchouten",
+                "Ganesha"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Odin",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Sati",
+                "Yata-Garasu",
+                "Sleipnir"
+            ],
+            [
+                "Parvati",
+                "Valkyrie",
+                "Garuda"
+            ],
+            [
+                "Slepinir",
+                "Valkyrie",
+                "Yata-Garasu"
+            ]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Atavaka",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Hanuman",
+                "Yaksa"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Mithra",
+        "Level": 74,
+        "Range": null,
+        "Special": [
+            [
+                "Jikokuten",
+                "Throne",
+                "Kali"
+            ],
+            [
+                "Virtue",
+                "Take-Mikazuchi",
+                "Kali"
+            ],
+            [
+                "Dominion",
+                "Skadi",
+                "Okuninushi"
+            ]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Thor",
+        "Level": 76,
+        "Range": null,
+        "Special": [
+            [
+                "Odin",
+                "Loki",
+                "Dwarf"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Horus",
+        "Level": 80,
+        "Range": null,
+        "Special": [
+            [
+                "Mithra",
+                "Hathor"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Baal",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Anat",
+                "Mot"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Baal",
+        "Level": 97,
+        "Range": null,
+        "Special": [
+            [
+                "Ananta",
+                "Garuda"
+            ]
+        ],
+        "Plugin": true
+    }
+]
