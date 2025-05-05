@@ -1,5 +1,9 @@
 [
     {
+        "Name": "Element",
+        "Alt": "Elemental"
+    },
+    {
         "Name": "Demon God",
         "Alt": "Deity"
     },
@@ -142,5 +146,13 @@
     {
         "Name": "Beelzebub (Fly)",
         "Alt": "Beelzebub"
+    },
+    {
+        "Name": "Yamata-no-Orochi",
+        "Alt": "Yamatano-Orochi"
+    },
+    {
+        "Name": "Flamies",
+        "Alt": "Flaemis"
     }
 ]

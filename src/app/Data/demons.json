@@ -234,7 +234,10 @@
         "Race": "Divine",
         "Name": "Angel",
         "Level": 11,
-        "Range": [1, 21],
+        "Range": [
+            1,
+            21
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -242,7 +245,10 @@
         "Race": "Divine",
         "Name": "Archangel",
         "Level": 17,
-        "Range": [22, 33],
+        "Range": [
+            22,
+            33
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -250,7 +256,10 @@
         "Race": "Divine",
         "Name": "Principality",
         "Level": 25,
-        "Range": [34, 49],
+        "Range": [
+            34,
+            49
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -258,7 +267,10 @@
         "Race": "Divine",
         "Name": "Power",
         "Level": 36,
-        "Range": [50, 71],
+        "Range": [
+            50,
+            71
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -266,7 +278,10 @@
         "Race": "Divine",
         "Name": "Virtue",
         "Level": 51,
-        "Range": [72, 101],
+        "Range": [
+            72,
+            101
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -274,7 +289,10 @@
         "Race": "Divine",
         "Name": "Dominion",
         "Level": 64,
-        "Range": [102, 127],
+        "Range": [
+            102,
+            127
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -282,7 +300,10 @@
         "Race": "Divine",
         "Name": "Throne",
         "Level": 71,
-        "Range": [128, null],
+        "Range": [
+            128,
+            null
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -291,7 +312,12 @@
         "Name": "Ose Hallel",
         "Level": 73,
         "Range": null,
-        "Special": [["Ose", "Throne"]],
+        "Special": [
+            [
+                "Ose",
+                "Throne"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -299,14 +325,22 @@
         "Name": "Flauros Hallel",
         "Level": 75,
         "Range": null,
-        "Special": [["Flauros", "Throne"]],
+        "Special": [
+            [
+                "Flauros",
+                "Throne"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Earth Element",
         "Name": "Kodama",
         "Level": 3,
-        "Range": [1,5],
+        "Range": [
+            1,
+            5
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -314,7 +348,10 @@
         "Race": "Earth Element",
         "Name": "Hua Po",
         "Level": 5,
-        "Range": [6, 9],
+        "Range": [
+            6,
+            9
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -322,7 +359,10 @@
         "Race": "Earth Element",
         "Name": "Knocker",
         "Level": 11,
-        "Range": [10,21],
+        "Range": [
+            10,
+            21
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -330,7 +370,10 @@
         "Race": "Earth Element",
         "Name": "Sudama",
         "Level": 17,
-        "Range": [22,33],
+        "Range": [
+            22,
+            33
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -338,7 +381,10 @@
         "Race": "Earth Element",
         "Name": "Bucca-Boo",
         "Level": 24,
-        "Range": [34,47],
+        "Range": [
+            34,
+            47
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -346,15 +392,34 @@
         "Race": "Earth Element",
         "Name": "Dwarf",
         "Level": 30,
-        "Range": [48,59],
+        "Range": [
+            48,
+            59
+        ],
         "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Koropokkuru",
+        "Level": 35,
+        "Range": null,
+        "Special": [
+            [
+                "Knocker",
+                "Dwarf"
+            ]
+        ],
         "Plugin": false
     },
     {
         "Race": "Earth Element",
         "Name": "Sarutahiko",
         "Level": 35,
-        "Range": [60,69],
+        "Range": [
+            60,
+            69
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -362,7 +427,10 @@
         "Race": "Earth Element",
         "Name": "Ubelluris",
         "Level": 41,
-        "Range": [70,81],
+        "Range": [
+            70,
+            81
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -370,7 +438,9 @@
         "Race": "Earth Element",
         "Name": "Titan",
         "Level": 62,
-        "Range": [82,null],
+        "Range": [
+            82
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -379,7 +449,13 @@
         "Name": "Gogmagog",
         "Level": 64,
         "Range": null,
-        "Special": [["Titan", "Knocker", "Blob"]],
+        "Special": [
+            [
+                "Titan",
+                "Knocker",
+                "Blob"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -387,7 +463,12 @@
         "Name": "Luvah",
         "Level": 32,
         "Range": null,
-        "Special": [["Sudama", "Aeros"]],
+        "Special": [
+            [
+                "Sudama",
+                "Aeros"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -395,7 +476,12 @@
         "Name": "Urthona",
         "Level": 34,
         "Range": null,
-        "Special": [["Sudama", "Erthys"]],
+        "Special": [
+            [
+                "Sudama",
+                "Erthys"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -403,7 +489,12 @@
         "Name": "Urizen",
         "Level": 36,
         "Range": null,
-        "Special": [["Sudama", "Flamies"]],
+        "Special": [
+            [
+                "Sudama",
+                "Flamies"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -411,7 +502,12 @@
         "Name": "Tharmas",
         "Level": 38,
         "Range": null,
-        "Special": [["Sudama", "Aquans"]],
+        "Special": [
+            [
+                "Sudama",
+                "Aquans"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -419,7 +515,13 @@
         "Name": "Albion",
         "Level": 65,
         "Range": null,
-        "Special": [["Knocker", "Ubelluris", "Titan"]],
+        "Special": [
+            [
+                "Knocker",
+                "Ubelluris",
+                "Titan"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -427,7 +529,13 @@
         "Name": "Alilat",
         "Level": 75,
         "Range": null,
-        "Special": [["Parvati", "Artemis", "Hecate"]],
+        "Special": [
+            [
+                "Parvati",
+                "Artemis",
+                "Hecate"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -435,14 +543,22 @@
         "Name": "Black Maria",
         "Level": 89,
         "Range": null,
-        "Special": [["Anat", "Jeanne D'Arc"]],
+        "Special": [
+            [
+                "Anat",
+                "Jeanne D'Arc"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Evil Demon",
         "Name": "Ogre",
         "Level": 25,
-        "Range": [1,49],
+        "Range": [
+            1,
+            49
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -450,7 +566,10 @@
         "Race": "Evil Demon",
         "Name": "Rakshasa",
         "Level": 41,
-        "Range": [40,81],
+        "Range": [
+            40,
+            81
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -458,7 +577,9 @@
         "Race": "Evil Demon",
         "Name": "Cyclops",
         "Level": 46,
-        "Range": [82,null],
+        "Range": [
+            82
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -467,7 +588,13 @@
         "Name": "Girimehkala",
         "Level": 70,
         "Range": null,
-        "Special": [["Ganesha","Vetala","Taraka"]],
+        "Special": [
+            [
+                "Ganesha",
+                "Vetala",
+                "Taraka"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -475,14 +602,23 @@
         "Name": "Hecatonchires",
         "Level": 82,
         "Range": null,
-        "Special": [["Ubelluris","Ogre","Cyclops"]],
+        "Special": [
+            [
+                "Ubelluris",
+                "Ogre",
+                "Cyclops"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Goddess",
         "Name": "Hathor",
         "Level": 18,
-        "Range": [1,35],
+        "Range": [
+            1,
+            35
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -490,7 +626,10 @@
         "Race": "Goddess",
         "Name": "Ameno-Uzume",
         "Level": 24,
-        "Range": [35,47],
+        "Range": [
+            35,
+            47
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -498,7 +637,10 @@
         "Race": "Goddess",
         "Name": "Sarasvati",
         "Level": 30,
-        "Range": [48,59],
+        "Range": [
+            48,
+            59
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -506,7 +648,10 @@
         "Race": "Goddess",
         "Name": "Freya",
         "Level": 38,
-        "Range": [60,75],
+        "Range": [
+            60,
+            75
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -514,7 +659,9 @@
         "Race": "Goddess",
         "Name": "Fortuna",
         "Level": 38,
-        "Range": ["Can't be fused"],
+        "Range": [
+            "Can't be fused"
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -522,7 +669,10 @@
         "Race": "Goddess",
         "Name": "Sati",
         "Level": 55,
-        "Range": [76,109],
+        "Range": [
+            76,
+            109
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -530,7 +680,9 @@
         "Race": "Goddess",
         "Name": "Scathach",
         "Level": 68,
-        "Range": [110,null],
+        "Range": [
+            110
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -539,7 +691,13 @@
         "Name": "Norn",
         "Level": 72,
         "Range": null,
-        "Special": [["Atropos","Lachesis","Clotho"]],
+        "Special": [
+            [
+                "Atropos",
+                "Lachesis",
+                "Clotho"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -547,7 +705,13 @@
         "Name": "Pallas Athena",
         "Level": 76,
         "Range": null,
-        "Special": [["Throne","Sati","Valkyrie"]],
+        "Special": [
+            [
+                "Throne",
+                "Sati",
+                "Valkyrie"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -555,7 +719,12 @@
         "Name": "Lakshmi",
         "Level": 81,
         "Range": null,
-        "Special": [["Sarasvati","Parvati"]],
+        "Special": [
+            [
+                "Sarasvati",
+                "Parvati"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -563,7 +732,13 @@
         "Name": "Anat",
         "Level": 84,
         "Range": null,
-        "Special": [["Pallas Athena","Hel","Kali"]],
+        "Special": [
+            [
+                "Pallas Athena",
+                "Hel",
+                "Kali"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -571,14 +746,22 @@
         "Name": "Athena Promachos",
         "Level": "??",
         "Range": null,
-        "Special": [["Pallas Athena","Artemis"]],
+        "Special": [
+            [
+                "Pallas Athena",
+                "Artemis"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Heavenly God",
         "Name": "Omoikane",
         "Level": 31,
-        "Range": [1,61],
+        "Range": [
+            1,
+            61
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -586,7 +769,10 @@
         "Race": "Heavenly God",
         "Name": "Tajikarao",
         "Level": 34,
-        "Range": [62,67],
+        "Range": [
+            62,
+            67
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -595,14 +781,22 @@
         "Name": "Hino-Kagutsuchi",
         "Level": 65,
         "Range": null,
-        "Special": [["Zhu Que", "Efreet", "Flamies"]],
+        "Special": [
+            [
+                "Zhu Que",
+                "Efreet",
+                "Flamies"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Heavenly God",
         "Name": "Take-Mikazuchi",
         "Level": 71,
-        "Range": [68,null],
+        "Range": [
+            68
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -611,7 +805,13 @@
         "Name": "Tsukuyomi",
         "Level": 80,
         "Range": null,
-        "Special": [["Inexperienced Yata-Garasu","Hecate","Nyx"]],
+        "Special": [
+            [
+                "Inexperienced Yata-Garasu",
+                "Hecate",
+                "Nyx"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -619,7 +819,13 @@
         "Name": "Amaterasu (M)",
         "Level": 84,
         "Range": null,
-        "Special": [["Inexperienced Yata-Garasu","Mithra","Cu Chulainn"]],
+        "Special": [
+            [
+                "Inexperienced Yata-Garasu",
+                "Mithra",
+                "Cu Chulainn"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -627,14 +833,22 @@
         "Name": "Amaterasu (F)",
         "Level": 94,
         "Range": null,
-        "Special": [["Inexperienced Yata-Garasu","Mithra","Hathor"]],
+        "Special": [
+            [
+                "Inexperienced Yata-Garasu",
+                "Mithra",
+                "Hathor"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Raptor",
         "Name": "Onmoraki",
         "Level": 1,
-        "Range": ["Rank Down Only"],
+        "Range": [
+            "Rank Down Only"
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -642,7 +856,10 @@
         "Race": "Raptor",
         "Name": "Moh Shuvuu",
         "Level": 28,
-        "Range": [2,55],
+        "Range": [
+            2,
+            55
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -650,7 +867,10 @@
         "Race": "Raptor",
         "Name": "Zhen",
         "Level": 41,
-        "Range": [56,81],
+        "Range": [
+            56,
+            81
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -658,7 +878,10 @@
         "Race": "Raptor",
         "Name": "Furiae",
         "Level": 45,
-        "Range": [82,89],
+        "Range": [
+            82,
+            89
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -666,7 +889,10 @@
         "Race": "Raptor",
         "Name": "Camazotz",
         "Level": 69,
-        "Range": [90,137],
+        "Range": [
+            90,
+            137
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -675,14 +901,21 @@
         "Name": "Anzu",
         "Level": 70,
         "Range": null,
-        "Special": [["Basilisk","Cerberus"]],
+        "Special": [
+            [
+                "Basilisk",
+                "Cerberus"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Raptor",
         "Name": "Hresvelgr",
         "Level": 78,
-        "Range": [138,null],
+        "Range": [
+            138
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -691,7 +924,12 @@
         "Name": "Gurr",
         "Level": 83,
         "Range": null,
-        "Special": [["Garuda","Rakshasa"]],
+        "Special": [
+            [
+                "Garuda",
+                "Rakshasa"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -700,9 +938,21 @@
         "Level": 80,
         "Range": null,
         "Special": [
-            ["Virtue","Dominion","Power"],
-            ["Surt","Dominion","Power"],
-            ["Inexperienced Uriel","Dominion","Power"]
+            [
+                "Virtue",
+                "Dominion",
+                "Power"
+            ],
+            [
+                "Surt",
+                "Dominion",
+                "Power"
+            ],
+            [
+                "Inexperienced Uriel",
+                "Dominion",
+                "Power"
+            ]
         ],
         "Plugin": true
     },
@@ -712,7 +962,11 @@
         "Level": 93,
         "Range": null,
         "Special": [
-            ["Uriel","Throne","Throne"]
+            [
+                "Uriel",
+                "Throne",
+                "Throne"
+            ]
         ],
         "Plugin": true
     },
@@ -722,7 +976,11 @@
         "Level": 94,
         "Range": null,
         "Special": [
-            ["Raphael","Throne","Odin"]
+            [
+                "Raphael",
+                "Throne",
+                "Odin"
+            ]
         ],
         "Plugin": true
     },
@@ -732,7 +990,11 @@
         "Level": 96,
         "Range": null,
         "Special": [
-            ["Gabriel","Virtue","Samael"]
+            [
+                "Gabriel",
+                "Virtue",
+                "Samael"
+            ]
         ],
         "Plugin": true
     },
@@ -742,7 +1004,11 @@
         "Level": 96,
         "Range": null,
         "Special": [
-            ["Uriel","Raphael","Gabriel"]
+            [
+                "Uriel",
+                "Raphael",
+                "Gabriel"
+            ]
         ],
         "Plugin": true
     },
@@ -752,7 +1018,11 @@
         "Level": 97,
         "Range": null,
         "Special": [
-            ["Raphael","Throne","Loki"]
+            [
+                "Raphael",
+                "Throne",
+                "Loki"
+            ]
         ],
         "Plugin": true
     },
@@ -760,7 +1030,10 @@
         "Race": "Vile",
         "Name": "Baphomet",
         "Level": 30,
-        "Range": [1,59],
+        "Range": [
+            1,
+            59
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -768,7 +1041,10 @@
         "Race": "Vile",
         "Name": "Tao Tie",
         "Level": 65,
-        "Range": [60,130],
+        "Range": [
+            60,
+            130
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -777,14 +1053,21 @@
         "Name": "Mishaguji-Sama",
         "Level": 67,
         "Range": null,
-        "Special": [["Take-Minakata","Sarutahiko"]],
+        "Special": [
+            [
+                "Take-Minakata",
+                "Sarutahiko"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Vile",
         "Name": "Pazuzu",
         "Level": 82,
-        "Range": [131,null],
+        "Range": [
+            131
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -793,7 +1076,12 @@
         "Name": "Mada",
         "Level": 83,
         "Range": null,
-        "Special": [["Nyarlathotep","Dionysus"]],
+        "Special": [
+            [
+                "Nyarlathotep",
+                "Dionysus"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -801,7 +1089,13 @@
         "Name": "Nyarlathotep",
         "Level": 86,
         "Range": null,
-        "Special": [["Pazuzu","Yata-Garasu","Baphomet"]],
+        "Special": [
+            [
+                "Pazuzu",
+                "Yata-Garasu",
+                "Baphomet"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -809,7 +1103,13 @@
         "Name": "Samael",
         "Level": 89,
         "Range": null,
-        "Special": [["Pazuzu","Uriel","Queen Mab"]],
+        "Special": [
+            [
+                "Pazuzu",
+                "Uriel",
+                "Queen Mab"
+            ]
+        ],
         "Plugin": true
     },
     {
@@ -817,14 +1117,23 @@
         "Name": "Seth",
         "Level": 96,
         "Range": null,
-        "Special": [["Gabriel","Chimera","Isis"]],
+        "Special": [
+            [
+                "Gabriel",
+                "Chimera",
+                "Isis"
+            ]
+        ],
         "Plugin": true
     },
     {
         "Race": "Wild Bird",
         "Name": "Harpy",
         "Level": 7,
-        "Range": [1,13],
+        "Range": [
+            1,
+            13
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -832,7 +1141,10 @@
         "Race": "Wild Bird",
         "Name": "Macha",
         "Level": 12,
-        "Range": [14,23],
+        "Range": [
+            14,
+            23
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -840,7 +1152,10 @@
         "Race": "Wild Bird",
         "Name": "Ocypete",
         "Level": 25,
-        "Range": [24,49],
+        "Range": [
+            24,
+            49
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -848,7 +1163,10 @@
         "Race": "Wild Bird",
         "Name": "Celaeno",
         "Level": 30,
-        "Range": [50,59],
+        "Range": [
+            50,
+            59
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -856,7 +1174,10 @@
         "Race": "Wild Bird",
         "Name": "Aello",
         "Level": 36,
-        "Range": [60,71],
+        "Range": [
+            60,
+            71
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -864,7 +1185,9 @@
         "Race": "Wild Bird",
         "Name": "Badb Catha",
         "Level": 54,
-        "Range": [72,null],
+        "Range": [
+            72
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -873,14 +1196,22 @@
         "Name": "Morrigan",
         "Level": 62,
         "Range": null,
-        "Special": [["Macha","Badb Catha"]],
+        "Special": [
+            [
+                "Macha",
+                "Badb Catha"
+            ]
+        ],
         "Plugin": false
     },
     {
         "Race": "Yoma",
         "Name": "Apsaras",
         "Level": 8,
-        "Range": [1,15],
+        "Range": [
+            1,
+            15
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -888,7 +1219,10 @@
         "Race": "Yoma",
         "Name": "Isora",
         "Level": 14,
-        "Range": [16,27],
+        "Range": [
+            16,
+            27
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -896,7 +1230,10 @@
         "Race": "Yoma",
         "Name": "Dis",
         "Level": 23,
-        "Range": [28,45],
+        "Range": [
+            28,
+            45
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -904,7 +1241,10 @@
         "Race": "Yoma",
         "Name": "Kinnari",
         "Level": 28,
-        "Range": [46,55],
+        "Range": [
+            46,
+            55
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -912,7 +1252,10 @@
         "Race": "Yoma",
         "Name": "Onkot",
         "Level": 37,
-        "Range": [56,73],
+        "Range": [
+            56,
+            73
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -920,7 +1263,10 @@
         "Race": "Yoma",
         "Name": "Jinn",
         "Level": 44,
-        "Range": [74,87],
+        "Range": [
+            74,
+            87
+        ],
         "Special": null,
         "Plugin": false
     },
@@ -928,8 +1274,315 @@
         "Race": "Yoma",
         "Name": "Ganesha",
         "Level": 58,
-        "Range": [88,null],
+        "Range": [
+            88
+        ],
         "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Cait Sith",
+        "Level": 7,
+        "Range": [
+            1,
+            13
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Cu Sith",
+        "Level": 13,
+        "Range": [
+            14,
+            25
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inugami",
+        "Level": 18,
+        "Range": [
+            26,
+            35
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Nekomata",
+        "Level": 26,
+        "Range": [
+            36,
+            51
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Orthrus",
+        "Level": 31,
+        "Range": [
+            52,
+            61
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Tan-Ki",
+        "Level": 37,
+        "Range": [
+            62,
+            73
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Dawon",
+        "Level": 42,
+        "Range": [
+            74,
+            83
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Cerberus",
+        "Level": 49,
+        "Range": [
+            84
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Gryphon",
+        "Level": 74,
+        "Range": null,
+        "Special": [
+            [
+                "Anzu",
+                "Throne"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Setanta",
+        "Level": 28,
+        "Range": [
+            1,
+            55
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Valkyrie",
+        "Level": 36,
+        "Range": [
+            56,
+            71
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Cu Chulainn",
+        "Level": 44,
+        "Range": [
+            72,
+            87
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Frost Ace",
+        "Level": 46,
+        "Range": null,
+        "Special": [
+            [
+                "Jack Frost",
+                "Tam Lin"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Kurama-Tengu",
+        "Level": 48,
+        "Range": [
+            88,
+            95
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Hayagriva",
+        "Level": 57,
+        "Range": [
+            96
+        ],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Kresnik",
+        "Level": 67,
+        "Range": null,
+        "Special": [
+            [
+                "Cu Chulainn",
+                "Unicorn"
+            ]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Hanuman",
+        "Level": 71,
+        "Range": null,
+        "Special": [
+            [
+                "Hayagriva",
+                "Garuda",
+                "Onkot"
+            ]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Nozuchi",
+        "Level": 14,
+        "Range": [1,27],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Naga",
+        "Level": 24,
+        "Range": [28,47],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Mizuchi",
+        "Level": 31,
+        "Range": [48,61],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Raja Naga",
+        "Level": 40,
+        "Range": [62,79],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Vouivre",
+        "Level": 48,
+        "Range": [80],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Yamata-no-Orochi",
+        "Level": 75,
+        "Range": null,
+        "Special": [["Quetzalcoatl","Nidhoggr","Raja Naga"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Yurlungur",
+        "Level": 81,
+        "Range": null,
+        "Special": [["Mizuchi","Quetzalcoatl"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Element",
+        "Name": "Erthys",
+        "Level": 7,
+        "Range": null,
+        "Special": [
+            ["Brute", "Brute"],
+            ["Earth Mother", "Earth Mother"],
+            ["Earth Element", "Earth Element"],
+            ["Fallen Angel", "Fallen Angel"],
+            ["Nation Ruler", "Nation Ruler"],
+            ["Nocturne", "Nation Ruler"]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Element",
+        "Name": "Aeros",
+        "Level": 11,
+        "Range": null,
+        "Special": [
+            ["Avian", "Avian"],
+            ["Beast", "Beast"],
+            ["Divine", "Divine"],
+            ["Fairy", "Fairy"],
+            ["Wild Bird", "Wild Bird"],
+            ["Wilder", "Wilder"]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Element",
+        "Name": "Aquans",
+        "Level": 15,
+        "Range": null,
+        "Special": [
+            ["Dragon", "Dragon"],
+            ["Dragon King", "Dragon King"],
+            ["Femme", "Femme"],
+            ["Heavenly God", "Heavenly God"],
+            ["Yoma", "Yoma"]
+        ],
+        "Plugin": false
+    },
+    {
+        "Race": "Element",
+        "Name": "Flamies",
+        "Level": 15,
+        "Range": null,
+        "Special": [
+            ["Godly Beast", "Godly Beast"],
+            ["Holy Beast", "Holy Beast"]
+        ],
         "Plugin": false
     }
 ]
