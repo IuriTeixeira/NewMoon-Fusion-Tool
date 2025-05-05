@@ -229,5 +229,707 @@
             ]
         ],
         "Plugin": true
+    },
+    {
+        "Race": "Divine",
+        "Name": "Angel",
+        "Level": 11,
+        "Range": [1, 21],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Archangel",
+        "Level": 17,
+        "Range": [22, 33],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Principality",
+        "Level": 25,
+        "Range": [34, 49],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Power",
+        "Level": 36,
+        "Range": [50, 71],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Virtue",
+        "Level": 51,
+        "Range": [72, 101],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Dominion",
+        "Level": 64,
+        "Range": [102, 127],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Throne",
+        "Level": 71,
+        "Range": [128, null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Ose Hallel",
+        "Level": 73,
+        "Range": null,
+        "Special": [["Ose", "Throne"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Divine",
+        "Name": "Flauros Hallel",
+        "Level": 75,
+        "Range": null,
+        "Special": [["Flauros", "Throne"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Kodama",
+        "Level": 3,
+        "Range": [1,5],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Hua Po",
+        "Level": 5,
+        "Range": [6, 9],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Knocker",
+        "Level": 11,
+        "Range": [10,21],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Sudama",
+        "Level": 17,
+        "Range": [22,33],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Bucca-Boo",
+        "Level": 24,
+        "Range": [34,47],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Dwarf",
+        "Level": 30,
+        "Range": [48,59],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Sarutahiko",
+        "Level": 35,
+        "Range": [60,69],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Ubelluris",
+        "Level": 41,
+        "Range": [70,81],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Titan",
+        "Level": 62,
+        "Range": [82,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Gogmagog",
+        "Level": 64,
+        "Range": null,
+        "Special": [["Titan", "Knocker", "Blob"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Luvah",
+        "Level": 32,
+        "Range": null,
+        "Special": [["Sudama", "Aeros"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Urthona",
+        "Level": 34,
+        "Range": null,
+        "Special": [["Sudama", "Erthys"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Urizen",
+        "Level": 36,
+        "Range": null,
+        "Special": [["Sudama", "Flamies"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Tharmas",
+        "Level": 38,
+        "Range": null,
+        "Special": [["Sudama", "Aquans"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Albion",
+        "Level": 65,
+        "Range": null,
+        "Special": [["Knocker", "Ubelluris", "Titan"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Alilat",
+        "Level": 75,
+        "Range": null,
+        "Special": [["Parvati", "Artemis", "Hecate"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Entity",
+        "Name": "Black Maria",
+        "Level": 89,
+        "Range": null,
+        "Special": [["Anat", "Jeanne D'Arc"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Ogre",
+        "Level": 25,
+        "Range": [1,49],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Rakshasa",
+        "Level": 41,
+        "Range": [40,81],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Cyclops",
+        "Level": 46,
+        "Range": [82,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Girimehkala",
+        "Level": 70,
+        "Range": null,
+        "Special": [["Ganesha","Vetala","Taraka"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Hecatonchires",
+        "Level": 82,
+        "Range": null,
+        "Special": [["Ubelluris","Ogre","Cyclops"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Hathor",
+        "Level": 18,
+        "Range": [1,35],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Ameno-Uzume",
+        "Level": 24,
+        "Range": [35,47],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Sarasvati",
+        "Level": 30,
+        "Range": [48,59],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Freya",
+        "Level": 38,
+        "Range": [60,75],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Fortuna",
+        "Level": 38,
+        "Range": ["Can't be fused"],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Sati",
+        "Level": 55,
+        "Range": [76,109],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Scathach",
+        "Level": 68,
+        "Range": [110,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Norn",
+        "Level": 72,
+        "Range": null,
+        "Special": [["Atropos","Lachesis","Clotho"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Pallas Athena",
+        "Level": 76,
+        "Range": null,
+        "Special": [["Throne","Sati","Valkyrie"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Lakshmi",
+        "Level": 81,
+        "Range": null,
+        "Special": [["Sarasvati","Parvati"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Anat",
+        "Level": 84,
+        "Range": null,
+        "Special": [["Pallas Athena","Hel","Kali"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Athena Promachos",
+        "Level": "??",
+        "Range": null,
+        "Special": [["Pallas Athena","Artemis"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Omoikane",
+        "Level": 31,
+        "Range": [1,61],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Tajikarao",
+        "Level": 34,
+        "Range": [62,67],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Hino-Kagutsuchi",
+        "Level": 65,
+        "Range": null,
+        "Special": [["Zhu Que", "Efreet", "Flamies"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Take-Mikazuchi",
+        "Level": 71,
+        "Range": [68,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Tsukuyomi",
+        "Level": 80,
+        "Range": null,
+        "Special": [["Inexperienced Yata-Garasu","Hecate","Nyx"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Amaterasu (M)",
+        "Level": 84,
+        "Range": null,
+        "Special": [["Inexperienced Yata-Garasu","Mithra","Cu Chulainn"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Amaterasu (F)",
+        "Level": 94,
+        "Range": null,
+        "Special": [["Inexperienced Yata-Garasu","Mithra","Hathor"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Onmoraki",
+        "Level": 1,
+        "Range": ["Rank Down Only"],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Moh Shuvuu",
+        "Level": 28,
+        "Range": [2,55],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Zhen",
+        "Level": 41,
+        "Range": [56,81],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Furiae",
+        "Level": 45,
+        "Range": [82,89],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Camazotz",
+        "Level": 69,
+        "Range": [90,137],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Anzu",
+        "Level": 70,
+        "Range": null,
+        "Special": [["Basilisk","Cerberus"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Hresvelgr",
+        "Level": 78,
+        "Range": [138,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Gurr",
+        "Level": 83,
+        "Range": null,
+        "Special": [["Garuda","Rakshasa"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Uriel",
+        "Level": 80,
+        "Range": null,
+        "Special": [
+            ["Virtue","Dominion","Power"],
+            ["Surt","Dominion","Power"],
+            ["Inexperienced Uriel","Dominion","Power"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Raphael",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            ["Uriel","Throne","Throne"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Gabriel",
+        "Level": 94,
+        "Range": null,
+        "Special": [
+            ["Raphael","Throne","Odin"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Michael",
+        "Level": 96,
+        "Range": null,
+        "Special": [
+            ["Gabriel","Virtue","Samael"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Seraph",
+        "Level": 96,
+        "Range": null,
+        "Special": [
+            ["Uriel","Raphael","Gabriel"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Metatron",
+        "Level": 97,
+        "Range": null,
+        "Special": [
+            ["Raphael","Throne","Loki"]
+        ],
+        "Plugin": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Baphomet",
+        "Level": 30,
+        "Range": [1,59],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Vile",
+        "Name": "Tao Tie",
+        "Level": 65,
+        "Range": [60,130],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Vile",
+        "Name": "Mishaguji-Sama",
+        "Level": 67,
+        "Range": null,
+        "Special": [["Take-Minakata","Sarutahiko"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Pazuzu",
+        "Level": 82,
+        "Range": [131,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Vile",
+        "Name": "Mada",
+        "Level": 83,
+        "Range": null,
+        "Special": [["Nyarlathotep","Dionysus"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Nyarlathotep",
+        "Level": 86,
+        "Range": null,
+        "Special": [["Pazuzu","Yata-Garasu","Baphomet"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Samael",
+        "Level": 89,
+        "Range": null,
+        "Special": [["Pazuzu","Uriel","Queen Mab"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Seth",
+        "Level": 96,
+        "Range": null,
+        "Special": [["Gabriel","Chimera","Isis"]],
+        "Plugin": true
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Harpy",
+        "Level": 7,
+        "Range": [1,13],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Macha",
+        "Level": 12,
+        "Range": [14,23],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Ocypete",
+        "Level": 25,
+        "Range": [24,49],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Celaeno",
+        "Level": 30,
+        "Range": [50,59],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Aello",
+        "Level": 36,
+        "Range": [60,71],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Badb Catha",
+        "Level": 54,
+        "Range": [72,null],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Morrigan",
+        "Level": 62,
+        "Range": null,
+        "Special": [["Macha","Badb Catha"]],
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Apsaras",
+        "Level": 8,
+        "Range": [1,15],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Isora",
+        "Level": 14,
+        "Range": [16,27],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Dis",
+        "Level": 23,
+        "Range": [28,45],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Kinnari",
+        "Level": 28,
+        "Range": [46,55],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Onkot",
+        "Level": 37,
+        "Range": [56,73],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Jinn",
+        "Level": 44,
+        "Range": [74,87],
+        "Special": null,
+        "Plugin": false
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Ganesha",
+        "Level": 58,
+        "Range": [88,null],
+        "Special": null,
+        "Plugin": false
     }
 ]
