@@ -7,8 +7,10 @@
             1,
             39
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Avian",
@@ -18,8 +20,10 @@
             40,
             55
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Avian",
@@ -29,8 +33,10 @@
             56,
             71
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Avian",
@@ -40,8 +46,10 @@
             72,
             83
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Avian",
@@ -55,7 +63,9 @@
                 "Badb Catha"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Avian",
@@ -65,8 +75,10 @@
             84,
             103
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Avian",
@@ -76,8 +88,10 @@
             104,
             null
         ],
-        "Special": false,
-        "Plugin": false
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demon God",
@@ -101,7 +115,9 @@
                 "Kirin"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demon God",
@@ -114,7 +130,9 @@
                 "Ganesha"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demon God",
@@ -138,7 +156,9 @@
                 "Yata-Garasu"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demon God",
@@ -151,7 +171,9 @@
                 "Yaksa"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demon God",
@@ -175,7 +197,9 @@
                 "Okuninushi"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demon God",
@@ -189,7 +213,9 @@
                 "Dwarf"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demon God",
@@ -202,7 +228,9 @@
                 "Hathor"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demon God",
@@ -215,7 +243,9 @@
                 "Mot"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demon God",
@@ -228,7 +258,9 @@
                 "Garuda"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Divine",
@@ -239,7 +271,9 @@
             21
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -250,7 +284,9 @@
             33
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -261,7 +297,9 @@
             49
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -272,7 +310,9 @@
             71
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -283,7 +323,9 @@
             101
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -294,7 +336,9 @@
             127
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -305,7 +349,9 @@
             null
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -318,7 +364,9 @@
                 "Throne"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Divine",
@@ -331,7 +379,9 @@
                 "Throne"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Earth Element",
@@ -342,7 +392,9 @@
             5
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -353,7 +405,9 @@
             9
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -364,7 +418,9 @@
             21
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -375,7 +431,9 @@
             33
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -386,7 +444,9 @@
             47
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -397,7 +457,9 @@
             59
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -410,7 +472,9 @@
                 "Dwarf"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -421,7 +485,9 @@
             69
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -432,7 +498,9 @@
             81
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -442,7 +510,9 @@
             82
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Element",
@@ -456,7 +526,9 @@
                 "Blob"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -469,7 +541,9 @@
                 "Aeros"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -482,7 +556,9 @@
                 "Erthys"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -495,7 +571,9 @@
                 "Flamies"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -508,7 +586,9 @@
                 "Aquans"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -522,7 +602,9 @@
                 "Titan"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -536,7 +618,9 @@
                 "Hecate"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Entity",
@@ -549,7 +633,9 @@
                 "Jeanne D'Arc"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Evil Demon",
@@ -560,7 +646,9 @@
             49
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Evil Demon",
@@ -571,7 +659,9 @@
             81
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Evil Demon",
@@ -581,7 +671,9 @@
             82
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Evil Demon",
@@ -595,7 +687,9 @@
                 "Taraka"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Evil Demon",
@@ -609,7 +703,9 @@
                 "Cyclops"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Goddess",
@@ -620,7 +716,9 @@
             35
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -631,7 +729,9 @@
             47
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -642,7 +742,9 @@
             59
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -653,7 +755,9 @@
             75
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -663,7 +767,9 @@
             "Can't be fused"
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -674,7 +780,9 @@
             109
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -684,7 +792,9 @@
             110
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Goddess",
@@ -698,7 +808,9 @@
                 "Clotho"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Goddess",
@@ -712,7 +824,9 @@
                 "Valkyrie"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Goddess",
@@ -725,7 +839,9 @@
                 "Parvati"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Goddess",
@@ -739,7 +855,9 @@
                 "Kali"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Goddess",
@@ -752,7 +870,9 @@
                 "Artemis"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -763,7 +883,9 @@
             61
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -774,7 +896,9 @@
             67
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -788,7 +912,9 @@
                 "Flamies"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -798,7 +924,9 @@
             68
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -812,7 +940,9 @@
                 "Nyx"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -826,7 +956,9 @@
                 "Cu Chulainn"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -840,7 +972,9 @@
                 "Hathor"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Raptor",
@@ -850,7 +984,9 @@
             "Rank Down Only"
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -861,7 +997,9 @@
             55
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -872,7 +1010,9 @@
             81
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -883,7 +1023,9 @@
             89
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -894,7 +1036,9 @@
             137
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -907,7 +1051,9 @@
                 "Cerberus"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Raptor",
@@ -917,7 +1063,9 @@
             138
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -930,7 +1078,9 @@
                 "Rakshasa"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Seraph",
@@ -954,7 +1104,11 @@
                 "Power"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true,
+            false,
+            false
+        ]
     },
     {
         "Race": "Seraph",
@@ -968,7 +1122,9 @@
                 "Throne"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Seraph",
@@ -982,7 +1138,9 @@
                 "Odin"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Seraph",
@@ -996,7 +1154,9 @@
                 "Samael"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Seraph",
@@ -1010,7 +1170,9 @@
                 "Gabriel"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Seraph",
@@ -1024,7 +1186,9 @@
                 "Loki"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Vile",
@@ -1035,7 +1199,9 @@
             59
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Vile",
@@ -1046,7 +1212,9 @@
             130
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Vile",
@@ -1059,7 +1227,9 @@
                 "Sarutahiko"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Vile",
@@ -1069,7 +1239,9 @@
             131
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Vile",
@@ -1082,7 +1254,9 @@
                 "Dionysus"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Vile",
@@ -1096,7 +1270,9 @@
                 "Baphomet"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Vile",
@@ -1110,7 +1286,9 @@
                 "Queen Mab"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Vile",
@@ -1124,7 +1302,9 @@
                 "Isis"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1135,7 +1315,9 @@
             13
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1146,7 +1328,9 @@
             23
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1157,7 +1341,9 @@
             49
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1168,7 +1354,9 @@
             59
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1179,7 +1367,9 @@
             71
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1189,7 +1379,9 @@
             72
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -1202,7 +1394,9 @@
                 "Badb Catha"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1213,7 +1407,9 @@
             15
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1224,7 +1420,9 @@
             27
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1235,7 +1433,9 @@
             45
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1246,7 +1446,9 @@
             55
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1257,7 +1459,9 @@
             73
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1268,7 +1472,9 @@
             87
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Yoma",
@@ -1278,7 +1484,9 @@
             88
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1289,7 +1497,9 @@
             13
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1300,7 +1510,9 @@
             25
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1311,7 +1523,9 @@
             35
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1322,7 +1536,9 @@
             51
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1333,7 +1549,9 @@
             61
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1344,7 +1562,9 @@
             73
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1355,7 +1575,9 @@
             83
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1365,7 +1587,9 @@
             84
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Beast",
@@ -1378,7 +1602,9 @@
                 "Throne"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demigod",
@@ -1389,7 +1615,9 @@
             55
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demigod",
@@ -1400,7 +1628,9 @@
             71
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demigod",
@@ -1411,7 +1641,9 @@
             87
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demigod",
@@ -1424,7 +1656,9 @@
                 "Tam Lin"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demigod",
@@ -1435,7 +1669,9 @@
             95
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demigod",
@@ -1445,7 +1681,9 @@
             96
         ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Demigod",
@@ -1458,7 +1696,9 @@
                 "Unicorn"
             ]
         ],
-        "Plugin": true
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Demigod",
@@ -1472,63 +1712,104 @@
                 "Onkot"
             ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Nozuchi",
         "Level": 14,
-        "Range": [1,27],
+        "Range": [
+            1,
+            27
+        ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Naga",
         "Level": 24,
-        "Range": [28,47],
+        "Range": [
+            28,
+            47
+        ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Mizuchi",
         "Level": 31,
-        "Range": [48,61],
+        "Range": [
+            48,
+            61
+        ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Raja Naga",
         "Level": 40,
-        "Range": [62,79],
+        "Range": [
+            62,
+            79
+        ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Vouivre",
         "Level": 48,
-        "Range": [80],
+        "Range": [
+            80
+        ],
         "Special": null,
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Yamata-no-Orochi",
         "Level": 75,
         "Range": null,
-        "Special": [["Quetzalcoatl","Nidhoggr","Raja Naga"]],
-        "Plugin": true
+        "Special": [
+            [
+                "Quetzalcoatl",
+                "Nidhoggr",
+                "Raja Naga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Dragon King",
         "Name": "Yurlungur",
         "Level": 81,
         "Range": null,
-        "Special": [["Mizuchi","Quetzalcoatl"]],
-        "Plugin": true
+        "Special": [
+            [
+                "Mizuchi",
+                "Quetzalcoatl"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
     },
     {
         "Race": "Element",
@@ -1536,14 +1817,34 @@
         "Level": 7,
         "Range": null,
         "Special": [
-            ["Brute", "Brute"],
-            ["Earth Mother", "Earth Mother"],
-            ["Earth Element", "Earth Element"],
-            ["Fallen Angel", "Fallen Angel"],
-            ["Nation Ruler", "Nation Ruler"],
-            ["Nocturne", "Nation Ruler"]
+            [
+                "Brute",
+                "Brute"
+            ],
+            [
+                "Earth Mother",
+                "Earth Mother"
+            ],
+            [
+                "Earth Element",
+                "Earth Element"
+            ],
+            [
+                "Fallen Angel",
+                "Fallen Angel"
+            ],
+            [
+                "Nation Ruler",
+                "Nation Ruler"
+            ],
+            [
+                "Nocturne",
+                "Nation Ruler"
+            ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Element",
@@ -1551,14 +1852,34 @@
         "Level": 11,
         "Range": null,
         "Special": [
-            ["Avian", "Avian"],
-            ["Beast", "Beast"],
-            ["Divine", "Divine"],
-            ["Fairy", "Fairy"],
-            ["Wild Bird", "Wild Bird"],
-            ["Wilder", "Wilder"]
+            [
+                "Avian",
+                "Avian"
+            ],
+            [
+                "Beast",
+                "Beast"
+            ],
+            [
+                "Divine",
+                "Divine"
+            ],
+            [
+                "Fairy",
+                "Fairy"
+            ],
+            [
+                "Wild Bird",
+                "Wild Bird"
+            ],
+            [
+                "Wilder",
+                "Wilder"
+            ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Element",
@@ -1566,13 +1887,30 @@
         "Level": 15,
         "Range": null,
         "Special": [
-            ["Dragon", "Dragon"],
-            ["Dragon King", "Dragon King"],
-            ["Femme", "Femme"],
-            ["Heavenly God", "Heavenly God"],
-            ["Yoma", "Yoma"]
+            [
+                "Dragon",
+                "Dragon"
+            ],
+            [
+                "Dragon King",
+                "Dragon King"
+            ],
+            [
+                "Femme",
+                "Femme"
+            ],
+            [
+                "Heavenly God",
+                "Heavenly God"
+            ],
+            [
+                "Yoma",
+                "Yoma"
+            ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Element",
@@ -1580,9 +1918,927 @@
         "Level": 15,
         "Range": null,
         "Special": [
-            ["Godly Beast", "Godly Beast"],
-            ["Holy Beast", "Holy Beast"]
+            [
+                "Godly Beast",
+                "Godly Beast"
+            ],
+            [
+                "Holy Beast",
+                "Holy Beast"
+            ]
         ],
-        "Plugin": false
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Pixie",
+        "Level": 2,
+        "Range": [
+            1,
+            3
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Jack Frost",
+        "Level": 11,
+        "Range": [
+            4,
+            21
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "High Pixie",
+        "Level": 15,
+        "Range": [
+            22,
+            29
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Pyro Jack",
+        "Level": 20,
+        "Range": [
+            30,
+            39
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Gandharva",
+        "Level": 23,
+        "Range": [
+            40,
+            45
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Kelpie",
+        "Level": 25,
+        "Range": [
+            46,
+            49
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Elf",
+        "Level": 31,
+        "Range": [
+            50,
+            61
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Troll",
+        "Level": 38,
+        "Range": [
+            62,
+            75
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Tam Lin",
+        "Level": 42,
+        "Range": [
+            76,
+            83
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Vivian",
+        "Level": 47,
+        "Range": [
+            84,
+            93
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Oberon",
+        "Level": 52,
+        "Range": [
+            94,
+            103
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Titania",
+        "Level": 57,
+        "Range": [
+            104
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fariy",
+        "Name": "Super Pixie",
+        "Level": 75,
+        "Range": null,
+        "Special": [
+            [
+                "Stormy Pixie",
+                "?"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Matador",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Girimehkala",
+                "Alice",
+                "Loa"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Alice",
+        "Level": 35,
+        "Range": null,
+        "Special": [
+            [
+                "Kodama",
+                "Lilim",
+                "Pixie"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "David",
+        "Level": 37,
+        "Range": null,
+        "Special": [
+            [
+                "Turdak",
+                "Chatterskull",
+                "Matador"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Hell Biker",
+        "Level": 46,
+        "Range": null,
+        "Special": [
+            [
+                "Girimehkala",
+                "Alice",
+                "Matador"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "White Rider",
+        "Level": 52,
+        "Range": null,
+        "Special": [
+            [
+                "Virtue",
+                "Matador",
+                "Zouchouten"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Daisoujou",
+        "Level": 55,
+        "Range": null,
+        "Special": [
+            [
+                "Accomplished Mou-Ryou",
+                "Matador",
+                "Yata-Garasu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Red Rider",
+        "Level": 58,
+        "Range": null,
+        "Special": [
+            [
+                "Power",
+                "White Rider",
+                "Koumokuten"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Black Rider",
+        "Level": 65,
+        "Range": null,
+        "Special": [
+            [
+                "Legion",
+                "Red Rider",
+                "Jikokuten"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Ogami",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Taraka",
+                "Anat",
+                "Phantom"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Pale Rider",
+        "Level": 74,
+        "Range": null,
+        "Special": [
+            [
+                "Loa",
+                "Black Rider",
+                "Bishamonten"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Jeanne D'Arc",
+        "Level": 75,
+        "Range": null,
+        "Special": [
+            [
+                "Hell Biker",
+                "Alice",
+                "Valkyrie"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Tokisada",
+        "Level": 83,
+        "Range": null,
+        "Special": [
+            [
+                "Hell Biker",
+                "Matador",
+                "Mot"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Yoshitsune",
+        "Level": 87,
+        "Range": null,
+        "Special": [
+            [
+                "Tokisada",
+                "Daisoujou"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Trumpeter",
+        "Level": 91,
+        "Range": null,
+        "Special": [
+            [
+                "Black Rider",
+                "Red Rider",
+                "Pale Rider"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Mother Harlot",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Trumpeter",
+                "Pale Rider",
+                "Hell Biker"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Makami",
+        "Level": 22,
+        "Range": [
+            1,
+            43
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Kaichi",
+        "Level": 22,
+        "Range": [
+            44,
+            61
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Nandi",
+        "Level": 44,
+        "Range": [
+            62,
+            87
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Narasimha",
+        "Level": 61,
+        "Range": [
+            88
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Sphinx",
+        "Level": 66,
+        "Range": null,
+        "Special": [
+            [
+                "Hathor",
+                "Chimera"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Xuan Wu",
+        "Level": 71,
+        "Range": null,
+        "Special": [
+            [
+                "Deformed Tan-Ki",
+                "Nozuchi",
+                "Accomplished Mizuchi"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Anubis",
+        "Level": 74,
+        "Range": null,
+        "Special": [
+            [
+                "Thoth",
+                "Narasimha"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Barong",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Shiisa",
+                "Tan-Ki",
+                "Mithra"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Shiisa",
+        "Level": 13,
+        "Range": [
+            1,
+            25
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Unicorn",
+        "Level": 21,
+        "Range": [
+            26,
+            41
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Apis",
+        "Level": 24,
+        "Range": [
+            42,
+            47
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Bai Ze",
+        "Level": 27,
+        "Range": [
+            48,
+            53
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Pa Bil Sag",
+        "Level": 31,
+        "Range": [
+            54,
+            61
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Senri",
+        "Level": 36,
+        "Range": [
+            62,
+            71
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Kirin",
+        "Level": 41,
+        "Range": [
+            72,
+            81
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Chimera",
+        "Level": 55,
+        "Range": null,
+        "Special": [
+            [
+                "Hanuman",
+                "Qing-Long"
+            ],
+            [
+                "Suparna",
+                "Dominion"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Sleipnir",
+        "Level": 62,
+        "Range": [
+            82
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Bai Hu",
+        "Level": 69,
+        "Range": null,
+        "Special": [
+            [
+                "Senri",
+                "Typhon",
+                "Scathach"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Alp",
+        "Level": 8,
+        "Range": [
+            1,
+            15
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Empusa",
+        "Level": 14,
+        "Range": [
+            16,
+            27
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Lilim",
+        "Level": 20,
+        "Range": [
+            28,
+            39
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Fomorian",
+        "Level": 8,
+        "Range": [
+            40,
+            53
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Incubus",
+        "Level": 31,
+        "Range": [
+            54,
+            61
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Succubus",
+        "Level": 37,
+        "Range": [
+            62,
+            73
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Black Frost",
+        "Level": 42,
+        "Range": null,
+        "Special": [
+            [
+                "Jack Frost",
+                "Pyro Jack",
+                "Baphomet"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Kaiwan",
+        "Level": 47,
+        "Range": [
+            74,
+            93
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Loa",
+        "Level": 52,
+        "Range": [
+            94,
+            103
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Queen Mab",
+        "Level": 57,
+        "Range": [
+            104
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Nyx",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Norn",
+                "Succubus",
+                "Hecate"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Lilith",
+        "Level": 92,
+        "Range": null,
+        "Special": [
+            [
+                "Vetala",
+                "Succubus",
+                "Lilim"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Hel",
+        "Level": 46,
+        "Range": [
+            1,
+            91
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Chernobog",
+        "Level": 62,
+        "Range": [
+            92
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Guede",
+        "Level": 69,
+        "Range": null,
+        "Special": [
+            [
+                "Loa",
+                "Baphomet"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Mot",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Odin",
+                "Chernobog",
+                "Hel"
+            ],
+            [
+                "Odin + Chernobog + Illusion Mot"
+            ]
+        ],
+        "Plugin": [
+            true,
+            false
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Beiji Weng",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Mot",
+                "Chernobog",
+                "Hel"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Garm",
+        "Level": 9,
+        "Range": [1],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     }
 ]
