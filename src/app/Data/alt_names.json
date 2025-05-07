@@ -109,7 +109,11 @@
     },
     {
         "Name": "Fuu-Ki",
-        "Alt": "Fuuki"
+        "Alt": "Fuki"
+    },
+    {
+        "Name": "Ongyo-Ki",
+        "Alt": "Ongyoki"
     },
     {
         "Name": "Qing-Long",
@@ -154,5 +158,41 @@
     {
         "Name": "Flamies",
         "Alt": "Flaemis"
+    },
+    {
+        "Name": "Sacred Soul",
+        "Alt": "Mitama"
+    },
+    {
+        "Name": "Tarasque",
+        "Alt": "Tarrasque"
+    },
+    {
+        "Name": "Ameno-Uzume",
+        "Alt": "Ame-no-Uzume"
+    },
+    {
+        "Name": "Hecatonchires",
+        "Alt": "Hecatoncheires"
+    },
+    {
+        "Name": "Shiisa",
+        "Alt": "Shiisaa"
+    },
+    {
+        "Name": "Specter",
+        "Alt": "Spectre"
+    },
+    {
+        "Name": "Wu Kong",
+        "Alt": "Seiten Taisei"
+    },
+    {
+        "Name": "Jinn",
+        "Alt": "Djinn"
+    },
+    {
+        "Name": "Pyro Jack",
+        "Alt": "Jack O' Lantern"
     }
 ]

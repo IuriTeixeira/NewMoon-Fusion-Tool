@@ -1,5 +1,5 @@
 'use client'
-import { Flex, Text, Table } from '@mantine/core'
+import { Flex, Text, Table, Image } from '@mantine/core'
 import demonList from '../Data/demons.json'
 import React from 'react'
 
@@ -10,6 +10,9 @@ export default function DemonTableComponent() {
                 <Table.Tr>
                     <Table.Th>
                         <Flex align='center' justify='center'>Race</Flex>
+                    </Table.Th>
+                    <Table.Th>
+                        <Flex align='center' justify='center'>Icon</Flex>
                     </Table.Th>
                     <Table.Th>
                         <Flex align='center' justify='center'>Name</Flex>
@@ -28,18 +31,20 @@ export default function DemonTableComponent() {
             <Table.Tbody>
                 {demonList.map((demon, index) => {
                     return (
-                        <React.Fragment>
+                        <React.Fragment key={`fragment-row-${index}`}>
                             <Table.Tr key={`row-${index}`}>
                                 {demon.Special
                                     ?
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
+                                        <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
                                         <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}>{demon.Name}</Table.Td>
                                         <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>
                                     :
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
+                                        <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
                                         <Table.Td key={`name-${index}`}>{demon.Name}</Table.Td>
                                         <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>

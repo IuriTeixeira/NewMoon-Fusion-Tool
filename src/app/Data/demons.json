@@ -151,7 +151,7 @@
                 "Garuda"
             ],
             [
-                "Slepinir",
+                "Sleipnir",
                 "Valkyrie",
                 "Yata-Garasu"
             ]
@@ -249,7 +249,7 @@
     },
     {
         "Race": "Demon God",
-        "Name": "Baal",
+        "Name": "Vishnu",
         "Level": 97,
         "Range": null,
         "Special": [
@@ -665,6 +665,21 @@
     },
     {
         "Race": "Evil Demon",
+        "Name": "Edimmu",
+        "Level": 41,
+        "Range": null,
+        "Special": [
+            [
+                "Raiju",
+                "Jinn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Evil Demon",
         "Name": "Cyclops",
         "Level": 46,
         "Range": [
@@ -830,6 +845,21 @@
     },
     {
         "Race": "Goddess",
+        "Name": "Athena Promachos",
+        "Level": "76",
+        "Range": null,
+        "Special": [
+            [
+                "Pallas Athena",
+                "Artemis"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Goddess",
         "Name": "Lakshmi",
         "Level": 81,
         "Range": null,
@@ -853,21 +883,6 @@
                 "Pallas Athena",
                 "Hel",
                 "Kali"
-            ]
-        ],
-        "Plugin": [
-            true
-        ]
-    },
-    {
-        "Race": "Goddess",
-        "Name": "Athena Promachos",
-        "Level": "??",
-        "Range": null,
-        "Special": [
-            [
-                "Pallas Athena",
-                "Artemis"
             ]
         ],
         "Plugin": [
@@ -1465,6 +1480,21 @@
     },
     {
         "Race": "Yoma",
+        "Name": "Efreet",
+        "Level": 42,
+        "Range": null,
+        "Special": [
+            [
+                "Pyro Jack",
+                "Jinn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Yoma",
         "Name": "Jinn",
         "Level": 44,
         "Range": [
@@ -1774,6 +1804,18 @@
         "Level": 48,
         "Range": [
             80
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Vritra",
+        "Level": 56,
+        "Range": [
+            "Can't be fused"
         ],
         "Special": null,
         "Plugin": [
@@ -2310,6 +2352,26 @@
     },
     {
         "Race": "Fiend",
+        "Name": "Masakado",
+        "Level": 90,
+        "Range": null,
+        "Special": [
+            [
+                "Daisoujou",
+                "Seven Stars of Death Beiji Weng"
+            ],
+            [
+                "Amaterasu of Kuyo",
+                "Bishamonten of Kuyo"
+            ]
+        ],
+        "Plugin": [
+            true,
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
         "Name": "Trumpeter",
         "Level": 91,
         "Range": null,
@@ -2560,6 +2622,7 @@
             ]
         ],
         "Plugin": [
+            true,
             true
         ]
     },
@@ -2835,10 +2898,1835 @@
         "Race": "Wilder",
         "Name": "Garm",
         "Level": 9,
-        "Range": [1],
+        "Range": [
+            1,
+            17
+        ],
         "Special": null,
         "Plugin": [
             false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Bicorn",
+        "Level": 17,
+        "Range": [
+            18,
+            33
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Gyuki",
+        "Level": 25,
+        "Range": [
+            34,
+            49
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Raiju",
+        "Level": 31,
+        "Range": null,
+        "Special": [
+            [
+                "Inugami",
+                "Nue"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Nue",
+        "Level": 37,
+        "Range": [
+            50,
+            73
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Mothman",
+        "Level": 40,
+        "Range": [
+            74,
+            79
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Catoblepas",
+        "Level": 509,
+        "Range": [
+            80,
+            99
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Fenrir",
+        "Level": 57,
+        "Range": [
+            100,
+            113
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Tao Wu",
+        "Level": 64,
+        "Range": [
+            114
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Sacred Soul",
+        "Name": "Ara Mitama",
+        "Level": 15,
+        "Range": null,
+        "Special": [
+            [
+                "Erthys",
+                "Aquans"
+            ],
+            [
+                "Aeros",
+                "Flamies"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Sacred Soul",
+        "Name": "Nigi Mitama",
+        "Level": 19,
+        "Range": null,
+        "Special": [
+            [
+                "Erthys",
+                "Aeros"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Sacred Soul",
+        "Name": "Kushi Mitama",
+        "Level": 22,
+        "Range": null,
+        "Special": [
+            [
+                "Aeros",
+                "Aquans"
+            ],
+            [
+                "Flamies",
+                "Erthys"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Sacred Soul",
+        "Name": "Saki Mitama",
+        "Level": 25,
+        "Range": null,
+        "Special": [
+            [
+                "Aquans",
+                "Flamies"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Shikigami",
+        "Level": 5,
+        "Range": [
+            1,
+            9
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Azumi",
+        "Level": 10,
+        "Range": [
+            10,
+            19
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Koppa-Tengu",
+        "Level": 15,
+        "Range": [
+            20,
+            29
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Momunofu",
+        "Level": 19,
+        "Range": [
+            30,
+            37
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Turdak",
+        "Level": 23,
+        "Range": [
+            38,
+            45
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Oni",
+        "Level": 25,
+        "Range": [
+            46,
+            49
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Karasu-Tengu",
+        "Level": 28,
+        "Range": [
+            50,
+            55
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Yomotsu-Ikusa",
+        "Level": 44,
+        "Range": [
+            56,
+            87
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Yaksa",
+        "Level": 51,
+        "Range": [
+            88,
+            101
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Shiki-Ouji",
+        "Level": 63,
+        "Range": [
+            102,
+            125
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Kin-Ki",
+        "Level": 66,
+        "Range": [
+            126,
+            131
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Sui-Ki",
+        "Level": 69,
+        "Range": [
+            132,
+            137
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Fuu-Ki",
+        "Level": 72,
+        "Range": [
+            138
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Ongyo-Ki",
+        "Level": 91,
+        "Range": null,
+        "Special": [
+            [
+                "Kin-Ki",
+                "Sui-Ki",
+                "Fuu-Ki"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Ares",
+        "Level": 56,
+        "Range": null,
+        "Special": [
+            [
+                "Artemis",
+                "Typhon"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Dionysus",
+        "Level": 58,
+        "Range": null,
+        "Special": [
+            [
+                "Freya",
+                "Titan",
+                "Kali"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Indrajit",
+        "Level": 67,
+        "Range": null,
+        "Special": [
+            [
+                "Zouchouten",
+                "Rakshasa"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Kartikeya",
+        "Level": 83,
+        "Range": null,
+        "Special": [
+            [
+                "Zouchouten",
+                "Parvati"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Susano-o",
+        "Level": 88,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Yata-Garasu",
+                "Kushinada-Hime",
+                "Okuninushi"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Wu Kong",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Hanuman",
+                "Garuda",
+                "Onkot"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Shiva",
+        "Level": 97,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Kartikeya",
+                "Parvati",
+                "Ganesha"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Coatlicue",
+        "Level": 33,
+        "Range": [
+            1,
+            65
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Ganga",
+        "Level": 39,
+        "Range": [
+            66,
+            77
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Quetzalcoatl",
+        "Level": 55,
+        "Range": [
+            78
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Qing-Long",
+        "Level": 77,
+        "Range": null,
+        "Special": [
+            [
+                "Jikokuten",
+                "Quetzalcoatl",
+                "Gandharva"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Ananta",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Koumokuten",
+                "Raja Naga",
+                "Qing-Long"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Kikuri-Hime",
+        "Level": 18,
+        "Range": [
+            1,
+            35
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Kushinada-Hime",
+        "Level": 26,
+        "Range": [
+            36,
+            51
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Artemis",
+        "Level": 30,
+        "Range": [
+            52,
+            59
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Parvati",
+        "Level": 64,
+        "Range": [
+            60,
+            127
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Kali",
+        "Level": 68,
+        "Range": [
+            128,
+            135
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Skadi",
+        "Level": 74,
+        "Range": [
+            136
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Diana",
+        "Level": 74,
+        "Range": null,
+        "Special": [
+            [
+                "Artemis",
+                "Hecate"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Isis",
+        "Level": 94,
+        "Range": null,
+        "Special": [
+            [
+                "Thoth",
+                "Parvati",
+                "Phantom"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Ishtar",
+        "Level": 96,
+        "Range": null,
+        "Special": [
+            [
+                "Artemis",
+                "Kali",
+                "Lilith"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Cockatrice",
+        "Level": 8,
+        "Range": [
+            1,
+            15
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Tarasque",
+        "Level": 17,
+        "Range": [
+            16,
+            33
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Bai Suzhen",
+        "Level": 23,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Basilisk",
+        "Level": 43,
+        "Range": [
+            34,
+            85
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Typhon",
+        "Level": 51,
+        "Range": [
+            86,
+            101
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Nidhoggr",
+        "Level": 57,
+        "Range": [
+            102
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Kingu",
+        "Level": 64,
+        "Range": null,
+        "Special": [
+            [
+                "Ghoul",
+                "Raja Naga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Fafnir",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Titan",
+                "Dwarf",
+                "Vouivre"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Vasuki",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Garuda",
+                "Raja Naga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Andras",
+        "Level": 15,
+        "Range": [
+            1,
+            29
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Forneus",
+        "Level": 29,
+        "Range": [
+            30,
+            57
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Eligor",
+        "Level": 43,
+        "Range": [
+            58,
+            85
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Decarabia",
+        "Level": 50,
+        "Range": [
+            86,
+            99
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Berith",
+        "Level": 58,
+        "Range": [
+            100,
+            115
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Orobas",
+        "Level": 65,
+        "Range": [
+            116,
+            129
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Ose",
+        "Level": 73,
+        "Range": [
+            130
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Flauros",
+        "Level": 75,
+        "Range": null,
+        "Special": [
+            [
+                "Queen Mab",
+                "Uriel"
+            ],
+            [
+                "Queen Mab",
+                "Scathach"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Gomory",
+        "Level": 79,
+        "Range": null,
+        "Special": [
+            [
+                "Flauros",
+                "Hecate"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Abraxas",
+        "Level": 82,
+        "Range": null,
+        "Special": [
+            [
+                "Mithra",
+                "Basilisk"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Belphegor",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Mara (Amorphous)",
+                "Shiki-Ouji",
+                "Moloch"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Arioch",
+        "Level": 86,
+        "Range": null,
+        "Special": [
+            [
+                "Throne",
+                "Abraxas"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Name": "Azazel",
+        "Level": 92,
+        "Range": null,
+        "Special": [
+            [
+                "Astaroth",
+                "Ose",
+                "Pazuzu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Datsue-Ba",
+        "Level": 9,
+        "Range": [
+            1,
+            17
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Acheri",
+        "Level": 15,
+        "Range": [
+            18,
+            29
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Taraka",
+        "Level": 25,
+        "Range": [
+            30,
+            49
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Gorgon",
+        "Level": 32,
+        "Range": [
+            50,
+            63
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Yomotsu-Shikome",
+        "Level": 35,
+        "Range": [
+            64,
+            69
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Leanan Sidhe",
+        "Level": 41,
+        "Range": [
+            70,
+            81
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Yuki Jyorou",
+        "Level": 44,
+        "Range": [
+            82,
+            87
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Lamia",
+        "Level": 47,
+        "Range": [
+            88,
+            93
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Clotho",
+        "Level": 48,
+        "Range": null,
+        "Special": [
+            [
+                "Lamia",
+                "Aello"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Arachne",
+        "Level": 50,
+        "Range": [
+            94,
+            99
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Lachesis",
+        "Level": 51,
+        "Range": null,
+        "Special": [
+            [
+                "Lamia",
+                "Ocypete"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Yaksini",
+        "Level": 53,
+        "Range": [
+            100,
+            105
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Atropos",
+        "Level": 56,
+        "Range": null,
+        "Special": [
+            [
+                "Lamia",
+                "Celaeno"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Dakini",
+        "Level": 65,
+        "Range": [
+            106
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Rangda",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Parvati",
+                "Kali",
+                "Yaksini"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Will O'Wisp",
+        "Level": 1,
+        "Range": [
+            "Rank Down Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Slime",
+        "Level": 6,
+        "Range": [
+            2,
+            11
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Mou-Ryou",
+        "Level": 11,
+        "Range": [
+            12,
+            21
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Blob",
+        "Level": 16,
+        "Range": [
+            22,
+            31
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Black Ooze",
+        "Level": 31,
+        "Range": [
+            32,
+            61
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Specter",
+        "Level": 36,
+        "Range": [
+            62,
+            71
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Shadow",
+        "Level": 52,
+        "Range": [
+            72
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Phantom",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Surt",
+                "Specter",
+                "Quetzalcoatl"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Name": "Zouchouten",
+        "Level": 38,
+        "Range": [
+            1,
+            75
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Name": "Koumokuten",
+        "Level": 45,
+        "Range": [
+            76,
+            89
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Name": "Jikokuten",
+        "Level": 52,
+        "Range": [
+            90
+        ],
+        "Special": null,
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Name": "Bishamonten",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Jikokuten",
+                "Koumokuten",
+                "Yaksini"
+            ],
+            [
+                "Jikokuten",
+                "Koumokuten",
+                "Rakshasa"
+            ]
+        ],
+        "Plugin": [
+            true,
+            true
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Poltergeist",
+        "Level": 4,
+        "Range": [
+            1,
+            7
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Gaki",
+        "Level": 7,
+        "Range": [
+            8,
+            13
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Ghoul",
+        "Level": 11,
+        "Range": [
+            14,
+            21
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Asamiya Gaki",
+        "Level": 12,
+        "Range": null,
+        "Special": [
+            [
+                "Gaki",
+                "Frost Ace"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Choronzon",
+        "Level": 17,
+        "Range": [
+            22,
+            33
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Yakkha",
+        "Level": 24,
+        "Range": [
+            34,
+            47
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Chatterskull",
+        "Level": 33,
+        "Range": [
+            48,
+            65
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Pisaca",
+        "Level": 36,
+        "Range": [
+            66,
+            71
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Legion",
+        "Level": 38,
+        "Range": [
+            72,
+            75
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Vetala",
+        "Level": 44,
+        "Range": [
+            76
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Utai-Gaikotsu",
+        "Level": 51,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Kumbhanda",
+        "Level": 63,
+        "Range": null,
+        "Special": [
+            [
+                "Rakshasa",
+                "Gandharva"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Kudlak",
+        "Level": 67,
+        "Range": null,
+        "Special": [
+            [
+                "Loa",
+                "Bicorn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Onamuchi",
+        "Level": 42,
+        "Range": [
+            1,
+            83
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Oyamatsumi",
+        "Level": 50,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Okuninushi",
+        "Level": 59,
+        "Range": [
+            84,
+            117
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Take-Minakata",
+        "Level": 63,
+        "Range": [
+            118,
+            125
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Ichimokuren",
+        "Level": 65,
+        "Range": null,
+        "Special": [
+            [
+                "Horus",
+                "Kresnik",
+                "Aeros"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Arahabaki",
+        "Level": 83,
+        "Range": [
+            126
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "King Frost",
+        "Level": 40,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Jack Frost",
+                "Jack Frost",
+                "Deformed Jack Frost"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Hecate",
+        "Level": 59,
+        "Range": null,
+        "Special": [
+            [
+                "Artemis",
+                "Quetzalcoatl",
+                "Yaksini"
+            ],
+            [
+                "Parvati",
+                "Ganga",
+                "Dakini"
+            ],
+            [
+                "Kali",
+                "Ganga",
+                "Decarabia"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Moloch",
+        "Level": 64,
+        "Range": null,
+        "Special": [
+            [
+                "Coatlicue",
+                "Artemis",
+                "Orobas"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Loki",
+        "Level": 69,
+        "Range": null,
+        "Special": [
+            [
+                "Odin",
+                "Hel",
+                "Sleipnir"
+            ],
+            [
+                "Odin",
+                "Chernobog",
+                "Kurama-Tengu"
+            ]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Tzitzimitl",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Coatlicue",
+                "Quetzalcoatl",
+                "Kali"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Surt",
+        "Level": 72,
+        "Range": null,
+        "Special": [
+            [
+                "Jikokuten",
+                "Fenrir",
+                "Shiki-Ouji"
+            ],
+            [
+                "Throne",
+                "Hecate",
+                "Surt"
+            ],
+            [
+                "Throne",
+                "Hecate",
+                "Uriel"
+            ]
+        ],
+        "Plugin": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Chi You",
+        "Level": 82,
+        "Range": null,
+        "Special": [
+            [
+                "Atavaka",
+                "Tao Tie",
+                "Tao Wu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Astaroth",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Kali",
+                "Artemis",
+                "Throne"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Beelzebub (Human)",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Astaroth",
+                "Moloch",
+                "Ghoul"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Lucifuge",
+        "Level": 90,
+        "Range": null,
+        "Special": [
+            [
+                "Gomory",
+                "Moloch"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Mara (Amorphous)",
+        "Level": 95,
+        "Range": null,
+        "Special": [
+            [
+                "Girimehkala",
+                "Surt",
+                "Hecate"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Mara",
+        "Level": 95,
+        "Range": null,
+        "Special": [
+            [
+                "Girimehkala",
+                "Moloch",
+                "Mara (Amorphous)"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Beelzebub (Fly)",
+        "Level": 40,
+        "Range": null,
+        "Special": [
+            [
+                "Astaroth",
+                "Moloch",
+                "Baphomet"
+            ]
+        ],
+        "Plugin": [
+            true
         ]
     }
 ]
