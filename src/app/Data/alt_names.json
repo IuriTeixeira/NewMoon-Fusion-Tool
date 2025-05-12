@@ -96,8 +96,8 @@
         "Alt": "Xiezhai"
     },
     {
-        "Name": "Kushi Mitama",
-        "Alt": "Kusi Mitama"
+        "Name": "Kusi Mitama",
+        "Alt": "Kushi Mitama"
     },
     {
         "Name": "Kin-Ki",
@@ -194,5 +194,9 @@
     {
         "Name": "Pyro Jack",
         "Alt": "Jack O' Lantern"
+    },
+    {
+        "Name": "Little Devil Lilim",
+        "Alt": "Lilim the Little Demon"
     }
 ]

@@ -2695,6 +2695,16 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Little Devil Lilim",
+        "Level": 20,
+        "Range": null,
+        "Special": [["Lilim", "Alp"]],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Fomorian",
         "Level": 8,
         "Range": [
@@ -3048,7 +3058,7 @@
     },
     {
         "Race": "Sacred Soul",
-        "Name": "Kushi Mitama",
+        "Name": "Kusi Mitama",
         "Level": 22,
         "Range": null,
         "Special": [

@@ -1,0 +1,2074 @@
+[
+    {
+        "Race": "Avian",
+        "Combinations": [
+            [
+                "Demon God",
+                "Holy Beast"
+            ],
+            [
+                "Goddess",
+                "Wild Bird"
+            ],
+            [
+                "Heavenly God",
+                "Divine"
+            ],
+            [
+                "Heavenly God",
+                "Wild Bird"
+            ],
+            [
+                "Seraphim",
+                "Wild Bird"
+            ],
+            [
+                "Seraphim",
+                "Godly Beast"
+            ],
+            [
+                "Wild Bird",
+                "Demigod"
+            ],
+            [
+                "Wild Bird",
+                "Godly Beast"
+            ],
+            [
+                "Wild Bird",
+                "Holy Beast"
+            ],
+            [
+                "Wild Bird",
+                "Earth Mother"
+            ],
+            [
+                "Raptor",
+                "Holy Beast"
+            ],
+            [
+                "Godly Beast",
+                "Earth Mother"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Demon God",
+        "Combinations": null,
+        "Elements": null
+    },
+    {
+        "Race": "Divine",
+        "Combinations": [
+            [
+                "Goddess",
+                "Fallen Angel"
+            ],
+            [
+                "Heavenly God",
+                "Fairy"
+            ],
+            [
+                "Vile",
+                "Seraphim"
+            ],
+            [
+                "Yoma",
+                "Wild Bird"
+            ],
+            [
+                "Yoma",
+                "Nocturne"
+            ],
+            [
+                "Yoma",
+                "Godly Beast"
+            ],
+            [
+                "Yoma",
+                "Holy Beast"
+            ],
+            [
+                "Seraphim",
+                "Avian"
+            ],
+            [
+                "Avian",
+                "Earth Element"
+            ],
+            [
+                "Wild Bird",
+                "Fairy"
+            ],
+            [
+                "Demigod",
+                "Brute"
+            ],
+            [
+                "Fairy",
+                "Godly Beast"
+            ],
+            [
+                "Fairy",
+                "Beast"
+            ],
+            [
+                "Godly Beast",
+                "Fallen Angel"
+            ],
+            [
+                "Earth Mother",
+                "Brute"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Down",
+            "Up",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Combinations": [
+            [
+                "Yoma",
+                "Vile"
+            ],
+            [
+                "Yoma",
+                "Evil Demon"
+            ],
+            [
+                "Yoma",
+                "Reaper"
+            ],
+            [
+                "Yoma",
+                "Fairy"
+            ],
+            [
+                "Yoma",
+                "Fallen Angel"
+            ],
+            [
+                "Yoma",
+                "Haunt"
+            ],
+            [
+                "Divine",
+                "Haunt"
+            ],
+            [
+                "Reaper",
+                "Brute"
+            ],
+            [
+                "Holy Beast",
+                "Nation Ruler"
+            ],
+            [
+                "Beast",
+                "Wilder"
+            ],
+            [
+                "Wilder",
+                "Haunt"
+            ],
+            [
+                "Earth Mother",
+                "Evil Dragon"
+            ],
+            [
+                "Earth Mother",
+                "Foul"
+            ],
+            [
+                "Fallen Angel",
+                "Brute"
+            ],
+            [
+                "Guardian",
+                "Brute"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Up",
+            "Down",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Entity",
+        "Combinations": null,
+        "Elements": null
+    },
+    {
+        "Race": "Evil Demon",
+        "Combinations": [
+            [
+                "Yoma",
+                "Raptor"
+            ],
+            [
+                "Yoma",
+                "Wilder"
+            ],
+            [
+                "Wild Bird",
+                "Femme"
+            ],
+            [
+                "Earth Element",
+                "Reaper"
+            ],
+            [
+                "Earth Element",
+                "Evil Dragon"
+            ],
+            [
+                "Reaper",
+                "Guardian"
+            ],
+            [
+                "Reaper",
+                "Femme"
+            ],
+            [
+                "Nocturne",
+                "Femme"
+            ],
+            [
+                "Dragon King",
+                "Evil Dragon"
+            ],
+            [
+                "Fallen Angel",
+                "Evil Dragon"
+            ],
+            [
+                "Evil Dragon",
+                "Femme"
+            ],
+            [
+                "Evil Dragon",
+                "Brute"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Goddess",
+        "Combinations": [
+            [
+                "Demon God",
+                "Divine"
+            ],
+            [
+                "Heavenly God",
+                "Yoma"
+            ],
+            [
+                "Heavenly God",
+                "Dragon King"
+            ],
+            [
+                "Heavenly God",
+                "Earth Mother"
+            ],
+            [
+                "Yoma",
+                "Seraphim"
+            ],
+            [
+                "Seraphim",
+                "Divine"
+            ],
+            [
+                "Seraphim",
+                "Demigod"
+            ],
+            [
+                "Divine",
+                "Demigod"
+            ],
+            [
+                "Divine",
+                "Fairy"
+            ],
+            [
+                "Divine",
+                "Godly Beast"
+            ],
+            [
+                "Divine",
+                "Holy Beast"
+            ],
+            [
+                "Divine",
+                "Earth Mother"
+            ],
+            [
+                "Divine",
+                "Dragon"
+            ],
+            [
+                "Avian",
+                "Femme"
+            ],
+            [
+                "Fairy",
+                "Holy Beast"
+            ],
+            [
+                "Godly Beast",
+                "Holy Beast"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Heavenly God",
+        "Combinations": [
+            [
+                "Demon God",
+                "Goddess"
+            ],
+            [
+                "Demon God",
+                "Avian"
+            ],
+            [
+                "Demon God",
+                "Nation Ruler"
+            ],
+            [
+                "Demon God",
+                "Guardian"
+            ],
+            [
+                "Goddess",
+                "Divine"
+            ],
+            [
+                "Goddess",
+                "Avian"
+            ],
+            [
+                "Goddess",
+                "Demigod"
+            ],
+            [
+                "Seraphim",
+                "Earth Mother"
+            ],
+            [
+                "Seraphim",
+                "Earth Element"
+            ],
+            [
+                "Avian",
+                "Demigod"
+            ],
+            [
+                "Avian",
+                "Dragon King"
+            ],
+            [
+                "Avian",
+                "Nation Ruler"
+            ],
+            [
+                "Wild Bird",
+                "Dragon"
+            ],
+            [
+                "Demigod",
+                "Godly Beast"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Raptor",
+        "Combinations": [
+            [
+                "Vile",
+                "Fairy"
+            ],
+            [
+                "Divine",
+                "Reaper"
+            ],
+            [
+                "Avian",
+                "Wild Bird"
+            ],
+            [
+                "Avian",
+                "Evil Demon"
+            ],
+            [
+                "Avian",
+                "Reaper"
+            ],
+            [
+                "Wild Bird",
+                "Reaper"
+            ],
+            [
+                "Wild Bird",
+                "Fallen Angel"
+            ],
+            [
+                "Wild Bird",
+                "Evil Dragon"
+            ],
+            [
+                "Wild Bird",
+                "Brute"
+            ],
+            [
+                "Evil Demon",
+                "Holy Beast"
+            ],
+            [
+                "Reaper",
+                "Wilder"
+            ],
+            [
+                "Reaper",
+                "Fallen Angel"
+            ],
+            [
+                "Evil Dragon",
+                "Haunt"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Seraph",
+        "Combinations": null,
+        "Elements": null
+    },
+    {
+        "Race": "Vile",
+        "Combinations": [
+            [
+                "Demon God",
+                "Raptor"
+            ],
+            [
+                "Demon God",
+                "Nocturne"
+            ],
+            [
+                "Goddess",
+                "Reaper"
+            ],
+            [
+                "Goddess",
+                "Evil Dragon"
+            ],
+            [
+                "Goddess",
+                "Haunt"
+            ],
+            [
+                "Heavenly God",
+                "Evil Demon"
+            ],
+            [
+                "Seraph",
+                "Destroyer"
+            ],
+            [
+                "Divine",
+                "Destroyer"
+            ],
+            [
+                "Raptor",
+                "Guardian"
+            ],
+            [
+                "Evil Demon",
+                "Reaper"
+            ],
+            [
+                "Evil Demon",
+                "Nation Ruler"
+            ],
+            [
+                "Evil Demon",
+                "Evil Dragon"
+            ],
+            [
+                "Destroyer",
+                "Earth Mother"
+            ],
+            [
+                "Destroyer",
+                "Fallen Angel"
+            ],
+            [
+                "Guardian",
+                "Evil Dragon"
+            ],
+            [
+                "Tyrant",
+                "Evil Dragon"
+            ],
+            [
+                "Evil Dragon",
+                "Foul"
+            ]
+        ],
+        "Elements": null
+    },
+    {
+        "Race": "Wild Bird",
+        "Combinations": [
+            [
+                "Heavenly God",
+                "Fallen Angel"
+            ],
+            [
+                "Yoma",
+                "Foul"
+            ],
+            [
+                "Divine",
+                "Raptor"
+            ],
+            [
+                "Divine",
+                "Nation Ruler"
+            ],
+            [
+                "Divine",
+                "Evil Dragon"
+            ],
+            [
+                "Avian",
+                "Fairy"
+            ],
+            [
+                "Avian",
+                "Wilder"
+            ],
+            [
+                "Raptor",
+                "Nocturne"
+            ],
+            [
+                "Raptor",
+                "Wilder"
+            ],
+            [
+                "Raptor",
+                "Haunt"
+            ],
+            [
+                "Fairy",
+                "Wilder"
+            ],
+            [
+                "Fairy",
+                "Haunt"
+            ],
+            [
+                "Holy Beast",
+                "Haunt"
+            ],
+            [
+                "Wilder",
+                "Foul"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Yoma",
+        "Combinations": [
+            [
+                "Divine",
+                "Brute"
+            ],
+            [
+                "Wild Bird",
+                "Haunt"
+            ],
+            [
+                "Earth Element",
+                "Beast"
+            ],
+            [
+                "Earth Element",
+                "Fallen Angel"
+            ],
+            [
+                "Demigod",
+                "Wilder"
+            ],
+            [
+                "Demigod",
+                "Tyrant"
+            ],
+            [
+                "Nocturne",
+                "Haunt"
+            ],
+            [
+                "Fairy",
+                "Dragon King"
+            ],
+            [
+                "Fairy",
+                "Earth Mother"
+            ],
+            [
+                "Fairy",
+                "Fallen Angel"
+            ],
+            [
+                "Fairy",
+                "Brute"
+            ],
+            [
+                "Fallen Angel",
+                "Haunt"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Up",
+            "Up",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Combinations": [
+            [
+                "Nocturne",
+                "Wilder"
+            ],
+            [
+                "Dragon King",
+                "Wild Bird"
+            ],
+            [
+                "Dragon King",
+                "Brute"
+            ],
+            [
+                "Godly Beast",
+                "Goddess"
+            ],
+            [
+                "Holy Beast",
+                "Earth Element"
+            ],
+            [
+                "Holy Beast",
+                "Fallen Angel"
+            ],
+            [
+                "Wilder",
+                "Goddess"
+            ],
+            [
+                "Divine",
+                "Femme"
+            ],
+            [
+                "Earth Mother",
+                "Earth Element"
+            ],
+            [
+                "Evil Demon",
+                "Femme"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Up",
+            "Down",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Combinations": [
+            [
+                "Goddess",
+                "Fairy"
+            ],
+            [
+                "Yoma",
+                "Demon God"
+            ],
+            [
+                "Avian",
+                "Brute"
+            ],
+            [
+                "Dragon King",
+                "Femme"
+            ],
+            [
+                "Dragon King",
+                "Fallen Angel"
+            ],
+            [
+                "Fairy",
+                "Dragon"
+            ],
+            [
+                "Godly Beast",
+                "Dragon"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Combinations": [
+            [
+                "Vile",
+                "Dragon"
+            ],
+            [
+                "Yoma",
+                "Divine"
+            ],
+            [
+                "Yoma",
+                "Evil Dragon"
+            ],
+            [
+                "Divine",
+                "Avian"
+            ],
+            [
+                "Divine",
+                "Nocturne"
+            ],
+            [
+                "Avian",
+                "Beast"
+            ],
+            [
+                "Avian",
+                "Fallen Angel"
+            ],
+            [
+                "Raptor",
+                "Beast"
+            ],
+            [
+                "Raptor",
+                "Earth Mother"
+            ],
+            [
+                "Earth Element",
+                "Guardian"
+            ],
+            [
+                "Earth Element",
+                "Nation Ruler"
+            ],
+            [
+                "Fairy",
+                "Nation Ruler"
+            ],
+            [
+                "Fairy",
+                "Evil Dragon"
+            ],
+            [
+                "Holy Beast",
+                "Dragon"
+            ],
+            [
+                "Nation Ruler",
+                "Beast"
+            ],
+            [
+                "Nation Ruler",
+                "Brute"
+            ],
+            [
+                "Nation Ruler",
+                "Fallen Angel"
+            ],
+            [
+                "Earth Mother",
+                "Beast"
+            ],
+            [
+                "Fallen Angel",
+                "Dragon"
+            ],
+            [
+                "Dragon",
+                "Foul"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Down",
+            "Up",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Element",
+        "Combinations": [
+            [
+                "Element"
+            ]
+        ],
+        "Elements": [
+            "Element"
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Combinations": [
+            [
+                "Goddess",
+                "Dragon King"
+            ],
+            [
+                "Divine",
+                "Dragon King"
+            ],
+            [
+                "Divine",
+                "Wild Bird"
+            ],
+            [
+                "Wild Bird",
+                "Earth Element"
+            ],
+            [
+                "Earth Element",
+                "Brute"
+            ],
+            [
+                "Nocturne",
+                "Fallen Angel"
+            ],
+            [
+                "Wilder",
+                "Brute"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Down",
+            "Up",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Combinations": null,
+        "Elements": null
+    },
+    {
+        "Race": "Godly Beast",
+        "Combinations": [
+            [
+                "Goddess",
+                "Holy Beast"
+            ],
+            [
+                "Goddess",
+                "Dragon"
+            ],
+            [
+                "Heavenly God",
+                "Holy Beast"
+            ],
+            [
+                "Heavenly God",
+                "Brute"
+            ],
+            [
+                "Yoma",
+                "Dragon"
+            ],
+            [
+                "Seraphim",
+                "Holy Beast"
+            ],
+            [
+                "Avian",
+                "Dragon"
+            ],
+            [
+                "Demon God",
+                "Beast"
+            ],
+            [
+                "Demigod",
+                "Holy Beast"
+            ],
+            [
+                "Demigod",
+                "Evil Dragon"
+            ],
+            [
+                "Beast",
+                "Holy Beast"
+            ],
+            [
+                "Holy Beast",
+                "Earth Mother"
+            ],
+            [
+                "Wilder",
+                "Nation Ruler"
+            ],
+            [
+                "Guardian",
+                "Demigod"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Combinations": [
+            [
+                "Destroyer",
+                "Godly Beast"
+            ],
+            [
+                "Heavenly God",
+                "Beast"
+            ],
+            [
+                "Heavenly God",
+                "Dragon"
+            ],
+            [
+                "Avian",
+                "Godly Beast"
+            ],
+            [
+                "Beast",
+                "Demigod"
+            ],
+            [
+                "Beast",
+                "Guardian"
+            ],
+            [
+                "Beast",
+                "Divine"
+            ],
+            [
+                "Beast",
+                "Goddess"
+            ],
+            [
+                "Beast",
+                "Nocturnus"
+            ],
+            [
+                "Demigod",
+                "Dragon"
+            ],
+            [
+                "Demigod",
+                "Nocturnus"
+            ],
+            [
+                "Demigod",
+                "Raptor"
+            ],
+            [
+                "Guardian",
+                "Godly Beast"
+            ],
+            [
+                "Dragon",
+                "Seraphim"
+            ],
+            [
+                "Fairy",
+                "Seraphim"
+            ],
+            [
+                "Godly Beast ",
+                " Nocturnus"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Down",
+            "Down",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Combinations": [
+            [
+                "Heavenly God",
+                "Raptor"
+            ],
+            [
+                "Avian",
+                "Yoma"
+            ],
+            [
+                "Beast",
+                "Fallen Angel"
+            ],
+            [
+                "Beast",
+                "Tyrant"
+            ],
+            [
+                "Brute",
+                "Dragon"
+            ],
+            [
+                "Demon God",
+                "Fairy"
+            ],
+            [
+                "Demigod",
+                "Femme"
+            ],
+            [
+                "Divine",
+                "Earth Element"
+            ],
+            [
+                "Dragon",
+                "Femme"
+            ],
+            [
+                "Fairy",
+                "Reaper"
+            ],
+            [
+                "Fairy",
+                "Tyrant"
+            ],
+            [
+                "Fallen Angel",
+                "Wilder"
+            ],
+            [
+                "Earth Mother",
+                "Yoma"
+            ],
+            [
+                "Dragon King",
+                "Wilder"
+            ],
+            [
+                "Dragon King",
+                "Yoma"
+            ],
+            [
+                "Tyrant",
+                "Wilder"
+            ],
+            [
+                "Tyrant",
+                "Yoma"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Up",
+            "Down",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Combinations": [
+            [
+                "Avian",
+                "Vile"
+            ],
+            [
+                "Beast",
+                "Evil Dragon"
+            ],
+            [
+                "Tyrant",
+                "Vile"
+            ],
+            [
+                "Destroyer",
+                "Vile"
+            ],
+            [
+                "Divine",
+                "Evil Demon"
+            ],
+            [
+                "Divine",
+                "Vile"
+            ],
+            [
+                "Evil Dragon",
+                "Wilder"
+            ],
+            [
+                "Earth Mother",
+                "Vile"
+            ],
+            [
+                "Goddess",
+                "Vile"
+            ],
+            [
+                "Guardian",
+                "Vile"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Combinations": [
+            [
+                "Beast",
+                "Evil Demon"
+            ],
+            [
+                "Beast",
+                "Foul"
+            ],
+            [
+                "Beast",
+                "Haunt"
+            ],
+            [
+                "Beast",
+                "Reaper"
+            ],
+            [
+                "Beast",
+                "Wild Bird"
+            ],
+            [
+                "Brute",
+                "Foul"
+            ],
+            [
+                "Dragon",
+                "Raptor"
+            ],
+            [
+                "Earth Element",
+                "Fairy"
+            ],
+            [
+                "Earth Element",
+                "Femme"
+            ],
+            [
+                "Earth Element",
+                "Tyrant"
+            ],
+            [
+                "Earth Element",
+                "Yoma"
+            ],
+            [
+                "Evil Dragon",
+                "Raptor"
+            ],
+            [
+                "Evil Dragon",
+                "Reaper"
+            ],
+            [
+                "Evil Dragon",
+                "Vile"
+            ],
+            [
+                "Fallen Angel",
+                "Femme"
+            ],
+            [
+                "Femme",
+                "Foul"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Down",
+            "Up",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Sacred Soul",
+        "Combinations": [
+            [
+                "Mitama"
+            ]
+        ],
+        "Elements": null
+    },
+    {
+        "Race": "Brute",
+        "Combinations": [
+            [
+                "Demon God",
+                "Earth Element"
+            ],
+            [
+                "Vile",
+                "Fallen Angel"
+            ],
+            [
+                "Vile",
+                "Femme"
+            ],
+            [
+                "Yoma",
+                "Femme"
+            ],
+            [
+                "Wild Bird",
+                "Evil Demon"
+            ],
+            [
+                "Wild Bird",
+                "Nocturne"
+            ],
+            [
+                "Earth Element",
+                "Wilder"
+            ],
+            [
+                "Evil Demon",
+                "Fairy"
+            ],
+            [
+                "Evil Demon",
+                "Wilder"
+            ],
+            [
+                "Evil Demon",
+                "Guardian"
+            ],
+            [
+                "Evil Demon",
+                "Foul"
+            ],
+            [
+                "Nocturne",
+                "Foul"
+            ],
+            [
+                "Fairy",
+                "Destroyer"
+            ],
+            [
+                "Fairy",
+                "Guardian"
+            ],
+            [
+                "Dragon King",
+                "Beast"
+            ],
+            [
+                "Dragon King",
+                "Haunt"
+            ],
+            [
+                "Nation Ruler",
+                "Haunt"
+            ],
+            [
+                "Haunt",
+                "Foul"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Down",
+            "Up",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Combinations": null,
+        "Elements": null
+    },
+    {
+        "Race": "Dragon",
+        "Combinations": [
+            [
+                "Demon God",
+                "Godly Beast"
+            ],
+            [
+                "Heavenly God",
+                "Avian"
+            ],
+            [
+                "Heavenly God",
+                "Demigod"
+            ],
+            [
+                "Heavenly God",
+                "Godly Beast"
+            ],
+            [
+                "Seraphim",
+                "Nation Ruler"
+            ],
+            [
+                "Avian",
+                "Earth Mother"
+            ],
+            [
+                "Avian",
+                "Guardian"
+            ],
+            [
+                "Raptor",
+                "Tyrant"
+            ],
+            [
+                "Reaper",
+                "Destroyer"
+            ],
+            [
+                "Demigod",
+                "Dragon King"
+            ],
+            [
+                "Dragon King",
+                "Godly Beast"
+            ],
+            [
+                "Dragon King",
+                "Guardian"
+            ],
+            [
+                "Godly Beast",
+                "Nation Ruler"
+            ],
+            [
+                "Wilder",
+                "Destroyer"
+            ],
+            [
+                "Destroyer",
+                "Nation Ruler"
+            ],
+            [
+                "Guardian",
+                "Tyrant"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Combinations": [
+            [
+                "Demon God",
+                "Femme"
+            ],
+            [
+                "Goddess",
+                "Seraphim"
+            ],
+            [
+                "Goddess",
+                "Earth Element"
+            ],
+            [
+                "Goddess",
+                "Nation Ruler"
+            ],
+            [
+                "Goddess",
+                "Guardian"
+            ],
+            [
+                "Goddess",
+                "Femme"
+            ],
+            [
+                "Seraphim",
+                "Fallen Angel"
+            ],
+            [
+                "Divine",
+                "Guardian"
+            ],
+            [
+                "Avian",
+                "Holy Beast"
+            ],
+            [
+                "Wild Bird",
+                "Destroyer"
+            ],
+            [
+                "Wild Bird",
+                "Nation Ruler"
+            ],
+            [
+                "Earth Element",
+                "Demigod"
+            ],
+            [
+                "Demigod",
+                "Fallen Angel"
+            ],
+            [
+                "Nocturne",
+                "Holy Beast"
+            ],
+            [
+                "Nocturne",
+                "Destroyer"
+            ],
+            [
+                "Nocturne",
+                "Nation Ruler"
+            ],
+            [
+                "Nocturne",
+                "Tyrant"
+            ],
+            [
+                "Dragon King",
+                "Nation Ruler"
+            ],
+            [
+                "Dragon King",
+                "Dragon"
+            ],
+            [
+                "Holy Beast",
+                "Femme"
+            ],
+            [
+                "Destroyer",
+                "Guardian"
+            ],
+            [
+                "Destroyer",
+                "Tyrant"
+            ],
+            [
+                "Nation Ruler",
+                "Dragon"
+            ],
+            [
+                "Guardian",
+                "Femme"
+            ],
+            [
+                "Tyrant",
+                "Femme"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Down",
+            "Down",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Combinations": [
+            [
+                "Vile",
+                "Wild Bird"
+            ],
+            [
+                "Vile",
+                "Raptor"
+            ],
+            [
+                "Vile",
+                "Godly Beast"
+            ],
+            [
+                "Wild Bird",
+                "Tyrant"
+            ],
+            [
+                "Raptor",
+                "Reaper"
+            ],
+            [
+                "Raptor",
+                "Destroyer"
+            ],
+            [
+                "Evil Demon",
+                "Dragon King"
+            ],
+            [
+                "Evil Demon",
+                "Fallen Angel"
+            ],
+            [
+                "Reaper",
+                "Dragon King"
+            ],
+            [
+                "Reaper",
+                "Dragon"
+            ],
+            [
+                "Dragon King",
+                "Destroyer"
+            ],
+            [
+                "Dragon King",
+                "Tyrant"
+            ],
+            [
+                "Godly Beast",
+                "Brute"
+            ],
+            [
+                "Holy Beast",
+                "Tyrant"
+            ],
+            [
+                "Beast",
+                "Destroyer"
+            ],
+            [
+                "Destroyer",
+                "Dragon"
+            ],
+            [
+                "Guardian",
+                "Foul"
+            ],
+            [
+                "Tyrant",
+                "Dragon"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Fallen Angel",
+        "Combinations": [
+            [
+                "Demon God",
+                "Wild Bird"
+            ],
+            [
+                "Goddess",
+                "Raptor"
+            ],
+            [
+                "Goddess",
+                "Nocturne"
+            ],
+            [
+                "Heavenly God",
+                "Nocturne"
+            ],
+            [
+                "Heavenly God",
+                "Femme"
+            ],
+            [
+                "Yoma",
+                "Beast"
+            ],
+            [
+                "Seraphim",
+                "Nocturne"
+            ],
+            [
+                "Seraphim",
+                "Tyrant"
+            ],
+            [
+                "Seraphim",
+                "Haunt"
+            ],
+            [
+                "Seraphim",
+                "Foul"
+            ],
+            [
+                "Divine",
+                "Wilder"
+            ],
+            [
+                "Divine",
+                "Foul"
+            ],
+            [
+                "Earth Element",
+                "Dragon King"
+            ],
+            [
+                "Evil Demon",
+                "Nocturne"
+            ],
+            [
+                "Reaper",
+                "Nocturne"
+            ],
+            [
+                "Nocturne",
+                "Dragon King"
+            ],
+            [
+                "Nocturne",
+                "Evil Dragon"
+            ],
+            [
+                "Dragon King",
+                "Foul"
+            ],
+            [
+                "Wilder",
+                "Femme"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Up",
+            "Down",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Combinations": [
+            [
+                "Goddess",
+                "Yoma"
+            ],
+            [
+                "Goddess",
+                "Evil Demon"
+            ],
+            [
+                "Goddess",
+                "Brute"
+            ],
+            [
+                "Raptor",
+                "Brute"
+            ],
+            [
+                "Heavenly God",
+                "Wilder"
+            ],
+            [
+                "Yoma",
+                "Nation Ruler"
+            ],
+            [
+                "Yoma",
+                "Brute"
+            ],
+            [
+                "Avian",
+                "Nocturne"
+            ],
+            [
+                "Wild Bird",
+                "Guardian"
+            ],
+            [
+                "Raptor",
+                "Brute"
+            ],
+            [
+                "Earth Element",
+                "Foul"
+            ],
+            [
+                "Demigod",
+                "Earth Mother"
+            ],
+            [
+                "Nocturne",
+                "Guardian"
+            ],
+            [
+                "Nocturne",
+                "Dragon"
+            ],
+            [
+                "Dragon King",
+                "Earth Mother"
+            ],
+            [
+                "Holy Beast",
+                "Brute"
+            ],
+            [
+                "Guardian",
+                "Earth Mother"
+            ],
+            [
+                "Fallen Angel",
+                "Earth Mother"
+            ],
+            [
+                "Earth Mother",
+                "Haunt"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Down",
+            "Up",
+            "Up"
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Combinations": [
+            [
+                "Vile",
+                "Evil Demon"
+            ],
+            [
+                "Vile",
+                "Reaper"
+            ],
+            [
+                "Vile",
+                "Beast"
+            ],
+            [
+                "Vile",
+                "Wilder"
+            ],
+            [
+                "Vile",
+                "Brute"
+            ],
+            [
+                "Vile",
+                "Haunt"
+            ],
+            [
+                "Wild Bird",
+                "Wilder"
+            ],
+            [
+                "Raptor",
+                "Earth Element"
+            ],
+            [
+                "Raptor",
+                "Evil Demon"
+            ],
+            [
+                "Raptor",
+                "Dragon King"
+            ],
+            [
+                "Raptor",
+                "Fallen Angel"
+            ],
+            [
+                "Raptor",
+                "Femme"
+            ],
+            [
+                "Earth Element",
+                "Nocturne"
+            ],
+            [
+                "Earth Element",
+                "Haunt"
+            ],
+            [
+                "Evil Demon",
+                "Tyrant"
+            ],
+            [
+                "Evil Demon",
+                "Haunt"
+            ],
+            [
+                "Beast",
+                "Femme"
+            ],
+            [
+                "Tyrant",
+                "Haunt"
+            ],
+            [
+                "Femme",
+                "Haunt"
+            ],
+            [
+                "Brute",
+                "Haunt"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Down",
+            "Up",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Combinations": [
+            [
+                "Demon God",
+                "Vile"
+            ],
+            [
+                "Demon God",
+                "Dragon King"
+            ],
+            [
+                "Demon God",
+                "Brute"
+            ],
+            [
+                "Vile",
+                "Dragon King"
+            ],
+            [
+                "Avian",
+                "Destroyer"
+            ],
+            [
+                "Evil Demon",
+                "Earth Mother"
+            ],
+            [
+                "Evil Demon",
+                "Dragon"
+            ],
+            [
+                "Demigod",
+                "Destroyer"
+            ],
+            [
+                "Demigod",
+                "Nation Ruler"
+            ],
+            [
+                "Nocturne",
+                "Earth Mother"
+            ],
+            [
+                "Nocturne",
+                "Brute"
+            ],
+            [
+                "Dragon King",
+                "Holy Beast"
+            ],
+            [
+                "Godly Beast",
+                "Femme"
+            ],
+            [
+                "Holy Beast",
+                "Destroyer"
+            ],
+            [
+                "Nation Ruler",
+                "Earth Mother"
+            ],
+            [
+                "Nation Ruler",
+                "Tyrant"
+            ],
+            [
+                "Nation Ruler",
+                "Femme"
+            ],
+            [
+                "Earth Mother",
+                "Femme"
+            ]
+        ],
+        "Elements": [
+            "Up",
+            "Down",
+            "Down",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Combinations": [
+            [
+                "Heavenly God",
+                "Foul"
+            ],
+            [
+                "Vile",
+                "Earth Element"
+            ],
+            [
+                "Vile",
+                "Nocturne"
+            ],
+            [
+                "Vile",
+                "Foul"
+            ],
+            [
+                "Raptor",
+                "Fairy"
+            ],
+            [
+                "Evil Demon",
+                "Brute"
+            ],
+            [
+                "Reaper",
+                "Demigod"
+            ],
+            [
+                "Fairy",
+                "Femme"
+            ],
+            [
+                "Fairy",
+                "Foul"
+            ],
+            [
+                "Wilder",
+                "Earth Mother"
+            ],
+            [
+                "Tyrant",
+                "Brute"
+            ],
+            [
+                "Tyrant",
+                "Foul"
+            ]
+        ],
+        "Elements": [
+            "Down",
+            "Up",
+            "Down",
+            "Down"
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Combinations": [
+            [
+                "Demon God",
+                "Heavenly God"
+            ],
+            [
+                "Demon God",
+                "Dragon"
+            ],
+            [
+                "Heavenly God",
+                "Seraphim"
+            ],
+            [
+                "Heavenly God",
+                "Earth Element"
+            ],
+            [
+                "Heavenly God",
+                "Destroyer"
+            ],
+            [
+                "Heavenly God",
+                "Guardian"
+            ],
+            [
+                "Vile",
+                "Demigod"
+            ],
+            [
+                "Yoma",
+                "Guardian"
+            ],
+            [
+                "Seraphim",
+                "Guardian"
+            ],
+            [
+                "Earth Element",
+                "Godly Beast"
+            ],
+            [
+                "Earth Element",
+                "Dragon"
+            ],
+            [
+                "Evil Demon",
+                "Demigod"
+            ],
+            [
+                "Holy Beast",
+                "Guardian"
+            ],
+            [
+                "Guardian",
+                "Dragon"
+            ]
+        ],
+        "Elements": [
+            "All Down"
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Combinations": null,
+        "Elements": null
+    }
+]
