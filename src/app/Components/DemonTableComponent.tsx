@@ -2,6 +2,7 @@
 import { Flex, Text, Table, Image } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import React, { ReactNode } from 'react'
+import Link from 'next/link'
 
 interface DemonTableProps {
     filter: string
@@ -28,14 +29,14 @@ export default function DemonTableComponent({ filter }: DemonTableProps) {
                         <React.Fragment key={`race-name-level-${index}`}>
                             <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
                             <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                            <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}>{demon.Name}</Table.Td>
+                            <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Link href={{pathname: '/fusions', query: {demon: demon.Name}}}>{demon.Name}</Link></Table.Td>
                             <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                         </React.Fragment>
                         :
                         <React.Fragment key={`race-name-level-${index}`}>
                             <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
                             <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                            <Table.Td key={`name-${index}`}>{demon.Name}</Table.Td>
+                            <Table.Td key={`name-${index}`}><Link href={{pathname: '/fusions', query: {demon: demon.Name}}}>{demon.Name}</Link></Table.Td>
                             <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                         </React.Fragment>
                     }

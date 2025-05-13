@@ -1,6 +1,7 @@
-interface FusionProps {
-    demon: string
-}
+'use client'
+import { useSearchParams } from "next/navigation";
+import FusionTableComponent from "../Components/FusionTableComponent";
+import demons from '../Data/demons.json'
 
 interface Demon {
     Race: string;
@@ -12,6 +13,12 @@ interface Demon {
 }
 
 
-export default function Fusions({demon}:FusionProps){
+export default function Fusions(){
+    const searchParams = useSearchParams()
+    const demonName:string = searchParams.get('demon') as string
+    const demon:Demon = demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
     
+    return (
+        <FusionTableComponent demon={demon}/>
+    )
 }
