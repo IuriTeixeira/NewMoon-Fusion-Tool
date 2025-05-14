@@ -2,23 +2,20 @@
 import { useSearchParams } from "next/navigation";
 import FusionTableComponent from "../Components/FusionTableComponent";
 import demons from '../Data/demons.json'
+import DemonInfoComponent from "../Components/DemonInfoComponent";
+import { Flex, SimpleGrid } from "@mantine/core";
 
-interface Demon {
-    Race: string;
-    Name: string;
-    Level: number;
-    Range: (number | null)[] | string[] | null;
-    Special: string[][] | null;
-    Plugin: boolean[]
-}
-
-
-export default function Fusions(){
+export default function Fusions() {
     const searchParams = useSearchParams()
-    const demonName:string = searchParams.get('demon') as string
-    const demon:Demon = demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
-    
+    const demonName: string = searchParams.get('demon') as string
+    const demon: Demon = demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+
     return (
-        <FusionTableComponent demon={demon}/>
+        <Flex align='center' justify='center'>
+            <SimpleGrid cols={1} w='80%'>
+                <DemonInfoComponent demon={demon} />
+                <FusionTableComponent demon={demon} />
+            </SimpleGrid>
+        </Flex >
     )
 }

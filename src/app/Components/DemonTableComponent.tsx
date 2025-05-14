@@ -8,15 +8,6 @@ interface DemonTableProps {
     filter: string
 }
 
-interface Demon {
-    Race: string;
-    Name: string;
-    Level: number;
-    Range: (number | null)[] | string[] | null;
-    Special: string[][] | null;
-    Plugin: boolean[]
-}
-
 export default function DemonTableComponent({ filter }: DemonTableProps) {
     let filteredDemonList:Demon[]
 
@@ -24,7 +15,7 @@ export default function DemonTableComponent({ filter }: DemonTableProps) {
         return (
             <React.Fragment key={`fragment-row-${index}`}>
                 <Table.Tr key={`row-${index}`}>
-                    {demon.Special
+                    {demon.Special && demon.Special.length > 0
                         ?
                         <React.Fragment key={`race-name-level-${index}`}>
                             <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>

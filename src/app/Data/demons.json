@@ -2695,7 +2695,7 @@
     },
     {
         "Race": "Nocturne",
-        "Name": "Little Devil Lilim",
+        "Name": "Lilim the Little Demon",
         "Level": 20,
         "Range": null,
         "Special": [["Lilim", "Alp"]],
@@ -2839,6 +2839,16 @@
         "Special": null,
         "Plugin": [
             false
+        ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Persephone",
+        "Level": 55,
+        "Range": null,
+        "Special": [["Hel", "Artemis"]],
+        "Plugin": [
+            true
         ]
     },
     {

@@ -7,16 +7,6 @@ interface SearchProps {
     setDemon: React.Dispatch<React.SetStateAction<string>>
 }
 
-interface Demon {
-    Race: string;
-    Name: string;
-    Level: number;
-    Range: (number | null)[] | string[] | null;
-    Special: string[][] | null;
-    Plugin: boolean[]
-}
-
-
 export default function SearchComponent({ setFilter, setDemon }: SearchProps) {
     const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraphim", "Vile", "Wild Bird", "Yoma"]
     const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Elemental", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
