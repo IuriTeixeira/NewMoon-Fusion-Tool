@@ -1099,6 +1099,17 @@
     },
     {
         "Race": "Seraph",
+        "Name": "Inexperienced Uriel",
+        "Level": 40,
+        "Range": null,
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Display": false
+    },
+    {
+        "Race": "Seraph",
         "Name": "Uriel",
         "Level": 80,
         "Range": null,
@@ -2827,6 +2838,17 @@
         "Plugin": [
             true
         ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Illusion Mot",
+        "Level": 1,
+        "Range": null,
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Display": false
     },
     {
         "Race": "Reaper",

@@ -5,4 +5,5 @@ interface Demon {
     Range: (number | null)[] | string[] | null;
     Special: string[][] | null;
     Plugin: boolean[]
+    Display?: boolean
 }

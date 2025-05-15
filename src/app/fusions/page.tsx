@@ -12,7 +12,7 @@ export default function Fusions() {
 
     return (
         <Flex align='center' justify='center'>
-            <SimpleGrid cols={1} w='80%'>
+            <SimpleGrid cols={1}>
                 <DemonInfoComponent demon={demon} />
                 <FusionTableComponent demon={demon} />
             </SimpleGrid>
