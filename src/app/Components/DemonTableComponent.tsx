@@ -1,4 +1,5 @@
 'use client'
+import { IconCheck, IconX } from '@tabler/icons-react'
 import { Flex, Text, Table, Image, Anchor } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import React from 'react'
@@ -9,6 +10,48 @@ interface DemonTableProps {
 }
 
 export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
+    const subTypes = [
+        'Inexperienced ',
+        'Illusion ',
+        ' of Kuyo',
+        'Wanderer ',
+        'Accomplished ',
+        'Vermillion Flame ',
+        'Godly Golden Winged Bird ',
+        'Hero of Akaeda ',
+        'Unmatched Steel ',
+        'Brave Red Capote ',
+        'Noble Demon King ',
+        'Blasted Road ',
+        'Agent of God ',
+        'Princess of Pure Madness ',
+        'Seven Stars of Death ',
+        'Agent of God ',
+        'Nimble ',
+        'Joyful ',
+        'Prideful ',
+        'Wrathful ',
+        'Lustful ',
+        'Magician ',
+        'Mystic ',
+        'Bringer of Aging ',
+        'Pleasure Bringer ',
+        'Huntress ',
+        'Heaven-Piercing ',
+        'Gojo Bridge ',
+        ' of Assault',
+        'Shana ',
+        'Hassou Tobi '
+    ]
+
+    function cleanString(str: string): string {
+        let result = str;
+        for (const subtype of subTypes) {
+            result = result.replace(subtype, '');
+        }
+        return result.trim();
+    }
+
     let filteredDemonList: Demon[]
 
     if (raceFilter !== '')
@@ -41,7 +84,8 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
                 </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
-                {filteredDemonList.filter((d: Demon) => d.Display !== false).map((demon, index) => {
+                {filteredDemonList.filter((d: Demon) => d.Variant !== true).map((demon, index) => {
+                    const imageName: string = cleanString(demon.Name)
                     return (
                         <React.Fragment key={`fragment-row-${index}`}>
                             <Table.Tr key={`row-${index}`}>
@@ -49,14 +93,14 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
                                     ?
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
-                                        <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
+                                        <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
                                         <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>
                                     :
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
-                                        <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
+                                        <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
                                         <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>
@@ -75,7 +119,7 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
                                         }
                                         <Table.Td key={`plugin-${index}-${0}`}>
                                             <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
-                                                {demon.Plugin[0] ? "✔️" : "❌"}
+                                                {demon.Plugin[0] ? <IconCheck size={16} /> : <IconX size={16} />}
                                             </Flex>
                                         </Table.Td>
 
@@ -90,7 +134,7 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-0`}>
                                             <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
-                                                {demon.Plugin[0] ? "✔️" : "❌"}
+                                                {demon.Plugin[0] ? <IconCheck size={16} /> : <IconX size={16} />}
                                             </Flex>
                                         </Table.Td>
                                     </React.Fragment>
@@ -106,7 +150,7 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-${indexSpecial}`}>
                                             <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
-                                                {demon.Plugin[indexSpecial + 1] ? "✔️" : "❌"}
+                                                {demon.Plugin[indexSpecial + 1] ? <IconCheck size={16} /> : <IconX size={16} />}
                                             </Flex>
                                         </Table.Td>
                                     </Table.Tr>

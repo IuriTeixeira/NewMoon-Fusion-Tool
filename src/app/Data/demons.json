@@ -1,6 +1,23 @@
 [
     {
         "Race": "Avian",
+        "Name": "Inexperienced Feng Huang",
+        "Level": 12,
+        "Range": null,
+        "Special": [
+            [
+                "Feng Huang",
+                "Inexperienced Inugami",
+                "Inexperienced Shiki-Ouji"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Avian",
         "Name": "Feng Huang",
         "Level": 20,
         "Range": [
@@ -69,6 +86,23 @@
     },
     {
         "Race": "Avian",
+        "Name": "Inexperienced Yata-Garasu",
+        "Level": 52,
+        "Range": null,
+        "Special": [
+            [
+                "Yata-Garasu",
+                "Inexperienced Titania",
+                "Parvati"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Avian",
         "Name": "Yata-Garasu",
         "Level": 52,
         "Range": [
@@ -92,6 +126,22 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Avian",
+        "Name": "Godly Golden Winged Bird Garuda",
+        "Level": 79,
+        "Range": null,
+        "Special": [
+            [
+                "Garuda",
+                "Zhu Que"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Demon God",
@@ -264,6 +314,36 @@
     },
     {
         "Race": "Divine",
+        "Name": "Holy Night Angel",
+        "Level": 1,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Divine",
+        "Name": "Inexperienced Angel",
+        "Level": 6,
+        "Range": null,
+        "Special": [
+            [
+                "Angel",
+                "Inexperienced Bai Ze",
+                "Inexperienced Decarabia"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Divine",
         "Name": "Angel",
         "Level": 11,
         "Range": [
@@ -290,6 +370,23 @@
     },
     {
         "Race": "Divine",
+        "Name": "Inexperienced Principality",
+        "Level": 20,
+        "Range": null,
+        "Special": [
+            [
+                "Principality",
+                "Inexperienced Unicorn",
+                "Inexperienced Poltergeist "
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Divine",
         "Name": "Principality",
         "Level": 25,
         "Range": [
@@ -300,6 +397,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Inexperienced Dominion",
+        "Level": 26,
+        "Range": null,
+        "Special": [
+            [
+                "Dominion",
+                "Inexperienced Oberon",
+                "Quetzalcoatl"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Divine",
@@ -385,6 +499,23 @@
     },
     {
         "Race": "Earth Element",
+        "Name": "Inexperienced Hua Po",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Hua Po",
+                "Inexperienced Cu Sith",
+                "Inexperienced Ganga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Earth Element",
         "Name": "Kodama",
         "Level": 3,
         "Range": [
@@ -421,6 +552,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Inexperienced Sudama",
+        "Level": 14,
+        "Range": null,
+        "Special": [
+            [
+                "Sudama",
+                "Inexperienced Cait Sith",
+                "Inexperienced Slime"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Earth Element",
@@ -501,6 +649,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Heaven-Piercing Ubelluris",
+        "Level": 51,
+        "Range": null,
+        "Special": [
+            [
+                "Deformed Ubelluris",
+                "Jack Frost",
+                "Slime"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Earth Element",
@@ -721,6 +886,23 @@
         "Plugin": [
             true
         ]
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Inexperienced Hathor",
+        "Level": 10,
+        "Range": null,
+        "Special": [
+            [
+                "Hathor",
+                "Inexperienced Fomorian",
+                "Inexperienced Karasu-Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Goddess",
@@ -1005,6 +1187,23 @@
     },
     {
         "Race": "Raptor",
+        "Name": "Heaven-Piercing Onmoraki",
+        "Level": 19,
+        "Range": null,
+        "Special": [
+            [
+                "Deformed Onmoraki",
+                "Cait Sith",
+                "Poltergeist "
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Raptor",
         "Name": "Moh Shuvuu",
         "Level": 28,
         "Range": [
@@ -1101,12 +1300,14 @@
         "Race": "Seraph",
         "Name": "Inexperienced Uriel",
         "Level": 40,
-        "Range": null,
+        "Range": [
+            "Can't be fused"
+        ],
         "Special": null,
         "Plugin": [
             false
         ],
-        "Display": false
+        "Variant": true
     },
     {
         "Race": "Seraph",
@@ -1217,6 +1418,23 @@
         ]
     },
     {
+        "Race": "Seraph",
+        "Name": "Agent of God Metatron",
+        "Level": 97,
+        "Range": null,
+        "Special": [
+            [
+                "Metatron",
+                "Mithra",
+                "Gabriel"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
         "Race": "Vile",
         "Name": "Baphomet",
         "Level": 30,
@@ -1228,6 +1446,36 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Ruler of the Sabbath Baphomet",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Heaven-Piercing Baphomet",
+        "Level": 55,
+        "Range": null,
+        "Special": [
+            [
+                "Deformed Baphomet",
+                "Gyuki",
+                "Choronzon"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Vile",
@@ -1334,6 +1582,23 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Inexperienced Harpy",
+        "Level": 3,
+        "Range": null,
+        "Special": [
+            [
+                "Harpy",
+                "Inexperienced Garm",
+                "Inexperienced Cockatrice"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Harpy",
         "Level": 7,
         "Range": [
@@ -1360,6 +1625,40 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Inexperienced Ocypete",
+        "Level": 14,
+        "Range": null,
+        "Special": [
+            [
+                "Ocypete",
+                "Inexperienced Jack Frost",
+                "Arahabaki"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Celaeno",
+        "Level": 23,
+        "Range": null,
+        "Special": [
+            [
+                "Celaeno",
+                "Nekomata",
+                "Yaksini"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Ocypete",
         "Level": 25,
         "Range": [
@@ -1370,6 +1669,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Aello",
+        "Level": 28,
+        "Range": null,
+        "Special": [
+            [
+                "Aello",
+                "Inexperienced Koppa-Tengu",
+                "Inexperienced Pyro Jack"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Wild Bird",
@@ -1396,6 +1712,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Heaven-Piercing Macha",
+        "Level": 42,
+        "Range": null,
+        "Special": [
+            [
+                "Deformed Macha",
+                "Troll",
+                "Ghoul"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Wild Bird",
@@ -1531,6 +1864,40 @@
     },
     {
         "Race": "Beast",
+        "Name": "Inexperienced Cait Sith",
+        "Level": 2,
+        "Range": null,
+        "Special": [
+            [
+                "Cait Sith",
+                "Inexperienced Sudama",
+                "Inexperienced Slime"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inexperienced Cu Sith",
+        "Level": 6,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Hua Po",
+                "Cu Sith",
+                "Inexperienced Ganga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
         "Name": "Cait Sith",
         "Level": 7,
         "Range": [
@@ -1541,6 +1908,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Avian",
+        "Name": "Inexperienced Inugami",
+        "Level": 10,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Feng Huang",
+                "Inugami",
+                "Inexperienced Shiki-Ouji"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Beast",
@@ -1570,6 +1954,23 @@
     },
     {
         "Race": "Beast",
+        "Name": "Inexperienced Nekomata",
+        "Level": 26,
+        "Range": null,
+        "Special": [
+            [
+                "Nekomata",
+                "Inexperienced Celaeno",
+                "Inexperienced Yaksini"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
         "Name": "Nekomata",
         "Level": 26,
         "Range": [
@@ -1593,6 +1994,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Heaven-Piercing Cait Sith",
+        "Level": 33,
+        "Range": null,
+        "Special": [
+            [
+                "Onmoraki",
+                "Deformed Cait Sith",
+                "Poltergeist"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Beast",
@@ -1634,6 +2052,89 @@
     },
     {
         "Race": "Beast",
+        "Name": "Three-Headed Cerberus",
+        "Level": 49,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
+        "Name": "Void Cerberus",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Nimble Cu Chulainn",
+                "Joyful Alice",
+                "Joyful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Nimble Alice",
+                "Prideful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Prideful Black Frost",
+                "Wrathful Alice"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Joyful Black Frost",
+                "Nimble Alice"
+            ],
+            [
+                "Three-Headed Cerberus",
+                "Prideful Black Frost",
+                "Wrathful Alice"
+            ]
+        ],
+        "Plugin": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
+        "Name": "Asura Cerberus",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Cerberus",
+                "Orthrus",
+                "Chimera"
+            ],
+            [
+                "Three-Headed Cerberus",
+                "Orthrus",
+                "Chimera"
+            ],
+            [
+                "Void Cerberus",
+                "Orthrus",
+                "Chimera"
+            ]
+        ],
+        "Plugin": [
+            true,
+            true,
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Beast",
         "Name": "Gryphon",
         "Level": 74,
         "Range": null,
@@ -1662,6 +2163,19 @@
     },
     {
         "Race": "Demigod",
+        "Name": "Nimble Cu Chulainn",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Demigod",
         "Name": "Valkyrie",
         "Level": 36,
         "Range": [
@@ -1685,6 +2199,19 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Vermillion Flame Cu Chulainn",
+        "Level": 44,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
     },
     {
         "Race": "Demigod",
@@ -1743,6 +2270,40 @@
     },
     {
         "Race": "Demigod",
+        "Name": "Hero of Akaeda Cu Chulainn",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Setanta",
+                "Garm",
+                "Cu Chulainn of Vermillion"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Noble Demon King Kurama-Tengu ",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Kurama-Tengu",
+                "Yoshitsune",
+                "Shiki-Ouji"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Demigod",
         "Name": "Hanuman",
         "Level": 71,
         "Range": null,
@@ -1753,6 +2314,18 @@
                 "Onkot"
             ]
         ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Wanderer Nozuchi",
+        "Level": 1,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
         "Plugin": [
             false
         ]
@@ -1883,8 +2456,8 @@
                 "Earth Element"
             ],
             [
-                "Fallen Angel",
-                "Fallen Angel"
+                "Fallen",
+                "Fallen"
             ],
             [
                 "Nation Ruler",
@@ -1892,7 +2465,7 @@
             ],
             [
                 "Nocturne",
-                "Nation Ruler"
+                "Nocturne"
             ]
         ],
         "Plugin": [
@@ -1999,6 +2572,23 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Inexperienced Jack Frost",
+        "Level": 4,
+        "Range": null,
+        "Special": [
+            [
+                "Jack Frost",
+                "Inexperienced Ocypete",
+                "Arahabaki"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fairy",
         "Name": "Jack Frost",
         "Level": 11,
         "Range": [
@@ -2022,6 +2612,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Pyro Jack",
+        "Level": 17,
+        "Range": null,
+        "Special": [
+            [
+                "Pyro Jack",
+                "Inexperienced Koppa-Tengu",
+                "Inexperienced Aello"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Fairy",
@@ -2077,6 +2684,23 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Inexperienced Oberon",
+        "Level": 36,
+        "Range": null,
+        "Special": [
+            [
+                "Oberon",
+                "Inexperienced Dominion",
+                "Quetzalcoatl"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fairy",
         "Name": "Troll",
         "Level": 38,
         "Range": [
@@ -2087,6 +2711,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Titania",
+        "Level": 38,
+        "Range": null,
+        "Special": [
+            [
+                "Titania",
+                "Yata-Garasu",
+                "Parvati"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Fairy",
@@ -2113,6 +2754,40 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Heaven-Piercing Troll",
+        "Level": 48,
+        "Range": null,
+        "Special": [
+            [
+                "Macha",
+                "Deformed Troll",
+                "Ghoul"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Heaven-Piercing Jack Frost",
+        "Level": 51,
+        "Range": null,
+        "Special": [
+            [
+                "Ubelluris",
+                "Deformed Jack Frost",
+                "Slime"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Fairy",
@@ -2172,6 +2847,61 @@
     },
     {
         "Race": "Fiend",
+        "Name": "Joyful Alice",
+        "Level": 1,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Shana Yoshitsune",
+        "Level": 10,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Nimble Alice",
+        "Level": 20,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Gojo Bridge Yoshitsune",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Shana Yoshitsune",
+                "Koppa Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
         "Name": "Alice",
         "Level": 35,
         "Range": null,
@@ -2217,6 +2947,42 @@
         "Plugin": [
             true
         ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Wrathful Alice",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of Aging Eligor",
+                "Mystic Ose"
+            ],
+            [
+                "Magician Decarabia",
+                "Mystic Ose"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Yoshitsune of Assault",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Gojo Bridge Yoshitsune",
+                "Karasu-Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Fiend",
@@ -2281,6 +3047,84 @@
         "Plugin": [
             true
         ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Malukala",
+        "Level": 65,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Princess of Pure Madness Alice",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Alice",
+                "Acheri",
+                "Black Frost"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Brave Red Capote Matador",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Matador",
+                "Guede",
+                "Cu Chulainn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Blasted Road Hell Biker",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Hell Biker",
+                "Jinn+ Bicorn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Hassou Tobi Yoshitsune",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Yoshitsune of Assault",
+                "Kurama Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Fiend",
@@ -2541,6 +3385,23 @@
     },
     {
         "Race": "Holy Beast",
+        "Name": "Inexperienced Unicorn",
+        "Level": 15,
+        "Range": null,
+        "Special": [
+            [
+                "Unicorn",
+                "Principality",
+                "Poltergeist "
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Holy Beast",
         "Name": "Unicorn",
         "Level": 21,
         "Range": [
@@ -2551,6 +3412,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Bai Ze",
+        "Level": 23,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Angel",
+                "Bai Ze",
+                "Inexperienced Decarabia"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Holy Beast",
@@ -2667,6 +3545,22 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Wanderer Alp",
+        "Level": 6,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Garm",
+                "Wanderer Nozuchi"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Alp",
         "Level": 8,
         "Range": [
@@ -2690,6 +3584,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Inexperienced Fomorian",
+        "Level": 20,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Hathor",
+                "Fomorian",
+                "Inexperienced Karasu-Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Nocturne",
@@ -2717,7 +3628,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "Variant": true
     },
     {
         "Race": "Nocturne",
@@ -2776,6 +3688,19 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Joyful Black Frost",
+        "Level": 45,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Kaiwan",
         "Level": 47,
         "Range": [
@@ -2786,6 +3711,26 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Prideful Black Frost",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Pleasure Bringer Orobas",
+                "Mystic Ose"
+            ],
+            [
+                "Bringer of Aging Eligor",
+                "Magician Decarabia"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "Variant": true
     },
     {
         "Race": "Nocturne",
@@ -2848,12 +3793,14 @@
         "Race": "Reaper",
         "Name": "Illusion Mot",
         "Level": 1,
-        "Range": null,
+        "Range": [
+            "Can't be fused"
+        ],
         "Special": null,
         "Plugin": [
             false
         ],
-        "Display": false
+        "Variant": true
     },
     {
         "Race": "Reaper",
@@ -2949,6 +3896,39 @@
         ]
     },
     {
+        "Race": "Reaper",
+        "Name": "Seven Stars of Death Beiji Weng",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Beiji Weng",
+                "Qing-Long "
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Garm",
+        "Level": 3,
+        "Range": null,
+        "Special": [
+            [
+                "Garm",
+                "Inexperienced Harpy",
+                "Inexperienced Cockatrice"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
         "Race": "Wilder",
         "Name": "Garm",
         "Level": 9,
@@ -3031,7 +4011,7 @@
     {
         "Race": "Wilder",
         "Name": "Catoblepas",
-        "Level": 509,
+        "Level": 50,
         "Range": [
             80,
             99
@@ -3040,6 +4020,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Heaven-Piercing Gyuki",
+        "Level": 53,
+        "Range": null,
+        "Special": [
+            [
+                "Baphomet",
+                "Deformed Gyuki",
+                "Choronzon"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Wilder",
@@ -3162,6 +4159,23 @@
     },
     {
         "Race": "Brute",
+        "Name": "Inexperienced Koppa-Tengu",
+        "Level": 12,
+        "Range": null,
+        "Special": [
+            [
+                "Koppa-Tengu",
+                "Inexperienced Pyro Jack",
+                "Inexperienced Aello"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Brute",
         "Name": "Koppa-Tengu",
         "Level": 15,
         "Range": [
@@ -3185,6 +4199,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Inexperienced Karasu-Tengu",
+        "Level": 21,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Hathor",
+                "Fomorian",
+                "Karasu-Tengu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Brute",
@@ -3240,6 +4271,23 @@
     },
     {
         "Race": "Brute",
+        "Name": "Inexperienced Shiki-Ouji",
+        "Level": 46,
+        "Range": null,
+        "Special": [
+            [
+                "Feng Huang",
+                "Inexperienced Inugami",
+                "Shiki-Ouji"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Brute",
         "Name": "Yaksa",
         "Level": 51,
         "Range": [
@@ -3289,6 +4337,22 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Unmatched Steel Kin-Ki",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Kinki",
+                "Xuan Wu"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Brute",
@@ -3429,6 +4493,23 @@
     },
     {
         "Race": "Dragon",
+        "Name": "Inexperienced Ganga",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Hua Po",
+                "Inexperienced Cu Sith",
+                "Ganga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Dragon",
         "Name": "Coatlicue",
         "Level": 33,
         "Range": [
@@ -3439,6 +4520,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Inexperienced Quetzalcoatl",
+        "Level": 35,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Oberon",
+                "Inexperienced Dominion",
+                "Quetzalcoatl"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Dragon",
@@ -3509,6 +4607,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Inexperienced Parvati",
+        "Level": 25,
+        "Range": null,
+        "Special": [
+            [
+                "Parvati",
+                "Inexperienced Yata-Garasu",
+                "Inexperienced Titania"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Earth Mother",
@@ -3591,6 +4706,28 @@
     },
     {
         "Race": "Earth Mother",
+        "Name": "Huntress Skadi",
+        "Level": 85,
+        "Range": null,
+        "Special": [
+            [
+                "Skadi",
+                "Loki",
+                "Odin"
+            ],
+            [
+                "Skadi",
+                "Trickster Loki",
+                "Odin"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Earth Mother",
         "Name": "Isis",
         "Level": 94,
         "Range": null,
@@ -3620,6 +4757,23 @@
         "Plugin": [
             true
         ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Inexperienced Cockatrice",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Cockatrice",
+                "Inexperienced Harpy",
+                "Inexperienced Garm "
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Evil Dragon",
@@ -3744,7 +4898,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Andras",
         "Level": 15,
         "Range": [
@@ -3757,7 +4911,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Forneus",
         "Level": 29,
         "Range": [
@@ -3770,7 +4924,76 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
+        "Name": "Inexperienced Decarabia",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Inexperienced Angel",
+                "Bai Ze",
+                "Inexperienced Decarabia"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Bringer of Aging Eligor",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Magician Decarabia",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Pleasure Bringer Orobas",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Mystic Ose",
+        "Level": 30,
+        "Range": [
+            "Can't be fused"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Fallen",
         "Name": "Eligor",
         "Level": 43,
         "Range": [
@@ -3783,7 +5006,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Decarabia",
         "Level": 50,
         "Range": [
@@ -3796,7 +5019,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Berith",
         "Level": 58,
         "Range": [
@@ -3809,7 +5032,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Orobas",
         "Level": 65,
         "Range": [
@@ -3822,7 +5045,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Ose",
         "Level": 73,
         "Range": [
@@ -3834,7 +5057,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Flauros",
         "Level": 75,
         "Range": null,
@@ -3853,7 +5076,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Gomory",
         "Level": 79,
         "Range": null,
@@ -3868,7 +5091,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Abraxas",
         "Level": 82,
         "Range": null,
@@ -3883,7 +5106,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Belphegor",
         "Level": 85,
         "Range": null,
@@ -3899,7 +5122,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Arioch",
         "Level": 86,
         "Range": null,
@@ -3914,7 +5137,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Name": "Azazel",
         "Level": 92,
         "Range": null,
@@ -3967,6 +5190,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Inexperienced Yaksini",
+        "Level": 25,
+        "Range": null,
+        "Special": [
+            [
+                "Yaksini",
+                "Inexperienced Celaeno",
+                "Inexperienced Nekomata"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Femme",
@@ -4146,6 +5386,23 @@
     },
     {
         "Race": "Foul",
+        "Name": "Inexperienced Slime",
+        "Level": 3,
+        "Range": null,
+        "Special": [
+            [
+                "Slime",
+                "Inexperienced Sudama",
+                "Inexperienced Cait Sith"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Foul",
         "Name": "Slime",
         "Level": 6,
         "Range": [
@@ -4182,6 +5439,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Heaven-Piercing Slime",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Ubelluris",
+                "Jack Frost",
+                "Deformed Slime"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Foul",
@@ -4299,6 +5573,23 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Inexperienced Poltergeist",
+        "Level": 4,
+        "Range": null,
+        "Special": [
+            [
+                "Poltergeist",
+                "Inexperienced Principality",
+                "Unicorn"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Haunt",
         "Name": "Poltergeist",
         "Level": 4,
         "Range": [
@@ -4379,6 +5670,40 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Heaven-Piercing Poltergeist",
+        "Level": 26,
+        "Range": null,
+        "Special": [
+            [
+                "Onmoraki",
+                "Cait Sith",
+                "Deformed Poltergeist"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Heaven-Piercing Ghoul",
+        "Level": 30,
+        "Range": null,
+        "Special": [
+            [
+                "Macha",
+                "Troll",
+                "Deformed Ghoul"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Haunt",
         "Name": "Chatterskull",
         "Level": 33,
         "Range": [
@@ -4389,6 +5714,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Heaven-Piercing Choronzon",
+        "Level": 35,
+        "Range": null,
+        "Special": [
+            [
+                "Baphomet",
+                "Gyuki",
+                "Deformed Choronzon"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Haunt",
@@ -4485,6 +5827,23 @@
     },
     {
         "Race": "Nation Ruler",
+        "Name": "Inexperienced Arahabaki",
+        "Level": 45,
+        "Range": null,
+        "Special": [
+            [
+                "Arahabaki",
+                "Inexperienced Ocypete",
+                "Inexperienced Jack Frost"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
+    },
+    {
+        "Race": "Nation Ruler",
         "Name": "Oyamatsumi",
         "Level": 50,
         "Range": [
@@ -4539,6 +5898,22 @@
     },
     {
         "Race": "Nation Ruler",
+        "Name": "Sukuna Hikona",
+        "Level": 65,
+        "Range": null,
+        "Special": [
+            [
+                "Okuninushi",
+                "Koropokkuru",
+                "Take-Mikazuchi"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
         "Name": "Arahabaki",
         "Level": 83,
         "Range": [
@@ -4548,6 +5923,23 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Trickster Loki",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Loki",
+                "Hel",
+                "Fenrir"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "Variant": true
     },
     {
         "Race": "Tyrant",

@@ -68,7 +68,7 @@
         "Combinations": [
             [
                 "Goddess",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Heavenly God",
@@ -120,7 +120,7 @@
             ],
             [
                 "Godly Beast",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Earth Mother",
@@ -155,7 +155,7 @@
             ],
             [
                 "Yoma",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Yoma",
@@ -190,7 +190,7 @@
                 "Foul"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Brute"
             ],
             [
@@ -250,7 +250,7 @@
                 "Evil Dragon"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Evil Dragon"
             ],
             [
@@ -440,7 +440,7 @@
             ],
             [
                 "Wild Bird",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Wild Bird",
@@ -460,7 +460,7 @@
             ],
             [
                 "Reaper",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Evil Dragon",
@@ -536,7 +536,7 @@
             ],
             [
                 "Destroyer",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Guardian",
@@ -558,7 +558,7 @@
         "Combinations": [
             [
                 "Heavenly God",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Yoma",
@@ -637,7 +637,7 @@
             ],
             [
                 "Earth Element",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Demigod",
@@ -661,14 +661,14 @@
             ],
             [
                 "Fairy",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Fairy",
                 "Brute"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Haunt"
             ]
         ],
@@ -704,7 +704,7 @@
             ],
             [
                 "Holy Beast",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Wilder",
@@ -751,7 +751,7 @@
             ],
             [
                 "Dragon King",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Fairy",
@@ -798,7 +798,7 @@
             ],
             [
                 "Avian",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Raptor",
@@ -838,14 +838,14 @@
             ],
             [
                 "Nation Ruler",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Earth Mother",
                 "Beast"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Dragon"
             ],
             [
@@ -896,7 +896,7 @@
             ],
             [
                 "Nocturne",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Wilder",
@@ -1070,7 +1070,7 @@
             ],
             [
                 "Beast",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Beast",
@@ -1105,7 +1105,7 @@
                 "Tyrant"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Wilder"
             ],
             [
@@ -1247,7 +1247,7 @@
                 "Vile"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Femme"
             ],
             [
@@ -1280,7 +1280,7 @@
             ],
             [
                 "Vile",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Vile",
@@ -1463,7 +1463,7 @@
             ],
             [
                 "Seraph",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Divine",
@@ -1487,7 +1487,7 @@
             ],
             [
                 "Demigod",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Nocturne",
@@ -1578,7 +1578,7 @@
             ],
             [
                 "Evil Demon",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Reaper",
@@ -1629,7 +1629,7 @@
         ]
     },
     {
-        "Race": "Fallen Angel",
+        "Race": "Fallen",
         "Combinations": [
             [
                 "Demon God",
@@ -1787,7 +1787,7 @@
                 "Earth Mother"
             ],
             [
-                "Fallen Angel",
+                "Fallen",
                 "Earth Mother"
             ],
             [
@@ -1847,7 +1847,7 @@
             ],
             [
                 "Raptor",
-                "Fallen Angel"
+                "Fallen"
             ],
             [
                 "Raptor",

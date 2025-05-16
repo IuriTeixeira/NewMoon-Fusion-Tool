@@ -3,6 +3,7 @@ import raceCombinations from '../Data/race_combinations.json'
 import demonsList from '../Data/demons.json'
 import React from "react";
 import Link from "next/link";
+import { IconCheck, IconX } from "@tabler/icons-react";
 
 interface FusionProps {
     demon: Demon
@@ -57,7 +58,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             if (demon.Range![0] !== "Can't be fused" && filteredCombinations[0].Elements) {
                 const raceRanks: Demon[] = demonsList
                     .filter((d: Demon) => d.Race === demon.Race)
-                    .filter((d: Demon) => d.Display !== false)
+                    .filter((d: Demon) => d.Variant !== true)
                     .map((d: Demon) => d);
                 let targetRank = -1
                 const elements: Demon[] = [
@@ -179,7 +180,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                             demon.Special ?
                                 <Table.Tr key={index}>
                                     <Table.Td key={`plugin-${combo.demon2.Race}-${index}`}>
-                                        <Flex justify={'center'}>{demon.Plugin[index] ? "✔️" : "❌"}</Flex>
+                                        <Flex justify={'center'}>{demon.Plugin[index] ? <IconCheck size={16}/> : <IconX size={16}/>}</Flex>
                                     </Table.Td>
                                     {combo.demon1 &&
                                         <React.Fragment key={`demon1-${index}`}>
