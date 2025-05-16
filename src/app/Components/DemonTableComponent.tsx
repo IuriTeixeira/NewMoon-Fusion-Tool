@@ -1,7 +1,7 @@
 'use client'
 import { Flex, Text, Table, Image, Anchor } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
-import React, { ReactNode } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 interface DemonTableProps {
@@ -11,10 +11,9 @@ interface DemonTableProps {
 export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
     let filteredDemonList: Demon[]
 
-    raceFilter !== ''
-        ?
+    if (raceFilter !== '')
         filteredDemonList = demonList.filter((demon: Demon) => demon.Race === raceFilter)
-        :
+    else
         filteredDemonList = demonList
 
     return (
