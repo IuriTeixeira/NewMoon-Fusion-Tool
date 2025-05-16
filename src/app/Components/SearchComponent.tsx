@@ -1,39 +1,27 @@
 'use client'
-import { Select, SimpleGrid } from "@mantine/core";
-import demonList from '../Data/demons.json' assert {type: "json"}
+import { Flex, Select } from "@mantine/core";
 
 interface SearchProps {
-    setFilter: React.Dispatch<React.SetStateAction<string>>
-    setDemon: React.Dispatch<React.SetStateAction<string>>
+    raceFilter: string
+    setRaceFilter: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function SearchComponent({ setFilter, setDemon }: SearchProps) {
+export default function SearchComponent({ raceFilter, setRaceFilter }: SearchProps) {
     const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraphim", "Vile", "Wild Bird", "Yoma"]
     const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Elemental", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
     const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen Angel", "Femme", "Foul", "Gaian", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
-    const displayDemons: string[] = demonList.map((demon) => demon.Name)
 
     return (
-        <SimpleGrid cols={2}>
+        <Flex justify='center' align={'flex-end'} gap={'xl'}>
             <Select
-                radius="xl"
-                label="Race"
-                placeholder="Select Race"
-                onChange={(value) => setFilter(value ?? '')}
+                label="Filter by Race"
+                value={raceFilter}
+                onChange={(value) => setRaceFilter(value ?? '')}
                 data={races}
                 clearable
                 searchable
             />
-            <Select
-                radius="xl"
-                label="Demon"
-                placeholder="Search Demon"
-                //onChange={}
-                data={displayDemons}
-                clearable
-                searchable
-            />
-        </SimpleGrid>
+        </Flex>
     )
 }

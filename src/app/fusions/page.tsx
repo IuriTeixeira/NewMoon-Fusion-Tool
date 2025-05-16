@@ -3,7 +3,7 @@ import { useSearchParams } from "next/navigation";
 import FusionTableComponent from "../Components/FusionTableComponent";
 import demons from '../Data/demons.json'
 import DemonInfoComponent from "../Components/DemonInfoComponent";
-import { Flex, SimpleGrid } from "@mantine/core";
+import { Button, Flex, SimpleGrid } from "@mantine/core";
 
 export default function Fusions() {
     const searchParams = useSearchParams()
@@ -11,8 +11,12 @@ export default function Fusions() {
     const demon: Demon = demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
 
     return (
+
         <Flex align='center' justify='center'>
-            <SimpleGrid cols={1}>
+            <SimpleGrid cols={1} spacing={'lg'}>
+                <Button fullWidth component="a" href="/">
+                    Back to List
+                </Button>
                 <DemonInfoComponent demon={demon} />
                 <FusionTableComponent demon={demon} />
             </SimpleGrid>

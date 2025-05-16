@@ -54,7 +54,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 }
             })
         } else {
-            if (filteredCombinations[0].Elements) {
+            if (demon.Range![0] !== "Can't be fused" && filteredCombinations[0].Elements) {
                 const raceRanks: Demon[] = demonsList
                     .filter((d: Demon) => d.Race === demon.Race)
                     .filter((d: Demon) => d.Display !== false)
@@ -72,22 +72,41 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     }
                 }
                 for (let i = 0; i < 4; i++) {
+                    let checkNext: boolean = false
                     if (filteredCombinations[0].Elements[i] === 'Down') {
-                        if (raceRanks[targetRank + 1]) allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
-                        /*if (raceRanks[i + 1].Plugin) {
-                            for (let j = targetRank + 1; j < raceRanks.length - targetRank; j++) {
-                                if (raceRanks[j].Plugin[0] && raceRanks[j + 1]) allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j + 1] })
-                                else break
+                        if (raceRanks[targetRank + 1]) {
+                            allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
+                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "Can't be fused") {
+                                checkNext = true
                             }
-                        }*/
+                            if (checkNext) {
+                                for (let j = targetRank + 1; j <= raceRanks.length - targetRank; j++) {
+                                    if (checkNext && raceRanks[j + 1]) {
+                                        allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j + 1] })
+                                        checkNext = false
+                                    } else {
+                                        break
+                                    }
+                                }
+                            }
+                        }
                     } else {
-                        if (raceRanks[targetRank - 1]) allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
-                        /*if (raceRanks[i - 1].Plugin) {
-                            for (let j = targetRank - 1; j >= raceRanks.length - (raceRanks.length - targetRank); j--) {
-                                if (raceRanks[j].Plugin[0] && raceRanks[j - 1]) allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
-                                else break
+                        if (raceRanks[targetRank - 1]) {
+                            allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
+                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "Can't be fused") {
+                                checkNext = true
                             }
-                        }*/
+                            if (checkNext) {
+                                for (let j = targetRank - 1; j >= 0; j--) {
+                                    if (checkNext && raceRanks[j - 1]) {
+                                        allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
+                                        checkNext = false
+                                    } else {
+                                        break
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

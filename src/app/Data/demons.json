@@ -2147,7 +2147,7 @@
         "Special": [
             [
                 "Stormy Pixie",
-                "?"
+                "Accomplished High Pixie"
             ]
         ],
         "Plugin": [
@@ -2709,7 +2709,12 @@
         "Name": "Lilim the Little Demon",
         "Level": 20,
         "Range": null,
-        "Special": [["Lilim", "Alp"]],
+        "Special": [
+            [
+                "Lilim",
+                "Alp"
+            ]
+        ],
         "Plugin": [
             true
         ]
@@ -2868,7 +2873,12 @@
         "Name": "Persephone",
         "Level": 55,
         "Range": null,
-        "Special": [["Hel", "Artemis"]],
+        "Special": [
+            [
+                "Hel",
+                "Artemis"
+            ]
+        ],
         "Plugin": [
             true
         ]
@@ -2912,7 +2922,9 @@
                 "Hel"
             ],
             [
-                "Odin + Chernobog + Illusion Mot"
+                "Odin",
+                "Chernobog",
+                "Illusion Mot"
             ]
         ],
         "Plugin": [

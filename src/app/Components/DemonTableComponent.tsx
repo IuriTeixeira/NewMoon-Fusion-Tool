@@ -5,75 +5,18 @@ import React, { ReactNode } from 'react'
 import Link from 'next/link'
 
 interface DemonTableProps {
-    filter: string
+    raceFilter: string,
 }
 
-export default function DemonTableComponent({ filter }: DemonTableProps) {
+export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
     let filteredDemonList: Demon[]
 
-    const displayDemon: ReactNode = demonList.filter((d: Demon) => d.Display !== false).map((demon, index) => {
-        return (
-            <React.Fragment key={`fragment-row-${index}`}>
-                <Table.Tr key={`row-${index}`}>
-                    {demon.Special && demon.Special.length > 0
-                        ?
-                        <React.Fragment key={`race-name-level-${index}`}>
-                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
-                            <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                            <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
-                        </React.Fragment>
-                        :
-                        <React.Fragment key={`race-name-level-${index}`}>
-                            <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
-                            <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                            <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                            <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
-                        </React.Fragment>
-                    }
-                    {demon.Range && typeof (demon.Range[0]) === 'number' &&
-                        <Table.Td key={`range-${index}`}>
-                            {demon.Range[0]}{demon.Range[1] && ` - ${demon.Range[1]}`}{!demon.Range[1] && '+'}
-                        </Table.Td>}
-                    {demon.Range && typeof (demon.Range[0]) !== 'number' &&
-                        <Table.Td key={`range-${index}`}>
-                            <Text key={`no-fusion-range-text-${index}`} c='red' size='sm'>{demon.Range[0]}</Text>
-                        </Table.Td>}
-                    {demon.Range && <Table.Td key={`plugin-${index}-${0}`}>
-                        {demon.Plugin[0] ? "✔️" : "❌"}
-                    </Table.Td>}
-                    {!demon.Range && demon.Special &&
-                        <React.Fragment key={`special-row-${index}-0`}>
-                            <Table.Td key={`special-${index}-0`}>
-                                {demon.Special[0][0]}
-                                {demon.Special[0][1] && ` x ${demon.Special[0][1]}`}
-                                {demon.Special[0][2] && ` x ${demon.Special[0][2]}`}
-                            </Table.Td>
-                            <Table.Td key={`plugin-${index}-0`}>
-                                {demon.Plugin[0] ? "✔️" : "❌"}
-                            </Table.Td>
-                        </React.Fragment>
-                    }
-                </Table.Tr>
-                {!demon.Range && demon.Special && demon.Special.length > 1 &&
-                    demon.Special.slice(1).map((line, indexSpecial) => (
-                        <Table.Tr key={`special-row-${index}-${indexSpecial}`}>
-                            <Table.Td key={`special-${index}-${indexSpecial}`}>
-                                {line[0]}
-                                {line[1] && ` x ${line[1]}`}
-                                {line[2] && ` x ${line[2]}`}
-                            </Table.Td>
-                            <Table.Td key={`plugin-${index}-${indexSpecial}`}>
-                                {demon.Plugin[indexSpecial + 1] ? "✔️" : "❌"}
-                            </Table.Td>
-                        </Table.Tr>
-                    ))
-                }
-            </React.Fragment>
-        )
-    })
+    raceFilter !== ''
+        ?
+        filteredDemonList = demonList.filter((demon: Demon) => demon.Race === raceFilter)
+        :
+        filteredDemonList = demonList
 
-    filter !== '' ? filteredDemonList = demonList.filter((demon: Demon) => demon.Race === filter) : filteredDemonList = demonList
     return (
         <Table withTableBorder withColumnBorders>
             <Table.Thead>
@@ -99,38 +42,47 @@ export default function DemonTableComponent({ filter }: DemonTableProps) {
                 </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
-                {!filter ? displayDemon : filteredDemonList.map((demon, index) => {
+                {filteredDemonList.filter((d: Demon) => d.Display !== false).map((demon, index) => {
                     return (
                         <React.Fragment key={`fragment-row-${index}`}>
                             <Table.Tr key={`row-${index}`}>
-                                {demon.Special
+                                {demon.Special && demon.Special.length > 0
                                     ?
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
                                         <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                                        <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}>{demon.Name}</Table.Td>
+                                        <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>
                                     :
                                     <React.Fragment key={`race-name-level-${index}`}>
                                         <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
                                         <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${demon.Name}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
-                                        <Table.Td key={`name-${index}`}>{demon.Name}</Table.Td>
+                                        <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
                                     </React.Fragment>
                                 }
-                                {demon.Range && typeof (demon.Range[0]) === 'number' &&
-                                    <Table.Td key={`range-${index}`}>
-                                        {demon.Range[0]}{demon.Range[1] && ` - ${demon.Range[1]}`}{!demon.Range[1] && '+'}
-                                    </Table.Td>}
-                                {demon.Range && typeof (demon.Range[0]) !== 'number' &&
-                                    <Table.Td key={`range-${index}`}>
-                                        <Text key={`no-fusion-range-text-${index}`} c='red' size='sm'>{demon.Range[0]}</Text>
-                                    </Table.Td>}
-                                {demon.Range && <Table.Td key={`plugin-${index}-${0}`}>
-                                    {demon.Plugin[0] ? "✔️" : "❌"}
-                                </Table.Td>}
-                                {!demon.Range && demon.Special &&
+                                {demon.Range
+                                    ?
+                                    <React.Fragment key={`range-fragment-${index}`}>
+                                        {typeof (demon.Range[0]) === 'number' ?
+                                            <Table.Td key={`range-${index}`}>
+                                                {demon.Range[0]}{demon.Range[1] && ` - ${demon.Range[1]}`}{!demon.Range[1] && '+'}
+                                            </Table.Td>
+                                            :
+                                            <Table.Td key={`range-${index}`}>
+                                                <Text key={`no-fusion-range-text-${index}`} c='red' size='sm'>{demon.Range[0]}</Text>
+                                            </Table.Td>
+                                        }
+                                        <Table.Td key={`plugin-${index}-${0}`}>
+                                            <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                {demon.Plugin[0] ? "✔️" : "❌"}
+                                            </Flex>
+                                        </Table.Td>
+
+                                    </React.Fragment>
+                                    :
+                                    demon.Special &&
                                     <React.Fragment key={`special-row-${index}-0`}>
                                         <Table.Td key={`special-${index}-0`}>
                                             {demon.Special[0][0]}
@@ -138,11 +90,13 @@ export default function DemonTableComponent({ filter }: DemonTableProps) {
                                             {demon.Special[0][2] && ` x ${demon.Special[0][2]}`}
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-0`}>
-                                            {demon.Plugin[0] ? "✔️" : "❌"}
+                                            <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                {demon.Plugin[0] ? "✔️" : "❌"}
+                                            </Flex>
                                         </Table.Td>
                                     </React.Fragment>
                                 }
-                            </Table.Tr>
+                            </Table.Tr >
                             {!demon.Range && demon.Special && demon.Special.length > 1 &&
                                 demon.Special.slice(1).map((line, indexSpecial) => (
                                     <Table.Tr key={`special-row-${index}-${indexSpecial}`}>
@@ -152,12 +106,14 @@ export default function DemonTableComponent({ filter }: DemonTableProps) {
                                             {line[2] && ` x ${line[2]}`}
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-${indexSpecial}`}>
-                                            {demon.Plugin[indexSpecial + 1] ? "✔️" : "❌"}
+                                            <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                {demon.Plugin[indexSpecial + 1] ? "✔️" : "❌"}
+                                            </Flex>
                                         </Table.Td>
                                     </Table.Tr>
                                 ))
                             }
-                        </React.Fragment>
+                        </React.Fragment >
                     )
                 })}
             </Table.Tbody>
