@@ -1,5 +1,5 @@
 import { IconArrowUp, IconArrowDown } from "@tabler/icons-react";
-import { Flex, Table, Text } from "@mantine/core";
+import { Flex, Table } from "@mantine/core";
 
 interface ElementInfoProps {
     elements: string[]
