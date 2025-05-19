@@ -2,14 +2,17 @@
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { Flex, Text, Table, Image, Anchor } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
+import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
 import React from 'react'
 import Link from 'next/link'
 
 interface DemonTableProps {
     raceFilter: string,
+    hidePlugins: boolean,
+    displayVariants: boolean,
 }
 
-export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
+export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants }: DemonTableProps) {
     const subTypes = [
         'Inexperienced ',
         'Illusion ',
@@ -55,10 +58,35 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
 
     let filteredDemonList: Demon[]
 
-    if (raceFilter !== '')
-        filteredDemonList = demonList.filter((demon: Demon) => demon.Race === raceFilter)
-    else
-        filteredDemonList = demonList
+    if (raceFilter !== '') {
+        if(hidePlugins){
+            if(displayVariants){
+                filteredDemonList = [...demonList, ...variantDemonList].filter((d: Demon) => d.Plugin[0] === false && d.Race === raceFilter)
+            }else{
+                filteredDemonList = demonList.filter((d: Demon) => d.Plugin[0] === false && d.Race === raceFilter)
+            }
+        }else{
+            if(displayVariants){
+                filteredDemonList = [...demonList, ...variantDemonList].filter((demon: Demon) => demon.Race === raceFilter)
+            }else{
+                filteredDemonList = demonList.filter((demon: Demon) => demon.Race === raceFilter)
+            }
+        }
+    } else {
+        if(hidePlugins){
+            if(displayVariants){
+                filteredDemonList = [...demonList, ...variantDemonList].filter((d: Demon) => d.Plugin[0] === false)
+            }else{
+                filteredDemonList = demonList.filter((d: Demon) => d.Plugin[0] === false)
+            }
+        }else{
+            if(displayVariants){
+                filteredDemonList = [...demonList, ...variantDemonList]
+            }else{
+                filteredDemonList = demonList
+            }
+        }
+    }
 
     return (
         <Table withTableBorder withColumnBorders>

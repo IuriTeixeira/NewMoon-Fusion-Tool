@@ -7,3 +7,9 @@ interface Demon {
     Plugin: boolean[]
     Variant?: boolean
 }
+
+interface FusionData {
+    Race: string;
+    Combinations: string[][] | null;
+    Elements: string[] | null
+}

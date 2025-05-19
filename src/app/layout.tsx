@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
+import HeaderComponent from "./Components/HeaderComponent";
 
 export const metadata: Metadata = {
     title: "New Moon Fusion Calculator",
@@ -20,6 +21,7 @@ export default function RootLayout({
             </head>
             <body>
                 <MantineProvider defaultColorScheme="dark">
+                    <HeaderComponent/>
                     {children}
                 </MantineProvider>
             </body>

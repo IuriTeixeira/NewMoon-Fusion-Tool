@@ -1,12 +1,16 @@
 'use client'
-import { Flex, Select } from "@mantine/core";
+import { Checkbox, Flex, Select } from "@mantine/core";
 
-interface SearchProps {
+interface FilterProps {
     raceFilter: string
-    setRaceFilter: React.Dispatch<React.SetStateAction<string>>
+    setRaceFilter: React.Dispatch<React.SetStateAction<string>>,
+    hidePlugins: boolean,
+    setHidePlugins: React.Dispatch<React.SetStateAction<boolean>>
+    displayVariants: boolean,
+    setDisplayVariants: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function SearchComponent({ raceFilter, setRaceFilter }: SearchProps) {
+export default function FilterComponent({ raceFilter, setRaceFilter, hidePlugins, setHidePlugins, displayVariants, setDisplayVariants }: FilterProps) {
     const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraphim", "Vile", "Wild Bird", "Yoma"]
     const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Elemental", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
     const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Gaian", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
@@ -15,12 +19,23 @@ export default function SearchComponent({ raceFilter, setRaceFilter }: SearchPro
     return (
         <Flex justify='center' align={'flex-end'} gap={'xl'}>
             <Select
+                size={"sm"}
                 label="Filter by Race"
                 value={raceFilter}
                 onChange={(value) => setRaceFilter(value ?? '')}
                 data={races}
                 clearable
                 searchable
+            />
+            <Checkbox
+                checked={hidePlugins}
+                label="Hide plugin demons"
+                onChange={(event) => setHidePlugins(event.currentTarget.checked)}
+            />
+            <Checkbox
+                checked={displayVariants}
+                label="Show variant demons"
+                onChange={(event) => setDisplayVariants(event.currentTarget.checked)}
             />
         </Flex>
     )
