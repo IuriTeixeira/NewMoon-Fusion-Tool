@@ -777,7 +777,7 @@
     {
         "Race": "Goddess",
         "Name": "Fortuna",
-        "Level": 38,
+        "Level": 46,
         "Range": [
             "PG Only"
         ],
@@ -1224,7 +1224,7 @@
         "Level": 65,
         "Range": [
             60,
-            130
+            129
         ],
         "Special": null,
         "Plugin": [
@@ -1251,7 +1251,7 @@
         "Name": "Pazuzu",
         "Level": 82,
         "Range": [
-            131
+            130
         ],
         "Special": null,
         "Plugin": [
@@ -2430,7 +2430,7 @@
     {
         "Race": "Godly Beast",
         "Name": "Kaichi",
-        "Level": 22,
+        "Level": 31,
         "Range": [
             44,
             61
@@ -2708,7 +2708,7 @@
     {
         "Race": "Nocturne",
         "Name": "Fomorian",
-        "Level": 8,
+        "Level": 27,
         "Range": [
             40,
             53
@@ -3706,7 +3706,7 @@
     {
         "Race": "Evil Dragon",
         "Name": "Vasuki",
-        "Level": 72,
+        "Level": 81,
         "Range": null,
         "Special": [
             [
