@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## New Moon Fusion Tool
 
-## Getting Started
+This is a simple fusion tool for the New Moon server of the Shin Megami Tensei: IMAGINE Online MMO.
 
-First, run the development server:
+I made this mostly because the regular [imagine fusion tool](https://aqiu384.github.io/megaten-fusion-tool/smtim/demons) is made for a vanilla server and doesn't include the new demons from New Moon, and it uses localized names that are not reflected in-game, which makes working with it a bit annoying in some cases. Additionally, I noticed some fusion ranges were wrong in that tool, which I have corrected on this.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This was made from scratch, I have not used any code from aqiu384's tool. All the information used to make this came from the imagine wiki, myself checking things in-game, and some people helping out with things I couldn't check myself.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The purpose of this tool is simply to facilitate fusions. As such, I haven't included any information that is not related to fusions, such as stats, affinities, skills, etc.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I do not plan on implementing regular triple fusions on this tool. You should not use those unless you're fusing a demon that requires it in the first place, in which case you don't need a fusion tool.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contact info
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have any suggestions or comments, or notice any bugs, feel free to tell me over at the New Moon discord, where I use the name Glorienn.
