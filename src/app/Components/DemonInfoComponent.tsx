@@ -36,7 +36,8 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
         'Gojo Bridge ',
         ' of Assault',
         'Shana ',
-        'Hassou Tobi '
+        'Hassou Tobi ',
+        'Horse '
     ]
 
     function cleanString(str: string): string {

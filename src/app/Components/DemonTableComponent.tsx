@@ -41,7 +41,8 @@ export default function DemonTableComponent({ raceFilter }: DemonTableProps) {
         'Gojo Bridge ',
         ' of Assault',
         'Shana ',
-        'Hassou Tobi '
+        'Hassou Tobi ',
+        'Horse '
     ]
 
     function cleanString(str: string): string {

@@ -1,6 +1,7 @@
 import { Anchor, Flex, Table } from "@mantine/core";
 import raceCombinations from '../Data/race_combinations.json'
 import demonsList from '../Data/demons.json'
+import variantDemonsList from '../Data/variant_demons.json'
 import React from "react";
 import Link from "next/link";
 import { IconCheck, IconX } from "@tabler/icons-react";
@@ -40,22 +41,38 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         const allValidFusions: DemonPair[] = []
         if (demon.Special) {
             demon.Special.forEach((combination: string[]) => {
-                const demon1: Demon = demonsList.find((d: Demon) => combination[0] === d.Name) as Demon
-                const demon2: Demon = demonsList.find((d: Demon) => combination[1] === d.Name) as Demon
-
+                const findDemon1:Demon = demonsList.find((d: Demon) => combination[0] === d.Name) as Demon
+                let demon1:Demon
+                if(findDemon1) {
+                    demon1 = findDemon1
+                }else{
+                    demon1 = variantDemonsList.find((d: Demon) => combination[0] === d.Name) as Demon
+                }
+                const findDemon2: Demon = demonsList.find((d: Demon) => combination[1] === d.Name) as Demon
+                let demon2:Demon
+                if(findDemon2) {
+                    demon2 = findDemon2
+                }else{
+                    demon2 = variantDemonsList.find((d: Demon) => combination[1] === d.Name) as Demon
+                }
+                
                 if (demon1 && demon2) {
                     if (combination.length > 2) {
-                        const demon3: Demon = demonsList.find((d: Demon) => combination[2] === d.Name) as Demon
-                        if (demon3) {
-                            allValidFusions.push({ demon1, demon2, demon3 })
+                        const findDemon3: Demon = demonsList.find((d: Demon) => combination[2] === d.Name) as Demon
+                        let demon3:Demon
+                        if (findDemon3) {
+                            demon3 = findDemon3
+                        }else{
+                            demon3 = variantDemonsList.find((d: Demon) => combination[2] === d.Name) as Demon
                         }
+                        allValidFusions.push({ demon1, demon2, demon3 })
                     } else {
                         allValidFusions.push({ demon1, demon2 })
                     }
                 }
             })
         } else {
-            if (demon.Range![0] !== "Can't be fused" && filteredCombinations[0].Elements) {
+            if (demon.Range && typeof(demon.Range![0]) !== 'string' && filteredCombinations[0].Elements) {
                 const raceRanks: Demon[] = demonsList
                     .filter((d: Demon) => d.Race === demon.Race)
                     .filter((d: Demon) => d.Variant !== true)
@@ -137,7 +154,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
     }
 
     const fusionResults: DemonPair[] = calculateFusions()
-
+    
     return (
         <Table.ScrollContainer minWidth={500}>
             <Table striped highlightOnHover withTableBorder withColumnBorders>
@@ -196,8 +213,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                     }
                                     {combo.demon3 &&
                                         <React.Fragment key={`demon3-${index}`}>
-                                            <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon3.Race}</Table.Td>
-                                            <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3.Name } }}>{combo.demon3.Name}</Anchor></Table.Td>
+                                            <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon3?.Race}</Table.Td>
+                                            <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3?.Name } }}>{combo.demon3?.Name}</Anchor></Table.Td>
                                         </React.Fragment>
                                     }
                                 </Table.Tr>
