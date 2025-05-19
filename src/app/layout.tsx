@@ -5,8 +5,8 @@ import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/c
 import HeaderComponent from "./Components/HeaderComponent";
 
 export const metadata: Metadata = {
-    title: "New Moon Fusion Calculator",
-    description: "Fusion Calculator for the New Moon server",
+    title: "New Moon Fusion Tool",
+    description: "Fusion Tool for the New Moon server",
 };
 
 export default function RootLayout({
