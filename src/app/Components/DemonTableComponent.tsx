@@ -158,10 +158,10 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                     <React.Fragment key={`special-row-${index}-0`}>
                                         <Table.Td key={`special-${index}-0`}>
                                             <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][0] } }}>{demon.Special[0][0]}</Anchor>
-                                            {' x '}
-                                            <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][1] } }}>{demon.Special[0][1] && demon.Special[0][1]}</Anchor>
-                                            {' x '}
-                                            <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][2] } }}>{demon.Special[0][2] && demon.Special[0][2]}</Anchor>
+                                            {demon.Special[0][1] && ' x '}
+                                            {demon.Special[0][1] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][1] } }}>{demon.Special[0][1]}</Anchor>}
+                                            {demon.Special[0][2] && ' x '}
+                                            {demon.Special[0][2] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][2] } }}>{demon.Special[0][2]}</Anchor>}
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-0`}>
                                             <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
@@ -176,10 +176,10 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                     <Table.Tr key={`special-row-${index}-${indexSpecial}`}>
                                         <Table.Td key={`special-${index}-${indexSpecial}`}>
                                             <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[0] } }}>{line[0]}</Anchor>
-                                            {' x '}
-                                            <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[1] } }}>{line[1] && line[1]}</Anchor>
-                                            {' x '}
-                                            <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[2] } }}>{line[2] && line[2]}</Anchor>
+                                            {line[1] && ' x '}
+                                            {line[1] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[1] } }}>{line[1]}</Anchor>}
+                                            {line[2] && ' x '}
+                                            {line[2] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[2] } }}>{line[2]}</Anchor>}
                                         </Table.Td>
                                         <Table.Td key={`plugin-${index}-${indexSpecial}`}>
                                             <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
