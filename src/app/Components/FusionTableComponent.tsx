@@ -67,7 +67,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 }
             })
         } else {
-            if (demon.Range && typeof (demon.Range![0]) !== 'string' && filteredCombinations[0].Elements) {
+            if (demon.Range && demon.Range![0] !== 'PG Only' && filteredCombinations[0].Elements) {
                 const raceRanks: Demon[] = demonsList
                     .filter((d: Demon) => d.Race === demon.Race)
                     .filter((d: Demon) => d.Variant !== true)
@@ -89,34 +89,32 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     if (filteredCombinations[0].Elements[i] === 'Down') {
                         if (raceRanks[targetRank + 1]) {
                             allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
-                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "Can't be fused") {
+                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "PG Only") {
                                 checkNext = true
                             }
-                            if (checkNext) {
-                                for (let j = targetRank + 1; j <= raceRanks.length - targetRank; j++) {
-                                    if (checkNext && raceRanks[j + 1]) {
-                                        allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j + 1] })
-                                        checkNext = false
-                                    } else {
+                            while (checkNext) {
+                                for (let j = 2; j <= raceRanks.length - targetRank; j++) {
+                                    allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
+                                    if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range![0] !== "PG Only") {
                                         break
                                     }
                                 }
+                                checkNext = false
                             }
                         }
                     } else {
                         if (raceRanks[targetRank - 1]) {
                             allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
-                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "Can't be fused") {
+                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "PG Only") {
                                 checkNext = true
                             }
-                            if (checkNext) {
+                            while (checkNext) {
                                 for (let j = targetRank - 1; j >= 0; j--) {
-                                    if (checkNext && raceRanks[j - 1]) {
-                                        allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
-                                        checkNext = false
-                                    } else {
+                                    if (!raceRanks[j].Special && raceRanks[j].Range![0] !== "PG Only") {
                                         break
                                     }
+                                    allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
+                                    checkNext = false
                                 }
                             }
                         }
@@ -130,14 +128,12 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 if (fusionHidePlugins) {
                     if (fusionDisplayVariants) {
                         filteredDemon1s = [...allDemon1s, ...allVariantDemon1s].filter((d: Demon) => d.Plugin[0] === false)
-                        console.log(allDemon1s, allVariantDemon1s, filteredDemon1s)
                     } else {
                         filteredDemon1s = allDemon1s.filter((d: Demon) => d.Plugin[0] === false)
                     }
                 } else {
                     if (fusionDisplayVariants) {
                         filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
-                        console.log(allDemon1s, allVariantDemon1s, filteredDemon1s)
                     } else {
                         filteredDemon1s = allDemon1s
                     }

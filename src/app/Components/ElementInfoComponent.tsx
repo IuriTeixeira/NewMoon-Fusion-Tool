@@ -24,9 +24,9 @@ export default function ElementInfoComponent({ elements }: ElementInfoProps) {
             <Table.Tbody>
                 <Table.Tr>
                     <Table.Td><Flex justify={'center'}>{elements[0] === 'Down' ? <IconArrowDown color={colors[0]}/> : <IconArrowUp color={colors[0]}/>}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[1] === 'Down' ? <IconArrowDown color={colors[1]}/> : <IconArrowUp color={colors[0]}/>}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[2] === 'Down' ? <IconArrowDown color={colors[2]}/> : <IconArrowUp color={colors[0]}/>}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[3] === 'Down' ? <IconArrowDown color={colors[3]}/> : <IconArrowUp color={colors[0]}/>}</Flex></Table.Td>
+                    <Table.Td><Flex justify={'center'}>{elements[1] === 'Down' ? <IconArrowDown color={colors[1]}/> : <IconArrowUp color={colors[1]}/>}</Flex></Table.Td>
+                    <Table.Td><Flex justify={'center'}>{elements[2] === 'Down' ? <IconArrowDown color={colors[2]}/> : <IconArrowUp color={colors[2]}/>}</Flex></Table.Td>
+                    <Table.Td><Flex justify={'center'}>{elements[3] === 'Down' ? <IconArrowDown color={colors[3]}/> : <IconArrowUp color={colors[3]}/>}</Flex></Table.Td>
                 </Table.Tr>
             </Table.Tbody>
         </Table>
