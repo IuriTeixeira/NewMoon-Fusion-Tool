@@ -1,6 +1,6 @@
 'use client'
 import { IconCheck, IconX } from '@tabler/icons-react'
-import { Flex, Text, Table, Image, Anchor } from '@mantine/core'
+import { Flex, Text, Table, Image, Anchor, useComputedColorScheme } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
 import React from 'react'
@@ -13,6 +13,8 @@ interface DemonTableProps {
 }
 
 export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants }: DemonTableProps) {
+    const colorScheme = useComputedColorScheme();
+
     const subTypes = [
         'Inexperienced ',
         'Illusion ',
@@ -91,7 +93,11 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
     return (
         <Table.ScrollContainer minWidth={500}>
             <Table withTableBorder withColumnBorders>
-                <Table.Thead>
+                <Table.Thead
+                    style={{
+                        backgroundColor: `var(--mantine-color-${colorScheme === 'dark' ? 'dark-6' : 'gray-0'})`
+                    }}
+                >
                     <Table.Tr>
                         <Table.Th>
                             <Flex align='center' justify='center'>Race</Flex>
