@@ -11,7 +11,7 @@ export default function Home() {
     const [displayVariants, setDisplayVariants] = useState<boolean>(false)
 
     return (
-        <Flex align='center' justify='center'>
+        <Flex align='center' justify='center' m={'lg'}>
             <SimpleGrid cols={1}>
                 <FilterComponent raceFilter={raceFilter} setRaceFilter={setRaceFilter} hidePlugins={hidePlugins} setHidePlugins={setHidePlugins} displayVariants={displayVariants} setDisplayVariants={setDisplayVariants} />
                 <DemonTableComponent raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} />

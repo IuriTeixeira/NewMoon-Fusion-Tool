@@ -7,7 +7,7 @@ export default function HeaderComponent() {
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
                 <Link href={'/'}>
-                    <Flex align={'flex-end'} justify={'flex-start'} gap={'xs'}>
+                    <Flex align={'center'} justify={'flex-start'} gap={'xs'}>
                         <Image src={`/NewMoonLogo.png`} alt='New Moon Logo' w={48} h={48} /> <h1>New Moon Fusion Tool</h1>
                     </Flex>
                 </Link>

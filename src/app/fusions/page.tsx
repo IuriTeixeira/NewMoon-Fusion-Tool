@@ -23,7 +23,7 @@ function FusionsContent() {
     const elementCombinations: FusionData = racesData.find((targetRace) => targetRace.Race === demon.Race) as FusionData
     
     return (
-        <Flex align='center' justify='center'>
+        <Flex align='center' justify='center' m={'lg'}>
             <SimpleGrid cols={1} spacing={'lg'}>
                 <Button fullWidth component="a" href="/">
                     Back to List
