@@ -93,7 +93,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                 checkNext = true
                             }
                             while (checkNext) {
-                                for (let j = 2; j <= raceRanks.length - targetRank; j++) {
+                                for (let j = 2; j < raceRanks.length - targetRank; j++) {
                                     allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
                                     if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range![0] !== "PG Only") {
                                         break
