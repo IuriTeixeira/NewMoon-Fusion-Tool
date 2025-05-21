@@ -67,6 +67,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 }
             })
         } else {
+            let validElementFusions:DemonPair[] = []
             if (demon.Range && demon.Range![0] !== 'PG Only' && filteredCombinations[0].Elements) {
                 const raceRanks: Demon[] = demonsList
                     .filter((d: Demon) => d.Race === demon.Race)
@@ -88,13 +89,13 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     let checkNext: boolean = false
                     if (filteredCombinations[0].Elements[i] === 'Down') {
                         if (raceRanks[targetRank + 1]) {
-                            allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
+                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
                             if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "PG Only") {
                                 checkNext = true
                             }
                             while (checkNext) {
                                 for (let j = 2; j < raceRanks.length - targetRank; j++) {
-                                    allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
+                                    validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
                                     if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range![0] !== "PG Only") {
                                         break
                                     }
@@ -104,7 +105,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                         }
                     } else {
                         if (raceRanks[targetRank - 1]) {
-                            allValidFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
+                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
                             if (raceRanks[targetRank - 1].Special || raceRanks[targetRank - 1].Range![0] === "PG Only") {
                                 checkNext = true
                             }
@@ -121,6 +122,10 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     }
                 }
             }
+            if(fusionHidePlugins){
+                validElementFusions = validElementFusions.filter((d:DemonPair) => !d.demon2.Plugin[0])
+            }
+            allValidFusions.push(...validElementFusions)
             combinations.forEach((combination: FusionCombination) => {
                 const allDemon1s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race1)
                 const allVariantDemon1s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race1)
