@@ -17,12 +17,12 @@
     },
     {
         "Race": "Avian",
-        "Name": "Inexperienced Yata-Garasu",
+        "Name": "Inexperienced Yatagarasu",
         "Level": 52,
         "Range": null,
         "Special": [
             [
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Inexperienced Titania",
                 "Parvati"
             ]
@@ -652,7 +652,7 @@
         "Special": [
             [
                 "Titania",
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Parvati"
             ]
         ],
@@ -1110,7 +1110,7 @@
         "Special": [
             [
                 "Parvati",
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Inexperienced Titania"
             ]
         ],
