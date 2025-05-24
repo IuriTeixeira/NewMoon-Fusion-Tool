@@ -174,7 +174,9 @@
         "Race": "Heavenly God",
         "Name": "Horse Ameno-Uzume",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -184,7 +186,9 @@
         "Race": "Heavenly God",
         "Name": "Horse Omoikane",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -194,7 +198,9 @@
         "Race": "Heavenly God",
         "Name": "Horse Tajikarao",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -592,6 +598,61 @@
             "Contract Only"
         ],
         "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Red Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Unfusable": true
+    },
+    {
+        "Race": "Fairy",
+        "Name": "White Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Unfusable": true
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Black Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "Unfusable": true
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Gold Demon Goldfish",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Red Demon Goldfish",
+                "White Demon Goldfish",
+                "Black Demon Goldfish"
+            ]
+        ],
         "Plugin": [
             false
         ]
@@ -1284,7 +1345,9 @@
         "Race": "Guardian",
         "Name": "Horse Zouchouten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -1294,7 +1357,9 @@
         "Race": "Guardian",
         "Name": "Horse Koumokuten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -1304,7 +1369,9 @@
         "Race": "Guardian",
         "Name": "Horse Jikokuten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false

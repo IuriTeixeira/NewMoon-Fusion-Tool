@@ -128,7 +128,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             allValidFusions.push(...validElementFusions)
             combinations.forEach((combination: FusionCombination) => {
                 const allDemon1s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race1)
-                const allVariantDemon1s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race1)
+                const allVariantDemon1s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race1 && !d.Unfusable)
                 let filteredDemon1s: Demon[]
                 if (fusionHidePlugins) {
                     if (fusionDisplayVariants) {
@@ -145,7 +145,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 }
 
                 const allDemon2s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race2)
-                const allVariantDemon2s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race2)
+                const allVariantDemon2s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race2 && !d.Unfusable)
                 let filteredDemon2s: Demon[]
                 if (fusionHidePlugins) {
                     if (fusionDisplayVariants) {

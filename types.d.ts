@@ -6,6 +6,7 @@ interface Demon {
     Special: string[][] | null;
     Plugin: boolean[]
     Variant?: boolean
+    Unfusable?: boolean
 }
 
 interface FusionData {
