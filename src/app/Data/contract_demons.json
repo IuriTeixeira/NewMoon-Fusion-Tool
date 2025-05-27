@@ -1,0 +1,80 @@
+[
+    {
+        "Race": "Avian",
+        "Name": "Phoenix",
+        "Location": ["Shinagawa [23, 22] and [18, 20]", "Shinagawa (South part)"],
+        "Restriction": ["Only spawns from 10:00 to 14:00", "Spawns with Madness-Driven Jatayu"]
+    },
+    {
+        "Race": "Avian",
+        "Name": "Premature Phoenix",
+        "Location": ["Shinagawa Catacombs Gold"]
+    },
+    {
+        "Race": "Avian",
+        "Name": "Shining Zhu Que",
+        "Location": ["Kagurazaka Zhu Que Cavern (Gold)"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Angel",
+        "Location": ["Shinagawa (South part)", "Suginami Tunnels (Bronze)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Lucky Angel",
+        "Location": ["Shinagawa (South part)", "Suginami Tunnels (Bronze)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Archangel",
+        "Location": ["Shinagawa (South part)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Accomplished Archangel",
+        "Location": ["Shinagawa (South part)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Archangel",
+        "Location": ["Suginami Tunnels (Silver)", "Celu Tower (Gold)"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Principality",
+        "Location": ["Shinagawa (South part)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Accomplished Principality",
+        "Location": ["Shinagawa Catacombs (Bronze)"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Principality",
+        "Location": ["Celu Tower (Gold)"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Inexperienced Principality",
+        "Location": ["Celu Tower (Silver)"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Power",
+        "Location": ["Suginami Tunnels (Gold)", "Shibuya"],
+        "Restriction": [null, "Spawns with Mad Avatar Raphael"]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Virtue",
+        "Location": ["Shinagawa (South part)"],
+        "Restriction": ["Does not spawn during New Moon or Invasion"]
+    }
+]
