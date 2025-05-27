@@ -14,3 +14,14 @@ interface FusionData {
     Combinations: string[][] | null;
     Elements: string[] | null
 }
+
+interface DemonPair {
+    demon1: Demon
+    demon2: Demon
+    demon3?: Demon
+}
+
+type FusionCombination = {
+    race1: string;
+    race2: string;
+}

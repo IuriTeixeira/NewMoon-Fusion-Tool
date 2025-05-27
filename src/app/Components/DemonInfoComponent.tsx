@@ -1,4 +1,4 @@
-import { Flex, Table, Image } from "@mantine/core";
+import { Flex, Table, Image, Center } from "@mantine/core";
 
 interface DemonInfoProps {
     demon: Demon
@@ -51,7 +51,7 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
     const imageName: string = cleanString(demon.Name)
 
     return (
-        <Flex align={'center'} justify={'center'}>
+        <Center>
             <Table align={'center'} variant="vertical" withTableBorder withColumnBorders>
                 <Table.Thead>
                     <Table.Tr>
@@ -65,29 +65,31 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                 </Table.Thead >
                 <Table.Tbody>
                     <Table.Tr>
-                        <Table.Th w={150}><Flex justify={'center'}>Race</Flex></Table.Th>
-                        <Table.Td><Flex justify={'center'}>{demon.Race}</Flex></Table.Td>
+                        <Table.Th w={150}><Center>Race</Center></Table.Th>
+                        <Table.Td><Center>{demon.Race}</Center></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Th w={150}><Flex justify={'center'}>Level</Flex></Table.Th>
-                        <Table.Td><Flex justify={'center'}>{demon.Level}</Flex></Table.Td>
+                        <Table.Th w={150}><Center>Level</Center></Table.Th>
+                        <Table.Td><Center>{demon.Level}</Center></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
-                        <Table.Th w={150}><Flex justify={'center'}>Fusion Range</Flex></Table.Th>
-                        <Table.Td><Flex justify={'center'}>
-                            {demon.Range && demon.Range[0]}
-                            {demon.Range && demon.Range[1]
-                                ?
-                                ` - ${demon.Range[1]}`
-                                :
-                                demon.Range && typeof (demon.Range[0]) === 'number' && '+'}
-                            {!demon.Range && demon.Special && 'Special Fusion'}
-                            {!demon.Range && !demon.Special && 'Can\'t be fused'}
-                        </Flex>
+                        <Table.Th w={150}><Center>Fusion Range</Center></Table.Th>
+                        <Table.Td>
+                            <Center>
+                                {demon.Range
+                                    ?
+                                    `${demon.Range[0]}${demon.Range[1]
+                                        ?
+                                        ` - ${demon.Range[1]}`
+                                        :
+                                        typeof (demon.Range[0]) === "number" ? '+' : ''}`
+                                    :
+                                    'Special Fusion'}
+                            </Center>
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>
             </Table >
-        </Flex>
+        </Center>
     )
 }
