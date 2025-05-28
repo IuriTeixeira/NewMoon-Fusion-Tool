@@ -215,6 +215,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                 ?
                                 <React.Fragment>
                                     <Table.Th rowSpan={2}><Center>Plugin?</Center></Table.Th>
+                                    <Table.Th rowSpan={2}><Center>Allows Variants?</Center></Table.Th>
                                     <Table.Th colSpan={2}><Center>Material 1</Center></Table.Th>
                                     <Table.Th colSpan={2}><Center>Material 2</Center></Table.Th>
                                 </React.Fragment>
@@ -249,6 +250,9 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                     <Table.Tr key={index}>
                                         <Table.Td key={`plugin-${combo.demon2.Race}-${index}`}>
                                             <Center>{demon.Plugin[index] ? <IconCheck size={16} /> : <IconX size={16} />}</Center>
+                                        </Table.Td>
+                                        <Table.Td key={`variant-${combo.demon2.Race}-${index}`}>
+                                            <Center>{demon.AllowVariants !== false ? <IconCheck size={16} /> : <IconX size={16} />}</Center>
                                         </Table.Td>
                                         {combo.demon1 &&
                                             <React.Fragment key={`demon1-${index}`}>

@@ -13,7 +13,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Avian",
@@ -29,7 +30,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Avian",
@@ -44,7 +46,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Divine",
@@ -72,7 +75,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Divine",
@@ -83,12 +87,13 @@
             [
                 "Principality",
                 "Inexperienced Unicorn",
-                "Inexperienced Poltergeist "
+                "Inexperienced Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Divine",
@@ -104,7 +109,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
@@ -120,7 +126,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
@@ -136,7 +143,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
@@ -152,7 +160,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Goddess",
@@ -168,7 +177,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Heavenly God",
@@ -231,12 +241,13 @@
             [
                 "Deformed Onmoraki",
                 "Cait Sith",
-                "Poltergeist "
+                "Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Seraph",
@@ -264,7 +275,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
@@ -292,7 +304,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -308,7 +321,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -324,7 +338,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -340,7 +355,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -356,7 +372,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -372,7 +389,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -388,7 +406,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -404,7 +423,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Avian",
@@ -420,7 +440,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -436,7 +457,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -452,7 +474,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -532,7 +555,8 @@
             true,
             true,
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demigod",
@@ -572,11 +596,12 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Demigod",
-        "Name": "Noble Demon King Kurama-Tengu ",
+        "Name": "Noble Demon King Kurama-Tengu",
         "Level": 70,
         "Range": null,
         "Special": [
@@ -588,7 +613,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Dragon King",
@@ -612,8 +638,7 @@
         "Special": null,
         "Plugin": [
             false
-        ],
-        "Unfusable": true
+        ]
     },
     {
         "Race": "Fairy",
@@ -625,8 +650,7 @@
         "Special": null,
         "Plugin": [
             false
-        ],
-        "Unfusable": true
+        ]
     },
     {
         "Race": "Fairy",
@@ -638,8 +662,7 @@
         "Special": null,
         "Plugin": [
             false
-        ],
-        "Unfusable": true
+        ]
     },
     {
         "Race": "Fairy",
@@ -671,7 +694,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -687,7 +711,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -703,7 +728,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -719,7 +745,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -735,7 +762,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -751,7 +779,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -802,7 +831,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -836,7 +866,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -852,7 +883,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -868,7 +900,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -883,7 +916,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -898,7 +932,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Holy Beast",
@@ -909,12 +944,13 @@
             [
                 "Unicorn",
                 "Principality",
-                "Poltergeist "
+                "Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Holy Beast",
@@ -930,7 +966,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Nocturne",
@@ -961,7 +998,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Nocturne",
@@ -976,7 +1014,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -1029,12 +1068,13 @@
         "Special": [
             [
                 "Beiji Weng",
-                "Qing-Long "
+                "Qing-Long"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -1050,7 +1090,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -1066,7 +1107,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -1082,7 +1124,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -1098,7 +1141,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -1114,7 +1158,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -1129,7 +1174,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Dragon",
@@ -1145,7 +1191,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Dragon",
@@ -1161,7 +1208,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Mother",
@@ -1177,7 +1225,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Mother",
@@ -1198,7 +1247,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Dragon",
@@ -1209,12 +1259,13 @@
             [
                 "Cockatrice",
                 "Inexperienced Harpy",
-                "Inexperienced Garm "
+                "Inexperienced Garm"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -1230,7 +1281,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -1307,7 +1359,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Foul",
@@ -1323,7 +1376,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Foul",
@@ -1339,7 +1393,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Guardian",
@@ -1407,7 +1462,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -1423,7 +1479,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -1439,7 +1496,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -1455,7 +1513,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Nation Ruler",
@@ -1471,7 +1530,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Tyrant",
@@ -1487,6 +1547,7 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     }
 ]

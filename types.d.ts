@@ -7,6 +7,7 @@ interface Demon {
     Plugin: boolean[]
     Variant?: boolean
     Unfusable?: boolean
+    AllowVariants?: boolean
 }
 
 interface FusionData {
