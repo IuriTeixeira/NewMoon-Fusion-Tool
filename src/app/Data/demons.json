@@ -3136,7 +3136,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3151,7 +3152,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3170,7 +3172,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3185,7 +3188,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Brute",
@@ -4651,7 +4655,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Tyrant",
