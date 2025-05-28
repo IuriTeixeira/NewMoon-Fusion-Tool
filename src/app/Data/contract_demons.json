@@ -2,13 +2,13 @@
     {
         "Race": "Avian",
         "Name": "Phoenix",
-        "Location": ["Shinagawa [23, 22] and [18, 20]", "Shinagawa (South part)"],
-        "Restriction": ["Only spawns from 10:00 to 14:00", "Spawns with Madness-Driven Jatayu"]
+        "Location": ["Shinagawa [23, 22] and [18, 20]", "Shinagawa (south side)"],
+        "Notes": ["Only spawns from 10:00 to 14:00", "Spawns with Madness-Driven Jatayu"]
     },
     {
         "Race": "Avian",
         "Name": "Premature Phoenix",
-        "Location": ["Shinagawa Catacombs Gold"]
+        "Location": ["Shinagawa Catacombs (Gold)"]
     },
     {
         "Race": "Avian",
@@ -18,26 +18,26 @@
     {
         "Race": "Divine",
         "Name": "Angel",
-        "Location": ["Shinagawa (South part)", "Suginami Tunnels (Bronze)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)", "Suginami Tunnels (Bronze)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Divine",
         "Name": "Lucky Angel",
-        "Location": ["Shinagawa (South part)", "Suginami Tunnels (Bronze)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)", "Suginami Tunnels (Bronze)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Divine",
         "Name": "Archangel",
-        "Location": ["Shinagawa (South part)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Divine",
         "Name": "Accomplished Archangel",
-        "Location": ["Shinagawa (South part)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Divine",
@@ -47,8 +47,8 @@
     {
         "Race": "Divine",
         "Name": "Principality",
-        "Location": ["Shinagawa (South part)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Divine",
@@ -69,12 +69,629 @@
         "Race": "Divine",
         "Name": "Deformed Power",
         "Location": ["Suginami Tunnels (Gold)", "Shibuya"],
-        "Restriction": [null, "Spawns with Mad Avatar Raphael"]
+        "Notes": [null, "Spawns with Mad Avatar Raphael"]
     },
     {
         "Race": "Divine",
         "Name": "Virtue",
-        "Location": ["Shinagawa (South part)"],
-        "Restriction": ["Does not spawn during New Moon or Invasion"]
+        "Location": ["Shinagawa (south side)"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Kodama",
+        "Location": ["Suginami (near Home III)", "Suginami Tunnels (Bronze)", "Nakano"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Hua Po",
+        "Location": ["Shibuya [23, 19]"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Hua Po",
+        "Location": ["Shibuya", "COMP-Hack Dungeon 4-A Reward"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Lost Hua Po",
+        "Location": ["Suginami (near Home III)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Lucky Hua Po",
+        "Location": ["Shibuya Quartz (Bronze)"],
+        "Notes": ["Only spawns in the rooms accessed through Luck crystals"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Knocker",
+        "Location": ["Shibuya (near Obelisk)", "Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Knocker",
+        "Location": ["Shibuya"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Sudama",
+        "Location": ["Shibuya", "Suginami Tunnels (Bronze)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Sudama",
+        "Location": ["Shibuya"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Inexperienced Sudama",
+        "Location": ["Shibuya"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Bucca-Boo",
+        "Location": ["Suginami [23, 18]", "Shibuya (northeast side)", "Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Dwarf",
+        "Location": ["Shibuya (east side)","Shinagawa","Shibuya Metro","Shibuya Quartz (Silver)"],
+        "Notes": [null, "Does not spawn during New Moon or Invasion", null, null]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Dwarf",
+        "Location": ["Shibuya"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Deformed Dwarf",
+        "Location": ["Shinagawa", "Shibuya Metro", "Shibuya Quartz (Gold)"],
+        "Notes": ["Does not spawn during New Moon or Invasion", null, null]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Ubelluris",
+        "Location": ["Ikebukuro"],
+        "Notes": ["Only during the day"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Late Afternoon Ubelluris",
+        "Location": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Ogre",
+        "Location": ["Celu Tower (Bronze)", "Ikebukuro"]
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Deformed Cyclops",
+        "Location": ["Celu Tower (Gold)"]
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Tajikarao",
+        "Location": ["Kagurazaka Zhu Que Cavern (Gold)"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Onmoraki",
+        "Location": ["Suginami [17, 17]", "Suginami Tunnels (Bronze)"],
+        "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Accomplished Onmoraki",
+        "Location": ["Shibuya Quartz (Silver)"],
+        "Notes": [null, null, null]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Deformed Onmoraki",
+        "Location": ["Shibuya Metro", "Suginami Tunnels (Silver)","Shibuya Quartz (Gold)"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Zhen",
+        "Location": ["Shinagawa"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Accomplished Zhen",
+        "Location": ["Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Shining Furiae",
+        "Location": ["Shibuya Quartz (Gold)"]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Deformed Baphomet",
+        "Location": ["Shibuya Metro"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Harpy",
+        "Location": ["Shibuya (southwest side)","Shibuya Quartz (Bronze)", "Celu Tower (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Harpy",
+        "Location": ["Shibuya"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Harpy",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Macha",
+        "Location": ["Celu Tower (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Macha",
+        "Location": ["Celu Tower (Silver)", "Shibuya Quartz (Gold)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Deformed Macha",
+        "Location": ["Shinagawa Catacombs (Bronze)","Shibuya Quartz (Gold)"],
+        "Notes": ["Does not spawn in the New Moon version of the run"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Ocypete",
+        "Location": ["Shibuya (near Obelisk)","Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Ocypete",
+        "Location": ["Shibuya","Shibuya Quartz (Silver)"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Ocypete",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Ocypete",
+        "Location": ["Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Celaeno",
+        "Location": ["Shibuya (northeast and southeast corners)","Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Celaeno",
+        "Location": ["Shibuya", "Shibuya Quartz (Silver)"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Celaeno",
+        "Location": ["Shibuya", "Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Celaeno",
+        "Location": ["Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Aello",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Aello",
+        "Location": ["Shibuya","Shibuya Quartz (Bronze)", "Shibuya Quartz (Silver)"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null, null]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Inexperienced Aello",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Aello",
+        "Location": ["Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Badb Catha",
+        "Location": ["Celu Tower (Silver)"]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Apsaras",
+        "Location": ["Shinjuku Docks (northeast rooms)", "Shinagawa", "Suginami [25, 22]"],
+        "Notes": [null, "Does not spawn during New Moon or Invasion", null]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Isora",
+        "Location": ["Shinjuku Docks (northeast rooms)"]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Accomplished Isora",
+        "Location": ["Shinjuku Docks (northeast rooms)"],
+        "Notes": [null]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Dis",
+        "Location": ["Shinjuku Docks (northwest rooms)"],
+        "Notes": [null]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Accomplished Dis",
+        "Location": ["Shinjuku Docks [21, 30]"]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Lucky Dis",
+        "Location": ["Shinjuku Docks [21, 30]"]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Onkot",
+        "Location": ["Celu Tower (Silver)"]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Ganesha",
+        "Location": ["Shinagawa (north side)"],
+        "Notes": [null]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Cait Sith",
+        "Location": ["Suginami [18, 18]", "Suginami Tunnels (Bronze)"],
+        "Notes": [null]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Cait Sith",
+        "Location": ["Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inexperienced Cait Sith",
+        "Location": ["Suginami [18, 21]"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Cu Sith",
+        "Location": ["Suginami [18, 21]", "Nakano Underground Ruins (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inexperienced Cu Sith",
+        "Location": ["Suginami [18, 21]"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inugami",
+        "Location": ["Suginami [20, 18]", "Nakano Underground Ruins (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inexperienced Inugami",
+        "Location": ["Suginami [21, 17]"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Mirror Inugami",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Nekomata",
+        "Location": ["Suginami Tunnels (Bronze)", "Suginami Tunnels (Grey)", "Nakano Underground Ruins (Bronze)", "Nakano Underground Ruins (Silver)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Accomplished Nekomata",
+        "Location": ["Suginami Tunnels (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Lucky Nekomata",
+        "Location": ["Suginami Tunnels (Silver)"],
+        "Notes": ["Glittering Ore rooms"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Orthrus",
+        "Location": ["Ikebukuro", "Nakano Underground Ruins (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Inexperienced Orthrus",
+        "Location": ["Suginami [15, 23] [14, 18] [16, 18] [17, 21]", "Kagurazaka Zhu Que Cavern (Bronze)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Orthrus",
+        "Location": ["Suginami Tunnels (Gold)", "Suginami Tunnels (Unknown)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Tan-Ki",
+        "Location": ["Suginami Tunnels (Gold)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Tan-Ki",
+        "Location": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Cerberus",
+        "Location": ["Suginami Tunnels (Gold)"]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Lucky Valkyrie",
+        "Location": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Sorrowful Aura doors in the non-New Moon version of the run"]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Deformed Kurama-Tengu",
+        "Location": ["Celu Tower (Gold)"]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Deformed Hanuman",
+        "Location": ["Celu Tower (Gold)"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Nozuchi",
+        "Location": ["Shinjuku Docks (northwest rooms)"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Inexperienced Nozuchi",
+        "Location": ["Shinjuku Docks (northwest rooms)"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Wandering Nozuchi",
+        "Location": ["Suginami [23, 24]"],
+        "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Naga",
+        "Location": ["Shinjuku Docks [14, 23] [21, 25]"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Accomplished Naga",
+        "Location": ["Shinjuku Docks [14, 23] [21, 25]"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Inexperienced Naga",
+        "Location": ["Shinjuku Docks [14, 23] [21, 25]", "Shinagawa"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Accomplished Mizuchi",
+        "Location": ["Ikebukuro"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Raja Naga",
+        "Location": ["Shinagawa (north side)", "Shinagawa"],
+        "Notes": ["Only during the night", "Spawns with Fanatic Girimehkala"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Pixie",
+        "Location": ["Suginami (near Home III)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Leader Pixie",
+        "Location": ["Suginami (near Home III)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Kissy Pixie",
+        "Location": ["Suginami [19, 21]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Pixie",
+        "Location": ["Denshi Kairo 42 BG-A", "Casino Arena Championship Run"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Jack Frost",
+        "Location": ["Suginami [22, 22]", "Suginami Tunnels (Bronze)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Jack Frost",
+        "Location": ["Suginami [25, 20]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Jack Frost",
+        "Location": ["Suginami [15, 23] [17, 21]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Rainbow of Victory Jack Frost",
+        "Location": ["Suginami [18, 18]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Deformed Jack Frost",
+        "Location": ["Suginami Tunnels (Silver)", "Suginami Tunnels (Gold)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Stray Jack Frost",
+        "Location": ["Denshi Kairo EV-JF"],
+        "Notes": ["Part of the \"Stray Jack Frost\" Quest"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "High Pixie",
+        "Location": ["Shibuya [19, 18]", "Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished High Pixie",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Pyro Jack",
+        "Location": ["Nakano [21, 18]"],
+        "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Pyro Jack",
+        "Location": ["Nakano [20, 23] [25, 18]"],
+        "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Pyro Jack",
+        "Location": ["Nakano [21, 18]"],
+        "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Deformed Pyro Jack",
+        "Location": ["Suginami Tunnels (Gold)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Gandharva",
+        "Location": ["Suginami [25, 22]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Kelpie",
+        "Location": ["Nakano [24, 21]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Kelpie",
+        "Location": ["Nakano"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone (except Accomplished Pyro Jack)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Elf",
+        "Location": ["Shibuya Quartz (Bronze)", "Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Elf",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Troll",
+        "Location": ["Suginami Tunnels (Silver)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Deformed Troll",
+        "Location": ["Suginami Tunnels (Silver)", "Shibuya Quartz (Silver)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Oberon",
+        "Location": ["Shibuya [19, 15] [20, 16]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Oberon",
+        "Location": ["Shibuya"],
+        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Oberon",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Titania",
+        "Location": ["Shibuya [19, 15] [20, 16]"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Lucky Titania",
+        "Location": ["Shibuya"]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Titania",
+        "Location": ["Shibuya Quartz (Bronze)"]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Makami",
+        "Location": ["Nakano Underground Ruins (Silver)"]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Inexperienced Makami",
+        "Location": ["Nakano Underground Ruins (Bronze)"]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Deformed Makami",
+        "Location": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Kaichi",
+        "Location": ["Nakano Underground Ruins (Silver)"]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Deformed Kaichi",
+        "Location": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Unicorn",
+        "Location": ["Nakano Underground Ruins (Silver)"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Specter",
+        "Location": ["Shinagawa Catacombs (Bronze)", "Nakano", "Shibuya Metro", "Old Tokyo Metro"],
+        "Notes": ["Serene Aura doors in the New Moon version of the run", "Spawns with Balance-Threatening Phantom", null, null]
     }
 ]
