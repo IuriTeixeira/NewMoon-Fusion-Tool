@@ -1,19 +1,12 @@
 'use client'
-import { Flex, Text, Table, Image, Anchor, useComputedColorScheme } from '@mantine/core'
+import { Flex, Table, useComputedColorScheme } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
-import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
-import locationList from '../Data/contract_demons.json'
 import React from 'react'
-import Link from 'next/link'
 
-interface DemonTableProps {
-    raceFilter: string,
-}
-
-export default function DemonLocationTableComponent({ raceFilter }: DemonTableProps) {
+export default function DemonLocationTableComponent() {
     const colorScheme = useComputedColorScheme();
 
-    const subTypes = [
+    /*const subTypes = [
         'Inexperienced ',
         'Illusion ',
         ' of Kuyo',
@@ -62,7 +55,7 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonTablePr
         filteredDemonList = demonList.filter((demon: Demon) => demon.Race === raceFilter)
     } else {
         filteredDemonList = demonList
-    }
+    }*/
 
     return (
         <Table.ScrollContainer minWidth={500}>
@@ -94,7 +87,8 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonTablePr
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
-                    {filteredDemonList.map((demon:Demon, index:number) => {
+                    {//filteredDemonList.map((demon:Demon, index:number) => {
+                    demonList.map((demon:Demon, index:number) => {
                         return (
                             <Table.Tr key={`row-${index}-${demon.Name}`}>
                                 <Table.Td key={`name-${index}`}>{demon.Name}</Table.Td>

@@ -88,8 +88,7 @@
     {
         "Race": "Earth Element",
         "Name": "Kodama",
-        "Zone": ["Suginami", "Suginami Tunnels (Bronze)", "Nakano"],
-        "Location": ["Near Home III", null, null]
+        "Zone": ["Suginami", "Suginami Tunnels (Bronze)", "Nakano"]
     },
     {
         "Race": "Earth Element",
@@ -173,7 +172,7 @@
         "Race": "Earth Element",
         "Name": "Ubelluris",
         "Zone": ["Ikebukuro"],
-        "Location": ["South side"],
+        "Location": ["[19, 21] [20, 24]"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
@@ -184,8 +183,8 @@
     {
         "Race": "Evil Demon",
         "Name": "Ogre",
-        "Zone": ["Celu Tower (Bronze)", "Ikebukuro"],
-        "Location": [null, "South side"],
+        "Zone": ["Ikebukuro", "Celu Tower (Bronze)"],
+        "Location": ["[22, 24]", null],
         "Notes": [null, "From 6:00 to 18:00"]
     },
     {
@@ -410,7 +409,7 @@
         "Race": "Beast",
         "Name": "Cu Sith",
         "Zone": ["Suginami", "Nakano Underground Ruins (Bronze)"],
-        "Location": ["[18, 21]", null]
+        "Location": ["[18, 21] [22, 22]", null]
     },
     {
         "Race": "Beast",
@@ -456,7 +455,7 @@
         "Race": "Beast",
         "Name": "Orthrus",
         "Zone": ["Ikebukuro", "Nakano Underground Ruins (Bronze)"],
-        "Location": ["South side"],
+        "Location": ["[23, 22] near Zoshigaya Cemetery"],
         "Notes": ["From 6:00 to 18:00", null]
     },
     {
@@ -606,7 +605,7 @@
         "Race": "Fairy",
         "Name": "Jack Frost",
         "Zone": ["Suginami", "Suginami Tunnels (Bronze)"],
-        "Location": ["[22, 22]"]
+        "Location": ["[21, 22] [24, 23]"]
     },
     {
         "Race": "Fairy",
@@ -677,7 +676,7 @@
         "Race": "Fairy",
         "Name": "Gandharva",
         "Zone": ["Suginami"],
-        "Location": ["[25, 22]"]
+        "Location": ["[25, 22] [25, 19]"]
     },
     {
         "Race": "Fairy",
@@ -839,7 +838,7 @@
         "Race": "Nocturne",
         "Name": "Alp",
         "Zone": ["Shinjuku Docks", "Ichigaya", "Suginami"],
-        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", null, "Near Junkerman"],
+        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", null, "Near Junkerman and near Suginami Tunnels"],
         "Notes": [null, null, "From 21:00 to 6:00"]
     },
     {
@@ -850,15 +849,9 @@
     },
     {
         "Race": "Nocturne",
-        "Name": "Wanderer Alp",
-        "Zone": ["Suginami"],
-        "Notes": ["From 21:00 to 6:00"]
-    },
-    {
-        "Race": "Nocturne",
         "Name": "Empusa",
         "Zone": ["Ichigaya", "Ikebukuro", "COMP-Hack Dungeon 1-A Reward"],
-        "Location": ["South side", "South side", null],
+        "Location": ["South side", "[20, 25]", null],
         "Notes": [null, "From 18:00 to 6:00", null]
     },
     {
@@ -871,7 +864,7 @@
         "Race": "Nocturne",
         "Name": "Lilim",
         "Zone": ["Shinjuku Docks", "Ikebukuro"],
-        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", "South side"],
+        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", "[22, 24]"],
         "Notes": [null, "From 18:00 to 6:00"]
     },
     {
@@ -906,14 +899,14 @@
         "Race": "Nocturne",
         "Name": "Incubus",
         "Zone": ["Ichigaya", "Ikebukuro"],
-        "Location": ["[25, 16]", "South side"],
+        "Location": ["[25, 16]", "[20, 24]"],
         "Notes": ["From 18:00 to 5:00", "From 18:00 to 6:00"]
     },
     {
         "Race": "Nocturne",
         "Name": "Succubus",
         "Zone": ["Ikebukuro"],
-        "Location": ["South side"],
+        "Location": ["[22, 24]"],
         "Notes": ["From 18:00 to 6:00"]
     },
     {
@@ -932,8 +925,8 @@
     {
         "Race": "Wilder",
         "Name": "Inexperienced Garm",
-        "Zone": ["Nakano"],
-        "Location": ["[18, 18]"]
+        "Zone": ["Suginami","Nakano"],
+        "Location": ["[25, 20]","[18, 18]"]
     },
     {
         "Race": "Wilder",
@@ -1050,19 +1043,21 @@
         "Race": "Brute",
         "Name": "Oni",
         "Zone": ["Ueno", "Ikebukuro"],
+        "Location": ["[17, 18] and Tower of the Dark Priests", "[22, 24]"],
         "Notes": ["From 6:00 to 18:00","From 6:00 to 18:00"]
     },
     {
         "Race": "Brute",
         "Name": "Accomplished Oni",
         "Zone": ["Ikebukuro"],
+        "Location": ["[19, 21]"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
         "Race": "Brute",
         "Name": "Karasu-Tengu",
         "Zone": ["Ueno", "Old Ichigaya Camp (Bronze)"],
-        "Location": ["Near Souhonzan"],
+        "Location": ["Near Souhonzan and at Tower of the Dark Priests"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
@@ -1085,8 +1080,7 @@
         "Race": "Evil Dragon",
         "Name": "Cockatrice",
         "Zone": ["Nakano", "Ueno"],
-        "Location": ["Near Yaginuma"],
-        "Notes": [null, "From 6:00 to 18:00"]
+        "Location": ["Near Yaginuma", "[19, 19] and near Kisaragi"]
     },
     {
         "Race": "Evil Dragon",
@@ -1127,8 +1121,8 @@
         "Race": "Evil Dragon",
         "Name": "Basilisk",
         "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Location": [null, null],
-        "Notes": ["From 6:00 to 18:00", "From 6:00 to 18:00"]
+        "Location": ["[20, 19] [21, 16]", "[09, 22] and [16, 18]"],
+        "Notes": [null, "From 6:00 to 18:00"]
     },
     {
         "Race": "Evil Dragon",
@@ -1144,7 +1138,7 @@
         "Race": "Evil Dragon",
         "Name": "Nidhoggr",
         "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Location": [null, null],
+        "Location": ["[20, 19]", "[11, 13] [12, 17]"],
         "Notes": ["From 18:00 to 6:00","From 6:00 to 18:00"]
         
     },
@@ -1171,13 +1165,15 @@
         "Race": "Femme",
         "Name": "Taraka",
         "Zone": ["Ueno"],
+        "Location": ["[19, 19] and near Kisaragi"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
         "Race": "Femme",
         "Name": "Gorgon",
         "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Notes": ["From 6:00 to 18:00", "From 6:00 to 18:00"]
+        "Location": ["Northeast and southeast corners", null],
+        "Notes": [null, "From 6:00 to 18:00"]
     },
     {
         "Race": "Femme",
@@ -1218,7 +1214,7 @@
         "Race": "Foul",
         "Name": "Slime",
         "Zone": ["Ueno", "Suginami Tunnels (Bronze)", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Celu Tower (Bronze)", "Celu Tower (Silver)", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)"],
-        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)", null, null, null, null, null, null, null]
+        "Location": ["Northeast and southeast corners", null, null, null, null, null, null, null]
     },
     {
         "Race": "Foul",
@@ -1248,14 +1244,14 @@
         "Race": "Foul",
         "Name": "Blob",
         "Zone": ["Ueno", "Shinjuku Docks", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Kagurazaka Zhu Que Cavern (Bronze)"],
-        "Location": ["Northeast corner", null, null, null, null],
+        "Location": ["Northeast and southeast corners", "[20, 24] and northwestern corridor", null, null, null],
         "Notes": ["From 6:00 to 18:00", null, null, null, null]
     },
     {
         "Race": "Foul",
         "Name": "Black Ooze",
         "Zone": ["Ueno", "Suginami Tunnels (Silver)", "Celu Tower (Silver)"],
-        "Location": ["Northeast corner", null, null],
+        "Location": ["Northeast and southeast corners", null, null],
         "Notes": ["From 6:00 to 18:00", null, null]
     },
     {
@@ -1295,8 +1291,9 @@
     {
         "Race": "Haunt",
         "Name": "Poltergeist",
-        "Zone": ["Ichigaya", "Shinjuku Docks", "Kagurazaka Zhu Que Cavern (Bronze)"],
-        "Location": ["Near Shinjuku Babel", null, null]
+        "Zone": ["Suginami", "Ichigaya", "Shinjuku Docks", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["[17, 24] (behind the buildings, overlooking the canyon)","Near Shinjuku Babel", "Near elevator", null],
+        "Notes": ["From 21:00 to 6:00", null, null, null]
     },
     {
         "Race": "Haunt",
@@ -1319,13 +1316,12 @@
         "Race": "Haunt",
         "Name": "Gaki",
         "Zone": ["Suginami", "Ueno", "Shinjuku Docks", "Old Ichigaya Camp (Bronze)", "Old Tokyo Metro"],
-        "Location": ["[16, 17] behind a rock", null, null, null]
+        "Location": ["[16, 17] behind a rock", "Northeast and southeast corners", "Near elevator", null]
     },
     {
         "Race": "Haunt",
         "Name": "Deformed Gaki",
-        "Zone": ["Kuchinawa Cave", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
-        "Location": [null, null, null, null]
+        "Zone": ["Kuchinawa Cave", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"]
     },
     {
         "Race": "Haunt",
@@ -1379,7 +1375,7 @@
         "Race": "Haunt",
         "Name": "Chatterskull",
         "Zone": ["Ikebukuro","Old Ichigaya Camp (Silver)", "Kagurazaka Zhu Que Cavern (Bronze)"],
-        "Location": ["South side", null, null],
+        "Location": ["[23, 22] near Zoshigaya Cemetery", null, null],
         "Notes": ["From 6:00 to 18:00", null, null]
     },
     {
