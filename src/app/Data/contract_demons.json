@@ -101,7 +101,7 @@
         "Race": "Earth Element",
         "Name": "Accomplished Hua Po",
         "Zone": ["Shibuya", "COMP-Hack Dungeon 4-A Reward"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone", null]
     },
     {
         "Race": "Earth Element",
@@ -125,7 +125,7 @@
         "Race": "Earth Element",
         "Name": "Accomplished Knocker",
         "Zone": ["Shibuya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Earth Element",
@@ -136,7 +136,7 @@
         "Race": "Earth Element",
         "Name": "Accomplished Sudama",
         "Zone": ["Shibuya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Earth Element",
@@ -160,7 +160,7 @@
         "Race": "Earth Element",
         "Name": "Accomplished Dwarf",
         "Zone": ["Shibuya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Earth Element",
@@ -173,6 +173,7 @@
         "Race": "Earth Element",
         "Name": "Ubelluris",
         "Zone": ["Ikebukuro"],
+        "Location": ["South side"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
@@ -183,7 +184,9 @@
     {
         "Race": "Evil Demon",
         "Name": "Ogre",
-        "Zone": ["Celu Tower (Bronze)", "Ikebukuro"]
+        "Zone": ["Celu Tower (Bronze)", "Ikebukuro"],
+        "Location": [null, "South side"],
+        "Notes": [null, "From 6:00 to 18:00"]
     },
     {
         "Race": "Evil Demon",
@@ -245,7 +248,7 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Harpy",
         "Zone": ["Shibuya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Wild Bird",
@@ -277,7 +280,7 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Ocypete",
         "Zone": ["Shibuya","Shibuya Quartz (Silver)"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone", null]
     },
     {
         "Race": "Wild Bird",
@@ -299,7 +302,7 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Celaeno",
         "Zone": ["Shibuya", "Shibuya Quartz (Silver)"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone", null]
     },
     {
         "Race": "Wild Bird",
@@ -320,7 +323,7 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Aello",
         "Zone": ["Shibuya","Shibuya Quartz (Bronze)", "Shibuya Quartz (Silver)"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone", null, null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone", null, null]
     },
     {
         "Race": "Wild Bird",
@@ -452,7 +455,9 @@
     {
         "Race": "Beast",
         "Name": "Orthrus",
-        "Zone": ["Ikebukuro", "Nakano Underground Ruins (Bronze)"]
+        "Zone": ["Ikebukuro", "Nakano Underground Ruins (Bronze)"],
+        "Location": ["South side"],
+        "Notes": ["From 6:00 to 18:00", null]
     },
     {
         "Race": "Beast",
@@ -467,6 +472,11 @@
     },
     {
         "Race": "Beast",
+        "Name": "Traditional Orthrus",
+        "Zone": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Beast",
         "Name": "Tan-Ki",
         "Zone": ["Suginami Tunnels (Gold)"]
     },
@@ -477,8 +487,18 @@
     },
     {
         "Race": "Beast",
+        "Name": "Traditional Tan-Ki",
+        "Zone": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Beast",
         "Name": "Deformed Cerberus",
         "Zone": ["Suginami Tunnels (Gold)"]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Traditional Cerberus",
+        "Zone": ["Nakano Underground Ruins (Gold)"]
     },
     {
         "Race": "Demigod",
@@ -525,6 +545,11 @@
         "Zone": ["Suginami"],
         "Location": ["[23, 24]"],
         "Notes": ["Only during the night"]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Traditional Nozuchi",
+        "Zone": ["Nakano Underground Ruins (Gold)"]
     },
     {
         "Race": "Dragon King",
@@ -665,7 +690,7 @@
         "Name": "Accomplished Kelpie",
         "Zone": ["Nakano", "Nakano Underground Ruins (Gold)"],
         "Location": [null, "1st floor Branch switch paths"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone (except Accomplished Pyro Jack)", null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)", null]
     },
     {
         "Race": "Fairy",
@@ -697,7 +722,7 @@
         "Race": "Fairy",
         "Name": "Accomplished Oberon",
         "Zone": ["Shibuya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Fairy",
@@ -821,7 +846,7 @@
         "Race": "Nocturne",
         "Name": "Accomplished Alp",
         "Zone": ["Ichigaya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Nocturne",
@@ -840,7 +865,7 @@
         "Race": "Nocturne",
         "Name": "Accomplished Empusa",
         "Zone": ["Ichigaya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Nocturne",
@@ -875,7 +900,7 @@
         "Race": "Nocturne",
         "Name": "Accomplished Fomorian",
         "Zone": ["Ichigaya"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
     },
     {
         "Race": "Nocturne",
@@ -902,7 +927,7 @@
         "Name": "Accomplished Garm",
         "Zone": ["Nakano", "Nakano Underground Ruins (Gold)"],
         "Location": [null, "1st floor Branch switch paths"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone (except Accomplished Pyro Jack)", null]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)", null]
     },
     {
         "Race": "Wilder",
@@ -925,7 +950,7 @@
         "Race": "Wilder",
         "Name": "Accomplished Bicorn",
         "Zone": ["Nakano"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone (except Accomplished Pyro Jack)"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)"]
     },
     {
         "Race": "Wilder",
@@ -948,7 +973,7 @@
         "Race": "Wilder",
         "Name": "Accomplished Gyuki",
         "Zone": ["Nakano"],
-        "Notes": ["Shares spawn pools with other accomplished demons in the same zone (except Accomplished Pyro Jack)"]
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)"]
     },
     {
         "Race": "Wilder",
@@ -981,10 +1006,419 @@
         "Zone": ["Nakano Underground Ruins (Gold)"]
     },
     {
+        "Race": "Brute",
+        "Name": "Azumi",
+        "Zone": ["Nakano"],
+        "Location": ["[23, 18] and east of Obelisk"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Koppa-Tengu",
+        "Zone": ["Celu Tower (Bronze)", "Old Ichigaya Camp (Bronze)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Inexperienced Koppa-Tengu",
+        "Zone": ["Celu Tower (Bronze)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Koppa-Tengu",
+        "Zone": ["Old Ichigaya Camp (Gold)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Momunofu",
+        "Zone": ["Old Ichigaya Camp (Silver)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Momunofu",
+        "Zone": ["Old Ichigaya Camp (Gold)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Turdak",
+        "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Accomplished Turdak",
+        "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Oni",
+        "Zone": ["Ueno", "Ikebukuro"],
+        "Notes": ["From 6:00 to 18:00","From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Accomplished Oni",
+        "Zone": ["Ikebukuro"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Karasu-Tengu",
+        "Zone": ["Ueno", "Old Ichigaya Camp (Bronze)"],
+        "Location": ["Near Souhonzan"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Inexperienced Karasu-Tengu",
+        "Zone": ["Old Ichigaya Camp (Bronze)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Karasu-Tengu",
+        "Zone": ["Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Ichigaya Camp (Gold)"]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Yomotsu-Ikusa",
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Cockatrice",
+        "Zone": ["Nakano", "Ueno"],
+        "Location": ["Near Yaginuma"],
+        "Notes": [null, "From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Inexperienced Cockatrice",
+        "Zone": ["Ueno"],
+        "Location": ["[17, 21] [21, 24] [20, 15]"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Accomplished Cockatrice",
+        "Zone": ["Ikebukuro"],
+        "Location": ["South side"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Late Afternoon Cockatrice",
+        "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Tarasque",
+        "Zone": ["Celu Tower (Silver)"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Deformed Tarasque",
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Traditional Tarasque",
+        "Zone": ["Nakano Underground Ruins (Gold)"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Basilisk",
+        "Zone": ["Ueno", "Kuchinawa Cave"],
+        "Location": [null, null],
+        "Notes": ["From 6:00 to 18:00", "From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Late Afternoon Basilisk",
+        "Zone": ["Ueno Mirage (Silver)"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Typhon",
+        "Zone": ["Celu Tower (Silver)"]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Nidhoggr",
+        "Zone": ["Ueno", "Kuchinawa Cave"],
+        "Location": [null, null],
+        "Notes": ["From 18:00 to 6:00","From 6:00 to 18:00"]
+        
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Accomplished Forneus",
+        "Zone": ["Ikebukuro"],
+        "Location": ["South side"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Datsue-Ba",
+        "Zone": ["Ueno", "Old Tokyo Metro"],
+        "Location": ["Near Kuchinawa Cave", null],
+        "Notes": ["From 6:00 to 18:00", null]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Inexperienced Datsue-Ba",
+        "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Taraka",
+        "Zone": ["Ueno"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Gorgon",
+        "Zone": ["Ueno", "Kuchinawa Cave"],
+        "Notes": ["From 6:00 to 18:00", "From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Yomotsu-Shikome",
+        "Zone": ["Ueno", "Shinagawa Catacombs (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Location": ["Near Kuchinawa Cave", null,null,null],
+        "Notes": ["From 6:00 to 18:00", "Only spawns in the New Moon version of the run",null,null]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Lamia",
+        "Zone": ["Kuchinawa Cave"],
+        "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Yaksini",
+        "Zone": ["Old Ichigaya Camp (Silver)"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Accomplished Yaksini",
+        "Zone": ["Old Ichigaya Camp (Silver)", "Old Ichigaya Camp (Gold)"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Will O'Wisp",
+        "Zone": ["Nakano"],
+        "Location": ["Near Yagiya"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Accomplished Will O'Wisp",
+        "Zone": ["Nakano"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Slime",
+        "Zone": ["Ueno", "Suginami Tunnels (Bronze)", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Celu Tower (Bronze)", "Celu Tower (Silver)", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)", null, null, null, null, null, null, null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Inexperienced Slime",
+        "Zone": ["Suginami"],
+        "Location": ["[18, 21]"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Slime",
+        "Zone": ["Old Ichigaya Camp (Gold)"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Mou-Ryou",
+        "Zone": ["Nakano", "Ueno", "Kagurazaka Zhu Que Cavern (Bronze)", "Old Tokyo Metro", "COMP-Hack Dungeon 1-A Reward"],
+        "Location": ["Western side", "Northeast corner"],
+        "Notes": [null, "From 18:00 to 6:00"]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Accomplished Mou-Ryou",
+        "Zone": ["Nakano", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)", null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Blob",
+        "Zone": ["Ueno", "Shinjuku Docks", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["Northeast corner", null, null, null, null],
+        "Notes": ["From 6:00 to 18:00", null, null, null, null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Black Ooze",
+        "Zone": ["Ueno", "Suginami Tunnels (Silver)", "Celu Tower (Silver)"],
+        "Location": ["Northeast corner", null, null],
+        "Notes": ["From 6:00 to 18:00", null, null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Black Ooze",
+        "Zone": ["Ueno", "Suginami Tunnels (Silver)", "Celu Tower (Silver)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Location": ["Northeast corner", null, null, null, null],
+        "Notes": ["From 6:00 to 18:00", null, null, null, null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Specter",
+        "Zone": ["Ueno", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Location": ["Northeast corner", null, null],
+        "Notes": ["From 6:00 to 18:00", null, null]
+    },
+    {
         "Race": "Foul",
         "Name": "Deformed Specter",
         "Zone": ["Shinagawa Catacombs (Bronze)", "Nakano", "Shibuya Metro", "Old Tokyo Metro"],
         "Location": ["Serene Aura doors in the New Moon version of the run", null, null, null],
         "Notes": ["Serene Aura is obtained by talking to the Archangel NPC in the non-New Moon version of the run", "Spawns with Balance-Threatening Phantom", null, null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Shadow",
+        "Zone": ["Ueno", "Old Ichigaya Camp (Silver)"],
+        "Location": ["Northeast corner", null],
+        "Notes": ["From 6:00 to 18:00", null]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Shadow",
+        "Zone": ["Nakano", "Old Ichigaya Camp (Gold)"],
+        "Notes": ["Spawns with Balance-Threatening Phantom", null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Poltergeist",
+        "Zone": ["Ichigaya", "Shinjuku Docks", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["Near Shinjuku Babel", null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Poltergeist",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Poltergeist",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Poltergeist",
+        "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)", "Kagurazaka Zhu Que Cavern (Gold)"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Gaki",
+        "Zone": ["Suginami", "Ueno", "Shinjuku Docks", "Old Ichigaya Camp (Bronze)", "Old Tokyo Metro"],
+        "Location": ["[16, 17] behind a rock", null, null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Gaki",
+        "Zone": ["Kuchinawa Cave", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Location": [null, null, null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Ghoul",
+        "Zone": ["Ichigaya", "Shinjuku Docks", "Old Tokyo Metro"],
+        "Location": ["[18, 16]", "[27, 22]", null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Ghoul",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Ghoul",
+        "Zone": ["Shinagawa Catacombs (Bronze)", "Old Tokyo Metro"],
+        "Notes": ["Only spawns in the New Moon version of the run", null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Choronzon",
+        "Zone": ["Ichigaya", "Old Tokyo Metro"],
+        "Notes": ["From 18:00 to 5:00", null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Choronzon",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Choronzon",
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Yakkha",
+        "Zone": ["Ichigaya", "Kagurazaka Zhu Que Cavern (Bronze)", "Old Tokyo Metro"],
+        "Location": ["Near Obelisk", null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Yakkha",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Chatterskull",
+        "Zone": ["Ikebukuro","Old Ichigaya Camp (Silver)", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["South side", null, null],
+        "Notes": ["From 6:00 to 18:00", null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Pisaca",
+        "Zone": ["Ichigaya", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Location": [null, null, null]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Pisaca",
+        "Zone": ["Ichigaya"],
+        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Pisaca",
+        "Zone": ["Old Ichigaya Camp (Silver)", "Old Tokyo Metro"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Legion",
+        "Zone": ["Old Ichigaya Camp (Silver)"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Legion",
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Vetala",
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Accomplished Take-Minakata",
+        "Zone": ["Kagurazaka Zhu Que Cavern (Gold)"]
     }
 ]
