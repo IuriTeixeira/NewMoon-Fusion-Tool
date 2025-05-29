@@ -79,6 +79,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     const raceRanks: Demon[] = demonsList
                         .filter((d: Demon) => d.Race === demon.Race)
                         .filter((d: Demon) => d.Variant !== true)
+                        .filter((d:Demon) => !d.Special)
+                        .filter((d:Demon) => d.Range && d.Range[0] !== 'PG Only')
                         .map((d: Demon) => d);
                     let targetRank = -1
                     const elements: Demon[] = [

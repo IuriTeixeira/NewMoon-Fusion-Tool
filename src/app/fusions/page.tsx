@@ -15,6 +15,50 @@ function FusionsContent() {
     const searchParams = useSearchParams()
     const demonName: string = searchParams.get('demon') as string
     const findDemon: Demon = demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+
+    const subTypes = [
+        'Inexperienced ',
+        'Illusion ',
+        ' of Kuyo',
+        'Wanderer ',
+        'Accomplished ',
+        'Vermillion Flame ',
+        'Godly Golden Winged Bird ',
+        'Hero of Akaeda ',
+        'Unmatched Steel ',
+        'Brave Red Capote ',
+        'Noble Demon King ',
+        'Blasted Road ',
+        'Agent of God ',
+        'Princess of Pure Madness ',
+        'Seven Stars of Death ',
+        'Agent of God ',
+        'Nimble ',
+        'Joyful ',
+        'Prideful ',
+        'Wrathful ',
+        'Lustful ',
+        'Magician ',
+        'Mystic ',
+        'Bringer of Aging ',
+        'Pleasure Bringer ',
+        'Huntress ',
+        'Heaven-Piercing ',
+        'Gojo Bridge ',
+        ' of Assault',
+        'Shana ',
+        'Hassou Tobi ',
+        'Horse '
+    ]
+
+    function cleanString(str: string): string {
+        let result = str;
+        for (const subtype of subTypes) {
+            result = result.replace(subtype, '');
+        }
+        return result.trim();
+    }
+
     let demon: Demon
     if (findDemon) {
         demon = findDemon
@@ -23,6 +67,13 @@ function FusionsContent() {
     }
 
     const elementCombinations: FusionData = racesData.find((targetRace) => targetRace.Race === demon.Race) as FusionData
+
+    let originalDemon = null
+    if (demon.Name === 'Amaterasu of Kuyo') {
+        originalDemon = demons.find((d: Demon) => d.Name === 'Amaterasu (F)') as Demon
+    } else {
+        originalDemon = demons.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
+    }
 
     return (
         <Flex align='center' justify='center' m={'lg'}>
@@ -33,7 +84,15 @@ function FusionsContent() {
                 <DemonInfoComponent demon={demon} />
                 <RaceListComponent demon={demon} />
                 {!demon.Special && <RaceCombinationsComponent demon={demon} />}
-                {elementCombinations.Elements && <ElementInfoComponent elements={elementCombinations.Elements!} />}
+                {elementCombinations.Elements
+                    &&
+                    (
+                        !demon.Special
+                        ||
+                        !originalDemon.Special
+                    )
+                    &&
+                    <ElementInfoComponent elements={elementCombinations.Elements!} />}
                 <FusionTableComponent demon={demon} />
             </Stack>
         </Flex >

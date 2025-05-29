@@ -551,7 +551,7 @@
                 "Foul"
             ]
         ],
-        "Elements": null
+        "Elements": ["Down", "Down", "Down", "Down"]
     },
     {
         "Race": "Wild Bird",

@@ -51,18 +51,6 @@
     },
     {
         "Race": "Divine",
-        "Name": "Holy Night Angel",
-        "Level": 1,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Divine",
         "Name": "Inexperienced Angel",
         "Level": 6,
         "Range": null,
@@ -281,18 +269,6 @@
     },
     {
         "Race": "Vile",
-        "Name": "Ruler of the Sabbath Baphomet",
-        "Level": 30,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Vile",
         "Name": "Heaven-Piercing Baphomet",
         "Level": 55,
         "Range": null,
@@ -492,47 +468,6 @@
     },
     {
         "Race": "Beast",
-        "Name": "Void Cerberus",
-        "Level": 70,
-        "Range": null,
-        "Special": [
-            [
-                "Nimble Cu Chulainn",
-                "Joyful Alice",
-                "Joyful Black Frost"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Nimble Alice",
-                "Prideful Black Frost"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Prideful Black Frost",
-                "Wrathful Alice"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Joyful Black Frost",
-                "Nimble Alice"
-            ],
-            [
-                "Three-Headed Cerberus",
-                "Prideful Black Frost",
-                "Wrathful Alice"
-            ]
-        ],
-        "Plugin": [
-            false,
-            false,
-            false,
-            false,
-            false
-        ],
-        "AllowVariants": false
-    },
-    {
-        "Race": "Beast",
         "Name": "Asura Cerberus",
         "Level": 70,
         "Range": null,
@@ -629,59 +564,6 @@
         "Plugin": [
             false
         ]
-    },
-    {
-        "Race": "Fairy",
-        "Name": "Red Demon Goldfish",
-        "Level": 1,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Fairy",
-        "Name": "White Demon Goldfish",
-        "Level": 1,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Fairy",
-        "Name": "Black Demon Goldfish",
-        "Level": 1,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Fairy",
-        "Name": "Gold Demon Goldfish",
-        "Level": 1,
-        "Range": null,
-        "Special": [
-            [
-                "Red Demon Goldfish",
-                "White Demon Goldfish",
-                "Black Demon Goldfish"
-            ]
-        ],
-        "Plugin": [
-            false
-        ],
-        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -898,7 +780,7 @@
         "Special": [
             [
                 "Matador",
-                "Guede",
+                "Guedhe",
                 "Cu Chulainn"
             ]
         ],
@@ -1005,22 +887,6 @@
             true
         ],
         "AllowVariants": false
-    },
-    {
-        "Race": "Nocturne",
-        "Name": "Lilim the Little Demon",
-        "Level": 20,
-        "Range": null,
-        "Special": [
-            [
-                "Lilim",
-                "Alp"
-            ]
-        ],
-        "Plugin": [
-            true
-        ],
-        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -1539,22 +1405,5 @@
             true
         ],
         "AllowVariants": false
-    },
-    {
-        "Race": "Tyrant",
-        "Name": "Trickster Loki",
-        "Level": 1,
-        "Range": null,
-        "Special": [
-            [
-                "Loki",
-                "Hel",
-                "Fenrir"
-            ]
-        ],
-        "Plugin": [
-            true
-        ],
-        "AllowVariants": true
     }
 ]
