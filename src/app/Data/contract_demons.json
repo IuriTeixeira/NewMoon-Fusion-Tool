@@ -152,7 +152,7 @@
         "Race": "Earth Element",
         "Name": "Dwarf",
         "Zone": ["Shibuya","Shinagawa","Shibuya Metro","Shibuya Quartz (Silver)"],
-        "Location": ["East side", "Near quarries", null],
+        "Location": ["East side", "Near quarries", null, null],
         "Notes": [null, "Does not spawn during New Moon or Invasion", null, null]
     },
     {
@@ -201,7 +201,7 @@
         "Race": "Raptor",
         "Name": "Onmoraki",
         "Zone": ["Suginami", "Suginami Tunnels (Bronze)"],
-        "Location": ["[17, 17]"],
+        "Location": ["[17, 17]", null],
         "Notes": ["From 21:00 to 6:00"]
     },
     {
@@ -295,7 +295,7 @@
         "Race": "Wild Bird",
         "Name": "Celaeno",
         "Zone": ["Shibuya","Shibuya Quartz (Bronze)"],
-        "Location": ["Northeast and southeast corners"]
+        "Location": ["Northeast and southeast corners", null]
     },
     {
         "Race": "Wild Bird",
@@ -605,7 +605,7 @@
         "Race": "Fairy",
         "Name": "Jack Frost",
         "Zone": ["Suginami", "Suginami Tunnels (Bronze)"],
-        "Location": ["[21, 22] [24, 23]"]
+        "Location": ["[21, 22] [24, 23]", null]
     },
     {
         "Race": "Fairy",

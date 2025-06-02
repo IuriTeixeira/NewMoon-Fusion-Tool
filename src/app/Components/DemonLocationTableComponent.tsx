@@ -1,6 +1,7 @@
 'use client'
 import { Center, Image, Anchor, Table, useComputedColorScheme } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
+import variantDemonList from '../Data/variant_demons.json'
 import demonLocList from '../Data/contract_demons.json'
 import React, { JSX } from 'react'
 import Link from 'next/link';
@@ -15,6 +16,10 @@ interface DemonLocation {
 
 export default function DemonLocationTableComponent() {
     const colorScheme = useComputedColorScheme();
+
+    const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraphim", "Vile", "Wild Bird", "Yoma"]
+    const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
+    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Gaian", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
 
     const demonLocations: DemonLocation[] = demonLocList as DemonLocation[]
     const subTypes = [
@@ -60,9 +65,39 @@ export default function DemonLocationTableComponent() {
         return result.trim();
     }
 
-    const filteredDemonList: Demon[] = demonList.filter((demon: Demon) =>
+    const regularDemons: Demon[] = demonList.filter((demon: Demon) =>
         demonLocations.some((loc: DemonLocation) => loc.Name === demon.Name)
     );
+
+    const variantDemons: Demon[] = variantDemonList.filter((demon: Demon) =>
+        demonLocations.some((loc: DemonLocation) => loc.Name === demon.Name)
+    );
+
+    const filteredDemonList: Demon[] = [...regularDemons, ...variantDemons]
+    const sortedDemonList = [...filteredDemonList].sort((a, b) => {
+        // 1st: Sort by alignment priority (Law > Neutral > Chaos)
+        const aAlignment =
+            racesLaw.includes(a.Race) ? 0 :
+                racesNeutral.includes(a.Race) ? 1 : 2;
+        const bAlignment =
+            racesLaw.includes(b.Race) ? 0 :
+                racesNeutral.includes(b.Race) ? 1 : 2;
+
+        if (aAlignment !== bAlignment) {
+            return aAlignment - bAlignment;
+        }
+
+        // 2nd: If same alignment, sort by Race (A-Z)
+        if (a.Race < b.Race) return -1;
+        if (a.Race > b.Race) return 1;
+
+        // 3rd: If same Race, sort by Level (ascending)
+        if (a.Level < b.Level) return -1;
+        if (a.Level > b.Level) return 1;
+
+        // 4th: If same Level, sort by Name (A-Z)
+        return a.Name.localeCompare(b.Name);
+    });
 
     return (
         <Table.ScrollContainer minWidth={500}>
@@ -77,13 +112,13 @@ export default function DemonLocationTableComponent() {
                             <Center>Race</Center>
                         </Table.Th>
                         <Table.Th>
+                            <Center>Level</Center>
+                        </Table.Th>
+                        <Table.Th>
                             <Center>Icon</Center>
                         </Table.Th>
                         <Table.Th>
                             <Center>Name</Center>
-                        </Table.Th>
-                        <Table.Th>
-                            <Center>Level</Center>
                         </Table.Th>
                         <Table.Th>
                             <Center>Zone</Center>
@@ -97,10 +132,20 @@ export default function DemonLocationTableComponent() {
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
-                    {filteredDemonList.map((demon: Demon, index: number) => {
+                    {sortedDemonList.map((demon: Demon, index: number) => {
                         const imageName: string = cleanString(demon.Name)
                         const demonLocation: DemonLocation = demonLocations.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation
-                        let locPlusNotes: (JSX.Element | null)[] = []
+                        const locPlusNotes: (JSX.Element | null)[] = []
+                        let bgColor: string = ''
+                        if (racesLaw.includes(demon.Race)) {
+                            bgColor = 'cyan'
+                        } else {
+                            if (racesChaos.includes(demon.Race)) {
+                                bgColor = 'red'
+                            } else {
+                                bgColor = 'green'
+                            }
+                        }
                         if (demonLocation.Location) {
                             if (demonLocation.Notes) {
                                 demonLocation.Location.map((location, locIndex) => (
@@ -158,13 +203,14 @@ export default function DemonLocationTableComponent() {
                             }
                         }
 
-                        const rows: number = demonLocation.Zone.length
-
                         return (
                             <React.Fragment key={`row-fragment-${index}-${demon.Name}`}>
                                 <Table.Tr key={`row-${index}-${demon.Name}`}>
-                                    <Table.Td key={`race-${index}`} rowSpan={demonLocation.Zone.length || 1}>
-                                        {demon.Race}
+                                    <Table.Th key={`race-${index}`} rowSpan={demonLocation.Zone.length || 1} bg={bgColor}>
+                                        <Center>{demon.Race}</Center>
+                                    </Table.Th>
+                                    <Table.Td key={`level-${index}`} rowSpan={demonLocation.Zone.length || 1}>
+                                        <Center>{demon.Level}</Center>
                                     </Table.Td>
                                     <Table.Td key={`icon-${index}`} rowSpan={demonLocation.Zone.length || 1}>
                                         <Center><Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} w={32} h={32} /></Center>
@@ -173,9 +219,6 @@ export default function DemonLocationTableComponent() {
                                         <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>
                                             {demon.Name}
                                         </Anchor>
-                                    </Table.Td>
-                                    <Table.Td key={`level-${index}`} rowSpan={demonLocation.Zone.length || 1}>
-                                        <Center>{demon.Level}</Center>
                                     </Table.Td>
                                     <Table.Td key={`zone-${index}-0`}>
                                         {demonLocation.Zone[0]}
