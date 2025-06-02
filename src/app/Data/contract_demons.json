@@ -392,7 +392,7 @@
         "Race": "Beast",
         "Name": "Cait Sith",
         "Zone": ["Suginami", "Suginami Tunnels (Bronze)", "Nakano Underground Ruins (Bronze)"],
-        "Location": ["[18, 18]", null]
+        "Location": ["[18, 18]", null, null]
     },
     {
         "Race": "Beast",
@@ -421,7 +421,7 @@
         "Race": "Beast",
         "Name": "Inugami",
         "Zone": ["Suginami", "Nakano Underground Ruins (Bronze)"],
-        "Location": ["[20, 18]"]
+        "Location": ["[20, 18]", null]
     },
     {
         "Race": "Beast",
@@ -455,7 +455,7 @@
         "Race": "Beast",
         "Name": "Orthrus",
         "Zone": ["Ikebukuro", "Nakano Underground Ruins (Bronze)"],
-        "Location": ["[23, 22] near Zoshigaya Cemetery"],
+        "Location": ["[23, 22] near Zoshigaya Cemetery", null],
         "Notes": ["From 6:00 to 18:00", null]
     },
     {
@@ -1057,8 +1057,8 @@
         "Race": "Brute",
         "Name": "Karasu-Tengu",
         "Zone": ["Ueno", "Old Ichigaya Camp (Bronze)"],
-        "Location": ["Near Souhonzan and at Tower of the Dark Priests"],
-        "Notes": ["From 6:00 to 18:00"]
+        "Location": ["Near Souhonzan and at Tower of the Dark Priests", null],
+        "Notes": ["From 6:00 to 18:00", null]
     },
     {
         "Race": "Brute",
@@ -1231,8 +1231,8 @@
         "Race": "Foul",
         "Name": "Mou-Ryou",
         "Zone": ["Nakano", "Ueno", "Kagurazaka Zhu Que Cavern (Bronze)", "Old Tokyo Metro", "COMP-Hack Dungeon 1-A Reward"],
-        "Location": ["Western side", "Northeast corner"],
-        "Notes": [null, "From 18:00 to 6:00"]
+        "Location": ["Western side", "Northeast corner", null, null, null],
+        "Notes": [null, "From 18:00 to 6:00", null, null, null]
     },
     {
         "Race": "Foul",
@@ -1316,7 +1316,7 @@
         "Race": "Haunt",
         "Name": "Gaki",
         "Zone": ["Suginami", "Ueno", "Shinjuku Docks", "Old Ichigaya Camp (Bronze)", "Old Tokyo Metro"],
-        "Location": ["[16, 17] behind a rock", "Northeast and southeast corners", "Near elevator", null]
+        "Location": ["[16, 17] behind a rock", "Northeast and southeast corners", "Near elevator", null, null]
     },
     {
         "Race": "Haunt",

@@ -1,10 +1,11 @@
 import React from "react";
 import DemonLocationTableComponent from "../Components/DemonLocationTableComponent";
+import { Flex } from "@mantine/core";
 
 export default function Contract() {
     return (
-        <React.Fragment>
+        <Flex align={"center"} justify={"center"}>
             <DemonLocationTableComponent />
-        </React.Fragment>
+        </Flex>
     )
 }

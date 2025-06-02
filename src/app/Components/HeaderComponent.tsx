@@ -1,4 +1,4 @@
-import { Button, Container, Flex, Image, Text } from '@mantine/core';
+import { Button, Container, Flex, Group, Image, Text } from '@mantine/core';
 import classes from './HeaderComponent.module.css';
 import Link from 'next/link';
 
@@ -15,11 +15,18 @@ export default function HeaderComponent() {
                         </Link>
                         <Text c={'dimmed'} fw={500}>by Glorienn</Text>
                     </Flex>
-                    <Link href={'/contract'}>
-                        <Button>
-                            Contract Demons
-                        </Button>
-                    </Link>
+                    <Group>
+                        <Link href={'/'}>
+                            <Button>
+                                Fusions
+                            </Button>
+                        </Link>
+                        <Link href={'/contract'}>
+                            <Button>
+                                Contract Demons
+                            </Button>
+                        </Link>
+                    </Group>
                 </Flex>
             </Container>
         </header>
