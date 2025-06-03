@@ -147,13 +147,13 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                             <Center>Race</Center>
                         </Table.Th>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Level</Flex>
+                            <Center>Level</Center>
                         </Table.Th>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Icon</Flex>
+                            <Center>Icon</Center>
                         </Table.Th>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Name</Flex>
+                            <Center>Name</Center>
                         </Table.Th>
                         <Table.Th>
                             <Center>Fusion Range</Center>
@@ -182,17 +182,17 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                     {demon.Special && demon.Special.length > 0
                                         ?
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Th key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}><Center>{demon.Race}</Center></Table.Th>
-                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
-                                            <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
+                                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
+                                            <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
+                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                         :
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Th key={`race-${index}`} bg={bgColor}><Center>{demon.Race}</Center></Table.Th>
-                                            <Table.Td key={`level-${index}`}><Flex key={`level-flex-${index}`} align='center' justify='center'>{demon.Level}</Flex></Table.Td>
-                                            <Table.Td key={`icon-${index}`}><Flex key={`icon-flex-${index}`} align='center' justify='center'><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Flex></Table.Td>
+                                            <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
+                                            <Table.Td key={`icon-${index}`}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
+                                            <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                     }
                                     {demon.Range
