@@ -90,6 +90,7 @@ function FusionsContent() {
                 <DemonInfoComponent demon={demon} />
                 <RaceListComponent demon={demon} />
                 {!demon.Special && <RaceCombinationsComponent demon={demon} />}
+                {demonLoc && <DemonContractInfoComponent demonLoc={demonLoc}/>}
                 {elementCombinations.Elements
                     &&
                     (
@@ -99,7 +100,6 @@ function FusionsContent() {
                     )
                     &&
                     <ElementInfoComponent elements={elementCombinations.Elements!} />}
-                {demonLoc && <DemonContractInfoComponent demonLoc={demonLoc}/>}
                 <FusionTableComponent demon={demon} />
             </Stack>
         </Flex >

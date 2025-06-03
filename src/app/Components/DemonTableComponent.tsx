@@ -126,11 +126,30 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         if (a.Race < b.Race) return -1;
         if (a.Race > b.Race) return 1;
 
-        // 3rd: If same Race, sort by Level (ascending)
+        // 3rd: if same Race, sort by Race Rank
+        const raceRanks: Demon[] = demonList
+        .filter((d: Demon) => d.Race === a.Race)
+        .map((d: Demon) => d);
+        
+        const aBaseName:string = cleanString(a.Name)
+        const bBaseName:string = cleanString(b.Name)
+        
+        const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
+        const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
+        
+        if (aRank < bRank) return -1;
+        if (aRank > bRank) return 1;
+        
+        // 4th: if same Rank, sort by base Name
+        
+        if (aBaseName < bBaseName) return -1;
+        if (aBaseName > bBaseName) return 1;
+
+        // 4th: If same base Name, sort by Level (ascending)
         if (a.Level < b.Level) return -1;
         if (a.Level > b.Level) return 1;
 
-        // 4th: If same Level, sort by Name (A-Z)
+        // 5th: If same Level, sort by Name (A-Z)
         return a.Name.localeCompare(b.Name);
     });
 
@@ -182,17 +201,17 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                     {demon.Special && demon.Special.length > 0
                                         ?
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}>{demon.Race}</Table.Td>
+                                            <Table.Th key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
+                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
                                             <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                         :
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
+                                            <Table.Th key={`race-${index}`} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
+                                            <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
                                             <Table.Td key={`icon-${index}`}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                                            <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                     }
                                     {demon.Range
