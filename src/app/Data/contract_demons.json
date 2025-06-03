@@ -207,8 +207,7 @@
     {
         "Race": "Raptor",
         "Name": "Accomplished Onmoraki",
-        "Zone": ["Shibuya Quartz (Silver)"],
-        "Notes": [null, null, null]
+        "Zone": ["Shibuya Quartz (Silver)"]
     },
     {
         "Race": "Raptor",
@@ -558,6 +557,7 @@
     },
     {
         "Race": "Dragon King",
+        "Name": "Accomplished Naga",
         "Zone": ["Shinjuku Docks"],
         "Location": ["[14, 23] [21, 25]"]
     },
@@ -746,11 +746,6 @@
     },
     {
         "Race": "Godly Beast",
-        "Name": "Shiisa",
-        "Zone": ["Nakano Underground Ruins (Bronze)"]
-    },
-    {
-        "Race": "Godly Beast",
         "Name": "Makami",
         "Zone": ["Nakano Underground Ruins (Silver)"]
     },
@@ -778,6 +773,11 @@
         "Race": "Godly Beast",
         "Name": "Nandi",
         "Zone": ["Nakano Underground Ruins (Silver)"]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Shiisa",
+        "Zone": ["Nakano Underground Ruins (Bronze)"]
     },
     {
         "Race": "Holy Beast",
@@ -871,7 +871,7 @@
         "Race": "Nocturne",
         "Name": "Inexperienced Lilim",
         "Zone": ["Shinjuku Docks"],
-        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell"]
+        "Location": ["Alp-Lilim-Robot Hell"]
     },
     {
         "Race": "Nocturne",
@@ -908,6 +908,11 @@
         "Zone": ["Ikebukuro"],
         "Location": ["[22, 24]"],
         "Notes": ["From 18:00 to 6:00"]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Inexperienced Succubus",
+        "Zone": ["COMP-Hack Dungeon 4-A Reward"]
     },
     {
         "Race": "Wilder",
@@ -967,6 +972,11 @@
         "Name": "Accomplished Gyuki",
         "Zone": ["Nakano"],
         "Notes": ["Shares spawn pools with other Accomplished demons in the same zone (except Accomplished Pyro Jack)"]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Gyuki",
+        "Zone": ["Nakano Underground Ruins (Bronze)"]
     },
     {
         "Race": "Wilder",
@@ -1072,6 +1082,12 @@
     },
     {
         "Race": "Brute",
+        "Name": "Inexperienced Shiki-Ouji",
+        "Zone": ["Shinjuku Docks"],
+        "Location": ["Act 15 boss room"]
+    },
+    {
+        "Race": "Brute",
         "Name": "Yomotsu-Ikusa",
         "Zone": ["Shinagawa Catacombs (Bronze)"],
         "Notes": ["Only spawns in the New Moon version of the run"]
@@ -1105,12 +1121,6 @@
         "Race": "Evil Dragon",
         "Name": "Tarasque",
         "Zone": ["Celu Tower (Silver)"]
-    },
-    {
-        "Race": "Evil Dragon",
-        "Name": "Deformed Tarasque",
-        "Zone": ["Shinagawa Catacombs (Bronze)"],
-        "Notes": ["Only spawns in the New Moon version of the run"]
     },
     {
         "Race": "Evil Dragon",
@@ -1170,10 +1180,20 @@
     },
     {
         "Race": "Femme",
+        "Name": "Deformed Taraka",
+        "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Femme",
         "Name": "Gorgon",
         "Zone": ["Ueno", "Kuchinawa Cave"],
         "Location": ["Northeast and southeast corners", null],
         "Notes": [null, "From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Deformed Gorgon",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Femme",
@@ -1184,9 +1204,19 @@
     },
     {
         "Race": "Femme",
+        "Name": "Deformed Yomotsu-Shikome",
+        "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Femme",
         "Name": "Lamia",
         "Zone": ["Kuchinawa Cave"],
         "Notes": ["From 6:00 to 18:00"]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Deformed Lamia",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Femme",
@@ -1303,12 +1333,6 @@
     },
     {
         "Race": "Haunt",
-        "Name": "Accomplished Poltergeist",
-        "Zone": ["Ichigaya"],
-        "Notes": ["Shares spawn pools with other Accomplished demons in the same zone"]
-    },
-    {
-        "Race": "Haunt",
         "Name": "Deformed Poltergeist",
         "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)", "Kagurazaka Zhu Que Cavern (Gold)"]
     },
@@ -1415,6 +1439,11 @@
     {
         "Race": "Nation Ruler",
         "Name": "Accomplished Take-Minakata",
+        "Zone": ["Kagurazaka Zhu Que Cavern (Gold)"]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Accomplished Okuninushi",
         "Zone": ["Kagurazaka Zhu Que Cavern (Gold)"]
     }
 ]

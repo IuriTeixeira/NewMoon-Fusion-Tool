@@ -2,12 +2,23 @@
 import { useSearchParams } from "next/navigation";
 import FusionTableComponent from "../Components/FusionTableComponent";
 import demons from '../Data/demons.json'
+import demonLocations from '../Data/contract_demons.json'
 import variantDemons from '../Data/variant_demons.json'
 import DemonInfoComponent from "../Components/DemonInfoComponent";
 import ElementInfoComponent from "../Components/ElementInfoComponent";
+import DemonContractInfoComponent from "../Components/DemonContractInfoComponent";
 import racesData from '../Data/race_combinations.json'
-import { Button, Flex, LoadingOverlay, SimpleGrid } from "@mantine/core";
+import { Button, Flex, LoadingOverlay, SimpleGrid, Space } from "@mantine/core";
 import { Suspense } from "react";
+import { IconArrowBack } from "@tabler/icons-react";
+
+interface DemonLocation {
+    Race: string
+    Name: string
+    Zone: string[]
+    Location?: (string | null)[]
+    Notes?: (string | null)[]
+}
 
 function FusionsContent() {
     const searchParams = useSearchParams()
@@ -21,15 +32,19 @@ function FusionsContent() {
     }
 
     const elementCombinations: FusionData = racesData.find((targetRace) => targetRace.Race === demon.Race) as FusionData
-    
+
+    const demonLoc:DemonLocation = demonLocations.find((d:DemonLocation) => d.Name = demon.Name) as DemonLocation
+
     return (
         <Flex align='center' justify='center' m={'lg'}>
             <SimpleGrid cols={1} spacing={'lg'}>
                 <Button fullWidth component="a" href="/">
+                    <IconArrowBack /><Space w={3} />
                     Back to List
                 </Button>
                 <DemonInfoComponent demon={demon} />
                 {elementCombinations.Elements && <ElementInfoComponent elements={elementCombinations.Elements!} />}
+                {demonLoc && <DemonContractInfoComponent demon={demon}/>}
                 <FusionTableComponent demon={demon} />
             </SimpleGrid>
         </Flex >

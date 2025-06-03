@@ -33,6 +33,16 @@
     },
     {
         "Race": "Avian",
+        "Name": "Shining Zhu Que",
+        "Level": 52,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Avian",
         "Name": "Godly Golden Winged Bird Garuda",
         "Level": 79,
         "Range": null,
@@ -44,6 +54,16 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Avian",
+        "Name": "Premature Phoenix",
+        "Level": 92,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -76,6 +96,16 @@
     },
     {
         "Race": "Divine",
+        "Name": "Accomplished Archangel",
+        "Level": 17,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
         "Name": "Inexperienced Principality",
         "Level": 20,
         "Range": null,
@@ -92,6 +122,16 @@
     },
     {
         "Race": "Divine",
+        "Name": "Accomplished Principality",
+        "Level": 25,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
         "Name": "Inexperienced Dominion",
         "Level": 26,
         "Range": null,
@@ -104,6 +144,46 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Lucky Angel",
+        "Level": 48,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Power",
+        "Level": 70,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Archangel",
+        "Level": 76,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Deformed Principality",
+        "Level": 76,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -124,6 +204,36 @@
     },
     {
         "Race": "Earth Element",
+        "Name": "Lost Hua Po",
+        "Level": 1,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Knocker",
+        "Level": 1,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Hua Po",
+        "Level": 5,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
         "Name": "Inexperienced Sudama",
         "Level": 14,
         "Range": null,
@@ -140,6 +250,46 @@
     },
     {
         "Race": "Earth Element",
+        "Name": "Accomplished Sudama",
+        "Level": 17,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Late Afternoon Ubelluris",
+        "Level": 5,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Accomplished Dwarf",
+        "Level": 30,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Lucky Hua Po",
+        "Level": 33,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
         "Name": "Heaven-Piercing Ubelluris",
         "Level": 51,
         "Range": null,
@@ -152,6 +302,26 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Deformed Dwarf",
+        "Level": 61,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Deformed Cyclops",
+        "Level": 72,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -218,6 +388,26 @@
     },
     {
         "Race": "Raptor",
+        "Name": "Accomplished Onmoraki",
+        "Level": 11,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Deformed Onmoraki",
+        "Level": 19,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
         "Name": "Heaven-Piercing Onmoraki",
         "Level": 19,
         "Range": null,
@@ -233,9 +423,41 @@
         ]
     },
     {
+        "Race": "Raptor",
+        "Name": "Accomplished Zhen",
+        "Level": 41,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Shining Furiae",
+        "Level": 73,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Seraph",
         "Name": "Inexperienced Uriel",
         "Level": 40,
+        "Range": [
+            "Quest Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Inexperienced Raphael",
+        "Level": 45,
         "Range": [
             "Quest Reward Only"
         ],
@@ -267,6 +489,16 @@
         "Range": [
             "PG Only"
         ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Deformed Baphomet",
+        "Level": 11,
+        "Range": ["Contract Only"],
         "Special": null,
         "Plugin": [
             false
@@ -306,6 +538,26 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Accomplished Harpy",
+        "Level": 7,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Macha",
+        "Level": 12,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Inexperienced Ocypete",
         "Level": 14,
         "Range": null,
@@ -338,6 +590,16 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Accomplished Ocypete",
+        "Level": 25,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Inexperienced Aello",
         "Level": 28,
         "Range": null,
@@ -354,6 +616,56 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Accomplished Celaeno",
+        "Level": 30,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Ocypete",
+        "Level": 31,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Accomplished Aello",
+        "Level": 36,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Celaeno",
+        "Level": 37,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Deformed Macha",
+        "Level": 42,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Heaven-Piercing Macha",
         "Level": 42,
         "Range": null,
@@ -366,6 +678,46 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Shining Aello",
+        "Level": 43,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Accomplished Isora",
+        "Level": 14,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Accomplished Dis",
+        "Level": 23,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Yoma",
+        "Name": "Lucky Dis",
+        "Level": 32,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -434,6 +786,36 @@
     },
     {
         "Race": "Beast",
+        "Name": "Accomplished Nekomata",
+        "Level": 26,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Mirror Inugami",
+        "Level": 27,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Cait Sith",
+        "Level": 33,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
         "Name": "Heaven-Piercing Cait Sith",
         "Level": 33,
         "Range": null,
@@ -455,6 +837,56 @@
         "Range": [
             "PG Only"
         ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Lucky Nekomata",
+        "Level": 52,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Orthrus",
+        "Level": 65,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Traditional Tan-Ki",
+        "Level": 67,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Traditional Cerberus",
+        "Level": 69,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Cerberus",
+        "Level": 70,
+        "Range": ["Contract Only"],
         "Special": null,
         "Plugin": [
             false
@@ -529,6 +961,26 @@
         ]
     },
     {
+        "Race": "Beast",
+        "Name": "Traditional Orthrus",
+        "Level": 71,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Deformed Tan-Ki",
+        "Level": 78,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Demigod",
         "Name": "Nimble Cu Chulainn",
         "Level": 30,
@@ -554,6 +1006,16 @@
     },
     {
         "Race": "Demigod",
+        "Name": "Lucky Valkyrie",
+        "Level": 55,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
         "Name": "Hero of Akaeda Cu Chulainn",
         "Level": 70,
         "Range": null,
@@ -570,7 +1032,7 @@
     },
     {
         "Race": "Demigod",
-        "Name": "Noble Demon King Kurama-Tengu ",
+        "Name": "Noble Demon King Kurama-Tengu",
         "Level": 70,
         "Range": null,
         "Special": [
@@ -585,9 +1047,147 @@
         ]
     },
     {
+        "Race": "Demigod",
+        "Name": "Deformed Hayagriva",
+        "Level": 77,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Deformed Kurama-Tengu",
+        "Level": 80,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Deformed Hanuman",
+        "Level": 80,
+        "Range": ["Contract Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Dragon King",
         "Name": "Wanderer Nozuchi",
         "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Inexperienced Nozuchi",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Inexperienced Naga",
+        "Level": 18,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Accomplished Naga",
+        "Level": 24,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Accomplished Mizuchi",
+        "Level": 42,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Dragon King",
+        "Name": "Traditional Nozuchi",
+        "Level": 64,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Pixie",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Lucky Pixie",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Kissy Pixie",
+        "Level": 2,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Leader Pixie",
+        "Level": 3,
         "Range": [
             "Contract Only"
         ],
@@ -614,6 +1214,54 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Stray Jack Frost",
+        "Level": 4,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Rainbow of Victory Jack Frost",
+        "Level": 11,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished High Pixie",
+        "Level": 15,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Elf",
+        "Level": 16,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Inexperienced Pyro Jack",
         "Level": 17,
         "Range": null,
@@ -626,6 +1274,30 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Pyro Jack",
+        "Level": 20,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Kelpie",
+        "Level": 25,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -662,6 +1334,18 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Deformed Troll",
+        "Level": 48,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Heaven-Piercing Troll",
         "Level": 48,
         "Range": null,
@@ -678,6 +1362,18 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Deformed Jack Frost",
+        "Level": 51,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Heaven-Piercing Jack Frost",
         "Level": 51,
         "Range": null,
@@ -690,6 +1386,42 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Accomplished Oberon",
+        "Level": 52,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Deformed Pyro Jack",
+        "Level": 55,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Lucky Titania",
+        "Level": 57,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -779,6 +1511,32 @@
     },
     {
         "Race": "Fiend",
+        "Name": "Nightmare Alice",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Alice",
+                "Wrathful Alice",
+                "Nimble Alice"
+            ],
+            [
+                "Alice",
+                "Wrathful Alice",
+                "Joyful Alice"
+            ],
+            [
+                "Wrathful Alice",
+                "Nimble Alice",
+                "Joyful Alice"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Fiend",
         "Name": "Princess of Pure Madness Alice",
         "Level": 70,
         "Range": null,
@@ -840,6 +1598,54 @@
         ]
     },
     {
+        "Race": "Godly Beast",
+        "Name": "Inexperienced Makami",
+        "Level": 12,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Inexperienced Kaichi",
+        "Level": 25,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Deformed Kaichi",
+        "Level": 60,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
+        "Name": "Deformed Makami",
+        "Level": 74,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Holy Beast",
         "Name": "Inexperienced Unicorn",
         "Level": 15,
@@ -872,6 +1678,78 @@
         ]
     },
     {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Kirin",
+        "Level": 29,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Deformed Kirin",
+        "Level": 70,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Deformed Sleipnir",
+        "Level": 78,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Deformed Apis",
+        "Level": 79,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Premature Pa Bil Sag",
+        "Level": 92,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Accomplished Alp",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Nocturne",
         "Name": "Wanderer Alp",
         "Level": 6,
@@ -882,6 +1760,30 @@
                 "Wanderer Nozuchi"
             ]
         ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Inexperienced Lilim",
+        "Level": 11,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Accomplished Empusa",
+        "Level": 14,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
         "Plugin": [
             false
         ]
@@ -904,6 +1806,18 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Inexperienced Succubus",
+        "Level": 20,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Lilim the Little Demon",
         "Level": 20,
         "Range": null,
@@ -915,6 +1829,18 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Accomplished Fomorian",
+        "Level": 27,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -944,6 +1870,32 @@
                 "Magician Decarabia"
             ]
         ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Crisis Black Frost",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            ["Prideful Black Frost","Joyful Black Frost","Wrathful Alice"],
+            ["Prideful Black Frost","Joyful Black Frost","Nimble Cu Chulainn"],
+            ["Prideful Black Frost","Joyful Black Frost","Nimble Alice"]
+        ],
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Premature Lilim",
+        "Level": 92,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
         "Plugin": [
             false
         ]
@@ -993,6 +1945,102 @@
     },
     {
         "Race": "Wilder",
+        "Name": "Accomplished Garm",
+        "Level": 9,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Bicorn",
+        "Level": 12,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Gyuki",
+        "Level": 14,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Accomplished Bicorn",
+        "Level": 17,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Mothman",
+        "Level": 20,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Accomplished Gyuki",
+        "Level": 25,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Bicorn",
+        "Level": 52,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Gyuki",
+        "Level": 53,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
         "Name": "Heaven-Piercing Gyuki",
         "Level": 53,
         "Range": null,
@@ -1005,6 +2053,54 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Catoblepas",
+        "Level": 53,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Garm",
+        "Level": 76,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Fenrir",
+        "Level": 77,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Deformed Tao Wu",
+        "Level": 79,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -1037,6 +2133,66 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Accomplished Turdak",
+        "Level": 23,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Accomplished Oni",
+        "Level": 25,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Koppa-Tengu",
+        "Level": 32,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Karasu-Tengu",
+        "Level": 40,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
+        "Name": "Deformed Momunofu",
+        "Level": 45,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -1156,6 +2312,66 @@
         ]
     },
     {
+        "Race": "Evil Dragon",
+        "Name": "Late Afternoon Cockatrice",
+        "Level": 16,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Accomplished Cockatrice",
+        "Level": 24,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Late Afternoon Basilisk",
+        "Level": 30,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Dragon",
+        "Name": "Traditional Tarasque",
+        "Level": 67,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Accomplished Forneus",
+        "Level": 29,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Fallen",
         "Name": "Inexperienced Decarabia",
         "Level": 30,
@@ -1220,12 +2436,35 @@
         ]
     },
     {
-        "Race": "Fallen",
-        "Name": "Eligor",
-        "Level": 43,
+        "Race": "Femme",
+        "Name": "Inexperienced Datsue-Ba",
+        "Level": 5,
         "Range": [
-            58,
-            85
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Lucky Acheri",
+        "Level": 5,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Lucky Datsue-Ba",
+        "Level": 10,
+        "Range": [
+            "Contract Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1249,6 +2488,78 @@
         ]
     },
     {
+        "Race": "Femme",
+        "Name": "Deformed Taraka",
+        "Level": 35,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Deformed Yomotsu-Shikome",
+        "Level": 40,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Deformed Gorgon",
+        "Level": 45,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Deformed Lamia",
+        "Level": 52,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
+        "Name": "Accomplished Yaksini",
+        "Level": 53,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Accomplished Will O'Wisp",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Foul",
         "Name": "Inexperienced Slime",
         "Level": 3,
@@ -1266,6 +2577,30 @@
     },
     {
         "Race": "Foul",
+        "Name": "Accomplished Mou-Ryou",
+        "Level": 11,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Slime",
+        "Level": 30,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
         "Name": "Heaven-Piercing Slime",
         "Level": 30,
         "Range": null,
@@ -1278,6 +2613,54 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Inexperienced Phantom",
+        "Level": 45,
+        "Range": [
+            "Quest Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Black Ooze",
+        "Level": 46,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Specter",
+        "Level": 52,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Foul",
+        "Name": "Deformed Shadow",
+        "Level": 62,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -1328,6 +2711,18 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Accomplished Ghoul",
+        "Level": 1,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
         "Name": "Inexperienced Poltergeist",
         "Level": 4,
         "Range": null,
@@ -1340,6 +2735,54 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Poltergeist",
+        "Level": 4,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Choronzon",
+        "Level": 17,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Accomplished Yakkha",
+        "Level": 24,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Poltergeist",
+        "Level": 26,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -1360,6 +2803,30 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Deformed Gaki",
+        "Level": 28,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Ghoul",
+        "Level": 30,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
         "Name": "Heaven-Piercing Ghoul",
         "Level": 30,
         "Range": null,
@@ -1372,6 +2839,18 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Choronzon",
+        "Level": 35,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -1391,6 +2870,42 @@
         ]
     },
     {
+        "Race": "Haunt",
+        "Name": "Accomplished Pisaca",
+        "Level": 36,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Legion",
+        "Level": 48,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Deformed Pisaca",
+        "Level": 55,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Nation Ruler",
         "Name": "Inexperienced Arahabaki",
         "Level": 45,
@@ -1407,6 +2922,30 @@
         ]
     },
     {
+        "Race": "Nation Ruler",
+        "Name": "Accomplished Take-Minakata",
+        "Level": 63,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Accomplished Okuninushi",
+        "Level": 70,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Tyrant",
         "Name": "Trickster Loki",
         "Level": 1,
@@ -1420,6 +2959,16 @@
         ],
         "Plugin": [
             true
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Inexperienced Surt",
+        "Level": 40,
+        "Range": ["Quest Reward Only"],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     }
 ]

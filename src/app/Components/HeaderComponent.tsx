@@ -1,4 +1,4 @@
-import { Button, Center, Container, Flex, Group, Image, Stack, Text } from '@mantine/core';
+import { Button, Center, Container, Group, Image, Stack, Text } from '@mantine/core';
 import classes from './HeaderComponent.module.css';
 import Link from 'next/link';
 
