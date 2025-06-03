@@ -15,39 +15,58 @@ interface DemonTableProps {
 export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants }: DemonTableProps) {
     const colorScheme = useComputedColorScheme();
 
+    const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraph", "Vile", "Wild Bird", "Yoma"]
+    const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
+    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
+
     const subTypes = [
-        'Inexperienced ',
-        'Illusion ',
-        ' of Kuyo',
-        'Wanderer ',
-        'Accomplished ',
-        'Vermillion Flame ',
-        'Godly Golden Winged Bird ',
-        'Hero of Akaeda ',
-        'Unmatched Steel ',
-        'Brave Red Capote ',
-        'Noble Demon King ',
-        'Blasted Road ',
-        'Agent of God ',
-        'Princess of Pure Madness ',
-        'Seven Stars of Death ',
-        'Agent of God ',
-        'Nimble ',
-        'Joyful ',
-        'Prideful ',
-        'Wrathful ',
-        'Lustful ',
-        'Magician ',
-        'Mystic ',
-        'Bringer of Aging ',
-        'Pleasure Bringer ',
-        'Huntress ',
-        'Heaven-Piercing ',
-        'Gojo Bridge ',
-        ' of Assault',
-        'Shana ',
-        'Hassou Tobi ',
-        'Horse '
+        'Inexperienced',
+        'Illusion',
+        'of Kuyo',
+        'Wanderer',
+        'Accomplished',
+        'Vermillion Flame',
+        'Godly Golden Winged Bird',
+        'Hero of Akaeda',
+        'Unmatched Steel',
+        'Brave Red Capote',
+        'Noble Demon King',
+        'Blasted Road',
+        'Agent of God',
+        'Princess of Pure Madness',
+        'Seven Stars of Death',
+        'Agent of God',
+        'Nimble',
+        'Joyful',
+        'Prideful',
+        'Wrathful',
+        'Lustful',
+        'Magician',
+        'Mystic',
+        'Bringer of Aging',
+        'Pleasure Bringer',
+        'Huntress',
+        'Heaven-Piercing',
+        'Gojo Bridge',
+        'of Assault',
+        'Shana',
+        'Hassou Tobi',
+        'Horse',
+        'Shining',
+        'Premature',
+        'Accomplished',
+        'Deformed',
+        'Lucky',
+        'Lost',
+        'Late Afternoon',
+        'Mirror',
+        'Traditional',
+        'Kissy',
+        'Leader',
+        'Rainbow of Victory',
+        'Stray',
+        'Crisis',
+        'Nightmare'
     ]
 
     function cleanString(str: string): string {
@@ -90,6 +109,50 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         }
     }
 
+    const sortedDemonList = [...filteredDemonList].sort((a, b) => {
+        // 1st: Sort by alignment priority (Law > Neutral > Chaos)
+        const aAlignment =
+            racesLaw.includes(a.Race) ? 0 :
+                racesNeutral.includes(a.Race) ? 1 : 2;
+        const bAlignment =
+            racesLaw.includes(b.Race) ? 0 :
+                racesNeutral.includes(b.Race) ? 1 : 2;
+
+        if (aAlignment !== bAlignment) {
+            return aAlignment - bAlignment;
+        }
+
+        // 2nd: If same alignment, sort by Race (A-Z)
+        if (a.Race < b.Race) return -1;
+        if (a.Race > b.Race) return 1;
+
+        // 3rd: if same Race, sort by Race Rank
+        const raceRanks: Demon[] = demonList
+        .filter((d: Demon) => d.Race === a.Race)
+        .map((d: Demon) => d);
+        
+        const aBaseName:string = cleanString(a.Name)
+        const bBaseName:string = cleanString(b.Name)
+        
+        const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
+        const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
+        
+        if (aRank < bRank) return -1;
+        if (aRank > bRank) return 1;
+        
+        // 4th: if same Rank, sort by base Name
+        
+        if (aBaseName < bBaseName) return -1;
+        if (aBaseName > bBaseName) return 1;
+
+        // 4th: If same base Name, sort by Level (ascending)
+        if (a.Level < b.Level) return -1;
+        if (a.Level > b.Level) return 1;
+
+        // 5th: If same Level, sort by Name (A-Z)
+        return a.Name.localeCompare(b.Name);
+    });
+
     return (
         <Table.ScrollContainer minWidth={500}>
             <Table withTableBorder withColumnBorders>
@@ -103,13 +166,13 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                             <Center>Race</Center>
                         </Table.Th>
                         <Table.Th>
+                            <Center>Level</Center>
+                        </Table.Th>
+                        <Table.Th>
                             <Center>Icon</Center>
                         </Table.Th>
                         <Table.Th>
                             <Center>Name</Center>
-                        </Table.Th>
-                        <Table.Th>
-                            <Center>Level</Center>
                         </Table.Th>
                         <Table.Th>
                             <Center>Fusion Range</Center>
@@ -120,25 +183,35 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
-                    {filteredDemonList.filter((d: Demon) => d.Variant !== true).map((demon, index) => {
+                    {sortedDemonList.filter((d: Demon) => d.Variant !== true).map((demon, index) => {
                         const imageName: string = cleanString(demon.Name)
+                        let bgColor: string = ''
+                        if (racesLaw.includes(demon.Race)) {
+                            bgColor = 'cyan'
+                        } else {
+                            if (racesChaos.includes(demon.Race)) {
+                                bgColor = 'red'
+                            } else {
+                                bgColor = 'green'
+                            }
+                        }
                         return (
                             <React.Fragment key={`fragment-row-${index}`}>
                                 <Table.Tr key={`row-${index}`}>
                                     {demon.Special && demon.Special.length > 0
                                         ?
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
+                                            <Table.Th key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
+                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
                                             <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                                            <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                         :
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Td key={`race-${index}`}>{demon.Race}</Table.Td>
+                                            <Table.Th key={`race-${index}`} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
+                                            <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
                                             <Table.Td key={`icon-${index}`}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
-                                            <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
                                         </React.Fragment>
                                     }
                                     {demon.Range

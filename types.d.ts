@@ -16,6 +16,14 @@ interface FusionData {
     Elements: string[] | null
 }
 
+interface DemonLocation {
+    Race: string
+    Name: string
+    Zone: string[]
+    Location?: (string | null)[]
+    Notes?: (string | null)[]
+}
+
 interface DemonPair {
     demon1: Demon
     demon2: Demon

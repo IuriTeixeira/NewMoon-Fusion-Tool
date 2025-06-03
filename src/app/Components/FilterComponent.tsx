@@ -13,7 +13,7 @@ interface FilterProps {
 export default function FilterComponent({ raceFilter, setRaceFilter, hidePlugins, setHidePlugins, displayVariants, setDisplayVariants }: FilterProps) {
     const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraph", "Vile", "Wild Bird", "Yoma"]
     const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
-    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Gaian", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
+    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
 
     return (
