@@ -10,7 +10,7 @@ import DemonContractInfoComponent from "../Components/DemonContractInfoComponent
 import RaceCombinationsComponent from "../Components/RaceCombinationsComponent";
 import RaceListComponent from "../Components/RaceListComponent";
 import racesData from '../Data/race_combinations.json'
-import { Button, Flex, LoadingOverlay, Stack } from "@mantine/core";
+import { Button, Flex, LoadingOverlay, Space, Stack } from "@mantine/core";
 import { Suspense } from "react";
 import { IconArrowBack } from "@tabler/icons-react";
 
@@ -70,6 +70,8 @@ function FusionsContent() {
     }
 
     const elementCombinations: FusionData = racesData.find((targetRace) => targetRace.Race === demon.Race) as FusionData
+
+    const demonLoc:DemonLocation = demonLocations.find((d:DemonLocation) => d.Name === demon.Name) as DemonLocation
 
     let originalDemon = null
     if (demon.Name === 'Amaterasu of Kuyo') {

@@ -108,7 +108,6 @@ export default function DemonLocationTableComponent() {
         
         const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
         const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
-        console.log(a.Name, aRank, 'vs', bRank, b.Name)
         
         if (aRank < bRank) return -1;
         if (aRank > bRank) return 1;

@@ -182,7 +182,7 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                     {demon.Special && demon.Special.length > 0
                                         ?
                                         <React.Fragment key={`race-name-level-${index}`}>
-                                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length}>{demon.Race}</Table.Td>
+                                            <Table.Td key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}>{demon.Race}</Table.Td>
                                             <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                             <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
