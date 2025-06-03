@@ -1,5 +1,5 @@
 import { IconArrowUp, IconArrowDown } from "@tabler/icons-react";
-import { Flex, Table, useComputedColorScheme } from "@mantine/core";
+import { Center, Table, useComputedColorScheme } from "@mantine/core";
 
 interface ElementInfoProps {
     elements: string[]
@@ -17,21 +17,21 @@ export default function ElementInfoComponent({ elements }: ElementInfoProps) {
                 }}
             >
                 <Table.Tr>
-                    <Table.Th colSpan={4}><Flex justify={'center'}>Elemental Fusion</Flex></Table.Th>
+                    <Table.Th colSpan={4}><Center>Elemental Fusion</Center></Table.Th>
                 </Table.Tr>
                 <Table.Tr>
-                    <Table.Th><Flex justify={'center'}>Erthys</Flex></Table.Th>
-                    <Table.Th><Flex justify={'center'}>Aeros</Flex></Table.Th>
-                    <Table.Th><Flex justify={'center'}>Aquans</Flex></Table.Th>
-                    <Table.Th><Flex justify={'center'}>Flaemis</Flex></Table.Th>
+                    <Table.Th><Center>Erthys</Center></Table.Th>
+                    <Table.Th><Center>Aeros</Center></Table.Th>
+                    <Table.Th><Center>Aquans</Center></Table.Th>
+                    <Table.Th><Center>Flaemis</Center></Table.Th>
                 </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
                 <Table.Tr>
-                    <Table.Td><Flex justify={'center'}>{elements[0] === 'Down' ? <IconArrowDown color={colors[0]} /> : <IconArrowUp color={colors[0]} />}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[1] === 'Down' ? <IconArrowDown color={colors[1]} /> : <IconArrowUp color={colors[1]} />}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[2] === 'Down' ? <IconArrowDown color={colors[2]} /> : <IconArrowUp color={colors[2]} />}</Flex></Table.Td>
-                    <Table.Td><Flex justify={'center'}>{elements[3] === 'Down' ? <IconArrowDown color={colors[3]} /> : <IconArrowUp color={colors[3]} />}</Flex></Table.Td>
+                    <Table.Td><Center>{elements[0] === 'Down' ? <IconArrowDown color={colors[0]} /> : <IconArrowUp color={colors[0]} />}</Center></Table.Td>
+                    <Table.Td><Center>{elements[1] === 'Down' ? <IconArrowDown color={colors[1]} /> : <IconArrowUp color={colors[1]} />}</Center></Table.Td>
+                    <Table.Td><Center>{elements[2] === 'Down' ? <IconArrowDown color={colors[2]} /> : <IconArrowUp color={colors[2]} />}</Center></Table.Td>
+                    <Table.Td><Center>{elements[3] === 'Down' ? <IconArrowDown color={colors[3]} /> : <IconArrowUp color={colors[3]} />}</Center></Table.Td>
                 </Table.Tr>
             </Table.Tbody>
         </Table>

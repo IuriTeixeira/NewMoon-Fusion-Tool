@@ -65,11 +65,12 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Avian",
-        "Name": "Yata-Garasu",
+        "Name": "Yatagarasu",
         "Level": 52,
         "Range": [
             84,
@@ -117,7 +118,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -132,7 +134,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -142,7 +145,7 @@
         "Special": [
             [
                 "Sati",
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Sleipnir"
             ],
             [
@@ -153,7 +156,7 @@
             [
                 "Sleipnir",
                 "Valkyrie",
-                "Yata-Garasu"
+                "Yatagarasu"
             ]
         ],
         "Plugin": [
@@ -173,7 +176,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -215,7 +219,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -230,7 +235,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -245,7 +251,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demon God",
@@ -260,6 +267,19 @@
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Holy Night Angel",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -366,7 +386,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Divine",
@@ -381,7 +402,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Earth Element",
@@ -474,7 +496,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
@@ -528,7 +551,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -543,7 +567,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -558,7 +583,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -573,7 +599,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -588,7 +615,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -604,7 +632,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -620,7 +649,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Entity",
@@ -635,7 +665,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Demon",
@@ -676,7 +707,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Evil Demon",
@@ -704,7 +736,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Demon",
@@ -720,7 +753,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Goddess",
@@ -825,7 +859,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Goddess",
@@ -841,7 +876,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Goddess",
@@ -856,7 +892,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Goddess",
@@ -871,7 +908,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Goddess",
@@ -887,7 +925,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Heavenly God",
@@ -929,7 +968,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Heavenly God",
@@ -950,14 +990,15 @@
         "Range": null,
         "Special": [
             [
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Hecate",
                 "Nyx"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Heavenly God",
@@ -966,14 +1007,15 @@
         "Range": null,
         "Special": [
             [
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Mithra",
                 "Cu Chulainn"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Heavenly God",
@@ -982,14 +1024,15 @@
         "Range": null,
         "Special": [
             [
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Mithra",
                 "Hathor"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Raptor",
@@ -1068,7 +1111,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Raptor",
@@ -1095,7 +1139,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Seraph",
@@ -1114,7 +1159,7 @@
                 "Power"
             ],
             [
-                "Inexperienced Uriel",
+                "Uriel",
                 "Dominion",
                 "Power"
             ]
@@ -1123,7 +1168,8 @@
             true,
             false,
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Seraph",
@@ -1139,7 +1185,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Seraph",
@@ -1155,7 +1202,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Seraph",
@@ -1171,7 +1219,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Seraph",
@@ -1187,7 +1236,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Seraph",
@@ -1203,7 +1253,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
@@ -1212,6 +1263,18 @@
         "Range": [
             1,
             59
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Ruler of the Sabbath Baphomet",
+        "Level": 30,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1244,7 +1307,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
@@ -1271,7 +1335,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
@@ -1281,13 +1346,14 @@
         "Special": [
             [
                 "Pazuzu",
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Baphomet"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
@@ -1303,7 +1369,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Vile",
@@ -1319,7 +1386,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Wild Bird",
@@ -1491,7 +1559,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Yoma",
@@ -1623,6 +1692,47 @@
     },
     {
         "Race": "Beast",
+        "Name": "Void Cerberus",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Nimble Cu Chulainn",
+                "Joyful Alice",
+                "Joyful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Nimble Alice",
+                "Prideful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Prideful Black Frost",
+                "Wrathful Alice"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Joyful Black Frost",
+                "Nimble Alice"
+            ],
+            [
+                "Three-Headed Cerberus",
+                "Prideful Black Frost",
+                "Wrathful Alice"
+            ]
+        ],
+        "Plugin": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Beast",
         "Name": "Gryphon",
         "Level": 74,
         "Range": null,
@@ -1634,7 +1744,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demigod",
@@ -1688,7 +1799,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demigod",
@@ -1728,7 +1840,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demigod",
@@ -1836,7 +1949,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Dragon King",
@@ -1851,7 +1965,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Element",
@@ -1972,6 +2087,59 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Red Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "White Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Black Demon Goldfish",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Gold Demon Goldfish",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Red Demon Goldfish",
+                "White Demon Goldfish",
+                "Black Demon Goldfish"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -2141,7 +2309,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2157,7 +2326,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -2173,7 +2343,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -2189,7 +2360,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -2205,7 +2377,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -2221,7 +2394,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2232,12 +2406,13 @@
             [
                 "Accomplished Mou-Ryou",
                 "Matador",
-                "Yata-Garasu"
+                "Yatagarasu"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2253,7 +2428,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2269,7 +2445,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2297,7 +2474,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -2313,7 +2491,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2329,7 +2508,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2345,7 +2525,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2360,7 +2541,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2380,7 +2562,8 @@
         "Plugin": [
             true,
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2396,7 +2579,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2412,7 +2596,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Godly Beast",
@@ -2478,7 +2663,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Godly Beast",
@@ -2494,7 +2680,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Godly Beast",
@@ -2509,7 +2696,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Godly Beast",
@@ -2525,7 +2713,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Holy Beast",
@@ -2636,7 +2825,8 @@
         "Plugin": [
             true,
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Holy Beast",
@@ -2664,7 +2854,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -2704,6 +2895,22 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Lilim the Little Demon",
+        "Level": 20,
+        "Range": null,
+        "Special": [
+            [
+                "Lilim",
+                "Alp"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -2758,7 +2965,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -2828,7 +3036,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Reaper",
@@ -2856,7 +3065,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Reaper",
@@ -2872,7 +3082,7 @@
     },
     {
         "Race": "Reaper",
-        "Name": "Guede",
+        "Name": "Guedhe",
         "Level": 69,
         "Range": null,
         "Special": [
@@ -2883,7 +3093,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Reaper",
@@ -2905,7 +3116,8 @@
         "Plugin": [
             true,
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Reaper",
@@ -2921,7 +3133,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Wilder",
@@ -2975,7 +3188,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -3058,7 +3272,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3073,7 +3288,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3092,7 +3308,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Sacred Soul",
@@ -3107,7 +3324,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Brute",
@@ -3291,7 +3509,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Destroyer",
@@ -3306,7 +3525,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Destroyer",
@@ -3337,7 +3557,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Destroyer",
@@ -3352,7 +3573,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Destroyer",
@@ -3361,14 +3583,15 @@
         "Range": null,
         "Special": [
             [
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Kushinada-Hime",
                 "Okuninushi"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Destroyer",
@@ -3384,7 +3607,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Destroyer",
@@ -3400,7 +3624,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Dragon",
@@ -3454,7 +3679,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Dragon",
@@ -3470,7 +3696,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Mother",
@@ -3562,7 +3789,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Earth Mother",
@@ -3578,7 +3806,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Mother",
@@ -3594,7 +3823,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Dragon",
@@ -3685,7 +3915,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Evil Dragon",
@@ -3701,7 +3932,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Dragon",
@@ -3716,7 +3948,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -3812,7 +4045,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -3827,7 +4061,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fallen",
@@ -3842,7 +4077,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fallen",
@@ -3858,7 +4094,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fallen",
@@ -3873,7 +4110,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -3889,7 +4127,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Femme",
@@ -4008,7 +4247,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Femme",
@@ -4036,7 +4276,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Femme",
@@ -4064,7 +4305,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Femme",
@@ -4092,7 +4334,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Foul",
@@ -4197,7 +4440,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Guardian",
@@ -4234,7 +4478,7 @@
         ],
         "Special": null,
         "Plugin": [
-            true
+            false
         ]
     },
     {
@@ -4257,7 +4501,8 @@
         "Plugin": [
             true,
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Haunt",
@@ -4311,7 +4556,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -4415,7 +4661,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Haunt",
@@ -4430,7 +4677,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nation Ruler",
@@ -4497,7 +4745,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nation Ruler",
@@ -4513,7 +4762,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nation Ruler",
@@ -4529,6 +4779,23 @@
     },
     {
         "Race": "Tyrant",
+        "Name": "Trickster Loki",
+        "Level": 1,
+        "Range": null,
+        "Special": [
+            [
+                "Loki",
+                "Hel",
+                "Fenrir"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": true
+    },
+    {
+        "Race": "Tyrant",
         "Name": "King Frost",
         "Level": 40,
         "Range": null,
@@ -4541,7 +4808,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Tyrant",
@@ -4620,7 +4888,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Tyrant",
@@ -4648,7 +4917,8 @@
             true,
             false,
             false
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
@@ -4664,7 +4934,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
@@ -4680,7 +4951,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
@@ -4696,7 +4968,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Tyrant",
@@ -4711,7 +4984,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
@@ -4727,7 +5001,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
@@ -4743,12 +5018,13 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Tyrant",
         "Name": "Beelzebub (Fly)",
-        "Level": 40,
+        "Level": 95,
         "Range": null,
         "Special": [
             [
@@ -4759,6 +5035,7 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     }
 ]

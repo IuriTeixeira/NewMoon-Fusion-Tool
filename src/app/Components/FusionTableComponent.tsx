@@ -1,4 +1,4 @@
-import { Anchor, Checkbox, Flex, Table } from "@mantine/core";
+import { Anchor, Center, Checkbox, Group, Table } from "@mantine/core";
 import raceCombinations from '../Data/race_combinations.json'
 import demonsList from '../Data/demons.json'
 import variantDemonsList from '../Data/variant_demons.json'
@@ -8,17 +8,6 @@ import { IconCheck, IconX } from "@tabler/icons-react";
 
 interface FusionProps {
     demon: Demon
-}
-
-type FusionCombination = {
-    race1: string;
-    race2: string;
-}
-
-interface DemonPair {
-    demon1: Demon
-    demon2: Demon
-    demon3?: Demon
 }
 
 export default function FusionTableComponent({ demon }: FusionProps) {
@@ -34,149 +23,170 @@ export default function FusionTableComponent({ demon }: FusionProps) {
 
     function calculateFusions(): DemonPair[] {
         const allValidFusions: DemonPair[] = []
-        if (demon.Special) {
-            demon.Special.forEach((combination: string[]) => {
-                const findDemon1: Demon = demonsList.find((d: Demon) => combination[0] === d.Name) as Demon
-                let demon1: Demon
-                if (findDemon1) {
-                    demon1 = findDemon1
-                } else {
-                    demon1 = variantDemonsList.find((d: Demon) => combination[0] === d.Name) as Demon
-                }
-                const findDemon2: Demon = demonsList.find((d: Demon) => combination[1] === d.Name) as Demon
-                let demon2: Demon
-                if (findDemon2) {
-                    demon2 = findDemon2
-                } else {
-                    demon2 = variantDemonsList.find((d: Demon) => combination[1] === d.Name) as Demon
-                }
-
-                if (demon1 && demon2) {
-                    if (combination.length > 2) {
-                        const findDemon3: Demon = demonsList.find((d: Demon) => combination[2] === d.Name) as Demon
-                        let demon3: Demon
-                        if (findDemon3) {
-                            demon3 = findDemon3
-                        } else {
-                            demon3 = variantDemonsList.find((d: Demon) => combination[2] === d.Name) as Demon
-                        }
-                        allValidFusions.push({ demon1, demon2, demon3 })
-                    } else {
-                        allValidFusions.push({ demon1, demon2 })
-                    }
-                }
-            })
-        } else {
-            let validElementFusions:DemonPair[] = []
-            if (demon.Range && demon.Range![0] !== 'PG Only' && filteredCombinations[0].Elements) {
+        if (demon.Race === 'Element') {
+            const elementFusions: DemonPair[] = []
+            for (let k = 0; k < demon.Special!.length; k++) {
                 const raceRanks: Demon[] = demonsList
-                    .filter((d: Demon) => d.Race === demon.Race)
+                    .filter((d: Demon) => d.Race === demon.Special![k][0])
                     .filter((d: Demon) => d.Variant !== true)
                     .map((d: Demon) => d);
-                let targetRank = -1
-                const elements: Demon[] = [
-                    demonsList.find((d: Demon) => d.Name === 'Erthys')!,
-                    demonsList.find((d: Demon) => d.Name === 'Aeros')!,
-                    demonsList.find((d: Demon) => d.Name === 'Aquans')!,
-                    demonsList.find((d: Demon) => d.Name === 'Flamies')!
-                ]
                 for (let i = 0; i < raceRanks.length; i++) {
-                    if (raceRanks[i].Name === demon.Name) {
-                        targetRank = i
+                    for (let j = i + 1; j < raceRanks.length; j++) {
+                        elementFusions.push({
+                            demon1: raceRanks[i],
+                            demon2: raceRanks[j]
+                        })
                     }
                 }
-                for (let i = 0; i < 4; i++) {
-                    let checkNext: boolean = false
-                    if (filteredCombinations[0].Elements[i] === 'Down') {
-                        if (raceRanks[targetRank + 1]) {
-                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
-                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "PG Only") {
-                                checkNext = true
-                            }
-                            while (checkNext) {
-                                for (let j = 2; j < raceRanks.length - targetRank; j++) {
-                                    validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
-                                    if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range![0] !== "PG Only") {
-                                        break
-                                    }
-                                }
-                                checkNext = false
-                            }
-                        }
+            }
+            allValidFusions.push(...elementFusions)
+        } else {
+            if (demon.Special) {
+                demon.Special.forEach((combination: string[]) => {
+                    const findDemon1: Demon = demonsList.find((d: Demon) => combination[0] === d.Name) as Demon
+                    let demon1: Demon
+                    if (findDemon1) {
+                        demon1 = findDemon1
                     } else {
-                        if (raceRanks[targetRank - 1]) {
-                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
-                            if (raceRanks[targetRank - 1].Special || raceRanks[targetRank - 1].Range![0] === "PG Only") {
-                                checkNext = true
+                        demon1 = variantDemonsList.find((d: Demon) => combination[0] === d.Name) as Demon
+                    }
+                    const findDemon2: Demon = demonsList.find((d: Demon) => combination[1] === d.Name) as Demon
+                    let demon2: Demon
+                    if (findDemon2) {
+                        demon2 = findDemon2
+                    } else {
+                        demon2 = variantDemonsList.find((d: Demon) => combination[1] === d.Name) as Demon
+                    }
+
+                    if (demon1 && demon2) {
+                        if (combination.length > 2) {
+                            const findDemon3: Demon = demonsList.find((d: Demon) => combination[2] === d.Name) as Demon
+                            let demon3: Demon
+                            if (findDemon3) {
+                                demon3 = findDemon3
+                            } else {
+                                demon3 = variantDemonsList.find((d: Demon) => combination[2] === d.Name) as Demon
                             }
-                            while (checkNext) {
-                                for (let j = targetRank - 1; j >= 0; j--) {
-                                    if (!raceRanks[j].Special && raceRanks[j].Range![0] !== "PG Only") {
-                                        break
+                            allValidFusions.push({ demon1, demon2, demon3 })
+                        } else {
+                            allValidFusions.push({ demon1, demon2 })
+                        }
+                    }
+                })
+            } else {
+                let validElementFusions: DemonPair[] = []
+                if (demon.Range && demon.Range![0] !== 'PG Only' && filteredCombinations[0].Elements) {
+                    const raceRanks: Demon[] = demonsList
+                        .filter((d: Demon) => d.Race === demon.Race)
+                        .filter((d: Demon) => d.Variant !== true)
+                        .filter((d:Demon) => !d.Special)
+                        .filter((d:Demon) => d.Range && d.Range[0] !== 'PG Only')
+                        .map((d: Demon) => d);
+                    let targetRank = -1
+                    const elements: Demon[] = [
+                        demonsList.find((d: Demon) => d.Name === 'Erthys')!,
+                        demonsList.find((d: Demon) => d.Name === 'Aeros')!,
+                        demonsList.find((d: Demon) => d.Name === 'Aquans')!,
+                        demonsList.find((d: Demon) => d.Name === 'Flamies')!
+                    ]
+                    for (let i = 0; i < raceRanks.length; i++) {
+                        if (raceRanks[i].Name === demon.Name) {
+                            targetRank = i
+                        }
+                    }
+                    for (let i = 0; i < 4; i++) {
+                        let checkNext: boolean = false
+                        if (filteredCombinations[0].Elements[i] === 'Down') {
+                            if (raceRanks[targetRank + 1]) {
+                                validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] })
+                                if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range![0] === "PG Only") {
+                                    checkNext = true
+                                }
+                                while (checkNext) {
+                                    for (let j = 2; j < raceRanks.length - targetRank; j++) {
+                                        validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] })
+                                        if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range![0] !== "PG Only") {
+                                            break
+                                        }
                                     }
-                                    allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
                                     checkNext = false
                                 }
                             }
-                        }
-                    }
-                }
-            }
-            if(fusionHidePlugins){
-                validElementFusions = validElementFusions.filter((d:DemonPair) => !d.demon2.Plugin[0])
-            }
-            allValidFusions.push(...validElementFusions)
-            combinations.forEach((combination: FusionCombination) => {
-                const allDemon1s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race1)
-                const allVariantDemon1s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race1)
-                let filteredDemon1s: Demon[]
-                if (fusionHidePlugins) {
-                    if (fusionDisplayVariants) {
-                        filteredDemon1s = [...allDemon1s, ...allVariantDemon1s].filter((d: Demon) => d.Plugin[0] === false)
-                    } else {
-                        filteredDemon1s = allDemon1s.filter((d: Demon) => d.Plugin[0] === false)
-                    }
-                } else {
-                    if (fusionDisplayVariants) {
-                        filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
-                    } else {
-                        filteredDemon1s = allDemon1s
-                    }
-                }
-
-                const allDemon2s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race2)
-                const allVariantDemon2s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race2)
-                let filteredDemon2s: Demon[]
-                if (fusionHidePlugins) {
-                    if (fusionDisplayVariants) {
-                        filteredDemon2s = [...allDemon2s, ...allVariantDemon2s].filter((d: Demon) => d.Plugin[0] === false)
-                    } else {
-                        filteredDemon2s = allDemon2s.filter((d: Demon) => d.Plugin[0] === false)
-                    }
-                } else {
-                    if (fusionDisplayVariants) {
-                        filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
-                    } else {
-                        filteredDemon2s = allDemon2s
-                    }
-                }
-                filteredDemon1s.forEach((demon1: Demon) => {
-                    filteredDemon2s.forEach((demon2: Demon) => {
-                        const levelRange = demon1.Level + demon2.Level
-                        if (demon.Range && demon.Range[0] && typeof (demon.Range[0]) === 'number') {
-                            if (levelRange >= demon.Range[0]) {
-                                if (demon.Range[1] && typeof (demon.Range[1]) == 'number') {
-                                    if (levelRange <= demon.Range[1]) {
-                                        allValidFusions.push({ demon1, demon2 })
+                        } else {
+                            if (raceRanks[targetRank - 1]) {
+                                validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] })
+                                if (raceRanks[targetRank - 1].Special || raceRanks[targetRank - 1].Range![0] === "PG Only") {
+                                    checkNext = true
+                                }
+                                while (checkNext) {
+                                    for (let j = targetRank - 1; j >= 0; j--) {
+                                        if (!raceRanks[j].Special && raceRanks[j].Range![0] !== "PG Only") {
+                                            break
+                                        }
+                                        allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] })
+                                        checkNext = false
                                     }
-                                } else {
-                                    allValidFusions.push({ demon1, demon2 })
                                 }
                             }
                         }
+                    }
+                }
+                if (fusionHidePlugins) {
+                    validElementFusions = validElementFusions.filter((d: DemonPair) => !d.demon2.Plugin[0])
+                }
+                allValidFusions.push(...validElementFusions)
+                combinations.forEach((combination: FusionCombination) => {
+                    const allDemon1s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race1)
+                    const allVariantDemon1s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race1 && !d.Unfusable)
+                    let filteredDemon1s: Demon[]
+                    if (fusionHidePlugins) {
+                        if (fusionDisplayVariants) {
+                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s].filter((d: Demon) => d.Plugin[0] === false)
+                        } else {
+                            filteredDemon1s = allDemon1s.filter((d: Demon) => d.Plugin[0] === false)
+                        }
+                    } else {
+                        if (fusionDisplayVariants) {
+                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                        } else {
+                            filteredDemon1s = allDemon1s
+                        }
+                    }
+
+                    const allDemon2s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race2)
+                    const allVariantDemon2s: Demon[] = variantDemonsList.filter((d: Demon) => d.Race === combination.race2 && !d.Unfusable)
+                    let filteredDemon2s: Demon[]
+                    if (fusionHidePlugins) {
+                        if (fusionDisplayVariants) {
+                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s].filter((d: Demon) => d.Plugin[0] === false)
+                        } else {
+                            filteredDemon2s = allDemon2s.filter((d: Demon) => d.Plugin[0] === false)
+                        }
+                    } else {
+                        if (fusionDisplayVariants) {
+                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                        } else {
+                            filteredDemon2s = allDemon2s
+                        }
+                    }
+                    filteredDemon1s.forEach((demon1: Demon) => {
+                        filteredDemon2s.forEach((demon2: Demon) => {
+                            const levelRange = demon1.Level + demon2.Level
+                            if (demon.Range && demon.Range[0] && typeof (demon.Range[0]) === 'number') {
+                                if (levelRange >= demon.Range[0]) {
+                                    if (demon.Range[1] && typeof (demon.Range[1]) == 'number') {
+                                        if (levelRange <= demon.Range[1]) {
+                                            allValidFusions.push({ demon1, demon2 })
+                                        }
+                                    } else {
+                                        allValidFusions.push({ demon1, demon2 })
+                                    }
+                                }
+                            }
+                        })
                     })
                 })
-            })
+            }
         }
         return allValidFusions
     }
@@ -186,7 +196,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
     return (
         <React.Fragment>
             {!demon.Special &&
-                <Flex justify={'center'} gap={'lg'}>
+                <Group justify={'center'} gap={'lg'}>
                     <Checkbox
                         checked={fusionHidePlugins}
                         label="Hide plugin demons"
@@ -197,7 +207,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                         label="Show variant demons"
                         onChange={(event) => setFusionDisplayVariants(event.currentTarget.checked)}
                     />
-                </Flex>
+                </Group>
             }
             <Table.ScrollContainer minWidth={500}>
                 <Table striped highlightOnHover withTableBorder withColumnBorders>
@@ -206,30 +216,31 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                             {demon.Special
                                 ?
                                 <React.Fragment>
-                                    <Table.Th rowSpan={2}><Flex justify={'center'}>Plugin?</Flex></Table.Th>
-                                    <Table.Th colSpan={2}><Flex justify={'center'}>Material 1</Flex></Table.Th>
-                                    <Table.Th colSpan={2}><Flex justify={'center'}>Material 2</Flex></Table.Th>
+                                    <Table.Th rowSpan={2}><Center>Plugin?</Center></Table.Th>
+                                    <Table.Th rowSpan={2}><Center>Allows Variants?</Center></Table.Th>
+                                    <Table.Th colSpan={2}><Center>Material 1</Center></Table.Th>
+                                    <Table.Th colSpan={2}><Center>Material 2</Center></Table.Th>
                                 </React.Fragment>
                                 :
                                 <React.Fragment>
-                                    <Table.Th colSpan={3}><Flex justify={'center'}>Material 1</Flex></Table.Th>
-                                    <Table.Th colSpan={3}><Flex justify={'center'}>Material 2</Flex></Table.Th>
+                                    <Table.Th colSpan={3}><Center>Material 1</Center></Table.Th>
+                                    <Table.Th colSpan={3}><Center>Material 2</Center></Table.Th>
                                 </React.Fragment>
                             }
-                            {demon.Special && fusionResults[0]?.demon3 && demon.Special && <Table.Th colSpan={2}><Flex justify={'center'}>Material 3</Flex></Table.Th>}
+                            {demon.Special && fusionResults[0]?.demon3 && demon.Special && <Table.Th colSpan={2}><Center>Material 3</Center></Table.Th>}
                         </Table.Tr>
                         <Table.Tr>
-                            <Table.Th><Flex justify={'center'}>Race</Flex></Table.Th>
-                            <Table.Th><Flex justify={'center'}>Name</Flex></Table.Th>
-                            {!demon.Special && <Table.Th><Flex justify={'center'}>Lv</Flex></Table.Th>}
-                            <Table.Th><Flex justify={'center'}>Race</Flex></Table.Th>
-                            <Table.Th><Flex justify={'center'}>Name</Flex></Table.Th>
-                            {!demon.Special && <Table.Th><Flex justify={'center'}>Lv</Flex></Table.Th>}
+                            <Table.Th><Center>Race</Center></Table.Th>
+                            <Table.Th><Center>Name</Center></Table.Th>
+                            {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
+                            <Table.Th><Center>Race</Center></Table.Th>
+                            <Table.Th><Center>Name</Center></Table.Th>
+                            {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
                             {fusionResults[0]?.demon3 &&
                                 <React.Fragment>
-                                    <Table.Th><Flex justify={'center'}>Race</Flex></Table.Th>
-                                    <Table.Th><Flex justify={'center'}>Name</Flex></Table.Th>
-                                    {!demon.Special && <Table.Th><Flex justify={'center'}>Lv</Flex></Table.Th>}
+                                    <Table.Th><Center>Race</Center></Table.Th>
+                                    <Table.Th><Center>Name</Center></Table.Th>
+                                    {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
                                 </React.Fragment>}
                         </Table.Tr>
                     </Table.Thead>
@@ -237,10 +248,13 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                         {fusionResults.length > 0
                             ?
                             fusionResults.map((combo, index) => (
-                                demon.Special ?
+                                (demon.Special && demon.Race !== 'Element') ?
                                     <Table.Tr key={index}>
                                         <Table.Td key={`plugin-${combo.demon2.Race}-${index}`}>
-                                            <Flex justify={'center'}>{demon.Plugin[index] ? <IconCheck size={16} /> : <IconX size={16} />}</Flex>
+                                            <Center>{demon.Plugin[index] ? <IconCheck size={16} /> : <IconX size={16} />}</Center>
+                                        </Table.Td>
+                                        <Table.Td key={`variant-${combo.demon2.Race}-${index}`}>
+                                            <Center>{demon.AllowVariants !== false ? <IconCheck size={16} /> : <IconX size={16} />}</Center>
                                         </Table.Td>
                                         {combo.demon1 &&
                                             <React.Fragment key={`demon1-${index}`}>
@@ -263,17 +277,17 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                     </Table.Tr>
                                     :
                                     <Table.Tr key={index}>
-                                        <Table.Td key={`race-${combo.demon1.Race}-${index}`}>{combo.demon1.Race}</Table.Td>
-                                        <Table.Td key={`name-${combo.demon1.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor></Table.Td>
-                                        <Table.Td key={`level-${combo.demon1.Race}-${index}`}>{combo.demon1.Level}</Table.Td>
-                                        <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon2.Race}</Table.Td>
-                                        <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor></Table.Td>
-                                        <Table.Td key={`level-${combo.demon2.Race}-${index}`}>{combo.demon2.Level}</Table.Td>
+                                        <Table.Td key={`race-${combo.demon1.Name}-${index}`}>{combo.demon1.Race}</Table.Td>
+                                        <Table.Td key={`name-${combo.demon1.Name}-${index}-`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor></Table.Td>
+                                        <Table.Td key={`level-${combo.demon1.Name}-${index}-`}>{combo.demon1.Level}</Table.Td>
+                                        <Table.Td key={`race-${combo.demon2.Name}-${index}`}>{combo.demon2.Race}</Table.Td>
+                                        <Table.Td key={`name-${combo.demon2.Name}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor></Table.Td>
+                                        <Table.Td key={`level-${combo.demon2.Name}-${index}`}>{combo.demon2.Level}</Table.Td>
                                     </Table.Tr>
                             ))
                             : (
                                 <Table.Tr>
-                                    <Table.Td colSpan={10}><Flex justify={'center'}>No valid fusions found.</Flex></Table.Td>
+                                    <Table.Td colSpan={10}><Center>No valid fusions found.</Center></Table.Td>
                                 </Table.Tr>
                             )
                         }

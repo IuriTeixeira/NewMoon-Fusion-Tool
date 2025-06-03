@@ -1,6 +1,6 @@
 'use client'
 import { IconCheck, IconX } from '@tabler/icons-react'
-import { Flex, Text, Table, Image, Anchor, useComputedColorScheme, Center } from '@mantine/core'
+import { Text, Table, Image, Anchor, useComputedColorScheme, Center } from '@mantine/core'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
 import React from 'react'
@@ -144,7 +144,7 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                 >
                     <Table.Tr>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Race</Flex>
+                            <Center>Race</Center>
                         </Table.Th>
                         <Table.Th>
                             <Flex align='center' justify='center'>Level</Flex>
@@ -156,10 +156,10 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                             <Flex align='center' justify='center'>Name</Flex>
                         </Table.Th>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Fusion Range</Flex>
+                            <Center>Fusion Range</Center>
                         </Table.Th>
                         <Table.Th>
-                            <Flex align='center' justify='center'>Plugin</Flex>
+                            <Center>Plugin</Center>
                         </Table.Th>
                     </Table.Tr>
                 </Table.Thead>
@@ -208,9 +208,9 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                                 </Table.Td>
                                             }
                                             <Table.Td key={`plugin-${index}-${0}`}>
-                                                <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                <Center key={`plugin-center-${index}`}>
                                                     {demon.Plugin[0] ? <IconCheck size={16} /> : <IconX size={16} />}
-                                                </Flex>
+                                                </Center>
                                             </Table.Td>
 
                                         </React.Fragment>
@@ -225,9 +225,9 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                                 {demon.Special[0][2] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Special[0][2] } }}>{demon.Special[0][2]}</Anchor>}
                                             </Table.Td>
                                             <Table.Td key={`plugin-${index}-0`}>
-                                                <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                <Center key={`plugin-center-${index}`}>
                                                     {demon.Plugin[0] ? <IconCheck size={16} /> : <IconX size={16} />}
-                                                </Flex>
+                                                </Center>
                                             </Table.Td>
                                         </React.Fragment>
                                     }
@@ -243,9 +243,9 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                                 {line[2] && <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: line[2] } }}>{line[2]}</Anchor>}
                                             </Table.Td>
                                             <Table.Td key={`plugin-${index}-${indexSpecial}`}>
-                                                <Flex key={`plugin-flex-${index}`} align='center' justify='center'>
+                                                <Center key={`plugin-center-${index}`}>
                                                     {demon.Plugin[indexSpecial + 1] ? <IconCheck size={16} /> : <IconX size={16} />}
-                                                </Flex>
+                                                </Center>
                                             </Table.Td>
                                         </Table.Tr>
                                     ))
