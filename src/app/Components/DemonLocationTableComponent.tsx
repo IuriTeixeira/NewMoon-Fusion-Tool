@@ -6,14 +6,6 @@ import demonLocList from '../Data/contract_demons.json'
 import React, { JSX } from 'react'
 import Link from 'next/link';
 
-interface DemonLocation {
-    Race: string
-    Name: string
-    Zone: string[]
-    Location?: (string | null)[]
-    Notes?: (string | null)[]
-}
-
 export default function DemonLocationTableComponent() {
     const colorScheme = useComputedColorScheme();
 
@@ -106,11 +98,31 @@ export default function DemonLocationTableComponent() {
         if (a.Race < b.Race) return -1;
         if (a.Race > b.Race) return 1;
 
-        // 3rd: If same Race, sort by Level (ascending)
+        // 3rd: if same Race, sort by Race Rank
+        const raceRanks: Demon[] = demonList
+        .filter((d: Demon) => d.Race === a.Race)
+        .map((d: Demon) => d);
+        
+        const aBaseName:string = cleanString(a.Name)
+        const bBaseName:string = cleanString(b.Name)
+        
+        const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
+        const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
+        console.log(a.Name, aRank, 'vs', bRank, b.Name)
+        
+        if (aRank < bRank) return -1;
+        if (aRank > bRank) return 1;
+        
+        // 4th: if same Rank, sort by base Name
+        
+        if (aBaseName < bBaseName) return -1;
+        if (aBaseName > bBaseName) return 1;
+
+        // 4th: If same base Name, sort by Level (ascending)
         if (a.Level < b.Level) return -1;
         if (a.Level > b.Level) return 1;
 
-        // 4th: If same Level, sort by Name (A-Z)
+        // 5th: If same Level, sort by Name (A-Z)
         return a.Name.localeCompare(b.Name);
     });
 

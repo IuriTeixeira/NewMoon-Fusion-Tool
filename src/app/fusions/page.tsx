@@ -12,14 +12,6 @@ import { Button, Flex, LoadingOverlay, SimpleGrid, Space } from "@mantine/core";
 import { Suspense } from "react";
 import { IconArrowBack } from "@tabler/icons-react";
 
-interface DemonLocation {
-    Race: string
-    Name: string
-    Zone: string[]
-    Location?: (string | null)[]
-    Notes?: (string | null)[]
-}
-
 function FusionsContent() {
     const searchParams = useSearchParams()
     const demonName: string = searchParams.get('demon') as string
@@ -33,7 +25,7 @@ function FusionsContent() {
 
     const elementCombinations: FusionData = racesData.find((targetRace) => targetRace.Race === demon.Race) as FusionData
 
-    const demonLoc:DemonLocation = demonLocations.find((d:DemonLocation) => d.Name = demon.Name) as DemonLocation
+    const demonLoc:DemonLocation = demonLocations.find((d:DemonLocation) => d.Name === demon.Name) as DemonLocation
 
     return (
         <Flex align='center' justify='center' m={'lg'}>
@@ -44,7 +36,7 @@ function FusionsContent() {
                 </Button>
                 <DemonInfoComponent demon={demon} />
                 {elementCombinations.Elements && <ElementInfoComponent elements={elementCombinations.Elements!} />}
-                {demonLoc && <DemonContractInfoComponent demon={demon}/>}
+                {demonLoc && <DemonContractInfoComponent demonLoc={demonLoc}/>}
                 <FusionTableComponent demon={demon} />
             </SimpleGrid>
         </Flex >

@@ -13,3 +13,11 @@ interface FusionData {
     Combinations: string[][] | null;
     Elements: string[] | null
 }
+
+interface DemonLocation {
+    Race: string
+    Name: string
+    Zone: string[]
+    Location?: (string | null)[]
+    Notes?: (string | null)[]
+}

@@ -88,7 +88,8 @@
     {
         "Race": "Earth Element",
         "Name": "Kodama",
-        "Zone": ["Suginami", "Suginami Tunnels (Bronze)", "Nakano"]
+        "Zone": ["Suginami", "Suginami Tunnels (Bronze)", "Nakano"],
+        "Location": ["Near Home III", null, null]
     },
     {
         "Race": "Earth Element",
