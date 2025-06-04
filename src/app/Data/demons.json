@@ -263,10 +263,30 @@
             [
                 "Ananta",
                 "Garuda"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Pixie"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Titania"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Arahabaki"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Pixie",
+                "Demi-Fiend's Arahabaki"
             ]
         ],
         "Plugin": [
-            true
+            true, false, false, false, false
         ],
         "AllowVariants": false
     },
@@ -1215,10 +1235,30 @@
                 "Gabriel",
                 "Virtue",
                 "Samael"
+            ],
+            [
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Cu Chulainn"
+            ],
+            [
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Pixie"
+            ],
+            [
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Titania"
+            ],
+            [
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Pixie",
+                "Demi-Fiend's Titania"
             ]
         ],
         "Plugin": [
-            true
+            true, false, false, false, false
         ],
         "AllowVariants": false
     },
@@ -2390,10 +2430,15 @@
                 "Virtue",
                 "Matador",
                 "Zouchouten"
+            ],
+            [
+                "Creator Quetzalcoatl",
+                "Creator Berith"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2407,10 +2452,15 @@
                 "Accomplished Mou-Ryou",
                 "Matador",
                 "Yatagarasu"
+            ],
+            [
+                "Creator Yatagarasu",
+                "Creator Berith"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2424,10 +2474,15 @@
                 "Power",
                 "White Rider",
                 "Koumokuten"
+            ],
+            [
+                "Creator Loa",
+                "Creator Dawon"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2441,10 +2496,15 @@
                 "Legion",
                 "Red Rider",
                 "Jikokuten"
+            ],
+            [
+                "Creator Power",
+                "Creator Yatagarasu"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2487,10 +2547,16 @@
                 "Loa",
                 "Black Rider",
                 "Bishamonten"
+            ],
+            [
+                "Creator Power",
+                "Creator Loa",
+                "Creator Berith"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2504,10 +2570,33 @@
                 "Hell Biker",
                 "Alice",
                 "Valkyrie"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Pixie",
+                "Demi-Fiend's Titania"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Pixie",
+                "Demi-Fiend's Parvati"
+            ],
+            [
+                "Demi-Fiend's Cu Chulainn",
+                "Demi-Fiend's Titania",
+                "Demi-Fiend's Parvati"
+            ],
+            [
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Titania",
+                "Demi-Fiend's Pixie"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false,
+            false,
+            false
         ],
         "AllowVariants": false
     },
@@ -2521,10 +2610,15 @@
                 "Hell Biker",
                 "Matador",
                 "Mot"
+            ],
+            [
+                "Creator Power",
+                "Creator Quetzalcoatl"
             ]
         ],
         "Plugin": [
-            true
+            true,
+            false
         ],
         "AllowVariants": false
     },
@@ -2537,10 +2631,15 @@
             [
                 "Tokisada",
                 "Daisoujou"
+            ],
+            [
+                "Creator Yatagarasu",
+                "Creator Dawon",
+                "Creator Quetzalcoatl"
             ]
         ],
         "Plugin": [
-            true
+            true, false, false, false, false
         ],
         "AllowVariants": false
     },
@@ -3620,10 +3719,30 @@
                 "Inexperienced Kartikeya",
                 "Parvati",
                 "Ganesha"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Girimehkala"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Cu Chulainn"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Pixie"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Titania"
             ]
         ],
         "Plugin": [
-            true
+            true, false, false, false, false
         ],
         "AllowVariants": false
     },
@@ -5031,10 +5150,30 @@
                 "Astaroth",
                 "Moloch",
                 "Baphomet"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Titania",
+                "Demi-Fiend's Girimehkala"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Titania",
+                "Demi-Fiend's Cu Chulainn"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Titania",
+                "Demi-Fiend's Pixie"
+            ],
+            [
+                "Demi-Fiend's Arahabaki",
+                "Demi-Fiend's Girimehkala",
+                "Demi-Fiend's Pixie"
             ]
         ],
         "Plugin": [
-            true
+            true, false, false, false, false
         ],
         "AllowVariants": false
     }

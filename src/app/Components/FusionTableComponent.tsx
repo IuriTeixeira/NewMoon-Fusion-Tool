@@ -75,7 +75,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 })
             } else {
                 let validElementFusions: DemonPair[] = []
-                if (demon.Range && demon.Range![0] !== 'PG Only' && filteredCombinations[0].Elements) {
+                if (demon.Range && typeof(demon.Range![0]) === 'number' && filteredCombinations[0].Elements) {
                     const raceRanks: Demon[] = demonsList
                         .filter((d: Demon) => d.Race === demon.Race)
                         .filter((d: Demon) => d.Variant !== true)

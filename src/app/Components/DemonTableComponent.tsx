@@ -1,6 +1,8 @@
 'use client'
 import { IconCheck, IconX } from '@tabler/icons-react'
 import { Text, Table, Image, Anchor, useComputedColorScheme, Center } from '@mantine/core'
+import { racesLaw, racesChaos } from '@/utils/constants'
+import { cleanString, sortTable } from '@/utils/functionUtils'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
 import React from 'react'
@@ -14,68 +16,6 @@ interface DemonTableProps {
 
 export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants }: DemonTableProps) {
     const colorScheme = useComputedColorScheme();
-
-    const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraph", "Vile", "Wild Bird", "Yoma"]
-    const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
-    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
-
-    const subTypes = [
-        'Inexperienced',
-        'Illusion',
-        'of Kuyo',
-        'Wanderer',
-        'Accomplished',
-        'Vermillion Flame',
-        'Godly Golden Winged Bird',
-        'Hero of Akaeda',
-        'Unmatched Steel',
-        'Brave Red Capote',
-        'Noble Demon King',
-        'Blasted Road',
-        'Agent of God',
-        'Princess of Pure Madness',
-        'Seven Stars of Death',
-        'Agent of God',
-        'Nimble',
-        'Joyful',
-        'Prideful',
-        'Wrathful',
-        'Lustful',
-        'Magician',
-        'Mystic',
-        'Bringer of Aging',
-        'Pleasure Bringer',
-        'Huntress',
-        'Heaven-Piercing',
-        'Gojo Bridge',
-        'of Assault',
-        'Shana',
-        'Hassou Tobi',
-        'Horse',
-        'Shining',
-        'Premature',
-        'Accomplished',
-        'Deformed',
-        'Lucky',
-        'Lost',
-        'Late Afternoon',
-        'Mirror',
-        'Traditional',
-        'Kissy',
-        'Leader',
-        'Rainbow of Victory',
-        'Stray',
-        'Crisis',
-        'Nightmare'
-    ]
-
-    function cleanString(str: string): string {
-        let result = str;
-        for (const subtype of subTypes) {
-            result = result.replace(subtype, '');
-        }
-        return result.trim();
-    }
 
     let filteredDemonList: Demon[]
 
@@ -109,49 +49,7 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         }
     }
 
-    const sortedDemonList = [...filteredDemonList].sort((a, b) => {
-        // 1st: Sort by alignment priority (Law > Neutral > Chaos)
-        const aAlignment =
-            racesLaw.includes(a.Race) ? 0 :
-                racesNeutral.includes(a.Race) ? 1 : 2;
-        const bAlignment =
-            racesLaw.includes(b.Race) ? 0 :
-                racesNeutral.includes(b.Race) ? 1 : 2;
-
-        if (aAlignment !== bAlignment) {
-            return aAlignment - bAlignment;
-        }
-
-        // 2nd: If same alignment, sort by Race (A-Z)
-        if (a.Race < b.Race) return -1;
-        if (a.Race > b.Race) return 1;
-
-        // 3rd: if same Race, sort by Race Rank
-        const raceRanks: Demon[] = demonList
-        .filter((d: Demon) => d.Race === a.Race)
-        .map((d: Demon) => d);
-        
-        const aBaseName:string = cleanString(a.Name)
-        const bBaseName:string = cleanString(b.Name)
-        
-        const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
-        const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
-        
-        if (aRank < bRank) return -1;
-        if (aRank > bRank) return 1;
-        
-        // 4th: if same Rank, sort by base Name
-        
-        if (aBaseName < bBaseName) return -1;
-        if (aBaseName > bBaseName) return 1;
-
-        // 4th: If same base Name, sort by Level (ascending)
-        if (a.Level < b.Level) return -1;
-        if (a.Level > b.Level) return 1;
-
-        // 5th: If same Level, sort by Name (A-Z)
-        return a.Name.localeCompare(b.Name);
-    });
+    const sortedDemonList = sortTable(filteredDemonList)
 
     return (
         <Table.ScrollContainer minWidth={500}>

@@ -13,29 +13,46 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Avian",
-        "Name": "Inexperienced Yata-Garasu",
+        "Name": "Creator Yatagarasu",
+        "Level": 52,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Avian",
+        "Name": "Inexperienced Yatagarasu",
         "Level": 52,
         "Range": null,
         "Special": [
             [
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Inexperienced Titania",
                 "Parvati"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Avian",
         "Name": "Shining Zhu Que",
         "Level": 52,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -54,13 +71,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Avian",
         "Name": "Premature Phoenix",
         "Level": 92,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -80,13 +100,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Divine",
         "Name": "Accomplished Archangel",
         "Level": 17,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -101,18 +124,21 @@
             [
                 "Principality",
                 "Inexperienced Unicorn",
-                "Inexperienced Poltergeist "
+                "Inexperienced Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Divine",
         "Name": "Accomplished Principality",
         "Level": 25,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -132,13 +158,28 @@
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Creator Power",
+        "Level": 36,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
         "Race": "Divine",
         "Name": "Lucky Angel",
         "Level": 48,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -148,7 +189,9 @@
         "Race": "Divine",
         "Name": "Deformed Power",
         "Level": 70,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -158,7 +201,9 @@
         "Race": "Divine",
         "Name": "Deformed Archangel",
         "Level": 76,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -168,7 +213,9 @@
         "Race": "Divine",
         "Name": "Deformed Principality",
         "Level": 76,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -188,13 +235,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
         "Name": "Lost Hua Po",
         "Level": 1,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -204,7 +254,9 @@
         "Race": "Earth Element",
         "Name": "Accomplished Knocker",
         "Level": 1,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -214,7 +266,9 @@
         "Race": "Earth Element",
         "Name": "Accomplished Hua Po",
         "Level": 5,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -234,13 +288,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
         "Name": "Accomplished Sudama",
         "Level": 17,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -250,7 +307,9 @@
         "Race": "Earth Element",
         "Name": "Late Afternoon Ubelluris",
         "Level": 5,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -260,7 +319,9 @@
         "Race": "Earth Element",
         "Name": "Accomplished Dwarf",
         "Level": 30,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -270,7 +331,9 @@
         "Race": "Earth Element",
         "Name": "Lucky Hua Po",
         "Level": 33,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -290,13 +353,28 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Element",
         "Name": "Deformed Dwarf",
         "Level": 61,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Demon",
+        "Name": "Demi-Fiend's Girimehkala",
+        "Level": 70,
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -306,7 +384,9 @@
         "Race": "Evil Demon",
         "Name": "Deformed Cyclops",
         "Level": 72,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -326,13 +406,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Heavenly God",
         "Name": "Horse Ameno-Uzume",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -342,7 +425,9 @@
         "Race": "Heavenly God",
         "Name": "Horse Omoikane",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -352,7 +437,9 @@
         "Race": "Heavenly God",
         "Name": "Horse Tajikarao",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -378,7 +465,9 @@
         "Race": "Raptor",
         "Name": "Accomplished Onmoraki",
         "Level": 11,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -388,7 +477,9 @@
         "Race": "Raptor",
         "Name": "Deformed Onmoraki",
         "Level": 19,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -403,18 +494,21 @@
             [
                 "Deformed Onmoraki",
                 "Cait Sith",
-                "Poltergeist "
+                "Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Raptor",
         "Name": "Accomplished Zhen",
         "Level": 41,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -424,7 +518,9 @@
         "Race": "Raptor",
         "Name": "Shining Furiae",
         "Level": 73,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -468,13 +564,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Vile",
         "Name": "Deformed Baphomet",
         "Level": 11,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -494,7 +593,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -510,13 +610,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
         "Name": "Accomplished Harpy",
         "Level": 7,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -526,7 +629,9 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Macha",
         "Level": 12,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -546,7 +651,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
@@ -562,13 +668,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
         "Name": "Accomplished Ocypete",
         "Level": 25,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -588,13 +697,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
         "Name": "Accomplished Celaeno",
         "Level": 30,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -604,7 +716,9 @@
         "Race": "Wild Bird",
         "Name": "Shining Ocypete",
         "Level": 31,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -614,7 +728,9 @@
         "Race": "Wild Bird",
         "Name": "Accomplished Aello",
         "Level": 36,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -624,7 +740,9 @@
         "Race": "Wild Bird",
         "Name": "Shining Celaeno",
         "Level": 37,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -634,7 +752,9 @@
         "Race": "Wild Bird",
         "Name": "Deformed Macha",
         "Level": 42,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -654,13 +774,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wild Bird",
         "Name": "Shining Aello",
         "Level": 43,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -670,7 +793,9 @@
         "Race": "Yoma",
         "Name": "Accomplished Isora",
         "Level": 14,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -680,7 +805,9 @@
         "Race": "Yoma",
         "Name": "Accomplished Dis",
         "Level": 23,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -690,7 +817,9 @@
         "Race": "Yoma",
         "Name": "Lucky Dis",
         "Level": 32,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -710,7 +839,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -726,7 +856,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -742,7 +873,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -758,13 +890,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
         "Name": "Accomplished Nekomata",
         "Level": 26,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -774,7 +909,9 @@
         "Race": "Beast",
         "Name": "Mirror Inugami",
         "Level": 27,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -784,7 +921,9 @@
         "Race": "Beast",
         "Name": "Deformed Cait Sith",
         "Level": 33,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -804,6 +943,19 @@
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Beast",
+        "Name": "Creator Dawon",
+        "Level": 42,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -822,7 +974,9 @@
         "Race": "Beast",
         "Name": "Lucky Nekomata",
         "Level": 52,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -832,7 +986,9 @@
         "Race": "Beast",
         "Name": "Deformed Orthrus",
         "Level": 65,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -842,7 +998,9 @@
         "Race": "Beast",
         "Name": "Traditional Tan-Ki",
         "Level": 67,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -852,7 +1010,9 @@
         "Race": "Beast",
         "Name": "Traditional Cerberus",
         "Level": 69,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -862,7 +1022,9 @@
         "Race": "Beast",
         "Name": "Deformed Cerberus",
         "Level": 70,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -894,13 +1056,16 @@
             true,
             true,
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Beast",
         "Name": "Traditional Orthrus",
         "Level": 71,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -910,7 +1075,9 @@
         "Race": "Beast",
         "Name": "Deformed Tan-Ki",
         "Level": 78,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -920,6 +1087,18 @@
         "Race": "Demigod",
         "Name": "Nimble Cu Chulainn",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Demi-Fiend's Cu Chulainn",
+        "Level": 44,
         "Range": [
             "PG Only"
         ],
@@ -944,7 +1123,9 @@
         "Race": "Demigod",
         "Name": "Lucky Valkyrie",
         "Level": 55,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -964,7 +1145,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Demigod",
@@ -980,13 +1162,16 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Demigod",
         "Name": "Deformed Hayagriva",
         "Level": 77,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -996,7 +1181,9 @@
         "Race": "Demigod",
         "Name": "Deformed Kurama-Tengu",
         "Level": 80,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -1006,7 +1193,9 @@
         "Race": "Demigod",
         "Name": "Deformed Hanuman",
         "Level": 80,
-        "Range": ["Contract Only"],
+        "Range": [
+            "Contract Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -1110,6 +1299,18 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Demi-Fiend's Pixie",
+        "Level": 2,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Kissy Pixie",
         "Level": 2,
         "Range": [
@@ -1146,7 +1347,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1210,7 +1412,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1250,7 +1453,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1260,13 +1464,14 @@
         "Special": [
             [
                 "Titania",
-                "Yata-Garasu",
+                "Yatagarasu",
                 "Parvati"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1294,7 +1499,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1322,7 +1528,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fairy",
@@ -1342,6 +1549,18 @@
         "Level": 55,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Demi-Fiend's Titania",
+        "Level": 57,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1409,7 +1628,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -1443,7 +1663,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -1469,7 +1690,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -1485,7 +1707,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -1501,7 +1724,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -1511,12 +1735,14 @@
         "Special": [
             [
                 "Hell Biker",
-                "Jinn+ Bicorn"
+                "Jinn",
+                "Bicorn"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Fiend",
@@ -1531,7 +1757,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Godly Beast",
@@ -1590,12 +1817,13 @@
             [
                 "Unicorn",
                 "Principality",
-                "Poltergeist "
+                "Poltergeist"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Holy Beast",
@@ -1611,7 +1839,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Holy Beast",
@@ -1738,7 +1967,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Nocturne",
@@ -1797,13 +2027,37 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Creator Loa",
+        "Level": 52,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Crisis Black Frost",
         "Level": 70,
         "Range": null,
         "Special": [
-            ["Prideful Black Frost","Joyful Black Frost","Wrathful Alice"],
-            ["Prideful Black Frost","Joyful Black Frost","Nimble Cu Chulainn"],
-            ["Prideful Black Frost","Joyful Black Frost","Nimble Alice"]
+            [
+                "Prideful Black Frost",
+                "Joyful Black Frost",
+                "Wrathful Alice"
+            ],
+            [
+                "Prideful Black Frost",
+                "Joyful Black Frost",
+                "Nimble Cu Chulainn"
+            ],
+            [
+                "Prideful Black Frost",
+                "Joyful Black Frost",
+                "Nimble Alice"
+            ]
         ],
         "Plugin": [
             false
@@ -1841,12 +2095,13 @@
         "Special": [
             [
                 "Beiji Weng",
-                "Qing-Long "
+                "Qing-Long"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -1862,7 +2117,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -1974,7 +2230,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Wilder",
@@ -2038,7 +2295,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -2054,7 +2312,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -2130,7 +2389,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Brute",
@@ -2145,7 +2405,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Dragon",
@@ -2161,7 +2422,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Dragon",
@@ -2177,7 +2439,21 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Dragon",
+        "Name": "Creator Quetzalcoatl",
+        "Level": 55,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Earth Mother",
@@ -2187,12 +2463,25 @@
         "Special": [
             [
                 "Parvati",
-                "Inexperienced Yata-Garasu",
+                "Inexperienced Yatagarasu",
                 "Inexperienced Titania"
             ]
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Demi-Fiend's Parvati",
+        "Level": 64,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
         ]
     },
     {
@@ -2214,7 +2503,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Evil Dragon",
@@ -2225,12 +2515,13 @@
             [
                 "Cockatrice",
                 "Inexperienced Harpy",
-                "Inexperienced Garm "
+                "Inexperienced Garm"
             ]
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Evil Dragon",
@@ -2306,7 +2597,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fallen",
@@ -2348,6 +2640,18 @@
         "Race": "Fallen",
         "Name": "Mystic Ose",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Creator Berith",
+        "Level": 58,
         "Range": [
             "PG Only"
         ],
@@ -2406,7 +2710,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Femme",
@@ -2494,7 +2799,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Foul",
@@ -2534,7 +2840,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Foul",
@@ -2588,7 +2895,9 @@
         "Race": "Guardian",
         "Name": "Horse Zouchouten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -2598,7 +2907,9 @@
         "Race": "Guardian",
         "Name": "Horse Koumokuten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -2608,7 +2919,9 @@
         "Race": "Guardian",
         "Name": "Horse Jikokuten",
         "Level": 50,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -2656,7 +2969,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -2720,7 +3034,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -2760,7 +3075,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -2788,7 +3104,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Haunt",
@@ -2840,7 +3157,8 @@
         ],
         "Plugin": [
             true
-        ]
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Nation Ruler",
@@ -2867,10 +3185,24 @@
         ]
     },
     {
+        "Race": "Nation Ruler",
+        "Name": "Demi-Fiend's Arahabaki",
+        "Level": 83,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Tyrant",
         "Name": "Inexperienced Surt",
         "Level": 40,
-        "Range": ["Quest Reward Only"],
+        "Range": [
+            "Quest Reward Only"
+        ],
         "Special": null,
         "Plugin": [
             false

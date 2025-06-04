@@ -1,11 +1,18 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import DemonLocationTableComponent from "../Components/DemonLocationTableComponent";
-import { Flex } from "@mantine/core";
+import FilterComponent from "../Components/FilterComponent";
+import { Flex, Stack } from "@mantine/core";
 
 export default function Contract() {
+    const [raceFilter, setRaceFilter] = useState<string>('')
     return (
-        <Flex align={"center"} justify={"center"}>
-            <DemonLocationTableComponent />
+        <Flex align='center' justify='center' m={'lg'}>
+            <Stack>
+                <FilterComponent raceFilter={raceFilter} setRaceFilter={setRaceFilter} />
+                <DemonLocationTableComponent raceFilter={raceFilter} />
+            </Stack>
         </Flex>
     )
 }

@@ -1,76 +1,21 @@
 'use client'
 import { Center, Image, Anchor, Table, useComputedColorScheme } from '@mantine/core'
+import { cleanString, sortTable } from '@/utils/functionUtils'
+import { racesLaw, racesChaos } from '@/utils/constants'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import variantDemonList from '../Data/variant_demons.json'
 import demonLocList from '../Data/contract_demons.json'
 import React, { JSX } from 'react'
 import Link from 'next/link';
 
-export default function DemonLocationTableComponent() {
+interface DemonLocationTableProps {
+    raceFilter: string
+}
+
+export default function DemonLocationTableComponent({ raceFilter }: DemonLocationTableProps) {
     const colorScheme = useComputedColorScheme();
 
-    const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Machine", "Raptor", "Seraph", "Vile", "Wild Bird", "Yoma"]
-    const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
-    const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
-
     const demonLocations: DemonLocation[] = demonLocList as DemonLocation[]
-    const subTypes = [
-        'Inexperienced',
-        'Illusion',
-        'of Kuyo',
-        'Wanderer',
-        'Accomplished',
-        'Vermillion Flame',
-        'Godly Golden Winged Bird',
-        'Hero of Akaeda',
-        'Unmatched Steel',
-        'Brave Red Capote',
-        'Noble Demon King',
-        'Blasted Road',
-        'Agent of God',
-        'Princess of Pure Madness',
-        'Seven Stars of Death',
-        'Agent of God',
-        'Nimble',
-        'Joyful',
-        'Prideful',
-        'Wrathful',
-        'Lustful',
-        'Magician',
-        'Mystic',
-        'Bringer of Aging',
-        'Pleasure Bringer',
-        'Huntress',
-        'Heaven-Piercing',
-        'Gojo Bridge',
-        'of Assault',
-        'Shana',
-        'Hassou Tobi',
-        'Horse',
-        'Shining',
-        'Premature',
-        'Accomplished',
-        'Deformed',
-        'Lucky',
-        'Lost',
-        'Late Afternoon',
-        'Mirror',
-        'Traditional',
-        'Kissy',
-        'Leader',
-        'Rainbow of Victory',
-        'Stray',
-        'Crisis',
-        'Nightmare'
-    ]
-
-    function cleanString(str: string): string {
-        let result = str;
-        for (const subtype of subTypes) {
-            result = result.replace(subtype, '');
-        }
-        return result.trim();
-    }
 
     const regularDemons: Demon[] = demonList.filter((demon: Demon) =>
         demonLocations.some((loc: DemonLocation) => loc.Name === demon.Name)
@@ -80,50 +25,15 @@ export default function DemonLocationTableComponent() {
         demonLocations.some((loc: DemonLocation) => loc.Name === demon.Name)
     );
 
-    const filteredDemonList: Demon[] = [...regularDemons, ...variantDemons]
-    const sortedDemonList = [...filteredDemonList].sort((a, b) => {
-        // 1st: Sort by alignment priority (Law > Neutral > Chaos)
-        const aAlignment =
-            racesLaw.includes(a.Race) ? 0 :
-                racesNeutral.includes(a.Race) ? 1 : 2;
-        const bAlignment =
-            racesLaw.includes(b.Race) ? 0 :
-                racesNeutral.includes(b.Race) ? 1 : 2;
+    let filteredDemonList: Demon[] = []
 
-        if (aAlignment !== bAlignment) {
-            return aAlignment - bAlignment;
-        }
+    if (raceFilter !== '') {
+        filteredDemonList = [...regularDemons, ...variantDemons].filter((demon: Demon) => demon.Race === raceFilter)
+    } else {
+        filteredDemonList = [...regularDemons, ...variantDemons]
+    }
 
-        // 2nd: If same alignment, sort by Race (A-Z)
-        if (a.Race < b.Race) return -1;
-        if (a.Race > b.Race) return 1;
-
-        // 3rd: if same Race, sort by Race Rank
-        const raceRanks: Demon[] = demonList
-        .filter((d: Demon) => d.Race === a.Race)
-        .map((d: Demon) => d);
-        
-        const aBaseName:string = cleanString(a.Name)
-        const bBaseName:string = cleanString(b.Name)
-        
-        const aRank:number = raceRanks.findIndex((d:Demon) => d.Name === aBaseName)
-        const bRank:number = raceRanks.findIndex((d:Demon) => d.Name === bBaseName)
-        
-        if (aRank < bRank) return -1;
-        if (aRank > bRank) return 1;
-        
-        // 4th: if same Rank, sort by base Name
-        
-        if (aBaseName < bBaseName) return -1;
-        if (aBaseName > bBaseName) return 1;
-
-        // 4th: If same base Name, sort by Level (ascending)
-        if (a.Level < b.Level) return -1;
-        if (a.Level > b.Level) return 1;
-
-        // 5th: If same Level, sort by Name (A-Z)
-        return a.Name.localeCompare(b.Name);
-    });
+    const sortedDemonList = sortTable(filteredDemonList)
 
     return (
         <Table.ScrollContainer minWidth={500}>
@@ -158,7 +68,13 @@ export default function DemonLocationTableComponent() {
                     </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
-                    {sortedDemonList.map((demon: Demon, index: number) => {
+                    {sortedDemonList.length <= 0
+                    ?
+                    <Table.Tr>
+                        <Table.Td colSpan={7}><Center>No demons of the {raceFilter} race are available to be contracted.</Center></Table.Td>
+                    </Table.Tr>
+                    :
+                    sortedDemonList.map((demon: Demon, index: number) => {
                         const imageName: string = cleanString(demon.Name)
                         const demonLocation: DemonLocation = demonLocations.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation
                         const locPlusNotes: (JSX.Element | null)[] = []

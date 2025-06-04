@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import DemonTableComponent from "./Components/DemonTableComponent";
 import FilterComponent from "./Components/FilterComponent";
-import { Flex, SimpleGrid } from "@mantine/core";
+import { Flex, Stack } from "@mantine/core";
 
 export default function Home() {
     const [raceFilter, setRaceFilter] = useState<string>('')
@@ -12,10 +12,10 @@ export default function Home() {
 
     return (
         <Flex align='center' justify='center' m={'lg'}>
-            <SimpleGrid cols={1}>
+            <Stack>
                 <FilterComponent raceFilter={raceFilter} setRaceFilter={setRaceFilter} hidePlugins={hidePlugins} setHidePlugins={setHidePlugins} displayVariants={displayVariants} setDisplayVariants={setDisplayVariants} />
                 <DemonTableComponent raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} />
-            </SimpleGrid>
+            </Stack>
         </Flex>
     );
 }
