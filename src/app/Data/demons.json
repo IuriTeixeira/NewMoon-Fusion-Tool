@@ -5108,6 +5108,22 @@
     },
     {
         "Race": "Tyrant",
+        "Name": "Alciel",
+        "Level": 92,
+        "Range": null,
+        "Special": [
+            [
+                "Michael",
+                "Moloch"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Tyrant",
         "Name": "Mara (Amorphous)",
         "Level": 95,
         "Range": null,
