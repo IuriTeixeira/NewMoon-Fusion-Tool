@@ -305,7 +305,7 @@
     },
     {
         "Race": "Earth Element",
-        "Name": "Late Afternoon Ubelluris",
+        "Name": "Late Bloomer Ubelluris",
         "Level": 5,
         "Range": [
             "Contract Only"
@@ -334,6 +334,16 @@
         "Range": [
             "Contract Only"
         ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Deformed Ubelluris",
+        "Level": 51,
+        "Range": ["Contract Only"],
         "Special": null,
         "Plugin": [
             false
@@ -501,6 +511,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Late Bloomer Anzu",
+        "Level": 35,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -2537,7 +2559,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Cockatrice",
+        "Name": "Late Bloomer Cockatrice",
         "Level": 16,
         "Range": [
             "Contract Only"
@@ -2561,7 +2583,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Basilisk",
+        "Name": "Late Bloomer Basilisk",
         "Level": 30,
         "Range": [
             "Contract Only"

@@ -178,7 +178,12 @@
     },
     {
         "Race": "Earth Element",
-        "Name": "Late Afternoon Ubelluris",
+        "Name": "Deformed Ubelluris",
+        "Zone": ["Ueno Mirage (Silver)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Late Bloomer Ubelluris",
         "Zone": ["Ueno Mirage (Bronze)"]
     },
     {
@@ -231,6 +236,11 @@
         "Race": "Raptor",
         "Name": "Shining Furiae",
         "Zone": ["Shibuya Quartz (Gold)"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Late Bloomer Anzu",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Vile",
@@ -1020,6 +1030,11 @@
     },
     {
         "Race": "Wilder",
+        "Name": "Deformed Catoblepas",
+        "Zone": ["Ueno Mirage (Silver)"]
+    },
+    {
+        "Race": "Wilder",
         "Name": "Deformed Fenrir",
         "Zone": ["Suginami Tunnels (Gold)"]
     },
@@ -1134,7 +1149,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Cockatrice",
+        "Name": "Late Bloomer Cockatrice",
         "Zone": ["Ueno Mirage (Bronze)"]
     },
     {
@@ -1156,7 +1171,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Basilisk",
+        "Name": "Late Bloomer Basilisk",
         "Zone": ["Ueno Mirage (Silver)"]
     },
     {
