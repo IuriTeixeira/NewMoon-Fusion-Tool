@@ -268,7 +268,7 @@
         "Race": "Wild Bird",
         "Name": "Deformed Macha",
         "Zone": ["Shinagawa Catacombs (Bronze)","Shibuya Quartz (Gold)"],
-        "Notes": ["Does not spawn in the New Moon version of the run"]
+        "Notes": ["Does not spawn in the New Moon version of the run", null]
     },
     {
         "Race": "Wild Bird",
@@ -576,7 +576,8 @@
     {
         "Race": "Dragon King",
         "Name": "Raja Naga",
-        "Zone": ["Shinagawa (north side)", "Shinagawa"],
+        "Zone": ["Shinagawa", "Shinagawa"],
+        "Location": ["North side", null],
         "Notes": ["From 18:00 to 6:00", "Spawns with Fanatic Girimehkala"]
     },
     {
@@ -838,9 +839,9 @@
     {
         "Race": "Nocturne",
         "Name": "Alp",
-        "Zone": ["Shinjuku Docks", "Ichigaya", "Suginami"],
-        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", null, "Near Junkerman and near Suginami Tunnels"],
-        "Notes": [null, null, "From 21:00 to 6:00"]
+        "Zone": ["Shinjuku Docks", "Shinjuku Docks", "Ichigaya", "Suginami", "Suginami"],
+        "Location": ["Near elevator", "Alp-Lilim-Robot Hell", null, "Near Junkerman", "Near Suginami Tunnels"],
+        "Notes": [null, null, null, "From 21:00 to 6:00", "From 21:00 to 6:00"]
     },
     {
         "Race": "Nocturne",
@@ -864,8 +865,8 @@
     {
         "Race": "Nocturne",
         "Name": "Lilim",
-        "Zone": ["Shinjuku Docks", "Ikebukuro"],
-        "Location": ["Near elevator, and at Alp-Lilim-Robot Hell", "[22, 24]"],
+        "Zone": ["Shinjuku Docks", "Shinjuku Docks", "Ikebukuro"],
+        "Location": ["Near elevator", "Alp-Lilim-Robot Hell", "[22, 24]"],
         "Notes": [null, "From 18:00 to 6:00"]
     },
     {
@@ -1012,8 +1013,8 @@
     {
         "Race": "Brute",
         "Name": "Azumi",
-        "Zone": ["Nakano"],
-        "Location": ["[23, 18] and east of Obelisk"]
+        "Zone": ["Nakano", "Nakano"],
+        "Location": ["[23, 18]", "East of Obelisk"]
     },
     {
         "Race": "Brute",
@@ -1053,9 +1054,9 @@
     {
         "Race": "Brute",
         "Name": "Oni",
-        "Zone": ["Ueno", "Ikebukuro"],
-        "Location": ["[17, 18] and Tower of the Dark Priests", "[22, 24]"],
-        "Notes": ["From 6:00 to 18:00","From 6:00 to 18:00"]
+        "Zone": ["Ueno", "Ueno", "Ikebukuro"],
+        "Location": ["[17, 18]", "Tower of the Dark Priests", "[22, 24]"],
+        "Notes": ["From 6:00 to 18:00","From 6:00 to 18:00","From 6:00 to 18:00"]
     },
     {
         "Race": "Brute",
@@ -1067,8 +1068,8 @@
     {
         "Race": "Brute",
         "Name": "Karasu-Tengu",
-        "Zone": ["Ueno", "Old Ichigaya Camp (Bronze)"],
-        "Location": ["Near Souhonzan and at Tower of the Dark Priests", null],
+        "Zone": ["Ueno", "Ueno", "Old Ichigaya Camp (Bronze)"],
+        "Location": ["Near Souhonzan", "Tower of the Dark Priests", null],
         "Notes": ["From 6:00 to 18:00", null]
     },
     {
@@ -1096,8 +1097,8 @@
     {
         "Race": "Evil Dragon",
         "Name": "Cockatrice",
-        "Zone": ["Nakano", "Ueno"],
-        "Location": ["Near Yaginuma", "[19, 19] and near Kisaragi"]
+        "Zone": ["Nakano", "Ueno", "Ueno"],
+        "Location": ["Near Yaginuma", "[19, 19]", "Near Kisaragi"]
     },
     {
         "Race": "Evil Dragon",
@@ -1132,7 +1133,7 @@
         "Race": "Evil Dragon",
         "Name": "Basilisk",
         "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Location": ["[20, 19] [21, 16]", "[09, 22] and [16, 18]"],
+        "Location": ["[20, 19] [21, 16]", "[09, 22] [16, 18]"],
         "Notes": [null, "From 6:00 to 18:00"]
     },
     {
@@ -1175,8 +1176,8 @@
     {
         "Race": "Femme",
         "Name": "Taraka",
-        "Zone": ["Ueno"],
-        "Location": ["[19, 19] and near Kisaragi"],
+        "Zone": ["Ueno", "Ueno"],
+        "Location": ["[19, 19]", "Near Kisaragi"],
         "Notes": ["From 6:00 to 18:00"]
     },
     {
@@ -1274,8 +1275,8 @@
     {
         "Race": "Foul",
         "Name": "Blob",
-        "Zone": ["Ueno", "Shinjuku Docks", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Kagurazaka Zhu Que Cavern (Bronze)"],
-        "Location": ["Northeast and southeast corners", "[20, 24] and northwestern corridor", null, null, null],
+        "Zone": ["Ueno", "Shinjuku Docks", "Shinjuku Docks", "Suginami Tunnels (Silver)", "Suginami Tunnels (Grey)", "Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["Northeast and southeast corners", "[20, 24]", "Northwestern corridor", null, null, null],
         "Notes": ["From 6:00 to 18:00", null, null, null, null]
     },
     {
