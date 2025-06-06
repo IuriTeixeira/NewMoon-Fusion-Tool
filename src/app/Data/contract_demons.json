@@ -1346,7 +1346,8 @@
     {
         "Race": "Haunt",
         "Name": "Deformed Gaki",
-        "Zone": ["Kuchinawa Cave", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"]
+        "Zone": ["Kuchinawa Cave", "Old Ichigaya Camp (Bronze)", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
+        "Notes": ["From 6:00 to 18:00", null, null, null]
     },
     {
         "Race": "Haunt",
