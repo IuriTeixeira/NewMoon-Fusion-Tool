@@ -531,7 +531,7 @@
         "Name": "Inexperienced Uriel",
         "Level": 40,
         "Range": [
-            "Quest Reward Only"
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [
@@ -543,7 +543,7 @@
         "Name": "Inexperienced Raphael",
         "Level": 45,
         "Range": [
-            "Quest Reward Only"
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1267,6 +1267,18 @@
         "Level": 64,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Stormy Pixie",
+        "Level": 1,
+        "Range": [
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2848,7 +2860,7 @@
         "Name": "Inexperienced Phantom",
         "Level": 45,
         "Range": [
-            "Quest Reward Only"
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [
@@ -3201,7 +3213,7 @@
         "Name": "Inexperienced Surt",
         "Level": 40,
         "Range": [
-            "Quest Reward Only"
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [

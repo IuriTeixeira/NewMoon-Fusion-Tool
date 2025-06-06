@@ -588,6 +588,24 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Stormy Pixie",
+        "Zone": ["Home III Virtual Battle", "COMP-Hack Dungeon 1-A Reward"],
+        "Notes": ["Gift from Snakeman for reaching Lv40", null]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Blizzard Jack Frost",
+        "Zone": ["Home III Virtual Battle", "COMP-Hack Dungeon 2-A Reward"],
+        "Notes": ["Gift from Snakeman for reaching Lv40", null]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inferno Pyro Jack",
+        "Zone": ["Home III Virtual Battle", "COMP-Hack Dungeon 3-A Reward"],
+        "Notes": ["Gift from Snakeman for reaching Lv40", null]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Leader Pixie",
         "Zone": ["Suginami"],
         "Location": ["Near Home III"]

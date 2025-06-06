@@ -1,6 +1,7 @@
-import { Accordion, Center, Table, useComputedColorScheme, Text, Anchor } from "@mantine/core";
+import { Image, Accordion, Center, Table, useComputedColorScheme, Text, Anchor } from "@mantine/core";
 import demonsList from '../Data/demons.json'
 import Link from "next/link";
+import { cleanString } from "@/utils/functionUtils";
 
 interface RaceListProps {
     demon: Demon
@@ -30,42 +31,56 @@ export default function RaceListComponent({ demon }: RaceListProps) {
                         >
                             <Table.Tr>
                                 <Table.Th><Center>Level</Center></Table.Th>
+                                <Table.Th><Center>Icon</Center></Table.Th>
                                 <Table.Th><Center>Name</Center></Table.Th>
                                 <Table.Th><Center>Fusion Range</Center></Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
-                            {raceRanks.map((demon: Demon, index: number) => (
-                                <Table.Tr key={`race-list-row-${index}`}>
-                                    <Table.Td key={`race-list-level-${index}`}>
-                                        <Center key={`race-list-center-level-${index}`}>
-                                            {demon.Level}
-                                        </Center>
-                                    </Table.Td>
-                                    <Table.Td key={`race-list-name-${index}`}>
-                                        <Center key={`race-list-center-name-${index}`}>
-                                            <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor>
-                                        </Center>
-                                    </Table.Td>
-                                    {demon.Range ?
-                                        <Table.Td key={`race-list-range-${index}`}>
-                                            <Center key={`race-list-center-range-${index}`}>
-                                                {demon.Range[0]}
-                                                {demon.Range[1]
-                                                ?
-                                                ` - ${demon.Range[1]}`
-                                                :
-                                                typeof(demon.Range[0]) === "number" && '+'}
+                            {raceRanks.map((d: Demon, index: number) => {
+                                const imageName: string = cleanString(d.Name)
+                                return (
+                                    <Table.Tr key={`race-list-row-${index}`}>
+                                        <Table.Td key={`race-list-level-${index}`}>
+                                            <Center key={`race-list-center-level-${index}`}>
+                                                {d.Level}
                                             </Center>
                                         </Table.Td>
-                                        :
-                                        <Table.Td key={`race-list-range-${index}`}>
-                                            <Center key={`race-list-center-range-${index}`}>
-                                                Special Fusion
+                                        <Table.Td key={`race-list-icon-${index}`}>
+                                            <Center key={`race-list-center-icon-${index}`}>
+                                                <Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={d.Name} w={32} h={32} />
                                             </Center>
-                                        </Table.Td>}
-                                </Table.Tr>
-                            ))}
+                                        </Table.Td>
+                                        <Table.Td key={`race-list-name-${index}`}>
+                                            <Center key={`race-list-center-name-${index}`}>
+                                                {d.Name === demon.Name
+                                                    ?
+                                                    <Text fw={700}>{d.Name}</Text>
+                                                    :
+                                                    <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: d.Name } }}>{d.Name}</Anchor>
+                                                }
+                                            </Center>
+                                        </Table.Td>
+                                        {d.Range ?
+                                            <Table.Td key={`race-list-range-${index}`}>
+                                                <Center key={`race-list-center-range-${index}`}>
+                                                    {d.Range[0]}
+                                                    {d.Range[1]
+                                                        ?
+                                                        ` - ${d.Range[1]}`
+                                                        :
+                                                        typeof (d.Range[0]) === "number" && '+'}
+                                                </Center>
+                                            </Table.Td>
+                                            :
+                                            <Table.Td key={`race-list-range-${index}`}>
+                                                <Center key={`race-list-center-range-${index}`}>
+                                                    Special Fusion
+                                                </Center>
+                                            </Table.Td>}
+                                    </Table.Tr>
+                                )
+                            })}
                         </Table.Tbody>
                     </Table>
                 </Accordion.Panel>

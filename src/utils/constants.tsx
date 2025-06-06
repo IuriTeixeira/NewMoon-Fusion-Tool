@@ -47,9 +47,54 @@ export const subTypes = [
     "Crisis",
     "Nightmare",
     "Creator",
-    "Demi-Fiend's"
+    "Demi-Fiend's",
+    "Stormy",
+    "Blizzard",
+    "Inferno"
 ]
 
-export const racesLaw: string[] = ["Avian", "Demon God", "Divine", "Earth Element", "Entity", "Evil Demon", "Goddess", "Heavenly God", "Raptor", "Seraph", "Vile", "Wild Bird", "Yoma"]
-export const racesNeutral: string[] = ["Beast", "Demigod", "Dragon King", "Element", "Fairy", "Fiend", "Godly Beast", "Holy Beast", "Nocturne", "Reaper", "Wilder", "Sacred Soul"]
-export const racesChaos: string[] = ["Brute", "Destroyer", "Dragon", "Earth Mother", "Evil Dragon", "Fallen", "Femme", "Foul", "Guardian", "Haunt", "Nation Ruler", "Tyrant"]
+export const racesLaw: string[] = [
+    "Avian",
+    "Demon God",
+    "Divine",
+    "Earth Element",
+    "Entity",
+    "Evil Demon",
+    "Goddess",
+    "Heavenly God",
+    "Raptor",
+    "Seraph",
+    "Vile",
+    "Wild Bird",
+    "Yoma"
+]
+
+export const racesNeutral: string[] = [
+    "Beast",
+    "Demigod",
+    "Dragon King",
+    "Element",
+    "Fairy",
+    "Fiend",
+    "Godly Beast",
+    "Holy Beast",
+    "Nocturne",
+    "Reaper",
+    "Wilder",
+    "Sacred Soul"
+]
+
+export const racesChaos: string[] = [
+    "Brute",
+    "Destroyer",
+    "Dragon",
+    "Earth Mother",
+    "Evil Dragon",
+    "Fallen",
+    "Femme",
+    "Foul",
+    "Guardian",
+    "Haunt",
+    "Nation Ruler",
+    "Tyrant"
+]

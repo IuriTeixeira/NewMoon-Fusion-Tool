@@ -48,7 +48,7 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                         </Table.Td>
                     </Table.Tr>
                 </Table.Tbody>
-            </Table >
+            </Table>
         </Center>
     )
 }

@@ -1,10 +1,11 @@
-import { Anchor, Center, Checkbox, Group, Table } from "@mantine/core";
+import { Image, Anchor, Center, Checkbox, Group, Table } from "@mantine/core";
 import raceCombinations from '../Data/race_combinations.json'
 import demonsList from '../Data/demons.json'
 import variantDemonsList from '../Data/variant_demons.json'
 import React, { useState } from "react";
 import Link from "next/link";
 import { IconCheck, IconX } from "@tabler/icons-react";
+import { cleanString } from "@/utils/functionUtils";
 
 interface FusionProps {
     demon: Demon
@@ -75,12 +76,12 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 })
             } else {
                 let validElementFusions: DemonPair[] = []
-                if (demon.Range && typeof(demon.Range![0]) === 'number' && filteredCombinations[0].Elements) {
+                if (demon.Range && typeof (demon.Range![0]) === 'number' && filteredCombinations[0].Elements) {
                     const raceRanks: Demon[] = demonsList
                         .filter((d: Demon) => d.Race === demon.Race)
                         .filter((d: Demon) => d.Variant !== true)
-                        .filter((d:Demon) => !d.Special)
-                        .filter((d:Demon) => d.Range && d.Range[0] !== 'PG Only')
+                        .filter((d: Demon) => !d.Special)
+                        .filter((d: Demon) => d.Range && d.Range[0] !== 'PG Only')
                         .map((d: Demon) => d);
                     let targetRank = -1
                     const elements: Demon[] = [
@@ -193,6 +194,15 @@ export default function FusionTableComponent({ demon }: FusionProps) {
 
     const fusionResults: DemonPair[] = calculateFusions()
 
+    let hasTriFusion: boolean = false
+
+    for (let i = 0; i < fusionResults.length; i++) {
+        if (fusionResults[i].demon3) {
+            hasTriFusion = true
+            break
+        }
+    }
+
     return (
         <React.Fragment>
             {!demon.Special &&
@@ -218,37 +228,42 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                 <React.Fragment>
                                     <Table.Th rowSpan={2}><Center>Plugin?</Center></Table.Th>
                                     <Table.Th rowSpan={2}><Center>Allows Variants?</Center></Table.Th>
-                                    <Table.Th colSpan={2}><Center>Material 1</Center></Table.Th>
-                                    <Table.Th colSpan={2}><Center>Material 2</Center></Table.Th>
-                                </React.Fragment>
-                                :
-                                <React.Fragment>
                                     <Table.Th colSpan={3}><Center>Material 1</Center></Table.Th>
                                     <Table.Th colSpan={3}><Center>Material 2</Center></Table.Th>
                                 </React.Fragment>
+                                :
+                                <React.Fragment>
+                                    <Table.Th colSpan={4}><Center>Material 1</Center></Table.Th>
+                                    <Table.Th colSpan={4}><Center>Material 2</Center></Table.Th>
+                                </React.Fragment>
                             }
-                            {demon.Special && fusionResults[0]?.demon3 && demon.Special && <Table.Th colSpan={2}><Center>Material 3</Center></Table.Th>}
+                            {hasTriFusion && <Table.Th colSpan={3}><Center>Material 3</Center></Table.Th>}
                         </Table.Tr>
                         <Table.Tr>
                             <Table.Th><Center>Race</Center></Table.Th>
-                            <Table.Th><Center>Name</Center></Table.Th>
                             {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
+                            <Table.Th><Center>Icon</Center></Table.Th>
+                            <Table.Th><Center>Name</Center></Table.Th>
                             <Table.Th><Center>Race</Center></Table.Th>
-                            <Table.Th><Center>Name</Center></Table.Th>
                             {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
-                            {fusionResults[0]?.demon3 &&
+                            <Table.Th><Center>Icon</Center></Table.Th>
+                            <Table.Th><Center>Name</Center></Table.Th>
+                            {hasTriFusion &&
                                 <React.Fragment>
                                     <Table.Th><Center>Race</Center></Table.Th>
+                                    <Table.Th><Center>Icon</Center></Table.Th>
                                     <Table.Th><Center>Name</Center></Table.Th>
-                                    {!demon.Special && <Table.Th><Center>Lv</Center></Table.Th>}
                                 </React.Fragment>}
                         </Table.Tr>
                     </Table.Thead>
                     <Table.Tbody>
                         {fusionResults.length > 0
                             ?
-                            fusionResults.map((combo, index) => (
-                                (demon.Special && demon.Race !== 'Element') ?
+                            fusionResults.map((combo, index) => {
+                                const demon1Icon: string = cleanString(combo.demon1.Name)
+                                const demon2Icon: string = cleanString(combo.demon2.Name)
+                                const demon3Icon: string = combo.demon3 ? cleanString(combo.demon3.Name) : '-'
+                                return (demon.Special && demon.Race !== 'Element') ?
                                     <Table.Tr key={index}>
                                         <Table.Td key={`plugin-${combo.demon2.Race}-${index}`}>
                                             <Center>{demon.Plugin[index] ? <IconCheck size={16} /> : <IconX size={16} />}</Center>
@@ -259,33 +274,45 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                         {combo.demon1 &&
                                             <React.Fragment key={`demon1-${index}`}>
                                                 <Table.Td key={`race-${combo.demon1.Race}-${index}`}>{combo.demon1.Race}</Table.Td>
+                                                <Table.Td key={`icon-${combo.demon1.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon1Icon}.png`} alt={combo.demon1.Name} w={32} h={32} /></Center></Table.Td>
                                                 <Table.Td key={`name-${combo.demon1.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor></Table.Td>
                                             </React.Fragment>
                                         }
                                         {combo.demon2 &&
                                             <React.Fragment key={`demon2-${index}`}>
                                                 <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon2.Race}</Table.Td>
+                                                <Table.Td key={`icon-${combo.demon2.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon2Icon}.png`} alt={combo.demon2.Name} w={32} h={32} /></Center></Table.Td>
                                                 <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor></Table.Td>
                                             </React.Fragment>
                                         }
-                                        {combo.demon3 &&
+                                        {combo.demon3 ?
                                             <React.Fragment key={`demon3-${index}`}>
-                                                <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon3?.Race}</Table.Td>
-                                                <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3?.Name } }}>{combo.demon3?.Name}</Anchor></Table.Td>
+                                                <Table.Td key={`race-${combo.demon3.Race}-${index}`}>{combo.demon3?.Race}</Table.Td>
+                                                <Table.Td key={`icon-${combo.demon3.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon3Icon}.png`} alt={combo.demon3?.Name} w={32} h={32} /></Center></Table.Td>
+                                                <Table.Td key={`name-${combo.demon3.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3?.Name } }}>{combo.demon3?.Name}</Anchor></Table.Td>
+                                            </React.Fragment>
+                                            :
+                                            hasTriFusion && <React.Fragment key={`demon3-${index}`}>
+                                                <Table.Td key={`race-demon3-${index}`}><Center key={`race-demon3-center-${index}`}>-</Center></Table.Td>
+                                                <Table.Td key={`icon-demon3-${index}`}><Center key={`icon-demon3-center-${index}`}>-</Center></Table.Td>
+                                                <Table.Td key={`name-demon3-${index}`}><Center key={`name-demon3-center-${index}`}>-</Center></Table.Td>
                                             </React.Fragment>
                                         }
                                     </Table.Tr>
                                     :
                                     <Table.Tr key={index}>
                                         <Table.Td key={`race-${combo.demon1.Name}-${index}`}>{combo.demon1.Race}</Table.Td>
-                                        <Table.Td key={`name-${combo.demon1.Name}-${index}-`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${combo.demon1.Name}-${index}-`}>{combo.demon1.Level}</Table.Td>
+                                        <Table.Td key={`icon-${combo.demon1.Name}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon1Icon}.png`} alt={combo.demon1.Name} w={32} h={32} /></Center></Table.Td>
+                                        <Table.Td key={`name-${combo.demon1.Name}-${index}-`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor></Table.Td>
                                         <Table.Td key={`race-${combo.demon2.Name}-${index}`}>{combo.demon2.Race}</Table.Td>
-                                        <Table.Td key={`name-${combo.demon2.Name}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor></Table.Td>
                                         <Table.Td key={`level-${combo.demon2.Name}-${index}`}>{combo.demon2.Level}</Table.Td>
+                                        <Table.Td key={`icon-${combo.demon2.Name}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon2Icon}.png`} alt={combo.demon2.Name} w={32} h={32} /></Center></Table.Td>
+                                        <Table.Td key={`name-${combo.demon2.Name}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor></Table.Td>
                                     </Table.Tr>
-                            ))
-                            : (
+                            })
+                            :
+                            (
                                 <Table.Tr>
                                     <Table.Td colSpan={10}><Center>No valid fusions found.</Center></Table.Td>
                                 </Table.Tr>

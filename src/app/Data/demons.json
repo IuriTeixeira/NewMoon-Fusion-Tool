@@ -1748,18 +1748,18 @@
             ],
             [
                 "Nimble Cu Chulainn",
-                "Prideful Black Frost",
-                "Wrathful Alice"
+                "Wrathful Alice",
+                "Prideful Black Frost"
             ],
             [
                 "Nimble Cu Chulainn",
-                "Joyful Black Frost",
-                "Nimble Alice"
+                "Nimble Alice",
+                "Joyful Black Frost"
             ],
             [
                 "Three-Headed Cerberus",
-                "Prideful Black Frost",
-                "Wrathful Alice"
+                "Wrathful Alice",
+                "Prideful Black Frost"
             ]
         ],
         "Plugin": [
@@ -2572,6 +2572,11 @@
                 "Valkyrie"
             ],
             [
+                "Demi-Fiend's Parvati",
+                "Demi-Fiend's Pixie",
+                "Demi-Fiend's Titania"
+            ],
+            [
                 "Demi-Fiend's Cu Chulainn",
                 "Demi-Fiend's Pixie",
                 "Demi-Fiend's Titania"
@@ -2585,11 +2590,6 @@
                 "Demi-Fiend's Cu Chulainn",
                 "Demi-Fiend's Titania",
                 "Demi-Fiend's Parvati"
-            ],
-            [
-                "Demi-Fiend's Parvati",
-                "Demi-Fiend's Titania",
-                "Demi-Fiend's Pixie"
             ]
         ],
         "Plugin": [
