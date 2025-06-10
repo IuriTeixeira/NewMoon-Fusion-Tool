@@ -305,7 +305,7 @@
     },
     {
         "Race": "Earth Element",
-        "Name": "Late Afternoon Ubelluris",
+        "Name": "Late Bloomer Ubelluris",
         "Level": 5,
         "Range": [
             "Contract Only"
@@ -331,6 +331,18 @@
         "Race": "Earth Element",
         "Name": "Lucky Hua Po",
         "Level": 33,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Deformed Ubelluris",
+        "Level": 51,
         "Range": [
             "Contract Only"
         ],
@@ -501,6 +513,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Late Bloomer Anzu",
+        "Level": 35,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Raptor",
@@ -2469,6 +2493,18 @@
     },
     {
         "Race": "Earth Mother",
+        "Name": "Late Bloomer Artemis",
+        "Level": 10,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
         "Name": "Inexperienced Parvati",
         "Level": 25,
         "Range": null,
@@ -2537,7 +2573,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Cockatrice",
+        "Name": "Late Bloomer Cockatrice",
         "Level": 16,
         "Range": [
             "Contract Only"
@@ -2561,7 +2597,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Basilisk",
+        "Name": "Late Bloomer Basilisk",
         "Level": 30,
         "Range": [
             "Contract Only"
@@ -3012,6 +3048,18 @@
         "Race": "Haunt",
         "Name": "Accomplished Yakkha",
         "Level": 24,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Late Bloomer Vetala",
+        "Level": 25,
         "Range": [
             "Contract Only"
         ],

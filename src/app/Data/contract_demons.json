@@ -178,8 +178,13 @@
     },
     {
         "Race": "Earth Element",
-        "Name": "Late Afternoon Ubelluris",
+        "Name": "Late Bloomer Ubelluris",
         "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
+        "Race": "Earth Element",
+        "Name": "Deformed Ubelluris",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Evil Demon",
@@ -231,6 +236,11 @@
         "Race": "Raptor",
         "Name": "Shining Furiae",
         "Zone": ["Shibuya Quartz (Gold)"]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Late Bloomer Anzu",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Vile",
@@ -1020,6 +1030,11 @@
     },
     {
         "Race": "Wilder",
+        "Name": "Deformed Catoblepas",
+        "Zone": ["Ueno Mirage (Silver)"]
+    },
+    {
+        "Race": "Wilder",
         "Name": "Deformed Fenrir",
         "Zone": ["Suginami Tunnels (Gold)"]
     },
@@ -1113,6 +1128,11 @@
         "Notes": ["Only spawns in the New Moon version of the run"]
     },
     {
+        "Race": "Earth Mother",
+        "Name": "Late Bloomer Artemis",
+        "Zone": ["Ueno Mirage (Bronze)"]
+    },
+    {
         "Race": "Evil Dragon",
         "Name": "Cockatrice",
         "Zone": ["Nakano", "Ueno", "Ueno"],
@@ -1134,7 +1154,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Cockatrice",
+        "Name": "Late Bloomer Cockatrice",
         "Zone": ["Ueno Mirage (Bronze)"]
     },
     {
@@ -1156,7 +1176,7 @@
     },
     {
         "Race": "Evil Dragon",
-        "Name": "Late Afternoon Basilisk",
+        "Name": "Late Bloomer Basilisk",
         "Zone": ["Ueno Mirage (Silver)"]
     },
     {
@@ -1206,9 +1226,9 @@
     {
         "Race": "Femme",
         "Name": "Gorgon",
-        "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Location": ["Northeast and southeast corners", null],
-        "Notes": [null, "From 6:00 to 18:00"]
+        "Zone": ["Kuchinawa Cave", "Ueno", "Ueno Mirage (Bronze)"],
+        "Location": [null, "Northeast and southeast corners", null],
+        "Notes": ["From 6:00 to 18:00", null, null]
     },
     {
         "Race": "Femme",
@@ -1426,8 +1446,7 @@
     {
         "Race": "Haunt",
         "Name": "Pisaca",
-        "Zone": ["Ichigaya", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
-        "Location": [null, null, null]
+        "Zone": ["Ichigaya", "Old Ichigaya Camp (Silver)", "Ueno Mirage (Bronze)", "Ueno Mirage (Silver)","Old Tokyo Metro"]
     },
     {
         "Race": "Haunt",
@@ -1456,6 +1475,11 @@
         "Name": "Vetala",
         "Zone": ["Shinagawa Catacombs (Bronze)"],
         "Notes": ["Only spawns in the New Moon version of the run"]
+    },
+    {
+        "Race": "Haunt",
+        "Name": "Late Bloomer Vetala",
+        "Zone": ["Ueno Mirage (Silver)"]
     },
     {
         "Race": "Nation Ruler",
