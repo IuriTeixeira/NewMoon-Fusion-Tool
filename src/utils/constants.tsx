@@ -37,7 +37,7 @@ export const subTypes = [
     "Deformed",
     "Lucky",
     "Lost",
-    "Late Afternoon",
+    "Late Bloomer",
     "Mirror",
     "Traditional",
     "Kissy",
