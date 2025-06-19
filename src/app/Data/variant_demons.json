@@ -512,7 +512,14 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "VariantRestrictions": [
+            [
+                null,
+                "Must be the versions from Fusion or Nakano Underground Tunnels (Bronze)",
+                null
+            ]
+        ]
     },
     {
         "Race": "Raptor",
@@ -1569,7 +1576,7 @@
         "VariantRestrictions": [
             [
                 null,
-                "Must be Suginami Tunnels (Silver) version",
+                "Must be the version from Suginami Tunnels (Silver)",
                 null
             ]
         ]
@@ -3102,7 +3109,14 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "VariantRestrictions": [
+            [
+                null,
+                "Must be the versions from Fusion or Nakano Underground Tunnels (Bronze)",
+                null
+            ]
+        ]
     },
     {
         "Race": "Haunt",

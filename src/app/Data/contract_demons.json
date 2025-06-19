@@ -1374,7 +1374,8 @@
     {
         "Race": "Haunt",
         "Name": "Deformed Poltergeist",
-        "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)", "Kagurazaka Zhu Que Cavern (Gold)"]
+        "Zone": ["Kagurazaka Zhu Que Cavern (Bronze)"],
+        "Location": ["[19, 21] of 1st floor"]
     },
     {
         "Race": "Haunt",
