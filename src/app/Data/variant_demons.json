@@ -1565,7 +1565,14 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "VariantRestrictions": [
+            [
+                null,
+                "Must be Suginami Tunnels (Silver) version",
+                null
+            ]
+        ]
     },
     {
         "Race": "Fairy",

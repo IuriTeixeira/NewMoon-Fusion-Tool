@@ -8,6 +8,7 @@ interface Demon {
     Variant?: boolean
     Unfusable?: boolean
     AllowVariants?: boolean
+    VariantRestrictions?: string[][] | null[[]]
 }
 
 interface FusionData {
