@@ -50,7 +50,9 @@ export const subTypes = [
     "Demi-Fiend's",
     "Stormy",
     "Blizzard",
-    "Inferno"
+    "Inferno",
+    "Asura",
+    "Three-Headed"
 ]
 
 export const racesLaw: string[] = [

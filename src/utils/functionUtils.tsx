@@ -1,11 +1,14 @@
 import { subTypes } from "./constants";
 import { racesLaw, racesNeutral } from '@/utils/constants'
-import demonList from "@/app/Data/demons.json"
 
 export function cleanString(str: string): string {
     let result = str;
     for (const subtype of subTypes) {
-        result = result.replace(subtype, '');
+        result = result
+                .replace(subtype, '')                           //Removes the subtype from the demon name
+                .replace('Asura','Void')                        //exception for Asura Cerberus
+                .replace('Three-Headed','Void')                 //exception for Three-Headed Cerberus
+                .replace('Amaterasu of Kuyo','Amaterasu (F)')   //exception for Amaterasu of Kuyo
     }
     return result.trim();
 }
@@ -29,7 +32,7 @@ export function sortTable(filteredDemonList: Demon[]): Demon[] {
         if (a.Race > b.Race) return 1;
 
         // 3rd: if same Race, sort by Race Rank
-        const raceRanks: Demon[] = demonList
+        const raceRanks: Demon[] = filteredDemonList
             .filter((d: Demon) => d.Race === a.Race)
             .map((d: Demon) => d);
 

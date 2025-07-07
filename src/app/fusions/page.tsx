@@ -31,12 +31,7 @@ function FusionsContent() {
 
     const demonLoc:DemonLocation = demonLocations.find((d:DemonLocation) => d.Name === demon.Name) as DemonLocation
 
-    let originalDemon = null
-    if (demon.Name === 'Amaterasu of Kuyo') {
-        originalDemon = demons.find((d: Demon) => d.Name === 'Amaterasu (F)') as Demon
-    } else {
-        originalDemon = demons.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
-    }
+    const originalDemon:Demon = demons.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
 
     return (
         <Flex align='center' justify='center' m={'lg'}>
