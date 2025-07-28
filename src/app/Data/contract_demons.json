@@ -1381,7 +1381,8 @@
         "Race": "Haunt",
         "Name": "Gaki",
         "Zone": ["Suginami", "Ueno", "Shinjuku Docks", "Old Ichigaya Camp (Bronze)", "Old Tokyo Metro"],
-        "Location": ["[16, 17] behind a rock", "Northeast and southeast corners", "Near elevator", null, null]
+        "Location": ["[16, 17] behind a rock", "Northeast and southeast corners", "Near elevator", null, null],
+        "Notes": ["From 21:00 to 6:00", null, null, null, null]
     },
     {
         "Race": "Haunt",
