@@ -5192,5 +5192,22 @@
             true, false, false, false, false
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Abaddon",
+        "Level": 96,
+        "Range": null,
+        "Special": [
+            [
+                "Pazuzu",
+                "Alciel",
+                "Belphegor"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": false
     }
 ]
