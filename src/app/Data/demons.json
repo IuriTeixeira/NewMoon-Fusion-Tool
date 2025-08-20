@@ -1617,6 +1617,21 @@
     },
     {
         "Race": "Yoma",
+        "Name": "Purski",
+        "Level": 56,
+        "Range": null,
+        "Special": [
+            [
+                "Ganesha",
+                "Raja Naga"
+            ]
+        ],
+        "Plugin": [
+            true
+        ]
+    },
+    {
+        "Race": "Yoma",
         "Name": "Ganesha",
         "Level": 58,
         "Range": [
@@ -4090,6 +4105,19 @@
         "Range": [
             30,
             57
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Eligor",
+        "Level": 43,
+        "Range": [
+            58,
+            85
         ],
         "Special": null,
         "Plugin": [
