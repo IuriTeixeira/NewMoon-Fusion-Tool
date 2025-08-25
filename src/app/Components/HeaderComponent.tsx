@@ -26,6 +26,11 @@ export default function HeaderComponent() {
                                 Demon Locations
                             </Button>
                         </Link>
+                        <Link href={'/about'}>
+                            <Button size={'compact-md'}>
+                                About
+                            </Button>
+                        </Link>
                     </Group>
                 </Stack>
             </Container>
