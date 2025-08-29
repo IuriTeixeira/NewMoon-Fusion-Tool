@@ -165,9 +165,9 @@
     {
         "Race": "Earth Element",
         "Name": "Deformed Dwarf",
-        "Zone": ["Shinagawa", "Shibuya Metro", "Shibuya Quartz (Gold)"],
-        "Location": ["Near quarries", null, null],
-        "Notes": ["Does not spawn during New Moon or Invasion", null, null]
+        "Zone": ["Shinagawa"],
+        "Location": ["Near quarries"],
+        "Notes": ["Does not spawn during New Moon or Invasion"]
     },
     {
         "Race": "Earth Element",
@@ -218,7 +218,7 @@
     {
         "Race": "Raptor",
         "Name": "Deformed Onmoraki",
-        "Zone": ["Shibuya Metro", "Suginami Tunnels (Silver)","Shibuya Quartz (Gold)"]
+        "Zone": ["Suginami Tunnels (Silver)"]
     },
     {
         "Race": "Raptor",
@@ -241,11 +241,6 @@
         "Race": "Raptor",
         "Name": "Late Bloomer Anzu",
         "Zone": ["Ueno Mirage (Silver)"]
-    },
-    {
-        "Race": "Vile",
-        "Name": "Deformed Baphomet",
-        "Zone": ["Shibuya Metro"]
     },
     {
         "Race": "Wild Bird",
@@ -277,8 +272,8 @@
     {
         "Race": "Wild Bird",
         "Name": "Deformed Macha",
-        "Zone": ["Shinagawa Catacombs (Bronze)","Shibuya Quartz (Gold)"],
-        "Notes": ["Does not spawn in the New Moon version of the run", null]
+        "Zone": ["Shinagawa Catacombs (Bronze)"],
+        "Notes": ["Does not spawn in the New Moon version of the run"]
     },
     {
         "Race": "Wild Bird",
@@ -1341,8 +1336,8 @@
     {
         "Race": "Foul",
         "Name": "Deformed Specter",
-        "Zone": ["Shinagawa Catacombs (Bronze)", "Nakano", "Shibuya Metro", "Old Tokyo Metro"],
-        "Location": ["Serene Aura doors in the New Moon version of the run", null, null, null],
+        "Zone": ["Shinagawa Catacombs (Bronze)", "Nakano", "Old Tokyo Metro"],
+        "Location": ["Serene Aura doors in the New Moon version of the run", null, null],
         "Notes": ["Serene Aura is obtained by talking to the Archangel NPC in the non-New Moon version of the run", "Spawns with Balance-Threatening Phantom", null, null]
     },
     {
