@@ -2,6 +2,7 @@ import { Image, Anchor, Center, Checkbox, Group, Table } from "@mantine/core";
 import raceCombinations from '../Data/race_combinations.json'
 import demonsList from '../Data/demons.json'
 import variantDemonsList from '../Data/variant_demons.json'
+import contractDemonList from '../Data/contract_demons.json'
 import React, { useState } from "react";
 import Link from "next/link";
 import { IconCheck, IconX } from "@tabler/icons-react";
@@ -14,6 +15,8 @@ interface FusionProps {
 export default function FusionTableComponent({ demon }: FusionProps) {
     const [fusionDisplayVariants, setFusionDisplayVariants] = useState<boolean>(false)
     const [fusionHidePlugins, setFusionHidePlugins] = useState<boolean>(false)
+    const [fusionDisplayContractOnly, setFusionDisplayContractOnly] = useState<boolean>(false)
+    const contractDemonNamesSet: Set<string> = new Set(contractDemonList.map((demon: DemonLocation) => demon.Name));
     const filteredCombinations: FusionData[] = raceCombinations.filter(target => demon.Race === target.Race)
     const combinations: FusionCombination[] = filteredCombinations.flatMap(race =>
         race.Combinations?.map(combination => ({
@@ -135,6 +138,9 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 if (fusionHidePlugins) {
                     validElementFusions = validElementFusions.filter((d: DemonPair) => !d.demon2.Plugin[0])
                 }
+                if(fusionDisplayContractOnly){
+                    validElementFusions = validElementFusions.filter((d: DemonPair) => contractDemonNamesSet.has(d.demon2.Name))
+                }
                 allValidFusions.push(...validElementFusions)
                 combinations.forEach((combination: FusionCombination) => {
                     const allDemon1s: Demon[] = demonsList.filter((d: Demon) => d.Race === combination.race1)
@@ -142,15 +148,38 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     let filteredDemon1s: Demon[]
                     if (fusionHidePlugins) {
                         if (fusionDisplayVariants) {
-                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s].filter((d: Demon) => d.Plugin[0] === false)
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                            }
                         } else {
-                            filteredDemon1s = allDemon1s.filter((d: Demon) => d.Plugin[0] === false)
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon1s = allDemon1s
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon1s = allDemon1s.filter((d: Demon) => d.Plugin[0] === false)
+                            }
                         }
                     } else {
                         if (fusionDisplayVariants) {
-                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
+                            }
                         } else {
-                            filteredDemon1s = allDemon1s
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon1s = allDemon1s
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon1s = allDemon1s
+                            }
                         }
                     }
 
@@ -159,15 +188,38 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                     let filteredDemon2s: Demon[]
                     if (fusionHidePlugins) {
                         if (fusionDisplayVariants) {
-                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s].filter((d: Demon) => d.Plugin[0] === false)
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                            }
                         } else {
-                            filteredDemon2s = allDemon2s.filter((d: Demon) => d.Plugin[0] === false)
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon2s = allDemon2s
+                                    .filter((d: Demon) => d.Plugin[0] === false)
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon2s = allDemon2s.filter((d: Demon) => d.Plugin[0] === false)
+                            }
                         }
                     } else {
                         if (fusionDisplayVariants) {
-                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
+                            }
                         } else {
-                            filteredDemon2s = allDemon2s
+                            if (fusionDisplayContractOnly) {
+                                filteredDemon2s = allDemon2s
+                                    .filter((d: Demon) => contractDemonNamesSet.has(d.Name))
+                            } else {
+                                filteredDemon2s = allDemon2s
+                            }
                         }
                     }
                     filteredDemon1s.forEach((demon1: Demon) => {
@@ -216,6 +268,11 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                         checked={fusionDisplayVariants}
                         label="Show variant demons"
                         onChange={(event) => setFusionDisplayVariants(event.currentTarget.checked)}
+                    />
+                    <Checkbox
+                        checked={fusionDisplayContractOnly}
+                        label="Display only contractable demons"
+                        onChange={(event) => setFusionDisplayContractOnly(event.currentTarget.checked)}
                     />
                 </Group>
             }
@@ -275,21 +332,21 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                             <React.Fragment key={`demon1-${index}`}>
                                                 <Table.Td key={`race-${combo.demon1.Race}-${index}`}>{combo.demon1.Race}</Table.Td>
                                                 <Table.Td key={`icon-${combo.demon1.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon1Icon}.png`} alt={combo.demon1.Name} w={32} h={32} /></Center></Table.Td>
-                                                <Table.Td key={`name-${combo.demon1.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor><br key={`name-variant-estriction-${combo.demon1.Race}-${index}`}/>{demon.VariantRestrictions && demon.VariantRestrictions[index][0] ? '* ' + demon.VariantRestrictions[index][0] : ''}</Table.Td>
+                                                <Table.Td key={`name-${combo.demon1.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon1.Name } }}>{combo.demon1.Name}</Anchor><br key={`name-variant-estriction-${combo.demon1.Race}-${index}`} />{demon.VariantRestrictions && demon.VariantRestrictions[index][0] ? '* ' + demon.VariantRestrictions[index][0] : ''}</Table.Td>
                                             </React.Fragment>
                                         }
                                         {combo.demon2 &&
                                             <React.Fragment key={`demon2-${index}`}>
                                                 <Table.Td key={`race-${combo.demon2.Race}-${index}`}>{combo.demon2.Race}</Table.Td>
                                                 <Table.Td key={`icon-${combo.demon2.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon2Icon}.png`} alt={combo.demon2.Name} w={32} h={32} /></Center></Table.Td>
-                                                <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor><br key={`name-variant-estriction-${combo.demon2.Race}-${index}`}/>{demon.VariantRestrictions && demon.VariantRestrictions[index][1] ? '* ' + demon.VariantRestrictions[index][1] : ''}</Table.Td>
+                                                <Table.Td key={`name-${combo.demon2.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon2.Name } }}>{combo.demon2.Name}</Anchor><br key={`name-variant-estriction-${combo.demon2.Race}-${index}`} />{demon.VariantRestrictions && demon.VariantRestrictions[index][1] ? '* ' + demon.VariantRestrictions[index][1] : ''}</Table.Td>
                                             </React.Fragment>
                                         }
                                         {combo.demon3 ?
                                             <React.Fragment key={`demon3-${index}`}>
                                                 <Table.Td key={`race-${combo.demon3.Race}-${index}`}>{combo.demon3?.Race}</Table.Td>
                                                 <Table.Td key={`icon-${combo.demon3.Race}-${index}`}><Center><Image fallbackSrc='/Blank.png' src={`/Icons/${demon3Icon}.png`} alt={combo.demon3?.Name} w={32} h={32} /></Center></Table.Td>
-                                                <Table.Td key={`name-${combo.demon3.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3?.Name } }}>{combo.demon3?.Name}</Anchor><br key={`name-variant-estriction-${combo.demon3.Race}-${index}`}/>{demon.VariantRestrictions && demon.VariantRestrictions[index][2] ? '* ' + demon.VariantRestrictions[index][2] : ''}</Table.Td>
+                                                <Table.Td key={`name-${combo.demon3.Race}-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: combo.demon3?.Name } }}>{combo.demon3?.Name}</Anchor><br key={`name-variant-estriction-${combo.demon3.Race}-${index}`} />{demon.VariantRestrictions && demon.VariantRestrictions[index][2] ? '* ' + demon.VariantRestrictions[index][2] : ''}</Table.Td>
                                             </React.Fragment>
                                             :
                                             hasTriFusion && <React.Fragment key={`demon3-${index}`}>

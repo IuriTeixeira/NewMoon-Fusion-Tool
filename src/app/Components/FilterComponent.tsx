@@ -9,9 +9,11 @@ interface FilterProps {
     setHidePlugins?: React.Dispatch<React.SetStateAction<boolean>>
     displayVariants?: boolean,
     setDisplayVariants?: React.Dispatch<React.SetStateAction<boolean>>
+    //displayContractOnly?: boolean,
+    //setDisplayContractOnly?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function FilterComponent({ raceFilter, setRaceFilter, hidePlugins, setHidePlugins, displayVariants, setDisplayVariants }: FilterProps) {
+export default function FilterComponent({ raceFilter, setRaceFilter, hidePlugins, setHidePlugins, displayVariants, setDisplayVariants/*, displayContractOnly, setDisplayContractOnly */}: FilterProps) {
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
 
     return (
@@ -35,6 +37,11 @@ export default function FilterComponent({ raceFilter, setRaceFilter, hidePlugins
                 label="Show variant demons"
                 onChange={(event) => setDisplayVariants(event.currentTarget.checked)}
             />}
+            {/*setDisplayContractOnly && <Checkbox
+                checked={displayContractOnly}
+                label="Display only contractable demons"
+                onChange={(event) => setDisplayContractOnly(event.currentTarget.checked)}
+            />*/}
         </Flex>
     )
 }

@@ -5,6 +5,7 @@ import { racesLaw, racesChaos } from '@/utils/constants'
 import { cleanString, sortTable } from '@/utils/functionUtils'
 import demonList from '../Data/demons.json' assert {type: "json"}
 import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
+//import contractDemonList from '../Data/contract_demons.json' assert {type: "json"}
 import React from 'react'
 import Link from 'next/link'
 
@@ -12,9 +13,10 @@ interface DemonTableProps {
     raceFilter: string,
     hidePlugins: boolean,
     displayVariants: boolean,
+    //displayContractOnly: boolean
 }
 
-export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants }: DemonTableProps) {
+export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants, /*displayContractOnly*/ }: DemonTableProps) {
     const colorScheme = useComputedColorScheme();
 
     let filteredDemonList: Demon[]
@@ -48,6 +50,17 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
             }
         }
     }
+    /*if (displayContractOnly) {
+        // Create a Set for faster lookup
+        const contractDemonNamesSet: Set<string> = new Set(
+            contractDemonList.map((demon: DemonLocation) => demon.Name)
+        );
+
+        // Filter the demon list
+        filteredDemonList = filteredDemonList.filter((d: Demon) =>
+            contractDemonNamesSet.has(d.Name)
+        );
+    }*/
 
     const sortedDemonList = sortTable(filteredDemonList)
 
