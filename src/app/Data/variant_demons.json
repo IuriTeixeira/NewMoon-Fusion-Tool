@@ -87,6 +87,18 @@
         ]
     },
     {
+        "Race": "Demon God",
+        "Name": "Akuma Odin",
+        "Level": 90,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Divine",
         "Name": "Inexperienced Angel",
         "Level": 6,
@@ -160,6 +172,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Divine",
+        "Name": "Akuma Angel",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Divine",
@@ -551,6 +575,18 @@
         "Level": 73,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Akuma Hresvelgr",
+        "Level": 60,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2115,6 +2151,18 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Akuma Lilith",
+        "Level": 90,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Premature Lilim",
         "Level": 92,
         "Range": [
@@ -2129,6 +2177,18 @@
         "Race": "Reaper",
         "Name": "Illusion Mot",
         "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
+        "Name": "Akuma Hel",
+        "Level": 60,
         "Range": [
             "PG Only"
         ],
@@ -2236,6 +2296,18 @@
         "Level": 25,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Akuma Mothman",
+        "Level": 30,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2714,6 +2786,18 @@
         "Race": "Fallen",
         "Name": "Creator Berith",
         "Level": 58,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Akuma Ose",
+        "Level": 30,
         "Range": [
             "PG Only"
         ],
@@ -3269,6 +3353,30 @@
         "Race": "Nation Ruler",
         "Name": "Demi-Fiend's Arahabaki",
         "Level": 83,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Akuma Arahabaki",
+        "Level": 90,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Akuma King Frost",
+        "Level": 30,
         "Range": [
             "PG Only"
         ],
