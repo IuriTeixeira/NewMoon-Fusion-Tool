@@ -88,7 +88,7 @@
     },
     {
         "Race": "Demon God",
-        "Name": "Akuma Odin",
+        "Name": "Odin of the Sea",
         "Level": 90,
         "Range": [
             "PG Only"
@@ -175,7 +175,7 @@
     },
     {
         "Race": "Divine",
-        "Name": "Akuma Angel",
+        "Name": "Angel of the Sea",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -583,7 +583,7 @@
     },
     {
         "Race": "Raptor",
-        "Name": "Akuma Hresvelgr",
+        "Name": "Hresvelgr of the Sea",
         "Level": 60,
         "Range": [
             "PG Only"
@@ -2151,7 +2151,7 @@
     },
     {
         "Race": "Nocturne",
-        "Name": "Akuma Lilith",
+        "Name": "Lilith of the Sea",
         "Level": 90,
         "Range": [
             "PG Only"
@@ -2187,7 +2187,7 @@
     },
     {
         "Race": "Raptor",
-        "Name": "Akuma Hel",
+        "Name": "Hel of the Sea",
         "Level": 60,
         "Range": [
             "PG Only"
@@ -2304,7 +2304,7 @@
     },
     {
         "Race": "Wilder",
-        "Name": "Akuma Mothman",
+        "Name": "Mothman of the Sea",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -2796,7 +2796,7 @@
     },
     {
         "Race": "Fallen",
-        "Name": "Akuma Ose",
+        "Name": "Ose of the Sea",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -3363,7 +3363,7 @@
     },
     {
         "Race": "Nation Ruler",
-        "Name": "Akuma Arahabaki",
+        "Name": "Arahabaki of the Sea",
         "Level": 90,
         "Range": [
             "PG Only"
@@ -3375,7 +3375,7 @@
     },
     {
         "Race": "Tyrant",
-        "Name": "Akuma King Frost",
+        "Name": "King Frost of the Sea",
         "Level": 30,
         "Range": [
             "PG Only"
