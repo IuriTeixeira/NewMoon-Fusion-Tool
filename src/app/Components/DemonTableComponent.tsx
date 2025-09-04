@@ -3,9 +3,9 @@ import { IconCheck, IconX } from '@tabler/icons-react'
 import { Text, Table, Image, Anchor, useComputedColorScheme, Center } from '@mantine/core'
 import { racesLaw, racesChaos } from '@/utils/constants'
 import { cleanString, sortTable } from '@/utils/functionUtils'
-import demonList from '../Data/demons.json' assert {type: "json"}
-import variantDemonList from '../Data/variant_demons.json' assert {type: "json"}
-//import contractDemonList from '../Data/contract_demons.json' assert {type: "json"}
+import demonList from '/Data/demons.json' assert {type: "json"}
+import variantDemonList from '/Data/variant_demons.json' assert {type: "json"}
+//import contractDemonList from '/Data/contract_demons.json' assert {type: "json"}
 import React from 'react'
 import Link from 'next/link'
 

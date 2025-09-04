@@ -1,18 +1,29 @@
 import { Image, Accordion, Center, Table, useComputedColorScheme, Text, Anchor } from "@mantine/core";
-import demonsList from '../Data/demons.json'
 import Link from "next/link";
-import { cleanString } from "@/utils/functionUtils";
+import { cleanString, loadJSON } from "@/utils/functionUtils";
+import { useEffect, useState } from "react";
 
 interface RaceListProps {
     demon: Demon
 }
 
 export default function RaceListComponent({ demon }: RaceListProps) {
+    const [data, setData] = useState<{
+        demonsList: Demon[]
+    } | null>(null)
+
+    useEffect(() => {
+        Promise.all([
+            loadJSON('/Data/demons.json'),
+        ]).then(([demonsList]) => {
+            setData({ demonsList })
+        })
+    }, [])
     const colorScheme = useComputedColorScheme()
 
-    const raceRanks: Demon[] = demonsList
+    const raceRanks: Demon[] = data ? data.demonsList
         .filter((d: Demon) => d.Race === demon.Race)
-        .map((d: Demon) => d);
+        .map((d: Demon) => d) : []
 
     return (
         <Accordion>

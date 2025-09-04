@@ -6,7 +6,6 @@ interface Demon {
     Special: string[][] | null;
     Plugin: boolean[]
     Variant?: boolean
-    Unfusable?: boolean
     AllowVariants?: boolean
     VariantRestrictions?: string[][] | null[[]]
 }

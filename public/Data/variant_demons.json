@@ -2861,6 +2861,18 @@
     },
     {
         "Race": "Femme",
+        "Name": "Inexperienced Kali",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
         "Name": "Deformed Taraka",
         "Level": 35,
         "Range": [

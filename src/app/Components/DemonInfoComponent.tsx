@@ -6,9 +6,7 @@ interface DemonInfoProps {
 }
 
 export default function DemonInfoComponent({ demon }: DemonInfoProps) {
-
     const imageName: string = cleanString(demon.Name)
-
     return (
         <Center>
             <Table align={'center'} variant="vertical" withTableBorder withColumnBorders>

@@ -2,9 +2,9 @@
 import { Center, Image, Anchor, Table, useComputedColorScheme } from '@mantine/core'
 import { cleanString, sortTable } from '@/utils/functionUtils'
 import { racesLaw, racesChaos } from '@/utils/constants'
-import demonList from '../Data/demons.json' assert {type: "json"}
-import variantDemonList from '../Data/variant_demons.json'
-import demonLocList from '../Data/contract_demons.json'
+import demonList from '/Data/demons.json' assert {type: "json"}
+import variantDemonList from '/Data/variant_demons.json'
+import demonLocList from '/Data/contract_demons.json'
 import React, { JSX } from 'react'
 import Link from 'next/link';
 

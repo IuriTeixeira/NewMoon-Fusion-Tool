@@ -2,15 +2,25 @@ import { subTypes } from "./constants";
 import { racesLaw, racesNeutral } from '@/utils/constants'
 
 export function cleanString(str: string): string {
-    let result = str;
-    for (const subtype of subTypes) {
-        result = result
-                .replace(subtype, '')                           //Removes the subtype from the demon name
-                .replace('Asura','Void')                        //exception for Asura Cerberus
-                .replace('Three-Headed','Void')                 //exception for Three-Headed Cerberus
-                .replace('Amaterasu of Kuyo','Amaterasu (F)')   //exception for Amaterasu of Kuyo
+    if (str){
+        let result = str;
+        for (const subtype of subTypes) {
+            result = result
+                    .replace(subtype, '')                           //Removes the subtype from the demon name
+                    .replace('Asura','Void')                        //exception for Asura Cerberus
+                    .replace('Three-Headed','Void')                 //exception for Three-Headed Cerberus
+                    .replace('Amaterasu of Kuyo','Amaterasu (F)')   //exception for Amaterasu of Kuyo
+        }
+        return result.trim();
     }
-    return result.trim();
+    return ''
+}
+
+export async function loadJSON(path: string) {
+    const res = await fetch(path)
+    const buffer = await res.arrayBuffer()
+    const decoded = new TextDecoder().decode(buffer)
+    return JSON.parse(decoded)
 }
 
 export function sortTable(filteredDemonList: Demon[]): Demon[] {

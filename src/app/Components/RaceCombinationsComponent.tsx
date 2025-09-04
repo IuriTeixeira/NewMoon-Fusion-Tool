@@ -1,13 +1,26 @@
 import { Accordion, Center, Table, useComputedColorScheme, Text } from "@mantine/core";
-import raceCombinations from '../Data/race_combinations.json'
+import { useEffect, useState } from "react";
+import { loadJSON } from "@/utils/functionUtils";
 
 interface CombinationInfoProps {
     demon: Demon
 }
 
 export default function RaceCombinationsComponent({ demon }: CombinationInfoProps) {
+    const [data, setData] = useState<{
+        raceCombinations: FusionData[]
+    } | null>(null)
+
+    useEffect(() => {
+        Promise.all([
+            loadJSON('/Data/race_combinations.json'),
+        ]).then(([raceCombinations]) => {
+            setData({ raceCombinations })
+        })
+    }, [])
+
     const colorScheme = useComputedColorScheme()
-    const filteredCombinations: FusionData[] = raceCombinations.filter(target => demon.Race === target.Race)
+    const filteredCombinations: FusionData[] = data ? data.raceCombinations.filter(target => demon.Race === target.Race) : []
     const combinations: FusionCombination[] = filteredCombinations.flatMap(race =>
         race.Combinations?.map(combination => ({
             race1: combination[0],
