@@ -10,6 +10,13 @@ interface Demon {
     VariantRestrictions?: string[][] | null[[]]
 }
 
+interface Data {
+    demonsList?: Demon[]
+    variantDemonsList?: Demon[]
+    raceCombinations?: FusionData[]
+    contractDemonsList?: DemonLocation[]
+}
+
 interface FusionData {
     Race: string;
     Combinations: string[][] | null;

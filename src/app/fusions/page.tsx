@@ -33,21 +33,21 @@ function FusionsContent() {
         })
     }, [])
 
-    if (!data) return <div>Error: Demon not found</div>
+    if (!data) return
 
     const demonName: string = searchParams.get('demon') as string
-    const demon: Demon =
-        data.demons
-            ?
-            data.demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
-            :
-            data.variantDemons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+    let demon: Demon = data.demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+    if (!demon) {
+        demon = data.variantDemons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+    }
 
+    console.log(data.demons)
     const elementCombinations: FusionData = data?.raceCombinations.find((targetRace) => targetRace.Race === demon.Race) as FusionData
 
     const demonLoc: DemonLocation = data?.demonLocations.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation
 
     const originalDemon: Demon = data?.demons.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
+
 
     return (
         <Flex align='center' justify='center' m={'lg'}>
@@ -69,7 +69,7 @@ function FusionsContent() {
                     )
                     &&
                     <ElementInfoComponent elements={elementCombinations.Elements!} />}
-                    <FusionTableComponent demon={demon} />
+                <FusionTableComponent demon={demon} />
             </Stack>
         </Flex >
     )
