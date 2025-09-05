@@ -1,6 +1,18 @@
 [
     {
         "Race": "Avian",
+        "Name": "Inexperienced Zhu Que",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Avian",
         "Name": "Inexperienced Feng Huang",
         "Level": 12,
         "Range": null,
@@ -80,6 +92,30 @@
         "Level": 92,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Inexperienced Thoth",
+        "Level": 20,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Inexperienced Mithra",
+        "Level": 50,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -171,7 +207,8 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "HasPG": true
     },
     {
         "Race": "Divine",
@@ -430,6 +467,16 @@
     },
     {
         "Race": "Goddess",
+        "Name": "Inexperienced Sarasvati",
+        "Level": 1,
+        "Range": ["PG Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Goddess",
         "Name": "Inexperienced Hathor",
         "Level": 10,
         "Range": null,
@@ -444,6 +491,16 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Goddess",
+        "Name": "Inexperienced Sati",
+        "Level": 30,
+        "Range": ["PG Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Heavenly God",
@@ -633,6 +690,18 @@
             true
         ],
         "AllowVariants": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Inexperienced Tao Tie",
+        "Level": 55,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Vile",
@@ -986,6 +1055,19 @@
     },
     {
         "Race": "Beast",
+        "Name": "Inexperienced Cerberus",
+        "Level": 30,
+        "Range": [
+            "Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Beast",
         "Name": "Deformed Cait Sith",
         "Level": 33,
         "Range": [
@@ -1144,6 +1226,30 @@
         "Level": 78,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Inexperienced Setanta",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Inexperienced Cu Chulainn",
+        "Level": 24,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1342,6 +1448,30 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Blizzard Jack Frost",
+        "Level": 1,
+        "Range": [
+            "Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inferno Pyro Jack",
+        "Level": 1,
+        "Range": [
+            "Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Stormy Pixie",
         "Level": 1,
         "Range": [
@@ -1500,6 +1630,18 @@
         "Level": 20,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Inexperienced Tam Lin",
+        "Level": 20,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -1703,6 +1845,18 @@
     },
     {
         "Race": "Fiend",
+        "Name": "Inexperienced Matador",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fiend",
         "Name": "Gojo Bridge Yoshitsune",
         "Level": 30,
         "Range": null,
@@ -1848,6 +2002,18 @@
     },
     {
         "Race": "Godly Beast",
+        "Name": "Inexperienced Xuan Wu",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Godly Beast",
         "Name": "Inexperienced Makami",
         "Level": 12,
         "Range": [
@@ -1889,6 +2055,26 @@
         "Range": [
             "Contract Only"
         ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Bai Hu",
+        "Level": 1,
+        "Range": ["PG Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Shiisaa",
+        "Level": 15,
+        "Range": ["PG Only"],
         "Special": null,
         "Plugin": [
             false
@@ -2061,6 +2247,19 @@
         "Name": "Inexperienced Succubus",
         "Level": 20,
         "Range": [
+            "Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Accomplished Fomorian",
+        "Level": 27,
+        "Range": [
             "Contract Only"
         ],
         "Special": null,
@@ -2070,10 +2269,10 @@
     },
     {
         "Race": "Nocturne",
-        "Name": "Accomplished Fomorian",
-        "Level": 27,
+        "Name": "Inexperienced Queen Mab",
+        "Level": 30,
         "Range": [
-            "Contract Only"
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2283,12 +2482,13 @@
         "Name": "Inexperienced Mothman",
         "Level": 20,
         "Range": [
-            "Contract Only"
+            "Reward Only"
         ],
         "Special": null,
         "Plugin": [
             false
-        ]
+        ],
+        "HasPG": true
     },
     {
         "Race": "Wilder",
@@ -2304,8 +2504,44 @@
     },
     {
         "Race": "Wilder",
+        "Name": "Inexperienced Nue",
+        "Level": 25,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Fenrir",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
         "Name": "Mothman of the Sea",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Inexperienced Tao Wu",
+        "Level": 34,
         "Range": [
             "PG Only"
         ],
@@ -2463,6 +2699,18 @@
     },
     {
         "Race": "Brute",
+        "Name": "Inexperienced Yaksa",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Brute",
         "Name": "Deformed Koppa-Tengu",
         "Level": 32,
         "Range": [
@@ -2532,6 +2780,19 @@
     },
     {
         "Race": "Dragon",
+        "Name": "Inexperienced Qing-Long",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Dragon",
         "Name": "Inexperienced Ganga",
         "Level": 30,
         "Range": null,
@@ -2545,7 +2806,8 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "HasPG": true
     },
     {
         "Race": "Dragon",
@@ -2573,9 +2835,21 @@
         ],
         "Special": null,
         "Plugin": [
-            true
+            false
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Inexperienced Kikuri-Hime",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Mother",
@@ -2583,6 +2857,18 @@
         "Level": 10,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Inexperienced Artemis",
+        "Level": 20,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2732,7 +3018,8 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "HasPG": true
     },
     {
         "Race": "Fallen",
@@ -2774,6 +3061,18 @@
         "Race": "Fallen",
         "Name": "Mystic Ose",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Inexperienced Flauros",
+        "Level": 50,
         "Range": [
             "PG Only"
         ],
@@ -2844,6 +3143,18 @@
     },
     {
         "Race": "Femme",
+        "Name": "Inexperienced Taraka",
+        "Level": 13,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Femme",
         "Name": "Inexperienced Yaksini",
         "Level": 25,
         "Range": null,
@@ -2857,7 +3168,8 @@
         "Plugin": [
             true
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "HasPG": true
     },
     {
         "Race": "Femme",
@@ -3043,6 +3355,18 @@
         "Level": 62,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Guardian",
+        "Name": "Inexperienced Jikokuten",
+        "Level": 26,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -3322,6 +3646,18 @@
     },
     {
         "Race": "Nation Ruler",
+        "Name": "Inexperienced Okuninushi",
+        "Level": 25,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
         "Name": "Inexperienced Arahabaki",
         "Level": 45,
         "Range": null,
@@ -3388,6 +3724,18 @@
     {
         "Race": "Tyrant",
         "Name": "King Frost of the Sea",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Inexperienced King Frost",
         "Level": 30,
         "Range": [
             "PG Only"

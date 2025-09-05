@@ -2224,6 +2224,18 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Shishimai Frost",
+        "Level": 11,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "High Pixie",
         "Level": 15,
         "Range": [

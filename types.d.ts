@@ -8,6 +8,7 @@ interface Demon {
     Variant?: boolean
     AllowVariants?: boolean
     VariantRestrictions?: string[][] | null[[]]
+    hasPG?: boolean
 }
 
 interface Data {

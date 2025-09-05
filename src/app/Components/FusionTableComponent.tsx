@@ -217,7 +217,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                         if (demon.Range && typeof demon.Range[0] === 'number') {
                                             if (levelRange >= demon.Range[0] && (!demon.Range[1] || levelRange <= demon.Range[1])) {
                                                 if (fusionDisplayPG) {
-                                                    if (d2.Range && d2.Range[0] === 'PG Only') {
+                                                    if ((d2.Range && d2.Range[0] === 'PG Only') || d2.HasPG) {
                                                         allValidFusions.push({ demon1: d1, demon2: d2 });
                                                     }
                                                 } else {
