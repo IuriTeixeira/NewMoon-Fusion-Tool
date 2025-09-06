@@ -243,6 +243,11 @@
         "Zone": ["Ueno Mirage (Silver)"]
     },
     {
+        "Race": "Vile",
+        "Name": "Deformed Baphomet",
+        "Zone": ["Shibuya Metro"]
+    },
+    {
         "Race": "Wild Bird",
         "Name": "Harpy",
         "Zone": ["Shibuya","Shibuya Quartz (Bronze)", "Celu Tower (Bronze)"],
