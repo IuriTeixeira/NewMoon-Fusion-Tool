@@ -4968,7 +4968,8 @@
         "Plugin": [
             false
         ],
-        "AllowVariants": false
+        "AllowVariants": false,
+        "HasPG": true
     },
     {
         "Race": "Tyrant",

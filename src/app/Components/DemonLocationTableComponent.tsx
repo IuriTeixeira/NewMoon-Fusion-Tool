@@ -27,14 +27,6 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
 
     }, [])
 
-    const regularDemons: Demon[] = data?.demonsList?.filter((demon: Demon) =>
-        data?.contractDemonsList?.some((loc: DemonLocation) => loc.Name === demon.Name)
-    ) ?? [];
-
-    const variantDemons: Demon[] = data?.variantDemonsList?.filter((demon: Demon) =>
-        data?.contractDemonsList?.some((loc: DemonLocation) => loc.Name === demon.Name)
-    ) ?? [];
-
     useEffect(() => {
         if (!data) return;
 

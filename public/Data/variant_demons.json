@@ -100,8 +100,32 @@
     },
     {
         "Race": "Demon God",
+        "Name": "Eternal Partner Odin",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demon God",
         "Name": "Inexperienced Thoth",
         "Level": 20,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demon God",
+        "Name": "Inexperienced Indra",
+        "Level": 30,
         "Range": [
             "PG Only"
         ],
@@ -125,6 +149,18 @@
     {
         "Race": "Demon God",
         "Name": "Odin of the Sea",
+        "Level": 90,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Eternal Partner Dominion",
         "Level": 90,
         "Range": [
             "PG Only"
@@ -443,6 +479,18 @@
     },
     {
         "Race": "Evil Demon",
+        "Name": "Eternal Partner Rakshasa",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Evil Demon",
         "Name": "Demi-Fiend's Girimehkala",
         "Level": 70,
         "Range": [
@@ -467,9 +515,23 @@
     },
     {
         "Race": "Goddess",
+        "Name": "Passion Sati",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Goddess",
         "Name": "Inexperienced Sarasvati",
         "Level": 1,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -496,7 +558,9 @@
         "Race": "Goddess",
         "Name": "Inexperienced Sati",
         "Level": 30,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -604,6 +668,18 @@
     },
     {
         "Race": "Raptor",
+        "Name": "Rapture Moh Shuvuu",
+        "Level": 30,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
         "Name": "Late Bloomer Anzu",
         "Level": 35,
         "Range": [
@@ -676,6 +752,18 @@
     },
     {
         "Race": "Seraph",
+        "Name": "Bilocation Metatron",
+        "Level": 50,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Seraph",
         "Name": "Agent of God Metatron",
         "Level": 97,
         "Range": null,
@@ -690,6 +778,42 @@
             true
         ],
         "AllowVariants": true
+    },
+    {
+        "Race": "Vile",
+        "Name": "Passion Baphomet",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Inexperienced Nyarlathotep",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Vile",
+        "Name": "Inexperienced Mishaguji-Sama",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Vile",
@@ -731,6 +855,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Wild Bird",
+        "Name": "Passion Morrigan",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wild Bird",
@@ -886,6 +1022,18 @@
     },
     {
         "Race": "Wild Bird",
+        "Name": "Inexperienced Morrigan",
+        "Level": 40,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Wild Bird",
         "Name": "Deformed Macha",
         "Level": 42,
         "Range": [
@@ -953,6 +1101,18 @@
         "Race": "Yoma",
         "Name": "Lucky Dis",
         "Level": 32,
+        "Range": [
+            "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Beast",
+        "Name": "Shocking Cait Sith",
+        "Level": 1,
         "Range": [
             "Contract Only"
         ],
@@ -1234,6 +1394,18 @@
     },
     {
         "Race": "Demigod",
+        "Name": "Eternal Partner Cu Chulainn",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
         "Name": "Inexperienced Setanta",
         "Level": 1,
         "Range": [
@@ -1259,6 +1431,18 @@
     {
         "Race": "Demigod",
         "Name": "Nimble Cu Chulainn",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Demigod",
+        "Name": "Inexperienced Kresnik",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -1440,6 +1624,30 @@
         "Level": 64,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Eternal Partner Oberon",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Electrifying Titania",
+        "Level": 1,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2062,9 +2270,11 @@
     },
     {
         "Race": "Holy Beast",
-        "Name": "Inexperienced Bai Hu",
+        "Name": "Electrifying Unicorn",
         "Level": 1,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -2072,9 +2282,35 @@
     },
     {
         "Race": "Holy Beast",
-        "Name": "Inexperienced Shiisaa",
+        "Name": "Passion Senri",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Bai Hu",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Holy Beast",
+        "Name": "Inexperienced Shiisa",
         "Level": 15,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -2168,6 +2404,30 @@
         "Level": 92,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Passion Succubus",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Passion Lilith",
+        "Level": 1,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -2271,6 +2531,30 @@
         "Race": "Nocturne",
         "Name": "Inexperienced Queen Mab",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Rapture Nyx",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Inexperienced Loa",
+        "Level": 40,
         "Range": [
             "PG Only"
         ],
@@ -2411,6 +2695,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Wilder",
+        "Name": "Eternal Partner Mothman",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Wilder",
@@ -2779,6 +3075,30 @@
         "AllowVariants": true
     },
     {
+        "Race": "Destroyer",
+        "Name": "Rapture Susano-o",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Destroyer",
+        "Name": "Inexperienced Indrajit",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Dragon",
         "Name": "Inexperienced Qing-Long",
         "Level": 1,
@@ -2788,8 +3108,7 @@
         "Special": null,
         "Plugin": [
             false
-        ],
-        "AllowVariants": false
+        ]
     },
     {
         "Race": "Dragon",
@@ -2838,6 +3157,18 @@
             false
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Passion Parvati",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Mother",
@@ -2993,6 +3324,18 @@
     },
     {
         "Race": "Fallen",
+        "Name": "Eternal Partner Eligor",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
         "Name": "Accomplished Forneus",
         "Level": 29,
         "Range": [
@@ -3061,6 +3404,18 @@
         "Race": "Fallen",
         "Name": "Mystic Ose",
         "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Inexperienced Orobas",
+        "Level": 40,
         "Range": [
             "PG Only"
         ],
@@ -3564,6 +3919,18 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Inexperienced Kudlak",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Haunt",
         "Name": "Heaven-Piercing Ghoul",
         "Level": 30,
         "Range": null,
@@ -3638,6 +4005,30 @@
         "Level": 55,
         "Range": [
             "Contract Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Eternal Partner Okuninushi",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Nation Ruler",
+        "Name": "Passion Arahabaki",
+        "Level": 1,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
@@ -3723,6 +4114,30 @@
     },
     {
         "Race": "Tyrant",
+        "Name": "Eternal Partner Loki",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Passion Hecate",
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
         "Name": "King Frost of the Sea",
         "Level": 30,
         "Range": [
@@ -3751,6 +4166,19 @@
         "Level": 40,
         "Range": [
             "Reward Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Bilocation Astaroth",
+        "Level": 50,
+        "Range": [
+            "PG Only"
         ],
         "Special": null,
         "Plugin": [
