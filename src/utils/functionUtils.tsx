@@ -6,10 +6,12 @@ export function cleanString(str: string): string {
         let result = str;
         for (const subtype of subTypes) {
             result = result
-                    .replace(subtype, '')                           //Removes the subtype from the demon name
-                    .replace('Asura','Void')                        //exception for Asura Cerberus
-                    .replace('Three-Headed','Void')                 //exception for Three-Headed Cerberus
-                    .replace('Amaterasu of Kuyo','Amaterasu (F)')   //exception for Amaterasu of Kuyo
+                    .replace(subtype, '')                                           //Removes the subtype from the demon name
+                    .replace('Asura','Void')                                        //exception for Asura Cerberus
+                    .replace('Three-Headed','Void')                                 //exception for Three-Headed Cerberus
+                    .replace('Amaterasu of Kuyo','Amaterasu (F)')                   //exception for Amaterasu of Kuyo
+                    .replace('Manifestation of Lord Beelzebub','Beelzebub (Human)') //exception for Manifestation of Lord Beelzebub
+                    .replace('Proud Lord Beelzebub','Beelzebub (Fly)')              //exception for Proud Lord Beelzebub
         }
         return result.trim();
     }

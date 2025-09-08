@@ -491,6 +491,23 @@
     },
     {
         "Race": "Evil Demon",
+        "Name": "Fiery Girimehkala",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Jealous Hell Biker",
+                "Wrathful Uriel",
+                "Playful Flauros"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Evil Demon",
         "Name": "Demi-Fiend's Girimehkala",
         "Level": 70,
         "Range": [
@@ -567,6 +584,18 @@
         ]
     },
     {
+        "Race": "Goddess",
+        "Name": "Sweet White Lakshmi",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
         "Race": "Heavenly God",
         "Name": "Horse Ameno-Uzume",
         "Level": 50,
@@ -594,6 +623,18 @@
         "Race": "Heavenly God",
         "Name": "Horse Tajikarao",
         "Level": 50,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Heavenly God",
+        "Name": "Inexperienced Lakshmi",
+        "Level": 60,
         "Range": [
             "PG Only"
         ],
@@ -680,6 +721,18 @@
     },
     {
         "Race": "Raptor",
+        "Name": "Bitter Black Moh Shuvuu",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Raptor",
         "Name": "Late Bloomer Anzu",
         "Level": 35,
         "Range": [
@@ -749,6 +802,22 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Seraph",
+        "Name": "Wrathful Uriel",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of War Berith",
+                "Winged Messenger Andras"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Seraph",
@@ -1904,6 +1973,18 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Bitter Black Titania",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fairy",
         "Name": "Deformed Troll",
         "Level": 48,
         "Range": [
@@ -2065,6 +2146,18 @@
     },
     {
         "Race": "Fiend",
+        "Name": "Sweet White Jeanne D'Arc",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fiend",
         "Name": "Gojo Bridge Yoshitsune",
         "Level": 30,
         "Range": null,
@@ -2076,6 +2169,47 @@
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Gluttonous Matador",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of War Berith",
+                "Mystic Ose"
+            ],
+            [
+                "Bringer of War Berith",
+                "Magician Decarabia"
+            ],
+            [
+                "Bringer of Peace Forneus",
+                "Bringer of Aging Eligor"
+            ],
+            [
+                "Bringer of Peace Forneus",
+                "Magician Decarabia"
+            ],
+            [
+                "Winged Messenger Andras",
+                "Bringer of Pleasure Orobas"
+            ],
+            [
+                "Winged Messenger Andras",
+                "Bringer of Aging Eligor"
+            ]
+        ],
+        "Plugin": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
         ],
         "AllowVariants": false
     },
@@ -2097,6 +2231,42 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Jealous Hell Biker",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of Peace Forneus",
+                "Mystic Ose"
+            ],
+            [
+                "Winged Messenger Andras",
+                "Magician Decarabia"
+            ],
+            [
+                "Winged Messenger Andras",
+                "Mystic Ose"
+            ],
+            [
+                "Bringer of Pleasure Orobas",
+                "Bringer of Aging Eligor"
+            ],
+            [
+                "Bringer of Pleasure Orobas",
+                "Magician Decarabia"
+            ]
+        ],
+        "Plugin": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Fiend",
@@ -2205,6 +2375,23 @@
         ],
         "Plugin": [
             true
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Fiend",
+        "Name": "Fiery Tokisada",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Lazy Mot",
+                "Prideful Black Frost",
+                "Wrathful Alice"
+            ]
+        ],
+        "Plugin": [
+            false
         ],
         "AllowVariants": false
     },
@@ -2582,7 +2769,7 @@
         "Range": null,
         "Special": [
             [
-                "Pleasure Bringer Orobas",
+                "Bringer of Pleasure Orobas",
                 "Mystic Ose"
             ],
             [
@@ -2667,6 +2854,37 @@
         "Plugin": [
             false
         ]
+    },
+    {
+        "Race": "Reaper",
+        "Name": "Lazy Mot",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of War Berith",
+                "Bringer of Pleasure Orobas"
+            ],
+            [
+                "Bringer of War Berith",
+                "Bringer of Aging Eligor"
+            ],
+            [
+                "Bringer of Peace Forneus",
+                "Bringer of Pleasure Orobas"
+            ],
+            [
+                "Winged Messenger Andras",
+                "Bringer of Peace Forneus"
+            ]
+        ],
+        "Plugin": [
+            false,
+            false,
+            false,
+            false
+        ],
+        "AllowVariants": false
     },
     {
         "Race": "Raptor",
@@ -3099,6 +3317,23 @@
         ]
     },
     {
+        "Race": "Destroyer",
+        "Name": "Fiery Kartikeya",
+        "Level": 70,
+        "Range": null,
+        "Special": [
+            [
+                "Greedy Surt",
+                "Gluttonous Matador",
+                "Playful Flauros"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
+    },
+    {
         "Race": "Dragon",
         "Name": "Inexperienced Qing-Long",
         "Level": 1,
@@ -3222,6 +3457,18 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Earth Mother",
+        "Name": "Sweet White Parvati",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Earth Mother",
@@ -3390,7 +3637,43 @@
     },
     {
         "Race": "Fallen",
-        "Name": "Pleasure Bringer Orobas",
+        "Name": "Winged Messenger Andras",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Bringer of Peace Forneus",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Bringer of War Berith",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Bringer of Pleasure Orobas",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -3403,6 +3686,18 @@
     {
         "Race": "Fallen",
         "Name": "Mystic Ose",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Fallen",
+        "Name": "Playful Flauros",
         "Level": 30,
         "Range": [
             "PG Only"
@@ -4162,6 +4457,18 @@
     },
     {
         "Race": "Tyrant",
+        "Name": "Bitter Black Tzitzimitl",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
         "Name": "Inexperienced Surt",
         "Level": 40,
         "Range": [
@@ -4175,8 +4482,48 @@
     },
     {
         "Race": "Tyrant",
+        "Name": "Greedy Surt",
+        "Level": 50,
+        "Range": null,
+        "Special": [
+            [
+                "Bringer of War Berith",
+                "Bringer of Peace Forneus"
+            ]
+        ],
+        "Plugin": [
+            false
+        ],
+        "AllowVariants": false
+    },
+    {
+        "Race": "Tyrant",
         "Name": "Bilocation Astaroth",
         "Level": 50,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Manifestation of Lord Beelzebub",
+        "Level": 95,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Tyrant",
+        "Name": "Proud Lord Beelzebub",
+        "Level": 95,
         "Range": [
             "PG Only"
         ],
