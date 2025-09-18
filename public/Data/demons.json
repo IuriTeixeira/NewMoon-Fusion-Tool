@@ -4825,6 +4825,17 @@
     },
     {
         "Race": "Haunt",
+        "Name": "Fly",
+        "Level": 64,
+        "Range": ["PG Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Haunt",
         "Name": "Kudlak",
         "Level": 67,
         "Range": null,
