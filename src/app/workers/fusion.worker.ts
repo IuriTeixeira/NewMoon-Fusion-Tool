@@ -54,11 +54,11 @@ self.onmessage = (e: MessageEvent<{
     } else {
         if (demon.Special) {
             demon.Special.forEach(combination => {
-                let demon1 = demonsList.find(d => d.Name === combination[0]) || variantDemonsList.find(d => d.Name === combination[0]);
-                let demon2 = demonsList.find(d => d.Name === combination[1]) || variantDemonsList.find(d => d.Name === combination[1]);
+                const demon1 = demonsList.find(d => d.Name === combination[0]) || variantDemonsList.find(d => d.Name === combination[0]);
+                const demon2 = demonsList.find(d => d.Name === combination[1]) || variantDemonsList.find(d => d.Name === combination[1]);
                 if (demon1 && demon2) {
                     if (combination.length > 2) {
-                        let demon3 = demonsList.find(d => d.Name === combination[2]) || variantDemonsList.find(d => d.Name === combination[2]);
+                        const demon3 = demonsList.find(d => d.Name === combination[2]) || variantDemonsList.find(d => d.Name === combination[2]);
                         allValidFusions.push({ demon1, demon2, demon3 });
                     } else {
                         allValidFusions.push({ demon1, demon2 });
@@ -70,7 +70,7 @@ self.onmessage = (e: MessageEvent<{
             if (demon.Range && typeof demon.Range[0] === 'number' && filteredCombinations && filteredCombinations[0].Elements) {
                 const raceRanks = demonsList
                     .filter(d => d.Race === demon.Race && !d.Variant && !d.Special && d.Range && d.Range[0] !== 'PG Only');
-                let targetRank = raceRanks.findIndex(d => d.Name === demon.Name);
+                const targetRank = raceRanks.findIndex(d => d.Name === demon.Name);
                 const elements = [
                     demonsList.find(d => d.Name === 'Erthys'),
                     demonsList.find(d => d.Name === 'Aeros'),
