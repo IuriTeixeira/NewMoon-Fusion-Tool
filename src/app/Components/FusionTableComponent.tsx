@@ -24,8 +24,6 @@ export default function FusionTableComponent({ demon }: FusionProps) {
     const [fusionDisplayPG, setFusionDisplayPG] = useState<boolean>(false)
     const [loading, setLoading] = useState(false);
 
-    const FusionWorker = new URL('@/app/workers/fusion.worker.ts', import.meta.url);
-
     useEffect(() => {
         Promise.all([
             loadJSON('/Data/demons.json'),
@@ -42,7 +40,9 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         if (!data) return;
         setLoading(true);
 
-        const worker = new Worker(FusionWorker, { type: 'module' });
+        const worker = new Worker(new URL('@/app/workers/fusion.worker.ts', import.meta.url), {
+            type: 'module',
+        });
 
         worker.onmessage = (e) => {
             setFusionResults(e.data);
@@ -59,7 +59,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             fusionDisplayPG,
         });
 
-        return () => worker.terminate(); // clean up
+        return () => worker.terminate(); // cleanup
     }, [
         demon,
         data,
@@ -68,6 +68,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         fusionDisplayVariants,
         fusionDisplayPG,
     ]);
+
 
     let hasTriFusion: boolean = false
 

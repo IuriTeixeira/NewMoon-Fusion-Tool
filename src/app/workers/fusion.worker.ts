@@ -1,5 +1,7 @@
 /// <reference lib="webworker" />
 
+export {}
+
 self.onmessage = (e: MessageEvent<{
     demon: Demon;
     data: Data;
