@@ -41,7 +41,6 @@ function FusionsContent() {
         demon = data.variantDemons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
     }
 
-    console.log(data.demons)
     const elementCombinations: FusionData = data?.raceCombinations.find((targetRace) => targetRace.Race === demon.Race) as FusionData
 
     const demonLoc: DemonLocation = data?.demonLocations.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation

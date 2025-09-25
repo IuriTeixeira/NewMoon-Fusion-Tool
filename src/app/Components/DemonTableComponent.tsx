@@ -35,50 +35,30 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
 
     useEffect(() => {
         if (!data) return;
-
         setLoading(true);
 
-        const workerCode = `
-            self.onmessage = (e) => {
-                const { demonsList, variantDemonsList, hidePlugins, displayVariants, raceFilter } = e.data;
-
-                let combinedList = [...demonsList];
-                if (displayVariants) combinedList = combinedList.concat(variantDemonsList);
-
-                let filteredDemonList = combinedList;
-                if (raceFilter) {
-                    filteredDemonList = combinedList.filter(demon => demon.Race === raceFilter);
-                }
-
-                if (hidePlugins) {
-                    filteredDemonList = filteredDemonList.filter(d => !d.Plugin[0]);
-                }
-
-                self.postMessage(filteredDemonList);
-            };
-        `;
-
-        const blob = new Blob([workerCode], { type: 'application/javascript' });
-        const worker = new Worker(URL.createObjectURL(blob), { type: 'module' });
+        const worker = new Worker(
+            new URL('@/app/workers/filterDemons.worker.ts', import.meta.url),
+            { type: 'module' }
+        );
 
         worker.onmessage = (e) => {
-            setFilteredDemonList(e.data); // now it should contain the demons
+            setFilteredDemonList(e.data);
             setTimeout(() => setLoading(false), 0);
             worker.terminate();
         };
 
-
         worker.postMessage({
             demonsList: data?.demonsList ?? [],
             variantDemonsList: data?.variantDemonsList ?? [],
-            contractDemonsList: data?.contractDemonsList ?? [],
+            contractDemonList: data?.contractDemonsList ?? [],
             hidePlugins,
             displayVariants,
             raceFilter,
         });
 
-
     }, [data, hidePlugins, displayVariants, raceFilter]);
+
 
 
     /*if (displayContractOnly) {

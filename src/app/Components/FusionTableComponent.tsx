@@ -24,6 +24,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
     const [fusionDisplayPG, setFusionDisplayPG] = useState<boolean>(false)
     const [loading, setLoading] = useState(false);
 
+    const FusionWorker = new URL('@/app/workers/fusion.worker.ts', import.meta.url);
+
     useEffect(() => {
         Promise.all([
             loadJSON('/Data/demons.json'),
@@ -38,209 +40,9 @@ export default function FusionTableComponent({ demon }: FusionProps) {
 
     useEffect(() => {
         if (!data) return;
-
         setLoading(true);
 
-        // --- Blob worker code ---
-        const workerCode = `
-            self.onmessage = (e) => {
-                const { demon, data, fusionHidePlugins, fusionHideFusionOnly, fusionDisplayVariants, fusionDisplayPG } = e.data;
-
-                function calculateFusions({ demon, data, fusionHidePlugins, fusionHideFusionOnly, fusionDisplayVariants, fusionDisplayPG }) {
-                    const contractDemonNamesSet = new Set(data.contractDemonsList.map(d => d.Name));
-                    const filteredCombinations = data.raceCombinations.filter(target => demon.Race === target.Race);
-                    const combinations = filteredCombinations
-                        ? filteredCombinations.flatMap(race =>
-                            race.Combinations?.map(comb => ({ race1: comb[0], race2: comb[1] })) || []
-                        )
-                        : [];
-                    const allValidFusions = [];
-
-                    if (demon.Race === 'Element') {
-                        const elementFusions = [];
-                        for (let k = 0; k < demon.Special.length; k++) {
-                            const raceRanks = data.demonsList
-                                .filter(d => d.Race === demon.Special[k][0] && !d.Variant);
-
-                            for (let i = 0; i < raceRanks.length; i++) {
-                                for (let j = i + 1; j < raceRanks.length; j++) {
-                                    elementFusions.push({ demon1: raceRanks[i], demon2: raceRanks[j] });
-                                }
-                            }
-                        }
-                        allValidFusions.push(...elementFusions);
-                    } else {
-                        if (demon.Special) {
-                            demon.Special.forEach(combination => {
-                                let demon1 = data.demonsList.find(d => d.Name === combination[0]) || data.variantDemonsList.find(d => d.Name === combination[0]);
-                                let demon2 = data.demonsList.find(d => d.Name === combination[1]) || data.variantDemonsList.find(d => d.Name === combination[1]);
-                                if (demon1 && demon2) {
-                                    if (combination.length > 2) {
-                                        let demon3 = data.demonsList.find(d => d.Name === combination[2]) || data.variantDemonsList.find(d => d.Name === combination[2]);
-                                        allValidFusions.push({ demon1, demon2, demon3 });
-                                    } else {
-                                        allValidFusions.push({ demon1, demon2 });
-                                    }
-                                }
-                            });
-                        } else {
-                            let validElementFusions = [];
-                            if (demon.Range && typeof demon.Range[0] === 'number' && filteredCombinations && filteredCombinations[0].Elements) {
-                                const raceRanks = data.demonsList
-                                    .filter(d => d.Race === demon.Race && !d.Variant && !d.Special && d.Range && d.Range[0] !== 'PG Only');
-                                let targetRank = raceRanks.findIndex(d => d.Name === demon.Name);
-                                const elements = [
-                                    data.demonsList.find(d => d.Name === 'Erthys'),
-                                    data.demonsList.find(d => d.Name === 'Aeros'),
-                                    data.demonsList.find(d => d.Name === 'Aquans'),
-                                    data.demonsList.find(d => d.Name === 'Flamies')
-                                ];
-                                for (let i = 0; i < 4; i++) {
-                                    let checkNext = false;
-                                    if (filteredCombinations[0].Elements[i] === 'Down') {
-                                        if (raceRanks[targetRank + 1]) {
-                                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + 1] });
-                                            if (raceRanks[targetRank + 1].Special || raceRanks[targetRank + 1].Range[0] === 'PG Only') checkNext = true;
-                                            while (checkNext) {
-                                                for (let j = 2; j < raceRanks.length - targetRank; j++) {
-                                                    validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank + j] });
-                                                    if (!raceRanks[targetRank + j].Special && raceRanks[targetRank + j].Range[0] !== 'PG Only') break;
-                                                }
-                                                checkNext = false;
-                                            }
-                                        }
-                                    } else {
-                                        if (raceRanks[targetRank - 1]) {
-                                            validElementFusions.push({ demon1: elements[i], demon2: raceRanks[targetRank - 1] });
-                                            if (raceRanks[targetRank - 1].Special || raceRanks[targetRank - 1].Range[0] === 'PG Only') checkNext = true;
-                                            while (checkNext) {
-                                                for (let j = targetRank - 1; j >= 0; j--) {
-                                                    if (!raceRanks[j].Special && raceRanks[j].Range[0] !== 'PG Only') break;
-                                                    allValidFusions.push({ demon1: elements[i], demon2: raceRanks[j - 1] });
-                                                    checkNext = false;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            if (fusionHidePlugins) {
-                                validElementFusions = validElementFusions.filter(d => !d.demon2.Plugin[0]);
-                            }
-                            if (fusionHideFusionOnly) {
-                                validElementFusions = validElementFusions.filter(d => contractDemonNamesSet.has(d.demon2.Name) || (d.demon2.Range && d.demon2.Range[0] === 'PG Only'));
-                            }
-                            allValidFusions.push(...validElementFusions);
-
-                            combinations.forEach(comb => {
-                                const allDemon1s = data.demonsList.filter(d => d.Race === comb.race1);
-                                const allVariantDemon1s = data.variantDemonsList.filter(d => d.Race === comb.race1);
-                                let filteredDemon1s;
-                                if (fusionHidePlugins) {
-                                    if (fusionDisplayVariants) {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
-                                                .filter(d => d.Plugin[0] === false)
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s].filter(d => d.Plugin[0] === false);
-                                        }
-                                    } else {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon1s = allDemon1s
-                                                .filter(d => d.Plugin[0] === false)
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon1s = allDemon1s.filter(d => d.Plugin[0] === false);
-                                        }
-                                    }
-                                } else {
-                                    if (fusionDisplayVariants) {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s]
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon1s = [...allDemon1s, ...allVariantDemon1s];
-                                        }
-                                    } else {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon1s = allDemon1s
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon1s = allDemon1s;
-                                        }
-                                    }
-                                }
-
-                                const allDemon2s = data.demonsList.filter(d => d.Race === comb.race2);
-                                const allVariantDemon2s = data.variantDemonsList.filter(d => d.Race === comb.race2);
-                                let filteredDemon2s;
-                                if (fusionHidePlugins) {
-                                    if (fusionDisplayVariants) {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
-                                                .filter(d => d.Plugin[0] === false)
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s].filter(d => d.Plugin[0] === false);
-                                        }
-                                    } else {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon2s = allDemon2s
-                                                .filter(d => d.Plugin[0] === false)
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon2s = allDemon2s.filter(d => d.Plugin[0] === false);
-                                        }
-                                    }
-                                } else {
-                                    if (fusionDisplayVariants) {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s]
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon2s = [...allDemon2s, ...allVariantDemon2s];
-                                        }
-                                    } else {
-                                        if (fusionHideFusionOnly) {
-                                            filteredDemon2s = allDemon2s
-                                                .filter(d => contractDemonNamesSet.has(d.Name) || (d.Range && d.Range[0] === 'PG Only'));
-                                        } else {
-                                            filteredDemon2s = allDemon2s;
-                                        }
-                                    }
-                                }
-
-                                filteredDemon1s.forEach(d1 => {
-                                    filteredDemon2s.forEach(d2 => {
-                                        const levelRange = d1.Level + d2.Level;
-                                        if (demon.Range && typeof demon.Range[0] === 'number') {
-                                            if (levelRange >= demon.Range[0] && (!demon.Range[1] || levelRange <= demon.Range[1])) {
-                                                if (fusionDisplayPG) {
-                                                    if ((d2.Range && d2.Range[0] === 'PG Only') || d2.HasPG) {
-                                                        allValidFusions.push({ demon1: d1, demon2: d2 });
-                                                    }
-                                                } else {
-                                                    allValidFusions.push({ demon1: d1, demon2: d2 });
-                                                }
-                                            }
-                                        }
-                                    });
-                                });
-                            });
-                        }
-                    }
-
-                    return allValidFusions;
-                }
-
-                const results = calculateFusions({ demon, data, fusionHidePlugins, fusionHideFusionOnly, fusionDisplayVariants, fusionDisplayPG });
-                self.postMessage(results);
-            };
-        `;
-
-        const blob = new Blob([workerCode], { type: 'application/javascript' });
-        const worker = new Worker(URL.createObjectURL(blob), { type: 'module' });
+        const worker = new Worker(FusionWorker, { type: 'module' });
 
         worker.onmessage = (e) => {
             setFusionResults(e.data);
@@ -249,14 +51,15 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         };
 
         worker.postMessage({
-            demon: demon,
-            data: data,
-            fusionHidePlugins: fusionHidePlugins,
-            fusionHideFusionOnly: fusionHideFusionOnly,
-            fusionDisplayVariants: fusionDisplayVariants,
-            fusionDisplayPG: fusionDisplayPG,
+            demon,
+            data,
+            fusionHidePlugins,
+            fusionHideFusionOnly,
+            fusionDisplayVariants,
+            fusionDisplayPG,
         });
 
+        return () => worker.terminate(); // clean up
     }, [
         demon,
         data,
@@ -265,8 +68,6 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         fusionDisplayVariants,
         fusionDisplayPG,
     ]);
-
-
 
     let hasTriFusion: boolean = false
 

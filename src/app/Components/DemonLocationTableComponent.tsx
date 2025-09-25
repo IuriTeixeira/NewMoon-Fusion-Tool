@@ -32,26 +32,10 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
 
         setLoading(true);
 
-        const workerCode = `
-        self.onmessage = (e) => {
-            const { demonsList, variantDemonsList, contractDemonsList, raceFilter } = e.data;
-
-            const combinedList = [...demonsList, ...variantDemonsList];
-
-            let filteredDemonList = combinedList.filter(demon =>
-                contractDemonsList.some(loc => loc.Name === demon.Name)
-            );
-
-            if (raceFilter) {
-                filteredDemonList = filteredDemonList.filter(demon => demon.Race === raceFilter);
-            }
-
-            self.postMessage(filteredDemonList);
-        };
-    `;
-
-        const blob = new Blob([workerCode], { type: 'application/javascript' });
-        const worker = new Worker(URL.createObjectURL(blob), { type: 'module' });
+        const worker = new Worker(
+            new URL('@/app/workers/filterContractDemons.worker.ts', import.meta.url),
+            { type: 'module' }
+        );
 
         worker.onmessage = (e) => {
             setfilteredDemonList(e.data);
@@ -59,16 +43,14 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
             worker.terminate();
         };
 
-
         worker.postMessage({
             demonsList: data?.demonsList ?? [],
             variantDemonsList: data?.variantDemonsList ?? [],
             contractDemonsList: data?.contractDemonsList ?? [],
             raceFilter,
         });
-
-
     }, [data, raceFilter]);
+
 
 
     const sortedDemonsList = sortTable(filteredDemonList)

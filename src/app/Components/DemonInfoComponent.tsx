@@ -1,5 +1,6 @@
 import { Flex, Table, Image, Center } from "@mantine/core";
 import { cleanString } from "@/utils/functionUtils"
+import { raceGems } from "@/utils/constants";
 
 interface DemonInfoProps {
     demon: Demon
@@ -12,7 +13,7 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
             <Table align={'center'} variant="vertical" withTableBorder withColumnBorders>
                 <Table.Thead>
                     <Table.Tr>
-                        <Table.Th colSpan={2}>
+                        <Table.Th colSpan={4}>
                             <Flex align={'center'} justify={'center'} gap={'sm'}>
                                 <Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} />
                                 {demon.Name}
@@ -24,8 +25,6 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                     <Table.Tr>
                         <Table.Th w={150}><Center>Race</Center></Table.Th>
                         <Table.Td><Center>{demon.Race}</Center></Table.Td>
-                    </Table.Tr>
-                    <Table.Tr>
                         <Table.Th w={150}><Center>Level</Center></Table.Th>
                         <Table.Td><Center>{demon.Level}</Center></Table.Td>
                     </Table.Tr>
@@ -42,6 +41,12 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                                         typeof (demon.Range[0]) === "number" ? '+' : ''}`
                                     :
                                     'Special Fusion'}
+                            </Center>
+                        </Table.Td>
+                        <Table.Th w={150}><Center>Synthesis Gem</Center></Table.Th>
+                        <Table.Td>
+                            <Center>
+                                {raceGems[demon.Race]}
                             </Center>
                         </Table.Td>
                     </Table.Tr>
