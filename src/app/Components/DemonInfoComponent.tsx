@@ -29,6 +29,12 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                         <Table.Td><Center>{demon.Level}</Center></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
+                        <Table.Th w={150}><Center>Synthesis Gem</Center></Table.Th>
+                        <Table.Td>
+                            <Center>
+                                {raceGems[demon.Race]}
+                            </Center>
+                        </Table.Td>
                         <Table.Th w={150}><Center>Fusion Range</Center></Table.Th>
                         <Table.Td>
                             <Center>
@@ -41,12 +47,6 @@ export default function DemonInfoComponent({ demon }: DemonInfoProps) {
                                         typeof (demon.Range[0]) === "number" ? '+' : ''}`
                                     :
                                     'Special Fusion'}
-                            </Center>
-                        </Table.Td>
-                        <Table.Th w={150}><Center>Synthesis Gem</Center></Table.Th>
-                        <Table.Td>
-                            <Center>
-                                {raceGems[demon.Race]}
                             </Center>
                         </Table.Td>
                     </Table.Tr>
