@@ -132,14 +132,14 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
                                         <React.Fragment key={`race-name-level-${index}`}>
                                             <Table.Th key={`race-${index}`} rowSpan={demon.Special.length} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
                                             <Table.Td key={`level-${index}`} rowSpan={demon.Special.length}><Center key={`level-center-${index}`}>{demon.Level}</Center></Table.Td>
-                                            <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
+                                            <Table.Td key={`icon-${index}`} rowSpan={demon.Special.length}><Center key={`icon-center-${index}`}><Image loading="lazy" fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demon.Special.length}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         </React.Fragment>
                                         :
                                         <React.Fragment key={`race-name-level-${index}`}>
                                             <Table.Th key={`race-${index}`} bg={bgColor}><Center key={`race-center-${index}`}>{demon.Race}</Center></Table.Th>
                                             <Table.Td key={`level-${index}`}><Center key={`icon-center-${index}`}>{demon.Level}</Center></Table.Td>
-                                            <Table.Td key={`icon-${index}`}><Center key={`icon-center-${index}`}><Image fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
+                                            <Table.Td key={`icon-${index}`}><Center key={`icon-center-${index}`}><Image loading="lazy" fallbackSrc='/Blank.png' key={`icon-${index}`} src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} /></Center></Table.Td>
                                             <Table.Td key={`name-${index}`}><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>{demon.Name}</Anchor></Table.Td>
                                         </React.Fragment>
                                     }

@@ -183,7 +183,7 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
                                                 <Center>{demon.Level}</Center>
                                             </Table.Td>
                                             <Table.Td key={`icon-${index}`} rowSpan={demonLocation.Zone.length || 1}>
-                                                <Center><Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} w={32} h={32} /></Center>
+                                                <Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} w={32} h={32} /></Center>
                                             </Table.Td>
                                             <Table.Td key={`name-${index}`} rowSpan={demonLocation.Zone.length || 1}>
                                                 <Anchor component={Link} href={{ pathname: '/fusions', query: { demon: demon.Name } }}>

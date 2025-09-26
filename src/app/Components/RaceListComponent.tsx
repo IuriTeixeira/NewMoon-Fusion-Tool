@@ -59,7 +59,7 @@ export default function RaceListComponent({ demon }: RaceListProps) {
                                         </Table.Td>
                                         <Table.Td key={`race-list-icon-${index}`}>
                                             <Center key={`race-list-center-icon-${index}`}>
-                                                <Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={d.Name} w={32} h={32} />
+                                                <Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={d.Name} w={32} h={32} />
                                             </Center>
                                         </Table.Td>
                                         <Table.Td key={`race-list-name-${index}`}>
