@@ -202,9 +202,13 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                                     <Center>Name</Center>
                                 </Table.Th>
                             }
-                            <Table.Th onClick={() => handleSort('demon2Race')} style={{ cursor: 'pointer' }}>
-                                <Center>Race {sortBy === 'demon2Race' && (reverseSort ? '↓' : '↑')}</Center>
-                            </Table.Th>
+                            {!demon.Special ?
+                                <Table.Th onClick={() => handleSort('demon2Race')} style={{ cursor: 'pointer' }}>
+                                    <Center>Race {sortBy === 'demon2Race' && (reverseSort ? '↓' : '↑')}</Center>
+                                </Table.Th>
+                                :
+                                <Table.Th><Center>Race</Center></Table.Th>
+                            }
                             {!demon.Special &&
                                 <Table.Th onClick={() => handleSort('demon2Level')} style={{ cursor: 'pointer' }}>
                                     <Center>Lv {sortBy === 'demon2Level' && (reverseSort ? '↓' : '↑')}</Center>
