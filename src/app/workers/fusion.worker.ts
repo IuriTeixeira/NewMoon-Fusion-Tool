@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 
-export {}
+export { }
 
 self.onmessage = (e: MessageEvent<{
     demon: Demon;
@@ -97,7 +97,7 @@ self.onmessage = (e: MessageEvent<{
 
                                     if (isNormal) break;
                                 }
-                            }else{
+                            } else {
                                 validElementFusions.push({ demon1: elements[i], demon2: nextDemon });
                             }
                         }
@@ -118,7 +118,7 @@ self.onmessage = (e: MessageEvent<{
 
                                     if (isNormal) break;
                                 }
-                            }else{
+                            } else {
                                 validElementFusions.push({ demon1: elements[i], demon2: nextDemon });
                             }
                         }
@@ -218,7 +218,7 @@ self.onmessage = (e: MessageEvent<{
                         if (
                             Array.isArray(demon.Range) &&
                             typeof demon.Range[0] === 'number' &&
-                            (demon.Range[1] === null || typeof demon.Range[1] === 'number')
+                            (demon.Range[1] === null || demon.Range[1] === undefined || typeof demon.Range[1] === 'number')
                         ) {
                             if (levelRange >= demon.Range[0] && (!demon.Range[1] || levelRange <= demon.Range[1])) {
                                 if (fusionDisplayPG) {
