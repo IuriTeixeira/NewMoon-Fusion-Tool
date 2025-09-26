@@ -1171,7 +1171,7 @@
         "Race": "Evil Dragon",
         "Name": "Basilisk",
         "Zone": ["Ueno", "Kuchinawa Cave"],
-        "Location": ["[20, 19] [21, 16]", "[09, 22] [16, 18]"],
+        "Location": ["[19, 19] [21, 16]", "[09, 22] [16, 18]"],
         "Notes": [null, "From 6:00 to 18:00"]
     },
     {
@@ -1336,7 +1336,7 @@
         "Name": "Specter",
         "Zone": ["Ueno", "Old Ichigaya Camp (Silver)", "Old Tokyo Metro"],
         "Location": ["Northeast corner", null, null],
-        "Notes": ["From 6:00 to 18:00", null, null]
+        "Notes": ["From 18:00 to 6:00", null, null]
     },
     {
         "Race": "Foul",
