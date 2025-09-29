@@ -6,10 +6,11 @@ import React, { JSX, useEffect, useState } from 'react'
 import Link from 'next/link';
 
 interface DemonLocationTableProps {
+    nameFilter: string,
     raceFilter: string
 }
 
-export default function DemonLocationTableComponent({ raceFilter }: DemonLocationTableProps) {
+export default function DemonLocationTableComponent({ nameFilter, raceFilter }: DemonLocationTableProps) {
     const colorScheme = useComputedColorScheme();
 
     const [data, setData] = useState<Data | null>()
@@ -33,7 +34,7 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
         setLoading(true);
 
         const worker = new Worker(
-            new URL('@/app/workers/filterContractDemons.worker.ts', import.meta.url),
+            new URL('@/app/workers/filterContractDemons.worker.js', import.meta.url),
             { type: 'module' }
         );
 
@@ -48,10 +49,9 @@ export default function DemonLocationTableComponent({ raceFilter }: DemonLocatio
             variantDemonsList: data?.variantDemonsList ?? [],
             contractDemonsList: data?.contractDemonsList ?? [],
             raceFilter,
+            nameFilter
         });
-    }, [data, raceFilter]);
-
-
+    }, [data, raceFilter, nameFilter]);
 
     const sortedDemonsList = sortTable(filteredDemonList)
 

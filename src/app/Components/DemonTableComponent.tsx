@@ -8,13 +8,14 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 interface DemonTableProps {
+    nameFilter: string,
     raceFilter: string,
     hidePlugins: boolean,
     displayVariants: boolean,
     //displayContractOnly: boolean
 }
 
-export default function DemonTableComponent({ raceFilter, hidePlugins, displayVariants, /*displayContractOnly*/ }: DemonTableProps) {
+export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugins, displayVariants, /*displayContractOnly*/ }: DemonTableProps) {
     const colorScheme = useComputedColorScheme();
 
     const [data, setData] = useState<Data | null>()
@@ -26,9 +27,9 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         Promise.all([
             loadJSON('/Data/demons.json'),
             loadJSON('/Data/variant_demons.json'),
-            loadJSON('/Data/contract_demons.json'),
-        ]).then(([demonsList, variantDemonsList, contractDemonsList]) => {
-            setData({ demonsList, variantDemonsList, contractDemonsList })
+            /* loadJSON('/Data/contract_demons.json') */,
+        ]).then(([demonsList, variantDemonsList, /* contractDemonsList */]) => {
+            setData({ demonsList, variantDemonsList, /* contractDemonsList */ })
         })
 
     }, [])
@@ -38,7 +39,7 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         setLoading(true);
 
         const worker = new Worker(
-            new URL('@/app/workers/filterDemons.worker.ts', import.meta.url),
+            new URL('@/app/workers/filterDemons.worker.js', import.meta.url),
             { type: 'module' }
         );
 
@@ -55,9 +56,10 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
             hidePlugins,
             displayVariants,
             raceFilter,
+            nameFilter
         });
 
-    }, [data, hidePlugins, displayVariants, raceFilter]);
+    }, [data, hidePlugins, displayVariants, raceFilter, nameFilter]);
 
 
 
@@ -73,7 +75,7 @@ export default function DemonTableComponent({ raceFilter, hidePlugins, displayVa
         );
     }*/
 
-    const sortedDemonList = sortTable(filteredDemonList)
+    const sortedDemonList:Demon[] = sortTable(filteredDemonList)
 
     return (
         <Table.ScrollContainer minWidth={500}>

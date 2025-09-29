@@ -6,6 +6,7 @@ import FilterComponent from "./Components/FilterComponent";
 import { Flex, Stack } from "@mantine/core";
 
 export default function Home() {
+    const [nameFilter, setNameFilter] = useState<string>('')
     const [raceFilter, setRaceFilter] = useState<string>('')
     const [hidePlugins, setHidePlugins] = useState<boolean>(false)
     //const [displayContractOnly, setDisplayContractOnly] = useState<boolean>(false)
@@ -14,8 +15,8 @@ export default function Home() {
     return (
         <Flex align='center' justify='center' m={'lg'}>
             <Stack>
-                <FilterComponent raceFilter={raceFilter} setRaceFilter={setRaceFilter} hidePlugins={hidePlugins} setHidePlugins={setHidePlugins} displayVariants={displayVariants} setDisplayVariants={setDisplayVariants}/* displayContractOnly={displayContractOnly} setDisplayContractOnly={setDisplayContractOnly}*/ />
-                <DemonTableComponent raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} /*displayContractOnly={displayContractOnly}*/ />
+                <FilterComponent nameFilter={nameFilter} setNameFilter={setNameFilter} raceFilter={raceFilter} setRaceFilter={setRaceFilter} hidePlugins={hidePlugins} setHidePlugins={setHidePlugins} displayVariants={displayVariants} setDisplayVariants={setDisplayVariants}/* displayContractOnly={displayContractOnly} setDisplayContractOnly={setDisplayContractOnly}*/ />
+                <DemonTableComponent nameFilter={nameFilter} raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} /*displayContractOnly={displayContractOnly}*/ />
             </Stack>
         </Flex>
     );
