@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/workers/filterDemons.worker.js", "src/app/workers/filterContractDemons.worker.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/workers/filterDemons.worker.js", "src/app/workers/filterContractDemons.worker.js", "src/app/workers/fusion.worker.js"],
   "exclude": ["node_modules"]
 }

@@ -56,7 +56,7 @@ export default function DemonLocationTableComponent({ nameFilter, raceFilter }: 
     const sortedDemonsList = sortTable(filteredDemonList)
 
     return (
-        <Table.ScrollContainer minWidth={500}>
+        <Table.ScrollContainer minWidth={500} maw={'90vw'}>
             <Table withTableBorder withColumnBorders>
                 <Table.Thead
                     style={{
@@ -98,7 +98,7 @@ export default function DemonLocationTableComponent({ nameFilter, raceFilter }: 
                     {sortedDemonsList.length <= 0
                         ?
                         <Table.Tr>
-                            <Table.Td colSpan={7}><Center>No demons of the {raceFilter} race are available to be contracted.</Center></Table.Td>
+                            <Table.Td colSpan={7}><Center>No demons found.</Center></Table.Td>
                         </Table.Tr>
                         :
                         sortedDemonsList.map((demon: Demon, index: number) => {
@@ -209,7 +209,6 @@ export default function DemonLocationTableComponent({ nameFilter, raceFilter }: 
                                     </React.Fragment>
                                 )
                             }
-
                         })}
                 </Table.Tbody>
             </Table>

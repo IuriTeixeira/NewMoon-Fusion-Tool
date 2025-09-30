@@ -1,8 +1,9 @@
 'use client'
-import { Text, Center, Checkbox, Group, Table, LoadingOverlay } from "@mantine/core";
+import { Text, Center, Table, LoadingOverlay, Title, Divider, Loader } from "@mantine/core";
 import React, { useEffect, useMemo, useState } from "react";
 import { loadJSON } from "@/utils/functionUtils";
 import { FusionRow } from "./FusionTableRowComponent"
+import FilterComponent from "./FilterComponent";
 
 interface FusionProps {
     demon: Demon
@@ -17,6 +18,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
     } | null>(null)
 
     const [fusionResults, setFusionResults] = useState<DemonPair[]>([])
+    const [fusionNameFilter, setFusionNameFilter] = useState<string>('')
+    const [fusionRaceFilter, setFusionRaceFilter] = useState<string>('')
     const [fusionDisplayVariants, setFusionDisplayVariants] = useState<boolean>(false)
     const [fusionHidePlugins, setFusionHidePlugins] = useState<boolean>(false)
     const [fusionHideFusionOnly, setFusionHideFusionOnly] = useState<boolean>(false)
@@ -41,7 +44,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         if (!data) return;
         setLoading(true);
 
-        const worker = new Worker(new URL('@/app/workers/fusion.worker.ts', import.meta.url), {
+        const worker = new Worker(new URL('@/app/workers/fusion.worker.js', import.meta.url), {
             type: 'module',
         });
 
@@ -58,6 +61,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             fusionHideFusionOnly,
             fusionDisplayVariants,
             fusionDisplayPG,
+            fusionNameFilter,
+            fusionRaceFilter
         });
 
         return () => worker.terminate(); // cleanup
@@ -68,6 +73,8 @@ export default function FusionTableComponent({ demon }: FusionProps) {
         fusionHideFusionOnly,
         fusionDisplayVariants,
         fusionDisplayPG,
+        fusionNameFilter,
+        fusionRaceFilter,
         sortBy,
         reverseSort
     ]);
@@ -121,43 +128,32 @@ export default function FusionTableComponent({ demon }: FusionProps) {
 
     return (
         <React.Fragment>
+            <Center><Title>Fusion Results</Title></Center>
             {!demon.Special &&
-                <Group align={'flex-start'} justify={'center'} gap={'lg'}>
-                    <Checkbox
-                        checked={fusionHidePlugins}
-                        label="Hide plugin demons"
-                        onChange={(event) => setFusionHidePlugins(event.currentTarget.checked)}
+                <React.Fragment>
+                    <Divider label="Filters" labelPosition="center" />
+                    <FilterComponent
+                        nameFilter={fusionNameFilter} setNameFilter={setFusionNameFilter}
+                        raceFilter={fusionRaceFilter} setRaceFilter={setFusionRaceFilter}
+                        hidePlugins={fusionHidePlugins} setHidePlugins={setFusionHidePlugins}
+                        displayVariants={fusionDisplayVariants} setDisplayVariants={setFusionDisplayVariants}
+                        fusionHideFusionOnly={fusionHideFusionOnly} setFusionHideFusionOnly={setFusionHideFusionOnly}
+                        fusionDisplayPG={fusionDisplayPG} setFusionDisplayPG={setFusionDisplayPG}
                     />
-                    <Checkbox
-                        checked={fusionDisplayVariants}
-                        label="Show variant demons"
-                        onChange={(event) => setFusionDisplayVariants(event.currentTarget.checked)}
-                    />
-                    <Checkbox
-                        checked={fusionHideFusionOnly}
-                        label="Hide fusion-only demons"
-                        onChange={(event) => setFusionHideFusionOnly(event.currentTarget.checked)}
-                    />
-                    <Checkbox
-                        checked={fusionDisplayPG}
-                        label="Include only fusions with demons available from PG"
-                        onChange={(event) => setFusionDisplayPG(event.currentTarget.checked)}
-                        description="* Element fusions ignore this condition"
-                    />
-                </Group>
+                </React.Fragment>
             }
+            <Divider />
             {loading
                 ?
-                <Text c={'dimmed'}>
-                    Calculating...
-                </Text>
+                <Center>
+                    <Loader size={'xs'} mr={'xs'}/> <Text c={'dimmed'}>Calculating...</Text>
+                </Center>
                 :
-                fusionResults ?
+                <Center>
                     <Text c={'dimmed'}>
-                        {fusionResults.length} fusions found.
+                        {fusionResults ? fusionResults.length : '0'} fusions found.
                     </Text>
-                    :
-                    <Text>No results found</Text>
+                </Center>
             }
             <Table.ScrollContainer minWidth={500}>
                 <Table striped highlightOnHover withTableBorder withColumnBorders>

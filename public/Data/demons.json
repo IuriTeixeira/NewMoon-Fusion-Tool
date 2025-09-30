@@ -2091,7 +2091,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "HasPG": true
     },
     {
         "Race": "Element",
@@ -2122,7 +2123,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "HasPG": true
     },
     {
         "Race": "Element",
@@ -2141,7 +2143,8 @@
         ],
         "Plugin": [
             false
-        ]
+        ],
+        "HasPG": true
     },
     {
         "Race": "Fairy",

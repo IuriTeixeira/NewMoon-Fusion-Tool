@@ -7,12 +7,13 @@ self.onmessage = (e) => {
     if (displayVariants) combinedList = combinedList.concat(variantDemonsList);
 
     let filteredDemonList = combinedList;
-    if (nameFilter) {
-        filteredDemonList = combinedList.filter(demon => demon.Name.toLowerCase().includes(nameFilter.toLowerCase()));
-    }
 
     if (raceFilter) {
         filteredDemonList = combinedList.filter(demon => demon.Race === raceFilter);
+    }
+
+    if (nameFilter) {
+        filteredDemonList = combinedList.filter(demon => demon.Name.toLowerCase().includes(nameFilter.toLowerCase()));
     }
 
     if (hidePlugins) {
