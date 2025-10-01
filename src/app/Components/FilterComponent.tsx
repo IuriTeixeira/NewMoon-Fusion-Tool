@@ -77,7 +77,7 @@ export default function FilterComponent({
 
     return (
         <Stack gap={'lg'}>
-            <Flex justify='center' align={'flex-start'} gap={'xl'} w={'80vw'}>
+            <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40vw'}>
                 <Select
                     w={'10vw'}
                     size={"sm"}
@@ -91,7 +91,7 @@ export default function FilterComponent({
                 <DemonSearchBarComponent demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} />
             </Flex>
             {!contractPage &&
-                <Flex justify='center' align={'flex-start'} gap={'xl'} w={'80vw'}>
+                <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40vw'}>
                     {setHidePlugins &&
                         <Checkbox
                             miw={'10vw'}
