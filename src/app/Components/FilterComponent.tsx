@@ -20,6 +20,7 @@ interface FilterProps {
     fusionDisplayPG?: boolean,
     setFusionDisplayPG?: React.Dispatch<React.SetStateAction<boolean>>
     contractPage?: boolean
+    forward?: boolean
     //displayContractOnly?: boolean,
     //setDisplayContractOnly?: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -31,12 +32,15 @@ export default function FilterComponent({
     displayVariants, setDisplayVariants,
     fusionHideFusionOnly, setFusionHideFusionOnly,
     fusionDisplayPG, setFusionDisplayPG,
-    contractPage
+    contractPage, forward
     /*, displayContractOnly, setDisplayContractOnly */
 }: FilterProps) {
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
     const [data, setData] = useState<Data | null>()
     const [filteredDemonList, setFilteredDemonList] = useState<Demon[]>([]);
+    if(displayVariants === undefined){
+        displayVariants = true
+    }
 
     useEffect(() => {
         Promise.all([
@@ -76,8 +80,8 @@ export default function FilterComponent({
     }, [data, hidePlugins, displayVariants, raceFilter, nameFilter, contractPage]);
 
     return (
-        <Stack gap={'lg'}>
-            <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40vw'}>
+        <Stack gap={'lg'} maw={forward ? '25vw' : ''}>
+            <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40%'}>
                 <Select
                     w={'10vw'}
                     size={"sm"}
@@ -88,7 +92,7 @@ export default function FilterComponent({
                     data={races}
                     clearable
                     searchable />
-                <DemonSearchBarComponent demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} />
+                <DemonSearchBarComponent forward={forward} demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} />
             </Flex>
             {!contractPage &&
                 <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40vw'}>

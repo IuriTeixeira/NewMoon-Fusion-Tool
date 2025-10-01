@@ -1,4 +1,5 @@
 'use client'
+import { sortTable } from '@/utils/functionUtils';
 import { CloseButton, Combobox, ScrollArea, TextInput, useCombobox, Text } from '@mantine/core';
 import { useEffect, useState } from 'react';
 
@@ -6,20 +7,23 @@ interface SearchProps {
     demonsList: Demon[],
     raceFilter: string,
     setNameFilter: React.Dispatch<React.SetStateAction<string>>
+    forward?: boolean
 }
 
-export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter }: SearchProps) {
+export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter, forward }: SearchProps) {
     const combobox = useCombobox({
         onDropdownClose: () => combobox.resetSelectedOption(),
     });
 
     const [value, setValue] = useState('');
-    const shouldFilterOptions = !demonsList.some((demon: Demon) => demon.Name === value);
-    const filteredOptions = shouldFilterOptions
+    const shouldFilterOptions:boolean = !demonsList.some((demon: Demon) => demon.Name === value);
+    const filteredOptions:Demon[] = shouldFilterOptions
         ? demonsList.filter((demon: Demon) => demon.Name.toLowerCase().includes(value.toLowerCase().trim()))
         : demonsList;
 
-    const options = filteredOptions.map((demon: Demon) => (
+    const sortedOptions:Demon[] = sortTable(filteredOptions)
+
+    const options = sortedOptions.map((demon: Demon) => (
         <Combobox.Option value={demon.Name} key={`${demon.Name}-${demon.Level}`}>
             <div>
                 <Text fz="sm" fw={500}>
@@ -56,7 +60,7 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter 
         >
             <Combobox.Target>
                 <TextInput
-                    w={'30vw'}
+                    w={forward ? '15vw' : '30vw'}
                     label="Search by Name"
                     placeholder={'e.g. Jack Frost'}
                     value={value}

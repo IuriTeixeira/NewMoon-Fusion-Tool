@@ -21,6 +21,11 @@ export default function HeaderComponent() {
                                 Fusions
                             </Button>
                         </Link>
+                        <Link href={'/forward-fusion'}>
+                            <Button size={'compact-md'}>
+                                Forward Fusions
+                            </Button>
+                        </Link>
                         <Link href={'/contract'}>
                             <Button size={'compact-md'}>
                                 Demon Locations
