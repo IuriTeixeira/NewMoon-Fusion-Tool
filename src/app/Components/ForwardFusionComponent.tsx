@@ -1,5 +1,5 @@
 'use  client'
-import { Center, Image, NumberInput, Stack, Title, Table, Flex } from "@mantine/core";
+import { Center, NumberInput, Stack, Title, Table, Flex } from "@mantine/core";
 import FilterComponent from "./FilterComponent";
 import raceCombinations from "@/../public/Data/race_combinations.json"
 import demonsList from "@/../public/Data/demons.json"
@@ -18,7 +18,11 @@ export default function ForwardFusionComponent() {
     const [nameDemon2, setNameDemon2] = useState<string>('')
     const [raceDemon2, setRaceDemon2] = useState<string>('')
     const [levelDemon2, setLevelDemon2] = useState<number | string>(1)
-    let fusionResult: Demon | undefined = calculateFusion(nameDemon1, raceDemon1, levelDemon1, nameDemon2, raceDemon2, levelDemon2)
+    let fusionResult: Demon | undefined = (nameDemon1 && nameDemon2)
+        ?
+        calculateFusion(nameDemon1, raceDemon1, levelDemon1, nameDemon2, raceDemon2, levelDemon2)
+        :
+        undefined
     const lastNameDemon1 = useRef<string | null>(null)
     const lastNameDemon2 = useRef<string | null>(null)
 
@@ -71,7 +75,11 @@ export default function ForwardFusionComponent() {
                 ];
                 mitamas.forEach(mitama => {
                     mitama?.Special?.forEach(combo => {
-                        if (nameDemon1 === combo[0] && nameDemon2 === combo[1]) {
+                        if (
+                            nameDemon1 === combo[0] && nameDemon2 === combo[1]
+                            ||
+                            nameDemon1 === combo[1] && nameDemon2 === combo[0]
+                        ) {
                             result = mitama
                         }
                     }
@@ -87,7 +95,7 @@ export default function ForwardFusionComponent() {
                 ];
                 elements.forEach(element => {
                     element?.Special?.forEach(combo => {
-                        if (combo.includes(raceDemon1)) {
+                        if (combo.includes(raceDemon1) || combo.includes(raceDemon2)) {
                             result = element
                         }
                     }

@@ -21,12 +21,20 @@ export default function RaceCombinationsComponent({ demon }: CombinationInfoProp
 
     const colorScheme = useComputedColorScheme()
     const filteredCombinations: FusionData[] = data ? data.raceCombinations.filter(target => demon.Race === target.Race) : []
-    const combinations: FusionCombination[] = filteredCombinations.flatMap(race =>
-        race.Combinations?.map(combination => ({
-            race1: combination[0],
-            race2: combination[1]
-        })) || []
-    );
+    const combinations: FusionCombination[] =
+        demon.Race === 'Element'
+            ?
+            demon.Special?.map(combination => ({
+                race1: combination[0],
+                race2: combination[1]
+            })) || []
+            :
+            filteredCombinations.flatMap(race =>
+                race.Combinations?.map(combination => ({
+                    race1: combination[0],
+                    race2: combination[1]
+                })) || []
+            );
 
     return (
         <Accordion>

@@ -57,7 +57,15 @@ function FusionsContent() {
                 </Button>
                 <DemonInfoComponent demon={demon} />
                 <RaceListComponent demon={demon} />
-                {!demon.Special && (demon.Range && typeof (demon.Range[0]) === 'number') && <RaceCombinationsComponent demon={demon} />}
+                {
+                    (
+                        (!demon.Special && (demon.Range && typeof (demon.Range[0]) === 'number'))
+                        ||
+                        demon.Race === 'Element'
+                    )
+                    &&
+                    <RaceCombinationsComponent demon={demon} />
+                }
                 {demonLoc && <DemonContractInfoComponent demonLoc={demonLoc} />}
                 {elementCombinations && elementCombinations.Elements
                     &&
