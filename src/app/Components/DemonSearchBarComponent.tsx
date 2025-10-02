@@ -37,8 +37,8 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter,
     ));
 
     useEffect(() => {
-        setValue('')
-    }, [raceFilter]);
+        if(!forward || (forward && !raceFilter)) setValue('')
+    }, [raceFilter, forward]);
 
     useEffect(() => {
         if (value.length >= 3) {

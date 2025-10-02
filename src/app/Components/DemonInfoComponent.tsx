@@ -41,7 +41,7 @@ function DemonInfoComponentInner({ demon }: DemonInfoProps) {
                     <Table.Tr>
                         <Table.Th colSpan={4}>
                             <Flex align={'center'} justify={'center'} gap={'sm'}>
-                                <Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} />
+                                <Image fallbackSrc='/Blank.png' src={`/Icons/${imageName}.png`} alt={demon.Name} title={demon.Name} w={32} h={32} />
                                 {isActive || demon.Race === '-'
                                     ?
                                     <Text fw={700}>{demon.Name}</Text>

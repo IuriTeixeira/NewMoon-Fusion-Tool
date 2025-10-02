@@ -38,9 +38,9 @@ export default function FilterComponent({
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
     const [data, setData] = useState<Data | null>()
     const [filteredDemonList, setFilteredDemonList] = useState<Demon[]>([]);
-    if(displayVariants === undefined){
+    /* if(displayVariants === undefined){
         displayVariants = true
-    }
+    } */
 
     useEffect(() => {
         Promise.all([
@@ -122,10 +122,10 @@ export default function FilterComponent({
                             onChange={(event) => setFusionDisplayPG(event.currentTarget.checked)}
                             description="* Element fusions ignore this condition" />}
                     {/*setDisplayContractOnly && <Checkbox
-        checked={displayContractOnly}
-        label="Display only contractable demons"
-        onChange={(event) => setDisplayContractOnly(event.currentTarget.checked)}
-    />*/}
+                        checked={displayContractOnly}
+                        label="Display only contractable demons"
+                        onChange={(event) => setDisplayContractOnly(event.currentTarget.checked)}
+                    />*/}
                 </Flex>
             }
         </Stack>

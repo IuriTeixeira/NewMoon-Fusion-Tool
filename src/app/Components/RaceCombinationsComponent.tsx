@@ -1,4 +1,4 @@
-import { Accordion, Center, Table, useComputedColorScheme, Text } from "@mantine/core";
+import { Accordion, Center, Table, useComputedColorScheme, Text, Image, Flex } from "@mantine/core";
 import { useEffect, useState } from "react";
 import { loadJSON } from "@/utils/functionUtils";
 
@@ -37,7 +37,7 @@ export default function RaceCombinationsComponent({ demon }: CombinationInfoProp
                     </Center>
                 </Accordion.Control>
                 <Accordion.Panel>
-                    <Table align={'center'} withTableBorder withColumnBorders>
+                    <Table align={'center'} withTableBorder withColumnBorders w={'auto'} mx={'auto'}>
                         <Table.Thead
                             style={{
                                 backgroundColor: `var(--mantine-color-${colorScheme === 'dark' ? 'dark-6' : 'gray-0'})`
@@ -52,14 +52,16 @@ export default function RaceCombinationsComponent({ demon }: CombinationInfoProp
                             {combinations.map((combination: FusionCombination, index: number) => (
                                 <Table.Tr key={`race-combinations-row-${index}`}>
                                     <Table.Td key={`race-combinations-cell-1-${index}`}>
-                                        <Center key={`race-combinations-center-1-${index}`}>
+                                        <Flex key={`race-combinations-center-1-${index}`} align={'center'} gap={'sm'}>
+                                            <Image key={`race-combinations-icon-1-${index}`} loading='lazy' fallbackSrc='/Icons/LNC Godly Spirit.png' src={`/Icons/LNC ${combination.race1}.png`} alt={combination.race1} title={combination.race1} w={48} h={48} />
                                             {combination.race1}
-                                        </Center>
+                                        </Flex>
                                     </Table.Td>
                                     <Table.Td key={`race-combinations-cell-2-${index}`}>
-                                        <Center key={`race-combinations-center-2-${index}`}>
+                                        <Flex key={`race-combinations-center-2-${index}`} align={'center'} gap={'sm'}>
+                                            <Image key={`race-combinations-icon-2-${index}`} loading='lazy' fallbackSrc='/Icons/LNC Godly Spirit.png' src={`/Icons/LNC ${combination.race2}.png`} alt={combination.race2} title={combination.race2} w={48} h={48} />
                                             {combination.race2}
-                                        </Center>
+                                        </Flex>
                                     </Table.Td>
                                 </Table.Tr>
                             ))}
