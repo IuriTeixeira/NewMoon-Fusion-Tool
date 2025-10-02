@@ -159,7 +159,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
                 <Table striped highlightOnHover withTableBorder withColumnBorders>
                     <Table.Thead>
                         <Table.Tr>
-                            {demon.Special
+                            {demon.Special && demon.Race !== 'Element'
                                 ?
                                 <React.Fragment>
                                     <Table.Th rowSpan={2}><Center>Plugin?</Center></Table.Th>
