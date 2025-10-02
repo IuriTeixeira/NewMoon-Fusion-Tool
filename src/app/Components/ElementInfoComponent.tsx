@@ -1,5 +1,6 @@
 import { IconArrowUp, IconArrowDown } from "@tabler/icons-react";
-import { Image, Center, Table, useComputedColorScheme } from "@mantine/core";
+import { Image, Center, Table, useComputedColorScheme, Anchor } from "@mantine/core";
+import Link from "next/link";
 
 interface ElementInfoProps {
     elements: string[]
@@ -20,10 +21,10 @@ export default function ElementInfoComponent({ elements }: ElementInfoProps) {
                     <Table.Th colSpan={4}><Center>Elemental Fusion</Center></Table.Th>
                 </Table.Tr>
                 <Table.Tr>
-                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Erthys.png`} alt={'Erthys'} w={32} h={32} mr={5} /> Erthys</Center></Table.Th>
-                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Aeros.png`} alt={'Aeros'} w={32} h={32} mr={5} />Aeros</Center></Table.Th>
-                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Aquans.png`} alt={'Aquans'} w={32} h={32} mr={5} />Aquans</Center></Table.Th>
-                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Flamies.png`} alt={'Flamies'} w={32} h={32} mr={5} />Flamies</Center></Table.Th>
+                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Erthys.png`} alt={'Erthys'} w={32} h={32} mr={'xs'} /><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: 'Erthys' } }}>Erthys</Anchor></Center></Table.Th>
+                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Aeros.png`} alt={'Aeros'} w={32} h={32} mr={'xs'} /><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: 'Erthys' } }}>Aeros</Anchor></Center></Table.Th>
+                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Aquans.png`} alt={'Aquans'} w={32} h={32} mr={'xs'} /><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: 'Erthys' } }}>Aquans</Anchor></Center></Table.Th>
+                    <Table.Th><Center><Image loading="lazy" fallbackSrc='/Blank.png' src={`/Icons/Flamies.png`} alt={'Flamies'} w={32} h={32} mr={'xs'} /><Anchor component={Link} href={{ pathname: '/fusions', query: { demon: 'Erthys' } }}>Flamies</Anchor></Center></Table.Th>
                 </Table.Tr>
             </Table.Thead>
             <Table.Tbody>
