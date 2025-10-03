@@ -1,6 +1,11 @@
 [
     {
         "Type": "Race",
+        "Name": "Seraph",
+        "Alt": "Seraphim"
+    },
+    {
+        "Type": "Race",
         "Name": "Sacred Soul",
         "Alt": "Mitama"
     },

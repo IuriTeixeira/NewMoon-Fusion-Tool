@@ -1,10 +1,11 @@
 'use client'
 import { useEffect, useState } from "react";
-import { Checkbox, Flex, Select, Stack } from "@mantine/core";
+import { Checkbox, Flex, Stack } from "@mantine/core";
 import { racesLaw, racesNeutral, racesChaos } from '@/utils/constants'
 import { loadJSON } from "@/utils/functionUtils";
 import { DemonSearchBarComponent } from "./DemonSearchBarComponent";
 import React from "react";
+import RaceSelectComponent from "./RaceSelectComponent";
 
 interface FilterProps {
     nameFilter: string,
@@ -47,8 +48,9 @@ export default function FilterComponent({
             loadJSON('/Data/demons.json'),
             loadJSON('/Data/variant_demons.json'),
             loadJSON('/Data/contract_demons.json'),
-        ]).then(([demonsList, variantDemonsList, contractDemonsList]) => {
-            setData({ demonsList, variantDemonsList, contractDemonsList })
+            loadJSON('/Data/alt_names.json')
+        ]).then(([demonsList, variantDemonsList, contractDemonsList, altNames]) => {
+            setData({ demonsList, variantDemonsList, contractDemonsList, altNames })
         })
     }, [])
 
@@ -74,24 +76,16 @@ export default function FilterComponent({
             hidePlugins,
             displayVariants,
             raceFilter,
-            nameFilter
+            nameFilter,
+            //altNames: data?.altNames ?? []
         });
 
     }, [data, hidePlugins, displayVariants, raceFilter, nameFilter, contractPage]);
-
+    
     return (
         <Stack gap={'lg'} maw={forward ? '25vw' : ''}>
             <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40%'}>
-                <Select
-                    w={'10vw'}
-                    size={"sm"}
-                    label="Filter by Race"
-                    placeholder="e.g. Fairy"
-                    value={raceFilter}
-                    onChange={(value) => { setRaceFilter(value ?? ''); setNameFilter('') }}
-                    data={races}
-                    clearable
-                    searchable />
+                <RaceSelectComponent setRaceFilter={setRaceFilter} races={races} altNames={data?.altNames}/>
                 <DemonSearchBarComponent forward={forward} demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} />
             </Flex>
             {!contractPage &&

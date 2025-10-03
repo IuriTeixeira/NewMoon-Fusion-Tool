@@ -11,11 +11,18 @@ interface Demon {
     hasPG?: boolean
 }
 
+interface AltName{
+    Type: string
+    Name: string
+    Alt: string
+}
+
 interface Data {
     demonsList?: Demon[]
     variantDemonsList?: Demon[]
     raceCombinations?: FusionData[]
     contractDemonsList?: DemonLocation[]
+    altNames?: AltName[]
 }
 
 interface FusionData {
