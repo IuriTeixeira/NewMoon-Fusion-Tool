@@ -15,12 +15,7 @@ import ElementInfoComponent from "../Components/ElementInfoComponent";
 function FusionsContent() {
     const searchParams = useSearchParams()
 
-    const [data, setData] = useState<{
-        demons: Demon[]
-        variantDemons: Demon[]
-        raceCombinations: FusionData[]
-        demonLocations: DemonLocation[]
-    } | null>(null)
+    const [data, setData] = useState<Data | null>(null)
 
     useEffect(() => {
         Promise.all([
@@ -28,24 +23,24 @@ function FusionsContent() {
             loadJSON('/Data/variant_demons.json'),
             loadJSON('/Data/race_combinations.json'),
             loadJSON('/Data/contract_demons.json'),
-        ]).then(([demons, variantDemons, raceCombinations, demonLocations]) => {
-            setData({ demons, variantDemons, raceCombinations, demonLocations })
+        ]).then(([demonsList, variantDemonsList, raceCombinations, contractDemonsList]) => {
+            setData({ demonsList, variantDemonsList, raceCombinations, contractDemonsList })
         })
     }, [])
 
     if (!data) return
 
     const demonName: string = searchParams.get('demon') as string
-    let demon: Demon = data.demons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+    let demon: Demon = data.demonsList?.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
     if (!demon) {
-        demon = data.variantDemons.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
+        demon = data.variantDemonsList?.find((targetDemon) => targetDemon.Name.toLowerCase() === demonName.toLowerCase()) as Demon
     }
 
-    const elementCombinations: FusionData = data?.raceCombinations.find((targetRace) => targetRace.Race === demon.Race) as FusionData
+    const elementCombinations: FusionData = data.raceCombinations?.find((targetRace) => targetRace.Race === demon.Race) as FusionData
 
-    const demonLoc: DemonLocation = data?.demonLocations.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation
+    const demonLoc: DemonLocation = data.contractDemonsList?.find((d: DemonLocation) => d.Name === demon.Name) as DemonLocation
 
-    const originalDemon: Demon = data?.demons.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
+    const originalDemon: Demon = data.demonsList?.find((d: Demon) => d.Name === cleanString(demon.Name)) as Demon
 
 
     return (

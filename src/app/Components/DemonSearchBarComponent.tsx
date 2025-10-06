@@ -6,22 +6,39 @@ import { useEffect, useState } from 'react';
 interface SearchProps {
     demonsList: Demon[],
     raceFilter: string,
-    setNameFilter: React.Dispatch<React.SetStateAction<string>>
+    setNameFilter: React.Dispatch<React.SetStateAction<string>>,
+    altNames?: AltName[]
     forward?: boolean
 }
 
-export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter, forward }: SearchProps) {
+export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter, altNames, forward }: SearchProps) {
     const combobox = useCombobox({
         onDropdownClose: () => combobox.resetSelectedOption(),
     });
 
     const [value, setValue] = useState('');
-    const shouldFilterOptions:boolean = !demonsList.some((demon: Demon) => demon.Name === value);
-    const filteredOptions:Demon[] = shouldFilterOptions
-        ? demonsList.filter((demon: Demon) => demon.Name.toLowerCase().includes(value.toLowerCase().trim()))
-        : demonsList;
+    const filteredOptions: Demon[] = demonsList.filter((demon) => {
+        const lowerDemon = demon.Name.toLowerCase();
+        const lowerSearch = value.toLowerCase().trim();
 
-    const sortedOptions:Demon[] = sortTable(filteredOptions)
+        // Direct match
+        if (lowerDemon.includes(lowerSearch)) return true;
+
+        // Match by any altName that maps to this demon.Name
+        if (altNames) {
+            const matchingAlts = altNames.filter(
+                (altName) =>
+                    altName.Type === 'Demon' &&
+                    altName.Alt.toLowerCase().includes(lowerSearch) &&
+                    altName.Name.toLowerCase() === lowerDemon
+            );
+            return matchingAlts.length > 0;
+        }
+
+        return false;
+    });
+
+    const sortedOptions: Demon[] = sortTable(filteredOptions)
 
     const options = sortedOptions.map((demon: Demon) => (
         <Combobox.Option value={demon.Name} key={`${demon.Name}-${demon.Level}`}>
@@ -37,7 +54,7 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter,
     ));
 
     useEffect(() => {
-        if(!forward || (forward && !raceFilter)) setValue('')
+        if (!forward || (forward && !raceFilter)) setValue('')
     }, [raceFilter, forward]);
 
     useEffect(() => {
@@ -46,7 +63,7 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter,
         } else {
             setNameFilter('')
         }
-    }, [value, setNameFilter]);
+    }, [value, filteredOptions, setNameFilter]);
 
     return (
         <Combobox
@@ -67,6 +84,9 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter,
                     onChange={(event) => {
                         setValue(event.currentTarget.value);
                         combobox.openDropdown();
+                    }}
+                    onSubmit={(event) => {
+                        setValue(event.currentTarget.value);
                     }}
                     onClick={() => combobox.openDropdown()}
                     onFocus={() => combobox.openDropdown()}

@@ -77,7 +77,7 @@ export default function FilterComponent({
             displayVariants,
             raceFilter,
             nameFilter,
-            //altNames: data?.altNames ?? []
+            altNames: data?.altNames ?? []
         });
 
     }, [data, hidePlugins, displayVariants, raceFilter, nameFilter, contractPage]);
@@ -86,7 +86,7 @@ export default function FilterComponent({
         <Stack gap={'lg'} maw={forward ? '25vw' : ''}>
             <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40%'}>
                 <RaceSelectComponent setRaceFilter={setRaceFilter} races={races} altNames={data?.altNames}/>
-                <DemonSearchBarComponent forward={forward} demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} />
+                <DemonSearchBarComponent forward={forward} demonsList={filteredDemonList} setNameFilter={setNameFilter} raceFilter={raceFilter} altNames={data?.altNames}/>
             </Flex>
             {!contractPage &&
                 <Flex justify='center' align={'flex-start'} gap={'xl'} miw={'40vw'}>

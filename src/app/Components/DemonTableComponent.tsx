@@ -27,9 +27,10 @@ export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugin
         Promise.all([
             loadJSON('/Data/demons.json'),
             loadJSON('/Data/variant_demons.json'),
+            loadJSON('/Data/alt_names.json'),
             /* loadJSON('/Data/contract_demons.json') */,
-        ]).then(([demonsList, variantDemonsList, /* contractDemonsList */]) => {
-            setData({ demonsList, variantDemonsList, /* contractDemonsList */ })
+        ]).then(([demonsList, variantDemonsList, altNames /* contractDemonsList */]) => {
+            setData({ demonsList, variantDemonsList, altNames /* contractDemonsList */ })
         })
 
     }, [])
@@ -56,7 +57,8 @@ export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugin
             hidePlugins,
             displayVariants,
             raceFilter,
-            nameFilter
+            nameFilter,
+            altNames: data?.altNames ?? []
         });
 
     }, [data, hidePlugins, displayVariants, raceFilter, nameFilter]);
@@ -75,7 +77,7 @@ export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugin
         );
     }*/
 
-    const sortedDemonList:Demon[] = sortTable(filteredDemonList)
+    const sortedDemonList: Demon[] = sortTable(filteredDemonList)
 
     return (
         <Table.ScrollContainer minWidth={500}>

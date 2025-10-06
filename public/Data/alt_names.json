@@ -253,5 +253,10 @@
         "Type": "Demon",
         "Name": "Yatagarasu",
         "Alt": "Yata-Garasu"
+    },
+    {
+        "Type": "Demon",
+        "Name": "Yurlungur",
+        "Alt": "Cobrinha"
     }
 ]

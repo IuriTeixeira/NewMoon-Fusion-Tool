@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 
 self.onmessage = (e) => {
-    const { nameFilter, demonsList, variantDemonsList, hidePlugins, displayVariants, raceFilter } = e.data;
+    const { nameFilter, demonsList, variantDemonsList, hidePlugins, displayVariants, raceFilter, altNames } = e.data;
 
     let combinedList = [...demonsList];
     if (displayVariants) combinedList = combinedList.concat(variantDemonsList);
@@ -13,7 +13,36 @@ self.onmessage = (e) => {
     }
 
     if (nameFilter) {
-        filteredDemonList = combinedList.filter(demon => demon.Name.toLowerCase().includes(nameFilter.toLowerCase()));
+        const lowerSearch = nameFilter.toLowerCase().trim();
+
+        filteredDemonList = filteredDemonList.filter((demon) => {
+            const lowerDemon = demon.Name.toLowerCase();
+
+            // Direct match for the main name
+            if (lowerDemon.includes(lowerSearch)) {
+                return true;
+            }
+
+            // If no direct match, check altNames
+            if (altNames) {
+                const matchingAlts = altNames.filter((altName) => {
+                    const lowerAlt = altName.Alt.toLowerCase();
+                    const lowerAltName = altName.Name.toLowerCase();
+                    
+                    return (
+                        altName.Type === 'Demon' &&
+                        lowerAlt.includes(lowerSearch) &&
+                        lowerAltName === lowerDemon
+                    );
+                });
+
+                if (matchingAlts.length > 0) {
+                    return true;
+                }
+            }
+
+            return false;
+        });
     }
 
     if (hidePlugins) {

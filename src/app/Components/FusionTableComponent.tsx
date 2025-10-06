@@ -10,13 +10,7 @@ interface FusionProps {
 }
 
 export default function FusionTableComponent({ demon }: FusionProps) {
-    const [data, setData] = useState<{
-        demonsList: Demon[]
-        variantDemonsList: Demon[]
-        raceCombinations: FusionData[]
-        contractDemonsList: DemonLocation[]
-    } | null>(null)
-
+    const [data, setData] = useState<Data | null>(null)
     const [fusionResults, setFusionResults] = useState<DemonPair[]>([])
     const [fusionNameFilter, setFusionNameFilter] = useState<string>('')
     const [fusionRaceFilter, setFusionRaceFilter] = useState<string>('')
@@ -34,8 +28,9 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             loadJSON('/Data/variant_demons.json'),
             loadJSON('/Data/race_combinations.json'),
             loadJSON('/Data/contract_demons.json'),
-        ]).then(([demonsList, variantDemonsList, raceCombinations, contractDemonsList]) => {
-            setData({ demonsList, variantDemonsList, raceCombinations, contractDemonsList })
+            loadJSON('/Data/alt_names.json'),
+        ]).then(([demonsList, variantDemonsList, raceCombinations, contractDemonsList, altNames]) => {
+            setData({ demonsList, variantDemonsList, raceCombinations, contractDemonsList, altNames })
         })
 
     }, [])
@@ -146,7 +141,7 @@ export default function FusionTableComponent({ demon }: FusionProps) {
             {loading
                 ?
                 <Center>
-                    <Loader size={'xs'} mr={'xs'}/> <Text c={'dimmed'}>Calculating...</Text>
+                    <Loader size={'xs'} mr={'xs'} /> <Text c={'dimmed'}>Calculating...</Text>
                 </Center>
                 :
                 <Center>
