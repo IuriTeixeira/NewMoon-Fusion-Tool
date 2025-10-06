@@ -6,12 +6,13 @@ import { useEffect, useState } from 'react';
 interface SearchProps {
     demonsList: Demon[],
     raceFilter: string,
+    setRaceFilter: React.Dispatch<React.SetStateAction<string>>,
     setNameFilter: React.Dispatch<React.SetStateAction<string>>,
     altNames?: AltName[]
     forward?: boolean
 }
 
-export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter, altNames, forward }: SearchProps) {
+export function DemonSearchBarComponent({ demonsList, raceFilter, setRaceFilter, setNameFilter, altNames, forward }: SearchProps) {
     const combobox = useCombobox({
         onDropdownClose: () => combobox.resetSelectedOption(),
     });
@@ -96,7 +97,11 @@ export function DemonSearchBarComponent({ demonsList, raceFilter, setNameFilter,
                             <CloseButton
                                 size="sm"
                                 onMouseDown={(event) => event.preventDefault()}
-                                onClick={() => setValue('')}
+                                onClick={() => {
+                                    setValue('')
+                                    setNameFilter('')
+                                    setRaceFilter('')
+                                }}
                                 aria-label="Clear value"
                             />
                         )
