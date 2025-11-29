@@ -14,6 +14,8 @@ interface FilterProps {
     setRaceFilter: React.Dispatch<React.SetStateAction<string>>,
     hidePlugins?: boolean,
     setHidePlugins?: React.Dispatch<React.SetStateAction<boolean>>
+    specialFilter?: boolean,
+    setSpecialFilter?: React.Dispatch<React.SetStateAction<boolean>>
     displayVariants?: boolean,
     setDisplayVariants?: React.Dispatch<React.SetStateAction<boolean>>
     fusionHideFusionOnly?: boolean,
@@ -22,26 +24,21 @@ interface FilterProps {
     setFusionDisplayPG?: React.Dispatch<React.SetStateAction<boolean>>
     contractPage?: boolean
     forward?: boolean
-    //displayContractOnly?: boolean,
-    //setDisplayContractOnly?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export default function FilterComponent({
     nameFilter, setNameFilter,
     raceFilter, setRaceFilter,
     hidePlugins, setHidePlugins,
+    specialFilter, setSpecialFilter,
     displayVariants, setDisplayVariants,
     fusionHideFusionOnly, setFusionHideFusionOnly,
     fusionDisplayPG, setFusionDisplayPG,
     contractPage, forward
-    /*, displayContractOnly, setDisplayContractOnly */
 }: FilterProps) {
     const races: string[] = [...racesLaw, ...racesNeutral, ...racesChaos]
     const [data, setData] = useState<Data | null>()
     const [filteredDemonList, setFilteredDemonList] = useState<Demon[]>([]);
-    /* if(displayVariants === undefined){
-        displayVariants = true
-    } */
 
     useEffect(() => {
         Promise.all([
@@ -96,6 +93,12 @@ export default function FilterComponent({
                             checked={hidePlugins}
                             label="Hide plugin demons"
                             onChange={(event) => setHidePlugins(event.currentTarget.checked)} />}
+                    {setSpecialFilter &&
+                        <Checkbox
+                            miw={'10vw'}
+                            checked={specialFilter}
+                            label="Show only Special Fusions"
+                            onChange={(event) => setSpecialFilter(event.currentTarget.checked)} />}
                     {setDisplayVariants &&
                         <Checkbox
                             miw={'10vw'}
@@ -115,11 +118,6 @@ export default function FilterComponent({
                             label="Include only fusions with demons available from PG"
                             onChange={(event) => setFusionDisplayPG(event.currentTarget.checked)}
                             description="* Element fusions ignore this condition" />}
-                    {/*setDisplayContractOnly && <Checkbox
-                        checked={displayContractOnly}
-                        label="Display only contractable demons"
-                        onChange={(event) => setDisplayContractOnly(event.currentTarget.checked)}
-                    />*/}
                 </Flex>
             }
         </Stack>

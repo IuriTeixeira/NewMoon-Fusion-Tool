@@ -3,7 +3,6 @@ import { IconCheck, IconX } from '@tabler/icons-react'
 import { Text, Table, Image, Anchor, useComputedColorScheme, Center, LoadingOverlay } from '@mantine/core'
 import { racesLaw, racesChaos } from '@/utils/constants'
 import { cleanString, loadJSON, sortTable } from '@/utils/functionUtils'
-//import contractDemonList from '/Data/contract_demons.json' assert {type: "json"}
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
@@ -12,10 +11,10 @@ interface DemonTableProps {
     raceFilter: string,
     hidePlugins: boolean,
     displayVariants: boolean,
-    //displayContractOnly: boolean
+    specialFilter: boolean
 }
 
-export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugins, displayVariants, /*displayContractOnly*/ }: DemonTableProps) {
+export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugins, displayVariants, specialFilter }: DemonTableProps) {
     const colorScheme = useComputedColorScheme();
 
     const [data, setData] = useState<Data | null>()
@@ -28,9 +27,8 @@ export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugin
             loadJSON('/Data/demons.json'),
             loadJSON('/Data/variant_demons.json'),
             loadJSON('/Data/alt_names.json'),
-            /* loadJSON('/Data/contract_demons.json') */,
-        ]).then(([demonsList, variantDemonsList, altNames /* contractDemonsList */]) => {
-            setData({ demonsList, variantDemonsList, altNames /* contractDemonsList */ })
+        ]).then(([demonsList, variantDemonsList, altNames]) => {
+            setData({ demonsList, variantDemonsList, altNames })
         })
 
     }, [])
@@ -55,27 +53,14 @@ export default function DemonTableComponent({ nameFilter, raceFilter, hidePlugin
             variantDemonsList: data?.variantDemonsList ?? [],
             contractDemonList: data?.contractDemonsList ?? [],
             hidePlugins,
+            specialFilter,
             displayVariants,
             raceFilter,
             nameFilter,
             altNames: data?.altNames ?? []
         });
 
-    }, [data, hidePlugins, displayVariants, raceFilter, nameFilter]);
-
-
-
-    /*if (displayContractOnly) {
-        // Create a Set for faster lookup
-        const contractDemonNamesSet: Set<string> = new Set(
-            contractDemonList.map((demon: DemonLocation) => demon.Name)
-        );
-
-        // Filter the demon list
-        filteredDemonList = filteredDemonList.filter((d: Demon) =>
-            contractDemonNamesSet.has(d.Name)
-        );
-    }*/
+    }, [data, hidePlugins, specialFilter, displayVariants, raceFilter, nameFilter]);
 
     const sortedDemonList: Demon[] = sortTable(filteredDemonList)
 

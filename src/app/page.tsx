@@ -9,7 +9,7 @@ export default function Home() {
     const [nameFilter, setNameFilter] = useState<string>('')
     const [raceFilter, setRaceFilter] = useState<string>('')
     const [hidePlugins, setHidePlugins] = useState<boolean>(false)
-    //const [displayContractOnly, setDisplayContractOnly] = useState<boolean>(false)
+    const [specialFilter, setSpecialFilter] = useState<boolean>(false)
     const [displayVariants, setDisplayVariants] = useState<boolean>(false)
 
     return (
@@ -19,11 +19,11 @@ export default function Home() {
                     nameFilter={nameFilter} setNameFilter={setNameFilter}
                     raceFilter={raceFilter} setRaceFilter={setRaceFilter}
                     hidePlugins={hidePlugins} setHidePlugins={setHidePlugins}
+                    specialFilter={specialFilter} setSpecialFilter={setSpecialFilter}
                     displayVariants={displayVariants} setDisplayVariants={setDisplayVariants}
-                /* displayContractOnly={displayContractOnly} setDisplayContractOnly={setDisplayContractOnly}*/
                 />
                 <Space h={'lg'}/>
-                <DemonTableComponent nameFilter={nameFilter} raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} /*displayContractOnly={displayContractOnly}*/ />
+                <DemonTableComponent nameFilter={nameFilter} raceFilter={raceFilter} hidePlugins={hidePlugins} displayVariants={displayVariants} specialFilter={specialFilter} />
             </Stack>
         </Flex>
     );

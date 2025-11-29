@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 
 self.onmessage = (e) => {
-    const { nameFilter, demonsList, variantDemonsList, hidePlugins, displayVariants, raceFilter, altNames } = e.data;
+    const { nameFilter, demonsList, variantDemonsList, hidePlugins, specialFilter, displayVariants, raceFilter, altNames } = e.data;
 
     let combinedList = [...demonsList];
     if (displayVariants) combinedList = combinedList.concat(variantDemonsList);
@@ -10,6 +10,10 @@ self.onmessage = (e) => {
 
     if (raceFilter) {
         filteredDemonList = combinedList.filter(demon => demon.Race === raceFilter);
+    }
+
+    if(specialFilter){
+        filteredDemonList = combinedList.filter(demon => demon.Special !== null)
     }
 
     if (nameFilter) {
