@@ -4853,7 +4853,7 @@
             ]
         ],
         "Plugin": [
-            false
+            true
         ],
         "HasPG": true
     },
