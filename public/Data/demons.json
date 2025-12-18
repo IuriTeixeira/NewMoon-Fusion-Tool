@@ -3099,7 +3099,9 @@
         "Race": "Nocturne",
         "Name": "Santa Black Frost",
         "Level": 42,
-        "Range": ["PG Only"],
+        "Range": [
+            "PG Only"
+        ],
         "Special": null,
         "Plugin": [
             false
@@ -4845,8 +4847,10 @@
         "Level": 64,
         "Range": null,
         "Special": [
-            "Shadow",
-            "Mot"
+            [
+                "Shadow",
+                "Mot"
+            ]
         ],
         "Plugin": [
             false
