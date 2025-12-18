@@ -3150,6 +3150,17 @@
     },
     {
         "Race": "Nocturne",
+        "Name": "Santa Black Frost",
+        "Level": 42,
+        "Range": ["PG Only"],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Nocturne",
         "Name": "Kaiwan",
         "Level": 47,
         "Range": [
