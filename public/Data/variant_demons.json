@@ -1821,6 +1821,32 @@
     },
     {
         "Race": "Fairy",
+        "Name": "Brilliant Santa Frost",
+        "Level": 11,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Brilliant Santa Pyro",
+        "Level": 11,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
+    },
+    {
+        "Race": "Fairy",
         "Name": "Demi-Fiend's Pixie",
         "Level": 2,
         "Range": [
