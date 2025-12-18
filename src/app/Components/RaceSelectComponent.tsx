@@ -72,7 +72,7 @@ export default function RaceSelectComponent({ setRaceFilter, races, altNames }: 
                     <Group gap={4} align="end">
                         <InputBase
                             w={'10vw'}
-                            label="Search by Race"
+                            label="Filter by Race"
                             component="button"
                             type="button"
                             pointer

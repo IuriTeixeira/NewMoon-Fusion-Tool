@@ -161,7 +161,19 @@
     {
         "Race": "Divine",
         "Name": "Eternal Partner Dominion",
-        "Level": 90,
+        "Level": 1,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Divine",
+        "Name": "Holy Night Angel",
+        "Level": 1,
         "Range": [
             "PG Only"
         ],
@@ -874,6 +886,18 @@
     },
     {
         "Race": "Vile",
+        "Name": "Ruler of the Sabbath Baphomet",
+        "Level": 30,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ]
+    },
+    {
+        "Race": "Vile",
         "Name": "Inexperienced Mishaguji-Sama",
         "Level": 30,
         "Range": [
@@ -1410,32 +1434,44 @@
     },
     {
         "Race": "Beast",
-        "Name": "Asura Cerberus",
+        "Name": "Void Cerberus",
         "Level": 70,
         "Range": null,
         "Special": [
             [
-                "Cerberus",
-                "Orthrus",
-                "Chimera"
+                "Nimble Cu Chulainn",
+                "Joyful Alice",
+                "Joyful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Nimble Alice",
+                "Prideful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Wrathful Alice",
+                "Prideful Black Frost"
+            ],
+            [
+                "Nimble Cu Chulainn",
+                "Nimble Alice",
+                "Joyful Black Frost"
             ],
             [
                 "Three-Headed Cerberus",
-                "Orthrus",
-                "Chimera"
-            ],
-            [
-                "Void Cerberus",
-                "Orthrus",
-                "Chimera"
+                "Wrathful Alice",
+                "Prideful Black Frost"
             ]
         ],
         "Plugin": [
-            true,
-            true,
-            true
+            false,
+            false,
+            false,
+            false,
+            false
         ],
-        "AllowVariants": true
+        "AllowVariants": false
     },
     {
         "Race": "Beast",
@@ -1900,6 +1936,19 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Musical Festival High Pixie",
+        "Level": 20,
+        "Range": [
+            "PG Only"
+        ],
+        "Special": null,
+        "Plugin": [
+            false
+        ],
+        "HasPG": true
     },
     {
         "Race": "Fairy",
@@ -2688,6 +2737,22 @@
             true
         ],
         "AllowVariants": false
+    },
+    {
+        "Race": "Nocturne",
+        "Name": "Little Devil Lilim",
+        "Level": 20,
+        "Range": null,
+        "Special": [
+            [
+                "Lilim",
+                "Alp"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": true
     },
     {
         "Race": "Nocturne",

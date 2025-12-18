@@ -296,18 +296,6 @@
     },
     {
         "Race": "Divine",
-        "Name": "Holy Night Angel",
-        "Level": 1,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Divine",
         "Name": "Angel",
         "Level": 11,
         "Range": [
@@ -1319,18 +1307,6 @@
     },
     {
         "Race": "Vile",
-        "Name": "Ruler of the Sabbath Baphomet",
-        "Level": 30,
-        "Range": [
-            "PG Only"
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Vile",
         "Name": "Tao Tie",
         "Level": 65,
         "Range": [
@@ -1755,44 +1731,32 @@
     },
     {
         "Race": "Beast",
-        "Name": "Void Cerberus",
+        "Name": "Asura Cerberus",
         "Level": 70,
         "Range": null,
         "Special": [
             [
-                "Nimble Cu Chulainn",
-                "Joyful Alice",
-                "Joyful Black Frost"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Nimble Alice",
-                "Prideful Black Frost"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Wrathful Alice",
-                "Prideful Black Frost"
-            ],
-            [
-                "Nimble Cu Chulainn",
-                "Nimble Alice",
-                "Joyful Black Frost"
+                "Cerberus",
+                "Orthrus",
+                "Chimera"
             ],
             [
                 "Three-Headed Cerberus",
-                "Wrathful Alice",
-                "Prideful Black Frost"
+                "Orthrus",
+                "Chimera"
+            ],
+            [
+                "Void Cerberus",
+                "Orthrus",
+                "Chimera"
             ]
         ],
         "Plugin": [
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true
         ],
-        "AllowVariants": false
+        "AllowVariants": true
     },
     {
         "Race": "Beast",
@@ -2273,19 +2237,6 @@
     },
     {
         "Race": "Fairy",
-        "Name": "Pyro Jack",
-        "Level": 20,
-        "Range": [
-            30,
-            39
-        ],
-        "Special": null,
-        "Plugin": [
-            false
-        ]
-    },
-    {
-        "Race": "Fairy",
         "Name": "Santa Pyro",
         "Level": 15,
         "Range": [
@@ -2299,16 +2250,28 @@
     },
     {
         "Race": "Fairy",
-        "Name": "Musical Festival High Pixie",
-        "Level": 20,
+        "Name": "Shishimai Pyro",
+        "Level": 15,
         "Range": [
             "PG Only"
         ],
         "Special": null,
         "Plugin": [
             false
+        ]
+    },
+    {
+        "Race": "Fairy",
+        "Name": "Pyro Jack",
+        "Level": 20,
+        "Range": [
+            30,
+            39
         ],
-        "HasPG": true
+        "Special": null,
+        "Plugin": [
+            false
+        ]
     },
     {
         "Race": "Fairy",
@@ -3075,22 +3038,6 @@
         "Plugin": [
             false
         ]
-    },
-    {
-        "Race": "Nocturne",
-        "Name": "Lilim the Little Demon",
-        "Level": 20,
-        "Range": null,
-        "Special": [
-            [
-                "Lilim",
-                "Alp"
-            ]
-        ],
-        "Plugin": [
-            true
-        ],
-        "AllowVariants": true
     },
     {
         "Race": "Nocturne",
@@ -4896,10 +4843,11 @@
         "Race": "Haunt",
         "Name": "Fly",
         "Level": 64,
-        "Range": [
-            "PG Only"
+        "Range": null,
+        "Special": [
+            "Shadow",
+            "Mot"
         ],
-        "Special": null,
         "Plugin": [
             false
         ],
