@@ -681,6 +681,23 @@
         "AllowVariants": true
     },
     {
+        "Race": "Entity",
+        "Name": "Pan-gu",
+        "Level": 93,
+        "Range": null,
+        "Special": [
+            [
+                "Black Maria",
+                "Isis",
+                "Ananta"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": false
+    },
+    {
         "Race": "Evil Demon",
         "Name": "Ogre",
         "Level": 25,
