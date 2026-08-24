@@ -30,7 +30,7 @@
     },
     {
         "Race": "Avian",
-        "Name": "Creator Yatagarasu",
+        "Name": "Fiendmaker Yatagarasu",
         "Level": 52,
         "Range": [
             "PG Only"
@@ -272,7 +272,7 @@
     },
     {
         "Race": "Divine",
-        "Name": "Creator Power",
+        "Name": "Fiendmaker Power",
         "Level": 36,
         "Range": [
             "PG Only"
@@ -1350,7 +1350,7 @@
     },
     {
         "Race": "Beast",
-        "Name": "Creator Dawon",
+        "Name": "Fiendmaker Dawon",
         "Level": 42,
         "Range": [
             "PG Only"
@@ -2874,7 +2874,7 @@
     },
     {
         "Race": "Nocturne",
-        "Name": "Creator Loa",
+        "Name": "Fiendmaker Loa",
         "Level": 52,
         "Range": [
             "PG Only"
@@ -3473,7 +3473,7 @@
     },
     {
         "Race": "Dragon",
-        "Name": "Creator Quetzalcoatl",
+        "Name": "Fiendmaker Quetzalcoatl",
         "Level": 55,
         "Range": [
             "PG Only"
@@ -3824,7 +3824,7 @@
     },
     {
         "Race": "Fallen",
-        "Name": "Creator Berith",
+        "Name": "Fiendmaker Berith",
         "Level": 58,
         "Range": [
             "PG Only"

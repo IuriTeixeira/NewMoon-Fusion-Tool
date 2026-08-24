@@ -53,7 +53,7 @@ export const subTypes = [
     "Stray",
     "Crisis",
     "Nightmare",
-    "Creator",
+    "Fiendmaker",
     "Demi-Fiend's",
     "Stormy",
     "Blizzard",

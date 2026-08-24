@@ -258,5 +258,15 @@
         "Type": "Demon",
         "Name": "Yurlungur",
         "Alt": "Cobrinha"
+    },
+    {
+        "Type": "Demon",
+        "Name": "Fiendmaker",
+        "Alt": "Creator"
+    },
+    {
+        "Type": "Demon",
+        "Name": "Fiendmaker",
+        "Alt": "One Who Creates Demons"
     }
 ]
