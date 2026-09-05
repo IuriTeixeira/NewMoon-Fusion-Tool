@@ -3654,6 +3654,38 @@
     },
     {
         "Race": "Brute",
+        "Name": "Mezuki",
+        "Level": 75,
+        "Range": null,
+        "Special": [
+            [
+                "Fuu-Ki",
+                "Sleipnir"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": true
+    },
+    {
+        "Race": "Brute",
+        "Name": "Gozuki",
+        "Level": 75,
+        "Range": null,
+        "Special": [
+            [
+                "Kin-Ki",
+                "Gyuki"
+            ]
+        ],
+        "Plugin": [
+            true
+        ],
+        "AllowVariants": true
+    },
+    {
+        "Race": "Brute",
         "Name": "Ongyo-Ki",
         "Level": 91,
         "Range": null,
