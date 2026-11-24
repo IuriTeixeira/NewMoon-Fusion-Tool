@@ -67,7 +67,7 @@ function FusionsContent() {
                     (
                         !demon.Special
                         ||
-                        !originalDemon.Special
+                        !originalDemon?.Special
                     )
                     &&
                     <ElementInfoComponent elements={elementCombinations.Elements!} />}
